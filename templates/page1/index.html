@@ -1,0 +1,61 @@
+<div class="logo">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.25 39"><title>logo</title><path d="M12.84,3.85V0.76c-3.08,0-5.7,1.4-5.8,6.33L7.13,10.7C3.66,11.93.88,15.48,0.88,18.94A10.67,10.67,0,0,0,5,27.47c0-.74,0-4,0-5.32A5.47,5.47,0,0,1,4,19a5.25,5.25,0,0,1,3.22-4.66L7.27,31.05c0,2.92-2.11,4.54-4.88,4.54v2.64c4.92,0,7.69-2.58,7.69-7.47V29.34c1.61,0.12,2.19.13,2.77,0.13v-4c-0.58,0-2-.19-2.8-0.3l0-11.66c0.73-.07,2.15-0.1,3-0.1V9.9A28.82,28.82,0,0,0,10,10l0-3.53A2.42,2.42,0,0,1,12.84,3.85Z"/></svg>
+</div>
+
+<div class="intro">
+	<div>
+		<p>Frank Castro</p>
+		<h2>Design <br>& <br>Code</h2>
+	</div>
+	<div scroll>
+		<!-- <div scroll ng-hide="hideIntro"> -->
+		<div ng-class="{ 'dimmed': hideIntro }">
+			<h1>Hello!</h1>
+			<p>Welcome to Frank’s personal website.</p>
+			<p>Frank is an experienced designer and Creative Director living in Ottawa, Canada. He has designed many things in the past but nowadays he mainly focuses on web design.</p>
+			<p>He likes to code his own designs whenever is possible so he builds prototypes using AngularJS or Javascript. Sometimes he thinks of himself as a programmer but he is not... he can not code without Stackoverflow.</p>
+			<p>In more specific terms, Frank defines the quality of the user experience, the art direction, design the visual elements, and implement / manage the front end development of web applications for different platforms and devices.</p>
+			<p>He is currently employed at Phirelight as Creative Director responsible for the design and prototyping of RapidPhire; the company’s network security software solution.</p>
+			<p>Below a list of some recent projects he has worked on.</p>
+		</div>
+	</div>
+	<div class="contactInfo" ng-class = "{ 'swapcolor': hideIntro }">
+		<p>hello@frankcastro.com</p>
+		<p>LinkedIn</p>
+		<p>Twitter</p>
+		<p>Google+</p>
+	</div>
+	<div class="contactInfo" ng-class = "{ 'swapcolor': hideIntro }">
+		<p>Codepen</p>
+		<p>JSFiddle</p>
+		<p>Plnkr</p>
+		<p>GitHub</p>
+	</div>
+</div>
+
+<div class="introbg" ng-class = "{ 'shrinked': hideIntro }"></div>
+
+<div class="projectrow">
+	<div class="leftcol">
+		<h2>Recent Projects</h2>
+	</div>
+
+	<div class="projects" ng-repeat="item in items">
+		<div class="devicesimg">
+			<img ng-src="{{item.image1}}"/>
+			<img parallax parallax-ratio="-0.3" ng-src="{{item.image2}}"/>
+			<img parallax parallax-ratio="-0.5" ng-src="{{item.image3}}"/>
+			<img parallax parallax-ratio="-0.7" ng-src="{{item.image4}}"/>
+		</div>
+		<div class="projectName">
+			<p>{{item.project}}</p>
+			<h2>{{item.type}}</h2>
+		</div>
+		<div class="projectInfo">
+			<p>{{item.description}}</p>
+			<p>{{item.role}}</p>
+			<a ng-href="{{item.href}}">{{item.link}}</a>
+		</div>
+	</div>
+</div>
+<footer-content></footer-content>

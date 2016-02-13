@@ -1,0 +1,44 @@
+[
+	{
+		"type" : "Sample",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	},
+	{
+		"type" : "Sample",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	},
+	{
+		"type" : "Sample",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	},
+	{
+		"type" : "Sample",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	},
+	{
+		"type" : "Sample",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	},
+	{
+		"type" : "Sample2",
+		"image1" : "images/bg-test0.jpg",
+		"image2" : "images/bg-test0.jpg",
+		"image3" : "images/bg-test0.jpg",
+		"image4" : "images/bg-test0.jpg"
+	}
+]
