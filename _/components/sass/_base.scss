@@ -1,0 +1,139 @@
+// hack to render svgs properly in IE for img tags
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+	img[src*=".svg"] {
+		width: 100%; 
+	}
+}
+
+html, body {
+	overflow-x: hidden;
+}
+
+html {
+	font-size: 100%;
+} // average browser default size 16px... you could use 62.5% font-size if you want to have the convinience of resizing rems in a way that is similar to using pixels e.g. 1.4 rem = 14px
+
+$default-text-shadow-color: rgba(#000000, 0.8);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 2px;
+
+$cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
+
+// COLOR
+
+$color1: white;
+$color2: lightskyblue;
+$color3: pink;
+
+$gray1: lightgray;
+$gray2: gray;
+$gray3: dimgray;
+
+// get rid of these three;
+$bg01: white;
+$bg02: lightskyblue;
+$bg03: pink;
+
+
+// TYPEFACE
+
+// White text on a black background has a higher contrast to the opposite, the letterforms need to be wider apart, lighter in weight and have more space between the lines. Increase the leading, tracking and decrease your font-weight
+
+@include font-face("SourceSansReg", font-files("SourceSansPro-Regular.otf"));
+@include font-face("SourceSansLight", font-files("SourceSansPro-Light.otf"));
+@include font-face("SourceSansBold", font-files("SourceSansPro-Bold.otf"));
+
+$primary-font: 'SourceSansReg';
+$primary-fontlight: 'SourceSansLight';
+$primary-fontbold: 'SourceSansBold';
+
+$sans: 'freight-sans-pro', sans-serif;
+
+//font weights for typefaces from typekit
+.light { font-weight: 300; }
+.book { font-weight: 400; }
+.medium { font-weight: 500; }
+.bold { font-weight: 700; }
+
+// Typographic scale using golden ratio 1:1.618, modular-scale .
+// $ms-base: 1rem;
+$ms-base: 1rem * 0.92;
+// 1rem = 16px by default. To relate values so you can write 1.4rem = 14px, the default font size on the body has to be set like this; body { font-size:62.5%; }.
+$ms-ratio: 1.618;
+
+$button: ms(0); //recommended medium weight, all caps
+$link: uppercase;
+
+// keep this body tag down here so you can grab the variables above
+body {
+	font-family: $sans, $primary-font;
+// @include background(linear-gradient(bottom right, rgba(pink, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%), image-url('bg-test2.png') repeat-y 100% 0);
+	@include background(linear-gradient(bottom right, rgba($bg03, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%));
+	margin: 0px;
+	padding: 0px;
+}
+
+#{headings(1,4)} {
+	color: $gray2;
+}
+
+h1 {
+	font-size: ms(3); //preferably use the font light weight type
+	font-weight: 300;
+}
+
+h2 {
+	font-size: ms(2);
+	font-weight: 300;
+}
+
+h3 {
+	font-size: ms(1);
+}
+
+h4 {
+	font-size: ms(0);
+} //recommended medium weight
+
+p {
+	font-size: ms(0);
+	line-height: ms(1);
+	color: #363436;
+} // this is the default size
+
+
+// @mixin bg-properties {
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+// 	background-position: center center;
+// 	@include single-transition(all, 1s, ease-out);
+// }
+
+
+// breakpoints structure
+
+// sample {
+// 	font-family: sans-serif;
+
+// 	@include susy-breakpoint($xsmall) {
+// 		@include single-transition(all, 1s, ease-out);
+// 	}
+
+// 	@include susy-breakpoint($small) {
+// 		@include single-transition(all, 1s, ease-out);
+// 	}
+
+// 	@include susy-breakpoint($medium) {
+// 		@include single-transition(all, 1s, ease-out);
+// 	}
+
+// 	@include susy-breakpoint($large) {
+// 		@include single-transition(all, 1s, ease-out);
+// 	}
+
+// 	@include susy-breakpoint($xlarge) {
+// 		@include single-transition(all, 1s, ease-out);
+// 	}
+// }
