@@ -21,9 +21,9 @@
 	},
 	{
 		"project" : "Phablet /s.com",
-		"type" : "Website",
-		"description" : "Personal project; At the time I registered these domain names I had no idea the word itself will become official part of the English dictionary. To maintain the domains active with some traffic I built a single page website. The users can compare smartphones features in the category of Phablets (screen size over 5.1 inches). Built in HTML5, CSS3, Javascript. Only desktop version.",
-		"role" : "Working on a new iteration with responsive design.",
+		"type" : "Responsive Website",
+		"description" : "This website is like a hub, the url name is generic and refers to smartphones in the category of Phablets (screen size over 5.1 inches)... the purpose of the website is to provide users with quick information about the phones, features, etc... Users can compare smartphones, their features.",
+		"role" : "In this project I've taken care of every aspect of the process, from design concepts to implementation. This webapp was built with AngularJS, HTML5, CSS3 (Sass, Compass, Susy), Grunt.",
 		"color" : "#616E28",
 		"image1" : "images/imac-oandw.png",
 		"image2" : "images/ipad-oandw.png",
@@ -33,9 +33,9 @@
 	{
 		"project" : "RapidPhire",
 		"type" : "Web Application",
-		"description" : "Unfournately this work I can not show it here... too bad because is the result of almost two years of work, research and iterations. One of the most complex user experience I have ever worked on, displaying large amount of data with a myriad of graphs for data visualization.",
+		"description" : "Unfortunately this work can not be shown here... two years of work, research and iterations. This is one of the most challenging user experience I have ever worked on... this web application tracks large amount of data and anomalies on your network activity... the challenge is in representing this information with a myriad of graphs for data visualization...",
 		"role" : " ",
 		"color" : "#616E28",
-		"image1" : "images/imac-oandw.png"
+		"image1" : "images/imac-rapidphire.png"
 	}
 ]
