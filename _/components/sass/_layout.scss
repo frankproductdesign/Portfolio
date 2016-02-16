@@ -123,21 +123,36 @@ nav {
 	  		}
 		}
 
-		.intro {
-			width: 100%;
-			// height: ms(5);
-			padding-bottom: ms(7);
+		.introtext {
+			@include span(6 of 12);
+			// @include pre(3);
+			@include column-count(2);
+			@include column-gap(ms(0));
+			@include transform(translate(-45%, -(ms(6))));
+			left: 50%;
+			position: absolute;
 
-			.introtext {
+			div {
+				width: 90%;
+				max-width: 480px;
+				// background-color: lightgray;
+
 				p {
+					font-size: ms(0);
+					line-height: ms(1);
 					color: white;
 					letter-spacing: 0.5px;
-				}
+				}					
 			}
+		}
+
+		.intro {
+			width: 100%;
+			height: ms(6);
 
 			.dimmed {
 				@include transition-delay(0s);
-				@include transition-duration(0.4s);
+				@include transition-duration(0.2s);
 				@include transition-timing-function(ease-in);
 				opacity: 0;
 			}
@@ -147,48 +162,29 @@ nav {
 			}
 
 			h2 {
-				// text-transform: uppercase;
 				color: $gray2;
 				// @include background(linear-gradient(bottom right, rgba($bg03, 0.5) 32%, rgba($bg02, 0.5) 44%));
 				padding-top: ms(-1);
 			}
 
-			div:first-of-type {
+			.nametitle {
 				@include span(2 of 12);
-				// @include pre(1);
-				position: relative;
+				top: ms(1);
+				position: absolute;
 				// background-color: lightyellow;
 			}
 
-			div:nth-of-type(2) {
-				@include span(6 of 12);
-				// @include pre(2);
-				@include column-count(2);
-				@include column-gap(ms(1));
-
-				div {
-					width: 90%;
-					max-width: 500px;
-					// background-color: lightgray;
-
-					p {
-						font-size: ms(0);
-						line-height: ms(1);
-					}					
-				}
-			}
-
 			.contactInfo {
-				@include span(2 of 12);
+				@include span(1 of 12);
+				// @include pre(2);
 				// @include suffix (1); // Adds column after the element
 				font-weight: 300;
 				text-align: left;
-				padding: 0px;
 
 				p {
 					color: black;
 					@include transition-delay(0s);
-					@include transition-duration(0.7s);
+					@include transition-duration(0.1s);
 					@include transition-timing-function(ease-in);
 				}
 				
@@ -203,14 +199,14 @@ nav {
 
 			.ng-hide {
 				@include transition-delay(0s);
-				@include transition-duration(0.3s);
+				@include transition-duration(0s);
 				@include transition-timing-function(ease-out);
 				opacity: 0;
 			}
 
 			.ng-hide-remove {
 				@include transition-delay(0s);
-				@include transition-duration(0.3s);
+				@include transition-duration(0s);
 				@include transition-timing-function(ease-in);
 			}
 		}
@@ -221,23 +217,27 @@ nav {
 			background-color: rgba($gray3, 1);
 			position: absolute;
 			top: ms(5);
+			margin-top: ms(0);
 			z-index: -1;
 			opacity: 1;
 			@include transition-delay(0s);
-			@include transition-duration(0.3s);
+			@include transition-duration(0.4s);
 			@include transition-timing-function(ease-in);
 
 			&.shrinked {
 				opacity: 0;
 				@include transition-delay(0s);
-				@include transition-duration(0.4s);
+				@include transition-duration(0.3s);
 				@include transition-timing-function(ease-out);
 			}
 		}
 
 		.projectrow {
 			@include span(12 of 12);
+			padding-top: ms(6);
+
 			div:nth-of-type(4) {
+
 				img:nth-of-type(2) {
 					padding-top: 600px;
 				}
@@ -259,6 +259,11 @@ nav {
 
 				h2 {
 					color: $gray1;
+				}
+
+				&.fixed {
+					position: fixed;
+					top: ms(1);
 				}
 		}
 
