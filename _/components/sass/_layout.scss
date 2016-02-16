@@ -128,18 +128,19 @@ nav {
 			// @include pre(3);
 			@include column-count(2);
 			@include column-gap(ms(0));
-			@include transform(translate(-45%, -(ms(6))));
+			@include transform(translateX(-46%));
 			left: 50%;
 			position: absolute;
+			top: ms(6);
 
 			div {
 				width: 90%;
-				max-width: 480px;
+				max-width: 600px;
 				// background-color: lightgray;
 
 				p {
-					font-size: ms(0);
-					line-height: ms(1);
+					font-size: ms(1);
+					line-height: ms(2);
 					color: white;
 					letter-spacing: 0.5px;
 				}					
@@ -148,7 +149,7 @@ nav {
 
 		.intro {
 			width: 100%;
-			height: ms(6);
+			height: ms(7);
 
 			.dimmed {
 				@include transition-delay(0s);
@@ -213,7 +214,7 @@ nav {
 
 		.introbg {
 			width: 100%;
-			height: ms(7);
+			height: ms(8);
 			background-color: rgba($gray3, 1);
 			position: absolute;
 			top: ms(5);
@@ -255,7 +256,6 @@ nav {
 		.leftcol {
 			@include span(1 of 12);
 			padding: 0px;
-			// height: 100%;
 
 				h2 {
 					color: $gray1;
@@ -264,6 +264,11 @@ nav {
 				&.fixed {
 					position: fixed;
 					top: ms(1);
+
+					h2 {
+						// color: $gray2;
+					}
+					
 				}
 		}
 
