@@ -47,7 +47,10 @@ $primary-font: 'SourceSansReg';
 $primary-fontlight: 'SourceSansLight';
 $primary-fontbold: 'SourceSansBold';
 
-$sans: 'freight-sans-pro', sans-serif;
+// $sans: 'molengo', sans-serif;
+// $sans: 'freight-sans-pro', sans-serif;
+$sans: 'freight-neo-pro', sans-serif;
+$serif: 'freight-text-pro', sans-serif;
 
 //font weights for typefaces from typekit
 .light { font-weight: 300; }

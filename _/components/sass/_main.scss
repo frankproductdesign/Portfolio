@@ -128,17 +128,18 @@ nav {
 			// @include pre(3);
 			@include column-count(2);
 			@include column-gap(ms(3));
-			@include transform(translateX(-46%));
+			@include transform(translateX(-50%));
 			left: 50%;
 			position: absolute;
 			top: ms(6);
 
 			div {
 				width: 98%;
-				max-width: 600px;
+				max-width: 620px;
 				// background-color: lightgray;
 
 				p {
+					font-family: $serif;
 					font-size: ms(1);
 					line-height: ms(2);
 					color: white;
