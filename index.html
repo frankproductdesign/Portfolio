@@ -27,7 +27,7 @@
 
 	<!-- Controllers -->
 	 	<script type="text/javascript" src="js/controllers/recent.controller.js"></script>
-	 	<script type="text/javascript" src="js/controllers/previous.controller.js"></script>
+	 	<script type="text/javascript" src="js/controllers/work.controller.js"></script>
 
 	<!-- Directives -->
 		<script type="text/javascript" src="js/directives/menu-sel.dir.js"></script>
@@ -40,7 +40,11 @@
 
 	<body>
 
-		<div class="mainContainer" ng-view></div>
+		<div class="mainContainer">
+
+			<div ng-view></div>
+			
+		</div>
 
 		<script src="js/script.min.js"></script>
 		<script src="js/slick.min.js"></script>
