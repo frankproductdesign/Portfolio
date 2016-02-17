@@ -1,0 +1,26 @@
+.moduletest {
+	font-family: sans-serif;
+
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+
+		@include span(3 of 12);
+		@include pre(2);
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+	}
+}
