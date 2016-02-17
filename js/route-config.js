@@ -18,6 +18,9 @@ angular.module('myApp')
 	.when('/philosophy', { 
 		templateUrl: 'templates/page4/index.html'
 	})
+	.when('/about', { 
+		templateUrl: 'templates/page5/index.html'
+	})
 
 	.otherwise({ redirectTo: '/recent'
 	});
