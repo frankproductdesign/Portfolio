@@ -2,7 +2,7 @@
 
 	<div class="moduletest" ng-repeat="item in items">
 		<div slick-carousel>
-			<img ng-repeat="image in item" ng-src="{{image}}" />
+			<div ng-repeat="image in item"><img ng-src="{{image}}" /></div>
 		</div>
 		<div class=" ">
 			<p>{{item.type}}</p>
