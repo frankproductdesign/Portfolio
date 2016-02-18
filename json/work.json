@@ -1,51 +1,10 @@
 [
 	{
 		"type" : "Sample",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" }
-		]
+		"images" : [{ "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }]
 	},
 	{
 		"type" : "Sample",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },			
-			{ "images/bg-test0.jpg" }
-		]
-	},
-	{
-		"type" : "Sample",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },			
-			{ "images/bg-test0.jpg" }
-		]
-	},
-	{
-		"type" : "Sample",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },			
-			{ "images/bg-test0.jpg" }
-		]
-	},
-	{
-		"type" : "Sample",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" }
-		]
-	},
-	{
-		"type" : "Sample2",
-		"image" : [
-			{ "images/bg-test0.jpg" },
-			{ "images/bg-test0.jpg" },			
-			{ "images/bg-test0.jpg" }
-		]
+		"images" : [{ "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }]
 	}
 ]
