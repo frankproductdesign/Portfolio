@@ -1,11 +1,11 @@
 .moduletest {
 	font-family: sans-serif;
+	@include span(3 of 12);
+	@include pre(2);
+	background-color: lightblue;
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-
-		@include span(3 of 12);
-		@include pre(2);
 	}
 
 	@include susy-breakpoint($small) {
