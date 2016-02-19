@@ -1,4 +1,4 @@
-.moduletest {
+.workmodule {
 	font-family: sans-serif;
 	@include span(3 of 12);
 	@include pre(2);
@@ -6,6 +6,20 @@
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
+		height: 26vw;
+		margin-bottom: ms(2);
+
+		.imageWrapper {
+
+			img {
+				// width: 20vw;
+				max-height: 400px;
+				max-width: 400px;
+				position: relative;
+				left: 50%;
+				@include transform (translateX(-50%));
+			}
+		}
 	}
 
 	@include susy-breakpoint($small) {

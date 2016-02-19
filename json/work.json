@@ -1,7 +1,7 @@
 [
 	{
 		"type" : "Sample",
-		"images" : [{ "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }]
+		"images" : [{ "image":"images/poster-afrofunk.jpg" }, { "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }, { "image":"images/bg-test0.jpg" }]
 	},
 	{
 		"type" : "Sample",
