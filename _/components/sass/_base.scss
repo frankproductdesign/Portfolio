@@ -29,6 +29,8 @@ $gray1: lightgray;
 $gray2: gray;
 $gray3: dimgray;
 
+$links: hotpink;
+
 // get rid of these three;
 $bg01: white;
 $bg02: lightskyblue;
@@ -104,16 +106,8 @@ p {
 	color: #363436;
 } // this is the default size
 
-
-// @mixin bg-properties {
-// 	-webkit-background-size: cover;
-// 	-moz-background-size: cover;
-// 	-o-background-size: cover;
-// 	background-size: cover;
-// 	background-position: center center;
-// 	@include single-transition(all, 1s, ease-out);
-// }
-
+//value is used in work section
+$imagesize: 480px;
 
 // breakpoints structure
 

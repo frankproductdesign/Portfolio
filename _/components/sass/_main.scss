@@ -407,7 +407,7 @@ footer {
 			@include transform (translateX(-50%));
 			position: fixed;
 			cursor: pointer;
-			fill: hotpink;
+			fill: $links;
 			z-index: 1000;
 
 			&.rotate {

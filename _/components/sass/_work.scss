@@ -2,23 +2,30 @@
 	font-family: sans-serif;
 	@include span(3 of 12);
 	@include pre(2);
-	background-color: lightblue;
+	// background-color: lightblue;
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		height: 26vw;
-		margin-bottom: ms(2);
+		height: $imagesize;
+		margin-bottom: ms(6);
 
 		.imageWrapper {
+			// background-color: pink;
 
 			img {
 				// width: 20vw;
-				max-height: 480px;
-				max-width: 480px;
+				max-height: $imagesize;
+				max-width: $imagesize;
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));
 			}
+		}
+
+		.worktext {
+			position: relative;
+			top: ms(3);
+			text-align: center;
 		}
 	}
 
