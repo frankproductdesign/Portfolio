@@ -1,6 +1,16 @@
-<div class="mainContainer">
-	<div>
-		<p>Text goes here</p>
+<intro-header></intro-header>
+
+	<div class="workmodule" ng-repeat="item in items">
+		<div slick-carousel>
+			<div class="imageWrapper" ng-repeat="image in item.images">
+				<img ng-src="{{image.image}}" />
+			</div>
+		</div>
+		<div class="worktext">
+			<p>{{item.type}}</p>
+		</div>
 	</div>
-</div>
+
 <footer-content></footer-content>
+
+<nav-menu></nav-menu>

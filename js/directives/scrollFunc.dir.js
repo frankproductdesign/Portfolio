@@ -14,7 +14,7 @@ angular
 					// }
 
 					$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
-// this fixed the position of the top row to the top
+// this fixs the position of the top row to the top
 
 				$scope.$apply();
 			});

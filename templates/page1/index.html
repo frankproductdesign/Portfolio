@@ -13,30 +13,6 @@
 
 <div class="introbg" ng-class = "{ 'shrinked': scrollPos >= 44 }"></div>
 
-<div class="projectrow">
-	<div class="leftcol" ng-class = "{ 'fixed' : scrollPos > 930 }">
-		<h2>Recent Projects</h2>
-	</div>
-
-	<div class="projects" ng-repeat="item in items">
-		<div class="devicesimg">
-			<img ng-src="{{item.image1}}"/>
-			<img parallax parallax-ratio="-0.3" ng-src="{{item.image2}}"/>
-			<img parallax parallax-ratio="-0.5" ng-src="{{item.image3}}"/>
-			<img parallax parallax-ratio="-0.7" ng-src="{{item.image4}}"/>
-		</div>
-		<div class="projectName">
-			<p>{{item.project}}</p>
-			<h2>{{item.type}}</h2>
-		</div>
-		<div class="projectInfo">
-			<p>{{item.description}}</p>
-			<p>{{item.role}}</p>
-			<a ng-href="{{item.href}}">{{item.link}}</a>
-		</div>
-	</div>
-</div>
-
 <footer-content></footer-content>
 
 <nav-menu></nav-menu>
