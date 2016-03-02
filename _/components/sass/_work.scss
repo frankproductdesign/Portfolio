@@ -1,6 +1,8 @@
 .workmodule {
 	font-family: sans-serif;
 	@include span(3 of 12);
+//try using this declaration below
+	// @include span(1 at 2 of 6); 
 	@include pre(2);
 	// background-color: lightblue;
 
