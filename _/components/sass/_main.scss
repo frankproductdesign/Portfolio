@@ -97,8 +97,50 @@ nav {
 	}
 }
 
+.bigbox {
+	@include container;
+	@include transform(translate(-50%, -50%));
+	width: 90vw;
+	height: 90vh;
+	background-color: rgba(lightblue,0.8);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+
+	// @media (min-width: 1200px) {
+	// 	@include container;
+	// 		.textblock {
+	// 			@include span(2 at 2 of 6);
+	// 		}
+	// }
+} 
+// this is the class for the home page to size the box that create the frame effects
+
+header {
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	background: url(http://cciog.com/wp-content/uploads/2010/08/texture-bg.jpg) center no-repeat;
+	background-size: cover;
+
+	.content {
+		position: absolute;
+		top: 0; left: 0; right: 0; bottom: 0;
+		z-index: 1;
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0; right: 0; left: 0; bottom: 0;
+		background: url(http://bgfons.com/upload/cardboard_texture999.jpg) center no-repeat;
+		background-size: cover;
+		z-index: 0;
+		opacity: 0;
+	}
+} // this is for the home page art and full screen effect
+
 .mainContainer {
-	width: 100vw;
+	@include container;
 
 // -------------------------- XSMALL --------------------------
 

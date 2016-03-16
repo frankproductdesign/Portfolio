@@ -14,7 +14,7 @@ angular
 					// }
 
 					$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
-// this fixs the position of the top row to the top
+// this toggles classes on different elements, opacity, position, etc.
 
 				$scope.$apply();
 			});
