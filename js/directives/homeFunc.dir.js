@@ -4,10 +4,9 @@ angular
 	.directive('homeFunc', function($scope, $window) {
 		return function(scope, element, attrs) {
 
-			var content = angular.element.querySelector('header .content')
-
-				// , blur    = angular.element.querySelector('header .overlay')
-				// , wHeight  = angular.element($window).height();
+			var content = angular.element.querySelector('.header .content'),
+				blur    = angular.element.querySelector('.header .overlay'),
+				wHeight  = angular.element($window).height();
 
 			/**requestAnimationFrame Shim */
 			window.requestAnimFrame = (function()
@@ -62,9 +61,9 @@ angular
 					'-webkit-transform' : 'translateY(-' + slowScroll + 'px)'
 				});
 				
-				// blur.css({
-				// 	'opacity' : blurScroll / wHeight
-				// });
+				blur.css({
+					'opacity' : blurScroll / wHeight
+				});
 			  }
 			};
 
