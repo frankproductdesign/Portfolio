@@ -28,6 +28,16 @@ $xlarge: 1919px;
 	float: right;
 }
 
+// @mixin bg-properties {
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+// 	background-position: center center;
+// 	@include single-transition(all, 1s, ease-out);
+// }
+// check where you were using these properties before you delete the commented lines
+
 nav {
 	visibility: hidden;
 	position: fixed;
@@ -97,15 +107,45 @@ nav {
 	}
 }
 
-.bigbox {
+.artContainerSpace {
+	width: 100%;
+	height: 190vh;
+	// background-color: rgba(lightgreen, 0.2);
+	position: absolute;
+	z-index: -1;
+}
+
+.artContainer {
+	height: 400px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://cciog.com/wp-content/uploads/2010/08/texture-bg.jpg'));
+	// @include bg-properties;
+
+	&.dimmed {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		opacity: 0;
+	}
+} // this is for the home page art and full screen effect
+
+.artbox {
 	@include container;
-	@include transform(translate(-50%, -50%));
-	width: 90vw;
-	height: 90vh;
-	background-color: rgba(lightblue,0.8);
 	top: 50%;
 	left: 50%;
-	position: absolute;
+	@include transform(translate(-50%, -50%));
+	width: 66vw;
+	height: 90vh;
+	// background-color: rgba(lightblue, 0.95);
+	@include background(linear-gradient(bottom right, rgba(lightblue, 0.95) 32%, rgba($color2, 0.95) 64%));
+	position: fixed;
+	@include border-radius(ms(-2));
+
+	img {
+		@include transform(translateY(-90px) scale(0.4));
+	}
 
 	// @media (min-width: 1200px) {
 	// 	@include container;
@@ -116,30 +156,6 @@ nav {
 } 
 // this is the class for the home page to size the box that create the frame effects
 
-.header {
-	// height: 100%;
-	position: relative;
-	overflow: hidden;
-	background: url(http://cciog.com/wp-content/uploads/2010/08/texture-bg.jpg) center no-repeat;
-	background-size: cover;
-	background-color: lightyellow;
-
-	.content {
-		position: absolute;
-		top: 0; left: 0; right: 0; bottom: 0;
-		z-index: 1;
-	}
-
-	// .overlay {
-	// 	position: absolute;
-	// 	top: 0; right: 0; left: 0; bottom: 0;
-	// 	background: url(http://bgfons.com/upload/cardboard_texture999.jpg) center no-repeat;
-	// 	background-size: cover;
-	// 	z-index: 0;
-	// 	opacity: 0;
-	// }
-} // this is for the home page art and full screen effect
-
 .mainContainer {
 	@include container;
 
@@ -149,27 +165,6 @@ nav {
 		@include single-transition(all, 1s, ease-out);
 		@include container;
 
-		// div:first-of-type {
-		// 	height: 100vh;
-		// }
-
-		.logo {
-	  		width: 100%;
-	  		height: ms(6);
-	  		background-color: transparent;
-	  		z-index: 999;
-	  		position: relative;
-	  		@include transform(translateY(40px));
-
-	  		svg {
-	  			height: 70px;
-	  			fill: $gray1;
-	  			left: 50%;
-	  			@include transform (translateX(-65%));
-	  			position: fixed;
-	  		}
-		}
-
 		.introtext {
 			@include span(6 of 12);
 			// @include pre(3);
@@ -177,7 +172,7 @@ nav {
 			@include column-gap(ms(3));
 			@include transform(translateX(-50%));
 			left: 50%;
-			position: absolute;
+			position: fixed;
 			top: ms(6);
 
 			div {
@@ -189,7 +184,7 @@ nav {
 					font-family: $serif;
 					font-size: 1.13vw;
 					line-height: 1.74vw;
-					color: white;
+					color: $gray3;
 					letter-spacing: 0.55px;
 				}					
 			}
@@ -202,7 +197,7 @@ nav {
 			}
 		}
 
-		.intro {
+		.contacts {
 			width: 100%;
 			height: ms(6);
 
@@ -212,7 +207,6 @@ nav {
 
 			h2 {
 				color: $gray2;
-				// @include background(linear-gradient(bottom right, rgba($bg03, 0.5) 32%, rgba($bg02, 0.5) 44%));
 				padding-top: ms(-1);
 			}
 
@@ -260,24 +254,60 @@ nav {
 			// }
 		}
 
-		.introbg {
-			width: 100%;
-			height: ms(8);
-			background-color: rgba($gray3, 1);
-			position: absolute;
-			top: ms(5);
-			margin-top: ms(0);
-			z-index: -1;
-			opacity: 1;
+		.circle {
 			@include transition-delay(0s);
-			@include transition-duration(0.4s);
-			@include transition-timing-function(ease-in);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(ease-out);
+			width: 61px; 
+			height: 61px; 
+			bottom: 6vh;
+			background-color: white;
+			@include transform (translateX(-50%));
+			left: 50%;
+			position: fixed;
+			@include border-radius(45px);
+			z-index: 997;
 
-			&.shrinked {
-				opacity: 0;
+			&.square {
 				@include transition-delay(0s);
 				@include transition-duration(0.3s);
 				@include transition-timing-function(ease-out);
+				height: 100%;
+				width: 100%;
+				bottom: 0px;
+				border: 0px;
+				@include border-radius(0px);
+				// @include background(linear-gradient(160deg, lightskyblue 32%, hotpink 68%));
+				@include background(gray);
+			}
+
+			// &.square::after {
+			// 	@include transition-delay(0s);
+			// 	@include transition-duration(0.7s);
+			// 	@include transition-timing-function(ease-out);
+			// 	height: 0vh;
+			// }
+		}
+
+		.plusIcon {
+			@include transition-duration(0.2s);
+			@include transition-delay(0.1s);
+			width: 61px;
+			height: 61px;
+			bottom: 6vh;
+			left: 50%;
+			@include transform (translateX(-50%));
+			position: fixed;
+			cursor: pointer;
+			fill: lightblue;
+			z-index: 1000;
+
+			&.rotate {
+				@include transition-duration(0.2s);
+				@include transition-delay(0.1s);
+				@include transform-origin(50%, 50%); //these values are the default setting for origin
+				@include transform (translateX(-50%) rotate(45deg));
+				left: 50%;
 			}
 		}
 
@@ -312,18 +342,12 @@ nav {
 				&.fixed {
 					position: fixed;
 					top: ms(1);
-
-					h2 {
-						// color: $gray2;
-					}
-					
 				}
 		}
 
 	  	.projects {
 	  		@include span(11 of 12);
 	  		float: right;
-
 
 			.devicesimg {
 				@include span(6 of 11);
@@ -407,64 +431,8 @@ footer {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-
-		.circle {
-			@include transition-delay(0s);
-			@include transition-duration(0.2s);
-			@include transition-timing-function(ease-out);
-			width: 120px; 
-			height: 120px; 
-			top: ms(0);
-			background-color: white;
-			@include transform (translateX(-50%));
-			left: 50%;
-			position: fixed;
-			@include border-radius(60px);
-			z-index: 997;
-
-			&.square {
-				@include transition-delay(0s);
-				@include transition-duration(0.3s);
-				@include transition-timing-function(ease-out);
-				height: 100%;
-				top: 0px;
-				width: 180px;
-				border: 0px;
-				@include border-radius(0px);
-				// @include background(linear-gradient(160deg, lightskyblue 32%, hotpink 68%));
-				@include background(white);
-				// display: inline;
-			}
-
-			// &.square::after {
-			// 	@include transition-delay(0s);
-			// 	@include transition-duration(0.7s);
-			// 	@include transition-timing-function(ease-out);
-			// 	height: 0vh;
-			// }
-		}
-
-		.plusIcon {
-			@include transition-duration(0.2s);
-			@include transition-delay(0.1s);
-			width: 61px;
-			height: 61px;
-			top: 44px;
-			left: 50%;
-			@include transform (translateX(-50%));
-			position: fixed;
-			cursor: pointer;
-			fill: $links;
-			z-index: 1000;
-
-			&.rotate {
-				@include transition-duration(0.2s);
-				@include transition-delay(0.1s);
-				@include transform-origin(50%, 50%); //these values are the default setting for origin
-				@include transform (translateX(-50%) rotate(45deg));
-				left: 50%;
-			}
-		}
+		position: fixed;
+		bottom: -5px;
 
 		div:first-of-type {
 			@include span (4 of 12);
