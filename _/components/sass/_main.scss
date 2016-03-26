@@ -28,14 +28,14 @@ $xlarge: 1919px;
 	float: right;
 }
 
-// @mixin bg-properties {
-// 	-webkit-background-size: cover;
-// 	-moz-background-size: cover;
-// 	-o-background-size: cover;
-// 	background-size: cover;
-// 	background-position: center center;
-// 	@include single-transition(all, 1s, ease-out);
-// }
+@mixin bg-properties {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	@include single-transition(all, 1s, ease-out);
+}
 // check where you were using these properties before you delete the commented lines
 
 nav {
@@ -330,22 +330,22 @@ nav {
 
 		.projectrow {
 			@include span(12 of 12);
-			padding-top: ms(7);
+			padding: 0px;
 
-			div:nth-of-type(4) {
+			// div:nth-of-type(4) {
 
-				img:nth-of-type(2) {
-					padding-top: 600px;
-				}
+			// 	img:nth-of-type(2) {
+			// 		padding-top: 600px;
+			// 	}
 
-				img:nth-of-type(3) {
-					padding-top: 900px;
-				}
+			// 	img:nth-of-type(3) {
+			// 		padding-top: 900px;
+			// 	}
 
-				img:nth-of-type(4) {
-					padding-top: 1250px;
-				}
-			}
+			// 	img:nth-of-type(4) {
+			// 		padding-top: 1250px;
+			// 	}
+			// }
 		}
 
 		.pageTitle {
@@ -353,6 +353,7 @@ nav {
 			padding: 0px;
 			position: fixed;
 			bottom: ms(0);
+			z-index: 1001;
 
 				h2 {
 					color: $gray1;
@@ -365,26 +366,29 @@ nav {
 		}
 
 	  	.projects {
-	  		@include span(11 of 12);
-	  		float: right;
+	  		@include span(12 of 12);
+	  		padding: 0px;
 
 			.devicesimg {
-				@include span(6 of 11);
-				@include pre(1);
-				height: 900px;
+				z-index: -1;
+				// height: 90vh;
 
 				img {
-					position: absolute;
+					// position: absolute;
 				}
+			}		
 
-				img:first-of-type {
-					width: 45vw;
-					max-width: 1010px;
+			.projectbg {
+				width: 100%;
+
+				img {
+					// position: absolute;
+					@include bg-properties;
 				}
 			}
 
 			.projectName {
-				@include span(2 of 11);
+				@include span(2 of 12);
 				// @include pre(1);
 				position: relative;
 

@@ -5,8 +5,10 @@
 	</div>
 
 	<div class="projects" ng-repeat="item in items">
-		<div class="devicesimg">
+		<div class="projectbg">	
 			<img ng-src="{{item.image1}}"/>
+		</div>
+		<div class="devicesimg">
 			<img parallax parallax-ratio="-0.3" ng-src="{{item.image2}}"/>
 			<img parallax parallax-ratio="-0.5" ng-src="{{item.image3}}"/>
 			<img parallax parallax-ratio="-0.7" ng-src="{{item.image4}}"/>
