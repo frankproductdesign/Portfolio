@@ -74,7 +74,8 @@ nav {
 
 				a {
 					text-decoration: none;
-					color: hotpink;
+					color: $links;
+					font-size: ms(2);
 				}
 			}
 
@@ -82,7 +83,7 @@ nav {
 
 				a {
 					font-family: $sans;
-					color: hotpink;
+					color: $links;
 					opacity: 0.4;
 					cursor: none;
 				}
@@ -109,7 +110,7 @@ nav {
 
 .artContainerSpace {
 	width: 100%;
-	height: 190vh;
+	height: 120vh;
 	// background-color: rgba(lightgreen, 0.2);
 	position: absolute;
 	z-index: -1;
@@ -144,7 +145,22 @@ nav {
 	@include border-radius(ms(-2));
 
 	img {
-		@include transform(translateY(-90px) scale(0.4));
+		// @include transform(translateY(-90px) scale(0.4));
+		@include transform(translate(-50%, -50%));
+		top: 50%;
+		left: 50%;
+		position: absolute;
+		width: 520px;
+	}
+
+	p {
+		@include transform(translate(-35%, 56vh));
+		left: 50%;
+		position: absolute;
+		color: $links;
+		text-transform: uppercase;
+		font-size: ms(2);
+		letter-spacing: 70px;
 	}
 
 	// @media (min-width: 1200px) {
@@ -200,6 +216,7 @@ nav {
 		.contacts {
 			width: 100%;
 			height: ms(6);
+			padding-top: ms(1);
 
 			h1 {
 				color: $gray1;
@@ -218,11 +235,11 @@ nav {
 			}
 
 			.contactInfo {
-				@include span(1 of 12);
+				@include span(12 of 12);
 				// @include pre(2);
 				// @include suffix (1); // Adds column after the element
 				font-weight: 300;
-				text-align: left;
+				text-align: center;
 
 				p {
 					color: black;
@@ -260,7 +277,7 @@ nav {
 			@include transition-timing-function(ease-out);
 			width: 61px; 
 			height: 61px; 
-			bottom: 6vh;
+			bottom: 9vh;
 			background-color: white;
 			@include transform (translateX(-50%));
 			left: 50%;
@@ -294,7 +311,7 @@ nav {
 			@include transition-delay(0.1s);
 			width: 61px;
 			height: 61px;
-			bottom: 6vh;
+			bottom: 9vh;
 			left: 50%;
 			@include transform (translateX(-50%));
 			position: fixed;
@@ -331,18 +348,20 @@ nav {
 			}
 		}
 
-		.leftcol {
-			@include span(1 of 12);
+		.pageTitle {
+			@include span(12 of 12);
 			padding: 0px;
+			position: fixed;
+			bottom: ms(0);
 
 				h2 {
 					color: $gray1;
 				}
 
-				&.fixed {
-					position: fixed;
-					top: ms(1);
-				}
+				// &.fixed {
+				// 	position: fixed;
+				// 	top: ms(1);
+				// }
 		}
 
 	  	.projects {
@@ -426,36 +445,27 @@ nav {
 
 footer {
 	font-family: $primary-font;
-	width: 100%;
+	position: fixed;
+	bottom: 20px;
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		position: fixed;
-		bottom: -5px;
 
-		div:first-of-type {
-			@include span (4 of 12);
-			// @include pre(4);
-			max-width: 600px;
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: relative;
+		.copyright {
+			width: 450px;
+			@include transform(translate(-50%, -480%) rotate(-90deg));
+			// left: 50%;
 			padding: ms(0) 0px ms(0) 0px;
 			letter-spacing: 0.04rem;
-			text-align: center;
+			// text-align: center;
 			font-size: ms(0);
 			line-height: ms(1);
-		}
 
-		p {
-			color: $gray3;
-			font-weight: 400;
-		}
-
-		p:first-of-type {
-			color: $gray1;
-			font-weight: 300;
+			p {
+				color: $gray1;
+				font-weight: 300;
+			}
 		}
 	}
 
