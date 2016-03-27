@@ -3,7 +3,7 @@
 		"project" : "Olive and Well",
 		"type" : "E-commerce website",
 		"description" : "This is an online store for olive oils and related products, located in Chicago, Illisnois, USA. The site uses a single page application with responsive design. Built with AngularJS, Sass (Compass), Susy (grid layout), SVG, HTML5, CSS3, Grunt.",
-		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design and code enterily, to work with the client from the very first concepts to implementation, and deployment. And the chance to keep an ongoing serie of iterations to maintain the site update to do date and release incremental improvements in the whole experience and design of the website. Back-End by Iroel Perez.",
+		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design and code enterily, to work with the client from the very first concepts to implementation, and deployment. And the chance to keep an ongoing serie of iterations to maintain the site up-to-date and to release incremental improvements design-wise and functionality-wise. Back-End by Iroel Perez.",
 		"image1" : "images/oandwbg.png",
 		"image2" : "images/laptop-oandw.png",
 		"image3" : "images/ipad-land-oandw.png",
@@ -25,7 +25,7 @@
 		"description" : "This domain name refers to smartphones in the category of Phablets (screen size over 5.1 inches)... the website allow users to compare features of smartphones in this category and provide links to other sources... Users can compare smartphone features and click on the links to visit carriers in their areas. Data only covers major cities in north america.",
 		"role" : "In this project I've taken care of every aspect of the process, from design concepts to implementation. This webapp was built with AngularJS, HTML5, CSS3 (Sass, Compass, Susy), Grunt.",
 		"color" : "#616E28",
-		"image1" : "images/imac-oandw.png",
+		"image1" : "images/oandwbg.png",
 		"image2" : "images/ipad-oandw.png",
 		"image3" : "images/laptop-oandw.png",
 		"image4" : "images/iphone-oandw.png"

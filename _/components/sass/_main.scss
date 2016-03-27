@@ -132,45 +132,21 @@ nav {
 	}
 } // this is for the home page art and full screen effect
 
-.artbox {
-	@include container;
-	top: 50%;
+.ctasmall {
+	@include transform(translateX(-50%));
 	left: 50%;
-	@include transform(translate(-50%, -50%));
-	width: 66vw;
-	height: 90vh;
-	// background-color: rgba(lightblue, 0.95);
-	@include background(linear-gradient(bottom right, rgba(lightblue, 0.95) 32%, rgba($color2, 0.95) 64%));
 	position: fixed;
-	@include border-radius(ms(-2));
+	bottom: 1vh;
+	font-size: ms(0);
+	color: $gray1;
 
-	img {
-		// @include transform(translateY(-90px) scale(0.4));
-		@include transform(translate(-50%, -50%));
-		top: 50%;
-		left: 50%;
-		position: absolute;
-		width: 520px;
+	&.dimmed {
+		@include transition-delay(0s);
+		@include transition-duration(0.2s);
+		@include transition-timing-function(ease-in);
+		opacity: 0;
 	}
-
-	p {
-		@include transform(translate(-35%, 56vh));
-		left: 50%;
-		position: absolute;
-		color: $links;
-		text-transform: uppercase;
-		font-size: ms(2);
-		letter-spacing: 70px;
-	}
-
-	// @media (min-width: 1200px) {
-	// 	@include container;
-	// 		.textblock {
-	// 			@include span(2 at 2 of 6);
-	// 		}
-	// }
-} 
-// this is the class for the home page to size the box that create the frame effects
+}
 
 .mainContainer {
 	@include container;
@@ -204,14 +180,47 @@ nav {
 					letter-spacing: 0.55px;
 				}					
 			}
-
-			&.dimmed {
-				@include transition-delay(0s);
-				@include transition-duration(0.2s);
-				@include transition-timing-function(ease-in);
-				opacity: 0;
-			}
 		}
+
+		.artbox {
+			@include container;
+			top: 50%;
+			left: 50%;
+			@include transform(translate(-50%, -50%));
+			width: 66vw;
+			height: 90vh;
+			// background-color: rgba(lightblue, 0.95);
+			@include background(linear-gradient(bottom right, rgba(lightblue, 0.95) 32%, rgba($color2, 0.95) 64%));
+			position: fixed;
+			@include border-radius(ms(-2));
+
+			img {
+				// @include transform(translateY(-90px) scale(0.4));
+				@include transform(translate(-50%, -50%));
+				top: 50%;
+				left: 50%;
+				position: absolute;
+				width: 520px;
+			}
+
+			p {
+				@include transform(translate(-35%, 56vh));
+				left: 50%;
+				position: absolute;
+				color: $links;
+				text-transform: uppercase;
+				font-size: ms(2);
+				letter-spacing: 70px;
+			}
+
+			// @media (min-width: 1200px) {
+			// 	@include container;
+			// 		.textblock {
+			// 			@include span(2 at 2 of 6);
+			// 		}
+			// }
+		} 
+		// this is the class for the home page to size the box that create the frame effects
 
 		.contacts {
 			width: 100%;
@@ -328,6 +337,23 @@ nav {
 			}
 		}
 
+		.pageTitle {
+			@include span(12 of 12);
+			padding: 0px;
+			position: fixed;
+			bottom: ms(0);
+			z-index: 901;
+
+				h2 {
+					color: $gray1;
+				}
+
+				// &.fixed {
+				// 	position: fixed;
+				// 	top: ms(1);
+				// }
+		}
+
 		.projectrow {
 			@include span(12 of 12);
 			padding: 0px;
@@ -348,64 +374,50 @@ nav {
 			// }
 		}
 
-		.pageTitle {
-			@include span(12 of 12);
-			padding: 0px;
-			position: fixed;
-			bottom: ms(0);
-			z-index: 1001;
 
-				h2 {
-					color: $gray1;
+
+			.devicesimg {
+				z-index: -1;
+				height: 520px;
+				@include span(8 of 12);
+
+				img {
+					padding: 20px;
+					@include transform(translateY(-300px));
+					// width: 100%;
+					// height: 100%;
+					position: absolute;
 				}
+			}
 
-				// &.fixed {
-				// 	position: fixed;
-				// 	top: ms(1);
-				// }
-		}
+
 
 	  	.projects {
 	  		@include span(12 of 12);
 	  		padding: 0px;
 
-			.devicesimg {
-				z-index: -1;
-
-				img {
-					position: absolute;
-				}
-			}		
 
 			.projectbg {
 				width: 100%;
-				height: 66vh;
-				// position: absolute;
+				height: 39vw;
 				@include bg-properties;
 			}
 
-			.projectName {
-				@include span(2 of 12);
-				// @include pre(1);
-				position: relative;
-
-					h2 {
-						color: $gray2;
-						padding-top: ms(-1);
-					}
-			}
-
 			.projectInfo {
-				@include span(2 of 11);
+				@include span(2 of 12);
 				// @include pre(2);
 				position: relative;
 				// background-color: white;
-				padding: 0px ms(2) ms(3) 0px;
+				padding: ms(2) 0px ms(3);
 				font-weight: 300;
+
+				h2 {
+					color: $gray2;
+					padding-top: ms(-1);
+				}
 
 				a {
 					padding: ms(1) 0px;
-					position: absolute;
 				}
 			}
 	  	}

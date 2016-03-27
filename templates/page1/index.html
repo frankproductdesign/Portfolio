@@ -1,5 +1,4 @@
-<!-- <div class="introtext" ng-class="{ 'dimmed': scrollPos >= 44 }"> -->
-<div class="introtext">
+<div class="introtext light">
 	<div>
 		<p>Welcome to Frank Castro personal website.</p>
 		<p>Frank is an experienced designer and Creative Director living in Ottawa, Canada. He has designed many things in the past but nowadays he focuses on web design.</p>
@@ -11,7 +10,6 @@
 
 <div class="artContainerSpace"></div> <!-- this div creates the space you need to scroll down and hide the art on homepage -->
 
-<!-- <div class="artContainer" ng-class="{ 'dimmed': scrollPos >= 120 }"> -->
 <div class="artContainer" scroll-opacity>
 	<div class="artbox">
 		<p>code</p>
@@ -19,6 +17,9 @@
 	</div>
 </div>
 
+<div scroll class="ctasmall light" ng-class="{ 'dimmed': scrollPos >= 60 }">
+	<p>Scroll to reveal text</p>
+</div>
 <footer-content></footer-content>
 
 <nav-menu></nav-menu>
