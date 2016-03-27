@@ -4,10 +4,9 @@
 	</div>
 
 	<div class="projects" ng-repeat="item in items">
-		<div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}">
-		</div>
+		<div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}"></div>
 		<div class="devicesimg">
-				<img parallax parallax-ratio="0.3" ng-src="{{item.image2}}"/>
+				<img ng-src="{{item.image2}}"/>
 				<img ng-src="{{item.image3}}"/>
 				<img ng-src="{{item.image4}}"/>
 		</div>
