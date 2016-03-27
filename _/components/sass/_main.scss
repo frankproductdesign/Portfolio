@@ -121,8 +121,7 @@ nav {
 	overflow: hidden;
 	display: block;
 	position: relative;
-	// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://cciog.com/wp-content/uploads/2010/08/texture-bg.jpg'));
-	// @include bg-properties;
+	// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://frankcastro.com/something/texture-bg.jpg'));
 
 	&.dimmed {
 		@include transition-delay(0s);
@@ -380,12 +379,14 @@ nav {
 				z-index: -1;
 				height: 520px;
 				@include span(8 of 12);
+				position: relative;
 
 				img {
 					padding: 20px;
-					@include transform(translateY(-300px));
-					// width: 100%;
-					// height: 100%;
+					top: 0px;
+					position: absolute;
+					// @include transform(translateY(-300px));
+					// @include box-shadow(black 2px 2px 10px); 
 				}
 			}
 
