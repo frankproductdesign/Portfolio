@@ -1,1 +1,1 @@
-angular.module('myApp', ['ngRoute', 'ngAnimate', 'myStuff'])
+angular.module('myApp', ['ngRoute', 'ngAnimate', 'myStuff', 'angular-parallax'])
