@@ -6,7 +6,7 @@ angular.module('angular-parallax', [
     restrict: 'A',
     scope: {
       parallaxRatio: '@',
-      parallaxVerticalOffset: '@',
+      parallaxVerticalOffset: '@', //this one don't take negative values
       parallaxHorizontalOffset: '@',
     },
     link: function($scope, elem, attrs) {

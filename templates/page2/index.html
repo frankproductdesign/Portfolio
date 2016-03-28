@@ -6,9 +6,9 @@
 	<div class="projects" ng-repeat="item in items">
 		<div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}"></div>
 		<div class="devicesimg">
-				<img parallax parallax-ratio="-0.3" ng-src="{{item.image2}}"/>
-				<img ng-src="{{item.image3}}"/>
-				<img ng-src="{{item.image4}}"/>
+			<img parallax parallax-ratio="-0.2" parallax-horizontal-offset="30" ng-src="{{item.image2}}"/>
+			<img parallax parallax-ratio="-0.4" parallax-horizontal-offset="630" ng-src="{{item.image3}}"/>
+			<img parallax parallax-ratio="-0.3" parallax-horizontal-offset="1130" ng-src="{{item.image4}}"/>
 		</div>
 		<div class="projectInfo">
 			<p>{{item.project}}</p>
