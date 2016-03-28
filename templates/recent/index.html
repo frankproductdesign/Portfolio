@@ -1,0 +1,29 @@
+<div class="projectrow">
+	<div class="pageTitle">
+		<h2>Recent Projects</h2>
+	</div>
+
+	<div class="projects" ng-repeat="item in items">
+		<div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}"></div>
+		<div class="devicesimg" parallax parallax-ratio="-0.3" parallax-horizontal-offset="30">
+			<img ng-src="{{item.image2}}"/>
+<!-- 			<img parallax-ratio="0.4" parallax-horizontal-offset="630" ng-src="{{item.image3}}"/>
+			<img parallax-ratio="0.3" parallax-horizontal-offset="1130" ng-src="{{item.image4}}"/> -->
+			<img ng-src="{{item.image3}}"/>
+			<img ng-src="{{item.image4}}"/>
+		</div>
+		<div class="projectInfo">
+			<p>{{item.project}}</p>
+			<h2>{{item.type}}</h2>
+			<br/><br/>
+			<p>{{item.description}}</p>
+			<p>{{item.role}}</p>
+			<br/><br/>
+			<a ng-href="{{item.href}}">{{item.link}}</a>
+		</div>
+	</div>
+</div>
+
+<footer-content></footer-content>
+
+<nav-menu></nav-menu>
