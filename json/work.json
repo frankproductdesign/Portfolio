@@ -10,9 +10,5 @@
 	{
 		"type" : "Sample",
 		"images" : [{ "image":"images/bg-test0.jpg" }]
-	},
-	{
-		"type" : "Print Media - Posters",
-		"images" : [{ "image":"images/poster-brahma.jpg" }, { "image":"images/poster-afrofunk.jpg" }, { "image":"images/poster-bnx.jpg" }, { "image":"images/poster-rockband.jpg" }]
 	}
 ]

@@ -5,26 +5,31 @@ angular
 
 		$routeProvider
 			.when('/home', {
-				templateUrl: 'templates/page1/index.html',
+				templateUrl: 'templates/home/index.html',
 			})
 			.when('/recent', {
-				templateUrl: 'templates/page2/index.html',
-				controller: 'CtrlrOne',
-				controllerAs: 'one'
+				templateUrl: 'templates/recent/index.html',
+				controller: 'CtrlrRecent',
+				controllerAs: 'recent'
 			})
 			.when('/past', { 
-				templateUrl: 'templates/page3/index.html',
-				controller: 'CtrlrTwo',
-				controllerAs: 'two'
+				templateUrl: 'templates/past/index.html',
+				controller: 'CtrlrWork',
+				controllerAs: 'work'
+			})
+			.when('/pastprint', { 
+				templateUrl: 'templates/print/index.html'
+				controller: 'CtrlrPrint',
+				controllerAs: 'print'
 			})
 			.when('/code', { 
-				templateUrl: 'templates/page4/index.html'
+				templateUrl: 'templates/code/index.html'
 			})
 			.when('/approach', { 
-				templateUrl: 'templates/page5/index.html'
+				templateUrl: 'templates/approach/index.html'
 			})
 			.when('/about', { 
-				templateUrl: 'templates/page6/index.html'
+				templateUrl: 'templates/about/index.html'
 			})
 
 			.otherwise({ redirectTo: '/home'
