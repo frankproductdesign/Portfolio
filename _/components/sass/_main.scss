@@ -49,6 +49,8 @@ nav {
 	opacity: 0;
 	width: ms(5);
 
+// -------------------------- XSMALL --------------------------
+
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.3s, ease-out);
 
@@ -91,59 +93,28 @@ nav {
 		}
 	}
 
+// -------------------------- SMALL --------------------------
+
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.5s, ease-out);
 	}
+
+// -------------------------- MEDIUM --------------------------
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 0.5s, ease-out);
 	}
 
+// -------------------------- LARGE --------------------------
+
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0s, ease-out);
 	}
 
+// -------------------------- XLARGE --------------------------
+
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0s, ease-out);
-	}
-}
-
-.artContainerSpace {
-	width: 100%;
-	height: 120vh;
-	// background-color: rgba(lightgreen, 0.2);
-	position: absolute;
-	z-index: -1;
-}
-
-.artContainer {
-	height: 400px;
-	overflow: hidden;
-	display: block;
-	position: relative;
-	// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://frankcastro.com/something/texture-bg.jpg'));
-
-	&.dimmed {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-		opacity: 0;
-	}
-} // this is for the home page art and full screen effect
-
-.ctasmall {
-	@include transform(translateX(-50%));
-	left: 50%;
-	position: fixed;
-	bottom: 1vh;
-	font-size: ms(0);
-	color: $gray1;
-
-	&.dimmed {
-		@include transition-delay(0s);
-		@include transition-duration(0.2s);
-		@include transition-timing-function(ease-in);
-		opacity: 0;
 	}
 }
 
@@ -155,6 +126,13 @@ nav {
 	@include susy-breakpoint($xsmall){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
+
+		.fclogo {
+			width: 24px;
+			position: fixed;
+			bottom: ms(0);
+			right: ms(2);
+		}
 
 		.introtext {
 			@include span(6 of 12);
@@ -169,7 +147,6 @@ nav {
 			div {
 				width: 98%;
 				max-width: 620px;
-				// background-color: lightgray;
 
 				p {
 					font-family: $serif;
@@ -194,7 +171,6 @@ nav {
 			@include border-radius(ms(-2));
 
 			img {
-				// @include transform(translateY(-90px) scale(0.4));
 				@include transform(translate(-50%, -50%));
 				top: 50%;
 				left: 50%;
@@ -221,6 +197,44 @@ nav {
 		} 
 		// this is the class for the home page to size the box that create the frame effects
 
+		.artContainerSpace {
+			width: 100%;
+			height: 120vh;
+			position: absolute;
+			z-index: -1;
+		}
+
+		.artContainer {
+			height: 400px;
+			overflow: hidden;
+			display: block;
+			position: relative;
+			// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://frankcastro.com/something/texture-bg.jpg'));
+
+			&.dimmed {
+				@include transition-delay(0s);
+				@include transition-duration(0.2s);
+				@include transition-timing-function(ease-in);
+				opacity: 0;
+			}
+		} // this is for the home page art and full screen effect
+
+		.ctasmall {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: fixed;
+			bottom: 1vh;
+			font-size: ms(0);
+			color: $gray1;
+
+			&.dimmed {
+				@include transition-delay(0s);
+				@include transition-duration(0.2s);
+				@include transition-timing-function(ease-in);
+				opacity: 0;
+			}
+		}
+
 		.contacts {
 			width: 100%;
 			height: ms(6);
@@ -239,7 +253,6 @@ nav {
 				@include span(2 of 12);
 				top: ms(1);
 				position: absolute;
-				// background-color: lightyellow;
 			}
 
 			.contactInfo {
@@ -262,7 +275,6 @@ nav {
 						color: $gray2;
 					}
 				}
-				// background-color: lightblue;
 			}
 
 			// .ng-hide {
@@ -337,21 +349,16 @@ nav {
 		}
 
 		.pageTitle {
-			@include span(12 of 12);
+			@include span(3 of 12);
 			padding-left: ms(2);
 			position: fixed;
 			bottom: ms(0);
 			z-index: 991;
+			@include single-text-shadow(white, 1px, 1px, ms(-1));
 
 				h2 {
 					color: $gray1;
-					// @include single-text-shadow(black, 1px, 1px, 1px);
 				}
-
-				// &.fixed {
-				// 	position: fixed;
-				// 	top: ms(1);
-				// }
 		}
 
 		.projectrow {
@@ -369,7 +376,6 @@ nav {
 
 			img {
 				position: absolute;
-				// @include box-shadow(black 2px 2px 10px); 
 			}
 
 			img:nth-of-type(2) {
@@ -395,9 +401,7 @@ nav {
 
 			.projectInfo {
 				@include span(2 of 12);
-				// @include pre(2);
 				position: relative;
-				// background-color: white;
 				padding: ms(3) 0px ms(5);
 				font-weight: 300;
 
@@ -451,6 +455,8 @@ footer {
 	position: fixed;
 	bottom: 20px;
 
+// -------------------------- XSMALL --------------------------
+
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
@@ -472,17 +478,25 @@ footer {
 		}
 	}
 
+// -------------------------- SMALL --------------------------
+
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
 	}
+
+// -------------------------- MEDIUM --------------------------
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 	}
 
+// -------------------------- LARGE --------------------------
+
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 	}
+
+// -------------------------- XLARGE --------------------------
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);

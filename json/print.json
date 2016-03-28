@@ -1,10 +1,6 @@
 [
 	{
 		"type" : "Sample",
-		"images" : [{ "image":"images/game-greenspace-ui1.jpg" }, { "image":"images/game-greenspace-ui2.jpg" }, { "image":"images/game-greenspace-ui3.jpg" }, { "image":"images/game-greenspace-ui4.jpg" }, { "image":"images/game-greenspace-ui5.jpg" }]
-	},
-	{
-		"type" : "Sample",
 		"images" : [{ "image":"images/ad-single-page-zacapa.jpg" }, { "image":"images/ad-two-page-zacapa.jpg" }, { "image":"images/ad-letter-zacapa.jpg" }, { "image":"images/ad-nails01.jpg" }, { "image":"images/ad-nails003.jpg" }, { "image":"images/ad-nails03.jpg" }]
 	},
 	{

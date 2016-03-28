@@ -5,10 +5,6 @@
 	},
 	{
 		"type" : "Sample",
-		"images" : [{ "image":"images/ad-single-page-zacapa.jpg" }, { "image":"images/ad-two-page-zacapa.jpg" }, { "image":"images/ad-letter-zacapa.jpg" }, { "image":"images/ad-nails01.jpg" }, { "image":"images/ad-nails003.jpg" }, { "image":"images/ad-nails03.jpg" }]
-	},
-	{
-		"type" : "Sample",
 		"images" : [{ "image":"images/bg-test0.jpg" }]
 	}
 ]

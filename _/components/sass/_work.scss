@@ -4,7 +4,8 @@
 //try using this declaration below
 	// @include span(1 at 2 of 6); 
 	@include pre(2);
-	// background-color: lightblue;
+
+// -------------------------- XSMALL --------------------------
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
@@ -31,17 +32,25 @@
 		}
 	}
 
+// -------------------------- SMALL --------------------------
+
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
 	}
+
+// -------------------------- MEDIUM --------------------------
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 	}
 
+// -------------------------- LARGE --------------------------
+
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 	}
+
+// -------------------------- XLARGE --------------------------
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);

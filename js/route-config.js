@@ -18,7 +18,7 @@ angular
 				controllerAs: 'work'
 			})
 			.when('/pastprint', { 
-				templateUrl: 'templates/print/index.html'
+				templateUrl: 'templates/print/index.html',
 				controller: 'CtrlrPrint',
 				controllerAs: 'print'
 			})
