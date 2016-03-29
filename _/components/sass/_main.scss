@@ -354,7 +354,7 @@ nav {
 			position: fixed;
 			bottom: ms(0);
 			z-index: 991;
-			@include single-text-shadow(white, 1px, 1px, ms(-1));
+			@include single-text-shadow(white, 1px, 1px, ms(4));
 
 				h2 {
 					color: $gray1;
@@ -370,12 +370,17 @@ nav {
 		.devicesimg {
 			z-index: 901;
 			height: 520px;
-			@include span(8 of 12);
+			@include span(9 of 12);
 			position: relative;
-			padding-top: ms(3);
+			padding-top: ms(4);
+			padding-left: ms(2);
 
 			img {
 				position: absolute;
+
+				&.shadow {
+					@include box-shadow(black 0px 0px 10px);
+				}
 			}
 
 			img:nth-of-type(2) {
@@ -392,7 +397,6 @@ nav {
 	  		padding: 0px;
 	  		position: relative;
 
-
 			.projectbg {
 				width: 100%;
 				height: 39vw;
@@ -400,9 +404,10 @@ nav {
 			}
 
 			.projectInfo {
-				@include span(2 of 12);
+				// @include span(2 of 12);
+				@include span(2 at 2 of 12);
 				position: relative;
-				padding: ms(3) 0px ms(5);
+				padding: ms(4) 0px ms(6);
 				font-weight: 300;
 
 				h2 {
