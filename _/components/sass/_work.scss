@@ -1,15 +1,15 @@
 .workmodule {
 	font-family: sans-serif;
-	@include span(3 of 12);
-//try using this declaration below
-	// @include span(1 at 2 of 6); 
-	@include pre(2);
 
 // -------------------------- XSMALL --------------------------
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		height: $imagesize;
+		@include span(4 of 12);
+		@include pre(1);
+		// @include span(4 at 3 of 12);
+		padding-top: ms(4);
+		height: 500px;
 		margin-bottom: ms(6);
 
 		.imageWrapper {
@@ -17,8 +17,8 @@
 
 			img {
 				// width: 20vw;
-				max-height: $imagesize;
-				max-width: $imagesize;
+				max-height: ms(6);
+				max-width: ms(8);
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));
