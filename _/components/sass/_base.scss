@@ -65,6 +65,8 @@ $ms-ratio: 1.618;
 $button: ms(0); //recommended medium weight, all caps
 $link: uppercase;
 
+$touch-character: " ☛ " !default;
+
 // keep this body tag down here so you can grab the variables above
 body {
 	font-family: $sans, $primary-font;

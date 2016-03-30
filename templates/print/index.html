@@ -1,15 +1,17 @@
-<intro-header></intro-header>
+<div class="pageTitle">
+	<h2>Past Work Print</h2>
+</div>
 
-	<div class="workmodule" ng-repeat="item in items">
-		<div slick-carousel>
-			<div class="imageWrapper" ng-repeat="image in item.images">
-				<img ng-src="{{image.image}}" />
-			</div>
-		</div>
-		<div class="worktext">
-			<p>{{item.type}}</p>
+<div class="workmodule" ng-repeat="item in items">
+	<div slick-carousel>
+		<div class="imageWrapper" ng-repeat="image in item.images">
+			<img ng-src="{{image.image}}" />
 		</div>
 	</div>
+	<div class="worktext">
+		<p>{{item.type}}</p>
+	</div>
+</div>
 
 <footer-content></footer-content>
 

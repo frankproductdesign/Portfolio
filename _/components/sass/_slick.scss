@@ -6,11 +6,12 @@ $slick-font-family: $sans !default;
 $slick-arrow-color: $links !default;
 $slick-dot-color: $links !default;
 $slick-dot-color-active: $slick-dot-color !default;
-$slick-prev-character: "⇠" !default;
-$slick-next-character: "⇢" !default;
-$slick-dot-character: " • " !default;
+$slick-prev-character: " ≪ " !default;
+$slick-next-character: " ≫ " !default;
+$slick-dot-character: " ● " !default;
 $slick-dot-size: ms(1) !default;
-$slick-opacity-default: 0.75 !default;
+$slick-opacity-arrows: 0.25 !default;
+$slick-opacity-dots: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
 $slick-opacity-not-active: 0.25 !default;
 
@@ -45,7 +46,7 @@ $slick-opacity-not-active: 0.25 !default;
 	background: transparent;
 	color: transparent;
 	top: 50%;
-	@include transform(translate(0, -50%) scale(1.6));
+	@include transform(translate(0, -50%) scale(1));
 	padding: 0;
 	border: none;
 	outline: none;
@@ -65,17 +66,17 @@ $slick-opacity-not-active: 0.25 !default;
 		font-size: ms(1);
 		line-height: 1;
 		color: $slick-arrow-color;
-		opacity: $slick-opacity-default;
+		opacity: $slick-opacity-arrows;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
 }
 
 .slick-prev {
-	left: -(ms(0));
+	left: (ms(0));
 	[dir="rtl"] & {
 		left: auto;
-		right: -(ms(0));
+		right: (ms(0));
 	}
 	&:before {
 		content: $slick-prev-character;
@@ -86,9 +87,9 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-next {
-	right: -(ms(0));
+	right: (ms(0));
 	[dir="rtl"] & {
-		left: -(ms(0));
+		left: (ms(0));
 		right: auto;
 	}
 	&:before {
@@ -118,7 +119,7 @@ $slick-opacity-not-active: 0.25 !default;
 		display: inline-block;
 		height: 44px;
 		width: 44px;
-		margin: ms(2) ms(0) ms(1);
+		margin: ms(2) ms(0);
 		padding: 0;
 		cursor: pointer;
 		button {
@@ -133,7 +134,7 @@ $slick-opacity-not-active: 0.25 !default;
 			color: transparent;
 			padding: 5px;
 			cursor: pointer;
-			@include transform(scale(1.6));
+			@include transform(scale(1));
 			&:hover, &:focus {
 				outline: none;
 				&:before {
@@ -159,7 +160,7 @@ $slick-opacity-not-active: 0.25 !default;
 		}
 		&.slick-active button:before {
 			color: $slick-dot-color-active;
-			opacity: $slick-opacity-default;
+			opacity: $slick-opacity-dots;
 		}
 	}
 }

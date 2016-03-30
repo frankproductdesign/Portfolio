@@ -5,12 +5,13 @@
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(4 of 12);
-		@include pre(1);
+		@include span(6 of 12);
+		// @include pre(1);
+		// @include suffix(1);
 		// @include span(4 at 3 of 12);
 		padding-top: ms(4);
-		height: 500px;
-		margin-bottom: ms(6);
+		// height: ms(3);
+		margin-bottom: ms(5);
 
 		.imageWrapper {
 			// background-color: pink;
@@ -27,8 +28,20 @@
 
 		.worktext {
 			position: relative;
-			top: ms(3);
+			top: ms(4);
 			text-align: center;
+			// height: 200px;
+
+			::before {
+				// content: url('images/svg/touch.svg');
+				content: 'swipe on image (touch)';
+				font-size: ms(-1);
+				text-transform: uppercase;
+				position: absolute;
+				@include transform(translate(-50%, -30px));
+				left: 50%;
+				opacity: 0.3;
+			}
 		}
 	}
 
