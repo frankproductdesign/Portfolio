@@ -67,6 +67,126 @@ $link: uppercase;
 
 $touch-character: " ☛ " !default;
 
+$susy: (
+	columns: 12,
+	gutters: .3,
+	math: fluid,
+	output: float,
+	gutter-position: inside,
+	container: auto,
+	container-position: center,
+	debug: (
+		image: hide,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,	
+	)
+);
+
+$xsmall: 320px;
+$small: 760px;
+$medium: 970px;
+$large: 1200px;
+$xlarge: 1919px;
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+@mixin bg-properties {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	@include single-transition(all, 1s, ease-out);
+}
+// check where you were using these properties before you delete the commented lines
+
+nav {
+	visibility: hidden;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	@include transform (translate(-50%, -50%));
+	z-index: 998;
+	@include single-transition(all, 0.2s, ease-in);
+	opacity: 0;
+	width: ms(5);
+
+// -------------------------- XSMALL --------------------------
+
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 0.3s, ease-out);
+
+		&.navOpen {
+			visibility: visible;
+			opacity: 1;
+			@include transition-delay(0.4s);
+			@include transition-duration(0.3s);
+			@include transition-timing-function(ease-out);
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+    		padding: 0;
+
+			li {
+				display: block; // makes the whole link area clickable (not just the text)
+				// float: left;
+				padding: 0px 0px ms(1) 0px;
+				text-align: center;
+				line-height: ms(1);
+
+				a {
+					text-decoration: none;
+					color: $links;
+					font-size: ms(2);
+				}
+			}
+
+			.active {
+
+				a {
+					font-family: $sans;
+					color: $links;
+					opacity: 0.4;
+					cursor: none;
+				}
+			}
+		}
+	}
+
+// -------------------------- SMALL --------------------------
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 0.5s, ease-out);
+	}
+
+// -------------------------- MEDIUM --------------------------
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 0.5s, ease-out);
+	}
+
+// -------------------------- LARGE --------------------------
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 0s, ease-out);
+	}
+
+// -------------------------- XLARGE --------------------------
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 0s, ease-out);
+	}
+}
+
 // keep this body tag down here so you can grab the variables above
 body {
 	font-family: $sans, $primary-font;
@@ -74,34 +194,61 @@ body {
 	// @include background(linear-gradient(bottom right, rgba($bg03, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%));
 	margin: 0px;
 	padding: 0px;
+
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+			h1 {
+				font-size: ms(3); //preferably use the font light weight type
+				font-weight: 300;
+			}
+
+			h2 {
+				font-size: ms(1);
+				font-weight: 400;
+			}
+
+			h3 {
+				font-size: ms(1);
+			}
+
+			h4 {
+				font-size: ms(0);
+			} //recommended medium weight
+
+			p {
+				font-size: ms(0);
+				line-height: ms(1);
+			} // this is the default size
+	}
+
+	@include susy-breakpoint($small) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($medium) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($large) {
+		@include single-transition(all, 1s, ease-out);
+	}
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+
+			h2 {
+				font-size: ms(2);
+				font-weight: 300;
+			}
+	}
+
+
 }
 
 #{headings(1,4)} {
 	color: $gray2;
 }
 
-h1 {
-	font-size: ms(3); //preferably use the font light weight type
-	font-weight: 300;
-}
-
-h2 {
-	font-size: ms(2);
-	font-weight: 300;
-}
-
-h3 {
-	font-size: ms(1);
-}
-
-h4 {
-	font-size: ms(0);
-} //recommended medium weight
-
-p {
-	font-size: ms(0);
-	line-height: ms(1);
-} // this is the default size
 
 // breakpoints structure
 

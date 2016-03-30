@@ -1,10 +1,10 @@
 [
 	{
-		"type" : "GreenSpace, social network game. Creative Direction. UX design.",
+		"type" : "GreenSpace, social network game (Facebook). Creative Direction, UX design, Game design.",
 		"images" : [{ "image":"images/game-greenspace-ui1.jpg" }, { "image":"images/game-greenspace-ui2.jpg" }, { "image":"images/game-greenspace-ui3.jpg" }, { "image":"images/game-greenspace-ui4.jpg" }, { "image":"images/game-greenspace-ui5.jpg" }]
 	},
 	{
-		"type" : "Game splashes. Art Direction, design.",
+		"type" : "Game splashes. Art Direction, Design.",
 		"images" : [{ "image":"images/splash-poker-blast.jpg" }, { "image":"images/splash-cursed.jpg" }, { "image":"images/splash-doutris.jpg" }, { "image":"images/splash-stolen-doubloon.jpg" }, { "image":"images/splash-bass-assassin2.jpg" }]
 	}
 ]

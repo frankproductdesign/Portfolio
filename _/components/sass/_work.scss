@@ -9,14 +9,12 @@
 		// @include pre(1);
 		// @include suffix(1);
 		// @include span(4 at 3 of 12);
-		padding-top: ms(0);
-		// height: ms(3);
-		margin-bottom: ms(1);
+		padding-top: ms(1);
+		margin-bottom: ms(3);
 
 		.imageWrapper {
 
 			img {
-				// width: 20vw;
 				max-height: ms(6);
 				max-width: ms(6);
 				position: relative;
@@ -27,19 +25,15 @@
 
 		.worktext {
 			position: relative;
-			top: ms(4);
+			top: 0px;
 			text-align: center;
-			// height: 200px;
+			padding: ms(3) ms(2) 0px;
 
 			::before {
 				// content: url('images/svg/touch.svg');
-				content: 'swipe on image (touch)';
-				font-size: ms(-1);
-				text-transform: uppercase;
-				position: absolute;
-				@include transform(translate(-50%, -30px));
-				left: 50%;
-				opacity: 0.3;
+				content: '';
+				font-size: 0px;
+				opacity: 0;
 			}
 		}
 	}
@@ -79,10 +73,14 @@
 		}
 
 		.worktext {
+			top: ms(4);
+			padding: 0px;
 
 			::before {
 				content: 'swipe on image (touch)';
 				font-size: ms(-1);
+				text-transform: uppercase;
+				position: absolute;
 				@include transform(translate(-50%, -30px));
 				left: 50%;
 				opacity: 0.3;
