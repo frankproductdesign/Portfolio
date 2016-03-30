@@ -317,6 +317,13 @@ nav {
 				// @include background(linear-gradient(160deg, lightskyblue 32%, hotpink 68%));
 				@include background(gray);
 			}
+
+			// &.square::after {
+			// 	@include transition-delay(0s);
+			// 	@include transition-duration(0.7s);
+			// 	@include transition-timing-function(ease-out);
+			// 	height: 0vh;
+			// }
 		}
 
 		.plusIcon {
@@ -392,7 +399,7 @@ nav {
 
 			.projectbg {
 				width: 100%;
-				height: 39vw;
+				height: 37vw;
 				@include bg-properties;
 			}
 
