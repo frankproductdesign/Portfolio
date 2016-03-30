@@ -5,21 +5,20 @@
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(6 of 12);
+		@include span(12 of 12);
 		// @include pre(1);
 		// @include suffix(1);
 		// @include span(4 at 3 of 12);
-		padding-top: ms(4);
+		padding-top: ms(0);
 		// height: ms(3);
-		margin-bottom: ms(5);
+		margin-bottom: ms(1);
 
 		.imageWrapper {
-			// background-color: pink;
 
 			img {
 				// width: 20vw;
-				max-height: ms(7);
-				max-width: ms(8);
+				max-height: ms(6);
+				max-width: ms(6);
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));
@@ -67,5 +66,27 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
+		@include span(6 of 12);
+		padding-top: ms(4);
+		margin-bottom: ms(5);
+
+		.imageWrapper {
+
+			img {
+				max-height: ms(7);
+				max-width: ms(8);
+			}
+		}
+
+		.worktext {
+
+			::before {
+				content: 'swipe on image (touch)';
+				font-size: ms(-1);
+				@include transform(translate(-50%, -30px));
+				left: 50%;
+				opacity: 0.3;
+			}
+		}
 	}
 }
