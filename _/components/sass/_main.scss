@@ -8,7 +8,7 @@
 		@include container;
 
 		.fclogo {
-			width: 24px;
+			width: 22px;
 			position: fixed;
 			bottom: ms(-1);
 			right: ms(0);
@@ -31,6 +31,7 @@
 				p {
 					font-family: $serif;
 					font-size: 1.13vw;
+					font-weight: 300;
 					line-height: 1.74vw;
 					color: $gray3;
 					letter-spacing: 0.55px;
@@ -43,9 +44,8 @@
 			top: 50%;
 			left: 50%;
 			@include transform(translate(-50%, -50%));
-			width: 66vw;
-			height: 90vh;
-			// background-color: rgba(lightblue, 0.95);
+			width: 86vw;
+			height: 69vh;
 			@include background(linear-gradient(bottom right, rgba(lightblue, 0.95) 32%, rgba($color2, 0.95) 64%));
 			position: fixed;
 			@include border-radius(ms(-2));
@@ -55,7 +55,7 @@
 				top: 50%;
 				left: 50%;
 				position: absolute;
-				width: 520px;
+				width: 270px;
 			}
 
 			p {
@@ -64,8 +64,8 @@
 				position: absolute;
 				color: $links;
 				text-transform: uppercase;
-				font-size: ms(2);
-				letter-spacing: 70px;
+				font-size: ms(0);
+				letter-spacing: 50px;
 			}
 
 			// @media (min-width: 1200px) {
@@ -100,12 +100,19 @@
 		} // this is for the home page art and full screen effect
 
 		.ctasmall {
-			@include transform(translateX(-50%));
-			left: 50%;
 			position: fixed;
-			bottom: 1vh;
-			font-size: ms(0);
-			color: $gray1;
+			width: 100%;
+			top: 0.5vh;
+			color: $gray2;
+
+			p {
+				text-transform: uppercase;
+				font-size: ms(-1);
+				font-weight: 400;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: absolute;
+			}
 
 			&.dimmed {
 				@include transition-delay(0s);
@@ -339,6 +346,32 @@
 			right: ms(1);
 		}
 
+		.artbox {
+			width: 66vw;
+			height: 90vh;
+			@include border-radius(ms(-2));
+
+			img {
+				width: 520px;
+			}
+
+			p {
+				@include transform(translate(-35%, 56vh));
+				font-size: ms(2);
+				letter-spacing: 70px;
+			}
+		} 
+		// this is the class for the home page to size the box that create the frame effects
+
+		.ctasmall {
+			top: 96vh;
+
+			p {
+				font-size: ms(-1);
+				font-weight: 300;
+			}
+		}
+
 		.circle {
 			width: 60px; 
 			height: 60px; 
@@ -378,17 +411,15 @@ footer {
 
 		.copyright {
 			width: 450px;
-			@include transform(translate(-50%, -480%) rotate(-90deg));
-			// left: 50%;
-			padding: ms(0) 0px ms(0) 0px;
+			@include transform(translate(-50%, -390%) rotate(-90deg));
+			padding: ms(1) 0px ms(0) 0px;
 			letter-spacing: 0.04rem;
-			// text-align: center;
-			font-size: ms(0);
 			line-height: ms(1);
 
 			p {
+				font-size: ms(-1);
 				color: $gray1;
-				font-weight: 300;
+				font-weight: 400;
 			}
 		}
 	}
@@ -415,5 +446,19 @@ footer {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
+
+		.copyright {
+			width: 450px;
+			@include transform(translate(-50%, -480%) rotate(-90deg));
+			padding: ms(0) 0px ms(0) 0px;
+			letter-spacing: 0.04rem;
+			line-height: ms(1);
+
+			p {
+				font-size: ms(0);
+				color: $gray1;
+				font-weight: 300;
+			}
+		}
 	}
 }
