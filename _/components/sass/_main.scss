@@ -56,17 +56,6 @@
 				width: 270px;
 			}
 
-			p {
-				@include transform(translateX(-37%));
-				left: 50%;
-				top: 50%;
-				position: absolute;
-				color: $links;
-				text-transform: uppercase;
-				font-size: ms(0);
-				letter-spacing: 44px;
-			}
-
 			// @media (min-width: 1200px) {
 			// 	@include container;
 			// 		.textblock {
@@ -256,27 +245,30 @@
 
 		.devicesimg {
 			z-index: 901;
-			height: 520px;
+			height: auto;
 			@include span(9 of 12);
 			position: relative;
-			padding-top: ms(4);
+			// padding-top: ms(4);
 			padding-left: ms(4);
 
 			img {
-				position: absolute;
+				position: relative;
+				padding: ms(0);
+				@include transform(translateY(-390px));
+				display: inline;
 
 				&.shadow {
 					@include box-shadow(black 0px 0px 10px);
 				}
 			}
 
-			img:nth-of-type(2) {
-				@include transform(translateX(740px));
-			}
+			// img:nth-of-type(2) {
+			// 	@include transform(translateX(740px));
+			// }
 
-			img:nth-of-type(3) {
-				@include transform(translateX(1240px));
-			}
+			// img:nth-of-type(3) {
+			// 	@include transform(translateX(1240px));
+			// }
 		}
 
 	  	.projects {
@@ -294,7 +286,7 @@
 				// @include span(2 of 12);
 				@include span(2 at 2 of 12);
 				position: relative;
-				padding: ms(4) 0px ms(6);
+				padding: ms(3) 0px ms(5);
 				font-weight: 300;
 
 				h2 {
@@ -375,12 +367,6 @@
 
 			img {
 				width: 520px;
-			}
-
-			p {
-				@include transform(translate(-38%, 62vh));
-				font-size: ms(2);
-				letter-spacing: 74px;
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
