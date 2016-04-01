@@ -79,13 +79,13 @@ body {
 
 		.slick-prev {
 			left: (ms(0));
-			[dir="rtl"] & {
+			[dir="ltr"] & {
 				left: auto;
 				right: (ms(0));
 			}
 			&:before {
 				content: $slick-prev-character;
-				[dir="rtl"] & {
+				[dir="ltr"] & {
 					content: $slick-next-character;
 				}
 			}
@@ -93,13 +93,13 @@ body {
 
 		.slick-next {
 			right: (ms(0));
-			[dir="rtl"] & {
+			[dir="ltr"] & {
 				left: (ms(0));
 				right: auto;
 			}
 			&:before {
 				content: $slick-next-character;
-				[dir="rtl"] & {
+				[dir="ltr"] & {
 					content: $slick-prev-character;
 				}
 			}

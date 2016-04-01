@@ -15,8 +15,8 @@
 		.imageWrapper {
 
 			img {
-				max-height: ms(6);
-				max-width: ms(6);
+				max-width: 90%;
+				max-height: 44vh;
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));
