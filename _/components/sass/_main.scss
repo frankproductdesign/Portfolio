@@ -17,20 +17,21 @@
 		.introtext {
 			@include span(12 of 12);
 			position: fixed;
-			top: 19vh;
+			height: 100%;
 
 			div {
 				width: 85%;
 				max-width: 280px;
-				@include transform(translateX(-50%));
+				@include transform(translate(-50%, -50%));
 				left: 50%;
+				top: 50%;
 				position: relative;
 
 				p {
 					font-family: $serif;
-					font-size: ms(0)/1.3;
+					font-size: 1.8vh;
 					font-weight: 400;
-					line-height: ms(0);
+					line-height: 2.7vh;
 					color: $gray3;
 					letter-spacing: 0.55px;
 				}					
@@ -44,7 +45,7 @@
 			@include transform(translate(-50%, -50%));
 			width: 88vw;
 			height: 69vh;
-			@include background(linear-gradient(bottom right, rgba(lightblue, 0.95) 32%, rgba($color2, 0.95) 64%));
+			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 33%, rgba($color2, 1) 64%));
 			position: fixed;
 			@include border-radius(ms(-2));
 
@@ -87,28 +88,28 @@
 			}
 		} // this is for the home page art and full screen effect
 
-		.ctasmall {
-			position: fixed;
-			width: 100%;
-			top: 0.5vh;
-			color: $gray1;
+		// .ctasmall {
+		// 	position: fixed;
+		// 	width: 100%;
+		// 	top: 0.5vh;
+		// 	color: $gray1;
 
-			p {
-				text-transform: uppercase;
-				font-size: ms(-1);
-				font-weight: 400;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position: absolute;
-			}
+		// 	p {
+		// 		text-transform: uppercase;
+		// 		font-size: ms(-1);
+		// 		font-weight: 400;
+		// 		@include transform(translateX(-50%));
+		// 		left: 50%;
+		// 		position: absolute;
+		// 	}
 
-			&.dimmed {
-				@include transition-delay(0s);
-				@include transition-duration(0.2s);
-				@include transition-timing-function(ease-in);
-				opacity: 0;
-			}
-		}
+		// 	&.dimmed {
+		// 		@include transition-delay(0s);
+		// 		@include transition-duration(0.2s);
+		// 		@include transition-timing-function(ease-in);
+		// 		opacity: 0;
+		// 	}
+		// }
 
 		.contacts {
 			width: 100%;
@@ -169,7 +170,8 @@
 			@include transition-timing-function(ease-out);
 			width: 44px; 
 			height: 44px; 
-			bottom: 9vh;
+			top: 3vh;
+			bottom: auto;
 			background-color: white;
 			@include transform (translateX(-50%));
 			left: 50%;
@@ -183,6 +185,7 @@
 				@include transition-timing-function(ease-out);
 				height: 100%;
 				width: 100%;
+				top: 0px;
 				bottom: 0px;
 				border: 0px;
 				@include border-radius(0px);
@@ -203,7 +206,8 @@
 			@include transition-delay(0.1s);
 			width: 44px;
 			height: 44px;
-			bottom: 9vh;
+			top: 3vh;
+			bottom: auto;
 			left: 50%;
 			@include transform (translateX(-50%));
 			position: fixed;
@@ -268,14 +272,14 @@
 
 			.projectbg {
 				width: 100%;
-				height: 75vw;
+				height: 95vw;
 				@include bg-properties;
 			}
 
 			.projectInfo {
 				@include span(12 of 12);
 				position: relative;
-				padding: ms(0) ms(0) ms(3);
+				padding: ms(0) ms(0) ms(5);
 				font-weight: 300;
 
 				h2 {
@@ -284,7 +288,7 @@
 				}
 
 				a {
-					padding: ms(1) 0px;
+					font-size: ms(0)
 				}
 
 				p {
@@ -324,6 +328,30 @@
 				width: ms(7);
 			}
 		}
+
+	  	.projects {
+
+			.projectInfo {
+				width: 480px;
+				padding: ms(3) 0px ms(6);
+				font-weight: 400;
+				@include transform (translateX(-50%));
+				left: 50%;
+
+				h2 {
+					color: $gray2;
+					padding-top: ms(-1);
+				}
+
+				a {
+					font-size: ms(0)
+				}
+
+				p {
+					padding-top: ms(1);
+				}
+			}
+	  	}
 	}
 
 
@@ -355,21 +383,30 @@
 		}
 
 		.introtext {
+			@include span(12 of 12);
+			// @include column-count(2);
+			// @include column-gap(ms(3));
+
+			position: fixed;
+			// height: 60vh;
+
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
+
+			div {
+				// width: 100%;
+				max-width: 100%;
+				position: relative;
+
 			@include span(6 of 12);
 			@include column-count(2);
 			@include column-gap(ms(3));
-			top: ms(6);
-			@include transform(translateX(-50%));
-			left: 50%;
-
-			div {
-				width: 98%;
-				max-width: 620px;
 
 				p {
-					font-size: 1.13vw;
+					font-size: 2.3vh;
 					font-weight: 300;
-					line-height: 1.74vw;
+					line-height: 3.9vh;
 					color: $gray3;
 					letter-spacing: 0.55px;
 				}					
@@ -380,25 +417,16 @@
 			width: 66vw;
 			height: 90vh;
 			@include border-radius(ms(-2));
+			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
 
 			img {
-				width: 520px;
+				width: 50vh;
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
 
 		.artContainerSpace {
 			height: 140vh;
-		}
-
-		.ctasmall {
-			top: 96vh;
-			color: $gray2;
-
-			p {
-				font-size: ms(-1);
-				font-weight: 300;
-			}
 		}
 
 		.contacts {
@@ -435,14 +463,16 @@
 		.circle {
 			width: 60px; 
 			height: 60px; 
-			bottom: 9vh;
 			background-color: white;
+			top: 3vh;
+			bottom: auto;
 		}
 
 		.plusIcon {
 			width: 61px;
 			height: 61px;
-			bottom: 9vh;
+			top: 3vh;
+			bottom: auto;
 		}
 
 		.pageTitle {
@@ -493,6 +523,8 @@
 				position: relative;
 				padding: ms(2) 0px ms(5);
 				font-weight: 300;
+				@include transform (translateX(0));
+				left: 0;
 
 				h2 {
 					color: $gray2;
@@ -500,7 +532,7 @@
 				}
 
 				a {
-					padding: ms(1) 0px;
+					font-size: ms(0)
 				}
 
 				p {

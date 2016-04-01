@@ -41,6 +41,7 @@ body {
 		.slick-prev,
 		.slick-next {
 			position: absolute;
+			z-index: 900;
 			display: block;
 			height: 40px;
 			width: 40px;
@@ -123,8 +124,8 @@ body {
 				position: relative;
 				display: inline-block;
 				height: 44px;
-				width: 44px;
-				margin: ms(-1) ms(0);
+				width: 30px;
+				margin: ms(-1) ms(-1);
 				padding: 0;
 				cursor: pointer;
 				button {
@@ -189,9 +190,11 @@ body {
 
 		.slick-prev,
 		.slick-next {
+			cursor: pointer;
+			@include transform(translate(0, -50%) scale(1.5));
 
 				&:before {
-					opacity: 0.25;
+					opacity: 0;
 				}
 			}
 

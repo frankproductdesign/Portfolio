@@ -9,14 +9,16 @@
 		// @include pre(1);
 		// @include suffix(1);
 		// @include span(4 at 3 of 12);
-		padding-top: ms(1);
+		padding-top: ms(3);
 		margin-bottom: ms(3);
 
 		.imageWrapper {
+			z-index: -1;
 
 			img {
+				height: auto;
 				max-width: 90%;
-				max-height: 44vh;
+				max-height: ms(7);
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));
@@ -27,14 +29,7 @@
 			position: relative;
 			top: 0px;
 			text-align: center;
-			padding: ms(3) ms(2) 0px;
-
-			::before {
-				// content: url('images/svg/touch.svg');
-				content: '';
-				font-size: 0px;
-				opacity: 0;
-			}
+			padding: ms(3) 7vw 0px;
 		}
 	}
 
@@ -67,8 +62,10 @@
 		.imageWrapper {
 
 			img {
-				max-height: ms(7);
-				max-width: ms(8);
+				height: auto;
+				// width: 100%;
+				max-height: ms(8);
+				max-width: 100%;
 			}
 		}
 
@@ -76,15 +73,15 @@
 			top: ms(4);
 			padding: 0px;
 
-			::before {
-				content: 'swipe on image (touch)';
-				font-size: ms(-1);
-				text-transform: uppercase;
-				position: absolute;
-				@include transform(translate(-50%, -30px));
-				left: 50%;
-				opacity: 0.3;
-			}
+			// ::before {
+			// 	content: 'swipe on image (touch)';
+			// 	font-size: ms(-1);
+			// 	text-transform: uppercase;
+			// 	position: absolute;
+			// 	@include transform(translate(-50%, -30px));
+			// 	left: 50%;
+			// 	opacity: 0.3;
+			// }
 		}
 	}
 }

@@ -113,7 +113,7 @@ nav {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.3s, ease-out);
 		width: 88vw;
-		top: 5vh;
+		top: ms(3);
 		left: 50%;
 		// @include transform (translate(-50%, -50%));
 		@include transform (translateX(-50%));
@@ -181,7 +181,7 @@ nav {
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0s, ease-out);
 		width: 33vw;
-		top: 50%;
+		top: 55%;
 		left: 50%;
 		@include transform (translate(-50%, -50%));
 
@@ -195,7 +195,7 @@ nav {
 				// float: left;
 				padding: 0px 0px ms(1) 0px;
 				text-align: center;
-				line-height: 4vh;
+				line-height: 5vh;
 
 				a {
 					text-decoration: none;
