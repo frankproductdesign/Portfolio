@@ -104,18 +104,19 @@ $xlarge: 1919px;
 nav {
 	visibility: hidden;
 	position: fixed;
-	top: 50%;
-	left: 50%;
-	@include transform (translate(-50%, -50%));
 	z-index: 998;
 	@include single-transition(all, 0.2s, ease-in);
 	opacity: 0;
-	width: ms(5);
 
 // -------------------------- XSMALL --------------------------
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.3s, ease-out);
+		width: 88vw;
+		top: 5vh;
+		left: 50%;
+		// @include transform (translate(-50%, -50%));
+		@include transform (translateX(-50%));
 
 		&.navOpen {
 			visibility: visible;
@@ -133,14 +134,15 @@ nav {
 			li {
 				display: block; // makes the whole link area clickable (not just the text)
 				// float: left;
-				padding: 0px 0px ms(1) 0px;
-				text-align: center;
-				line-height: ms(1);
+				padding: 0px 0px ms(0) 0px;
+				text-align: left;
+				line-height: 5vh;
 
 				a {
 					text-decoration: none;
+					// text-transform: uppercase;
 					color: $links;
-					font-size: ms(2);
+					font-size: 4vh;
 				}
 			}
 
@@ -178,6 +180,40 @@ nav {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0s, ease-out);
+		width: 33vw;
+		top: 50%;
+		left: 50%;
+		@include transform (translate(-50%, -50%));
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+    		padding: 0;
+
+			li {
+				display: block; // makes the whole link area clickable (not just the text)
+				// float: left;
+				padding: 0px 0px ms(1) 0px;
+				text-align: center;
+				line-height: 4vh;
+
+				a {
+					text-decoration: none;
+					color: $links;
+					font-size: 4vh;
+				}
+			}
+
+			.active {
+
+				a {
+					font-family: $sans;
+					color: $links;
+					opacity: 0.4;
+					cursor: none;
+				}
+			}
+		}
 	}
 }
 
