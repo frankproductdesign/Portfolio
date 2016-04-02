@@ -12,19 +12,6 @@
 		padding-top: ms(3);
 		margin-bottom: ms(3);
 
-		.imageWrapper {
-			z-index: -1;
-
-			img {
-				height: auto;
-				max-width: 90%;
-				max-height: ms(7);
-				position: relative;
-				left: 50%;
-				@include transform (translateX(-50%));
-			}
-		}
-
 		.worktext {
 			position: relative;
 			top: 0px;
@@ -37,6 +24,14 @@
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
+		padding-top: ms(4);
+
+		.worktext {
+			max-width: 480px;
+			width: 50vw;
+			@include transform (translateX(-50%));
+			left: 50%;
+		}
 	}
 
 // -------------------------- MEDIUM --------------------------
@@ -59,29 +54,9 @@
 		padding-top: ms(4);
 		margin-bottom: ms(5);
 
-		.imageWrapper {
-
-			img {
-				height: auto;
-				// width: 100%;
-				max-height: ms(8);
-				max-width: 100%;
-			}
-		}
-
 		.worktext {
 			top: ms(4);
 			padding: 0px;
-
-			// ::before {
-			// 	content: 'swipe on image (touch)';
-			// 	font-size: ms(-1);
-			// 	text-transform: uppercase;
-			// 	position: absolute;
-			// 	@include transform(translate(-50%, -30px));
-			// 	left: 50%;
-			// 	opacity: 0.3;
-			// }
 		}
 	}
 }

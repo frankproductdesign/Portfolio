@@ -106,6 +106,34 @@ body {
 			}
 		}
 
+		.slick-slide {
+			z-index: -1;
+
+			img {
+				max-width: 100%;
+				max-height: ms(6);
+				position: relative;
+				left: 50%;
+				@include transform (translateX(-50%));
+			}
+		}
+
+		.slick-track {
+			height: ms(6);
+		}
+
+		.slick-slide::before {
+			content: '';
+			display: inline-block;
+			height: 100%;
+			vertical-align: middle;
+		}
+
+		.slick-slide img {
+			vertical-align: middle;
+			display: inline-block;
+		}
+
 		/* Dots */
 
 		.slick-dotted.slick-slider {
@@ -198,9 +226,27 @@ body {
 				}
 			}
 
+		.slick-slide {
+			z-index: -1;
+
+			img {
+				max-width: 100%;;
+				max-height: ms(8);
+				position: relative;
+				left: 50%;
+				@include transform (translateX(-50%));				
+			}
+		}
+
+		.slick-track {
+			height: ms(8);
+		}
+
 		.slick-dots {
+
 			li {
 				margin: ms(2) ms(0);
+	
 				button {
 					@include transform(scale(1));
 				}

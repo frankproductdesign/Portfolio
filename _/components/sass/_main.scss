@@ -255,14 +255,6 @@
 			img {
 				display: none;
 			}
-
-			// img:nth-of-type(2) {
-			// 	@include transform(translateX(740px));
-			// }
-
-			// img:nth-of-type(3) {
-			// 	@include transform(translateX(1240px));
-			// }
 		}
 
 	  	.projects {
@@ -306,18 +298,15 @@
 		@include container;
 
 		.introtext {
-			top: 24vh;
 
 			div {
 				width: 98%;
 				max-width: 540px;
 
 				p {
-					font-size: ms(0);
-					font-weight: 400;
-					line-height: ms(1);
-					color: $gray3;
-					letter-spacing: 0.5px;
+					font-size: 1.7;
+					font-weight: 300;
+					line-height: 2.9vh;
 				}					
 			}
 		}
@@ -490,6 +479,10 @@
 			@include span(12 of 12);
 			padding: 0px;
 			position: absolute;
+
+			// img:nth-of-type(4) {
+			// 	padding-top: ms(6);
+			// }
 		}
 
 		.devicesimg {
@@ -502,9 +495,13 @@
 			img {
 				position: relative;
 				padding: ms(0);
-				@include transform(translateY(-30vh));
+				// @include transform(translateY(-30vh));
 				display: inline;
 			}
+
+			// img:nth-of-type(3) {
+			// 	@include transform(translateX(1240px));
+			// }
 		}
 
 	  	.projects {

@@ -112,8 +112,8 @@ nav {
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.3s, ease-out);
-		width: 88vw;
-		top: ms(3);
+		width: 87vw;
+		top: 13vh;
 		left: 50%;
 		// @include transform (translate(-50%, -50%));
 		@include transform (translateX(-50%));
@@ -162,6 +162,7 @@ nav {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.5s, ease-out);
+		top: ms(4);
 	}
 
 // -------------------------- MEDIUM --------------------------

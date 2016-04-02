@@ -4,7 +4,7 @@
 
 <div class="workmodule" ng-repeat="item in items">
 	<div slick-carousel>
-		<div class="imageWrapper" ng-repeat="image in item.images">
+		<div ng-repeat="image in item.images">
 			<img ng-src="{{image.image}}" />
 		</div>
 	</div>
