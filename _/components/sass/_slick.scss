@@ -189,14 +189,39 @@ body {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
+
+		.slick-slide {
+
+			img {
+				max-height: ms(7);
+			}
+		}
+
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
+
+		.slick-slide {
+
+			img {
+				max-height: ms(7);
+			}
+		}
+
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
+
+		.slick-slide {
+
+			img {
+				max-width: 84%;;
+				max-height: ms(6.4);
+			}
+		}
+
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -217,7 +242,7 @@ body {
 
 			img {
 				max-width: 100%;;
-				max-height: ms(8);
+				max-height: ms(7.4);
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));				

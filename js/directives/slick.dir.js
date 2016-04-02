@@ -16,7 +16,7 @@ angular
 
 						// the magic
 						responsive: [{
-							breakpoint: 4500,
+							breakpoint: 7000,
 							// this breakpoint is coded backwards to sass, it include screen sizes downwards not upwards
 								settings: {
 									adaptiveHeight: false,
@@ -26,7 +26,7 @@ angular
 
 							}, {
 
-							breakpoint: 760,
+							breakpoint: 1200,
 								settings: {
 									adaptiveHeight: true,
 									slidesToShow: 1,

@@ -44,6 +44,14 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
+		@include span(6 of 12);
+		padding-top: ms(3);
+		margin-bottom: ms(4);
+
+		.worktext {
+			top: ms(3);
+			padding: 0px;
+		}
 	}
 
 // -------------------------- XLARGE --------------------------
