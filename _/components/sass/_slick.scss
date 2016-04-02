@@ -219,6 +219,9 @@ body {
 			img {
 				max-width: 84%;;
 				max-height: ms(6.4);
+				position: relative;
+				left: 50%;
+				@include transform (translateX(-50%));
 			}
 		}
 
@@ -245,7 +248,7 @@ body {
 				max-height: ms(7.4);
 				position: relative;
 				left: 50%;
-				@include transform (translateX(-50%));				
+				@include transform (translateX(-50%));			
 			}
 		}
 

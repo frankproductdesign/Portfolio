@@ -357,6 +357,57 @@
 
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
+
+		.devicesimg {
+			z-index: 901;
+			height: auto;
+			@include span(9 of 12);
+			position: relative;
+			padding-left: ms(4);
+			padding-top: ms(0);
+
+			img {
+				position: relative;
+				padding: ms(0);
+				display: inline;
+			}
+
+			::before, img:nth-of-type(3) {
+				display: none;
+			}
+		}
+
+		.projects {
+			@include span(12 of 12);
+			padding: 0px;
+			position: relative;
+
+			.projectbg {
+				height: 33vw;
+			}
+
+			.projectInfo {
+				@include span(2 at 2 of 12);
+				position: relative;
+				padding: ms(1) 0px ms(5);
+				font-weight: 300;
+				@include transform (translateX(0));
+				left: 0;
+
+				h2 {
+					color: $gray2;
+					padding-top: ms(-1);
+				}
+
+				a {
+					font-size: ms(0)
+				}
+
+				p {
+					padding-top: ms(2);
+				}
+			}
+		}
 	}
 
 
@@ -475,39 +526,29 @@
 			}
 		}
 
-		.projectrow {
-			@include span(12 of 12);
-			padding: 0px;
-			position: absolute;
-
-			// img:nth-of-type(4) {
-			// 	padding-top: ms(6);
-			// }
-		}
-
 		.devicesimg {
 			z-index: 901;
 			height: auto;
 			@include span(9 of 12);
 			position: relative;
 			padding-left: ms(4);
+			padding-top: ms(0);
 
 			img {
 				position: relative;
 				padding: ms(0);
-				// @include transform(translateY(-30vh));
 				display: inline;
 			}
 
-			// img:nth-of-type(3) {
-			// 	@include transform(translateX(1240px));
-			// }
+			::before, img:nth-of-type(3) {
+				display: inline;
+			}
 		}
 
-	  	.projects {
-	  		@include span(12 of 12);
-	  		padding: 0px;
-	  		position: relative;
+		.projects {
+			@include span(12 of 12);
+			padding: 0px;
+			position: relative;
 
 			.projectbg {
 				width: 100%;
@@ -536,7 +577,7 @@
 					padding-top: ms(2);
 				}
 			}
-	  	}
+		}
 	}
 }
 
