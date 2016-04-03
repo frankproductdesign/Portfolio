@@ -175,6 +175,19 @@ nav {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 0s, ease-out);
+
+		ul {
+
+			li {
+				padding: 0px 0px 3vh 0px;
+				text-align: center;
+				line-height: 4vh;
+
+				a {
+					font-size: 4vh;
+				}
+			}
+		}
 	}
 
 // -------------------------- XLARGE --------------------------
@@ -187,31 +200,14 @@ nav {
 		@include transform (translate(-50%, -50%));
 
 		ul {
-			list-style-type: none;
-			margin: 0;
-    		padding: 0;
 
 			li {
-				display: block; // makes the whole link area clickable (not just the text)
-				// float: left;
 				padding: 0px 0px ms(1) 0px;
 				text-align: center;
 				line-height: 5vh;
 
 				a {
-					text-decoration: none;
-					color: $links;
 					font-size: 4vh;
-				}
-			}
-
-			.active {
-
-				a {
-					font-family: $sans;
-					color: $links;
-					opacity: 0.4;
-					cursor: none;
 				}
 			}
 		}

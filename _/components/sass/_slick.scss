@@ -214,6 +214,13 @@ body {
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 
+		.slick-prev,
+		.slick-next {
+			&:before {
+				opacity: 0.16;
+			}
+		}
+
 		.slick-slide {
 
 			img {
@@ -236,7 +243,7 @@ body {
 			@include transform(translate(0, -50%) scale(1.5));
 
 				&:before {
-					opacity: 0;
+					opacity: 0.16;
 				}
 			}
 

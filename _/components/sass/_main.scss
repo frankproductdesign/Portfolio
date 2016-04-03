@@ -116,21 +116,6 @@
 			height: ms(6);
 			padding-top: ms(1);
 
-			h1 {
-				color: $gray1;
-			}
-
-			h2 {
-				color: $gray2;
-				padding-top: ms(-1);
-			}
-
-			.nametitle {
-				@include span(2 of 12);
-				top: ms(1);
-				position: absolute;
-			}
-
 			.contactInfo {
 				@include span(12 of 12);
 				// @include pre(2);
@@ -358,6 +343,58 @@
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
 
+		.introtext {
+			@include span(12 of 12);
+			position: fixed;
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
+
+			div {
+				max-width: 100%;
+				position: relative;
+				@include span(6 of 12);
+				@include column-count(2);
+				@include column-gap(5vw);
+
+				p {
+					font-size: 2.3vh;
+					font-weight: 300;
+					line-height: 3.9vh;
+					color: $gray3;
+					letter-spacing: 0.55px;
+				}					
+			}
+		}
+
+		.artbox {
+			width: 66vw;
+			height: 90vh;
+			@include border-radius(ms(-2));
+			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
+
+			img {
+				width: 55vh;
+			}
+		} 
+		// this is the class for the home page to size the box that create the frame effects
+
+		.contacts {
+			width: 100%;
+			height: auto;
+			padding-top: 4vh;
+
+			.contactInfo {
+				@include span(12 of 12);
+				font-weight: 300;
+				text-align: center;
+
+				div:nth-of-type(2) {
+					display: inline;
+				}
+			}
+		}
+
 		.devicesimg {
 			z-index: 901;
 			height: auto;
@@ -427,22 +464,17 @@
 			@include span(12 of 12);
 			// @include column-count(2);
 			// @include column-gap(ms(3));
-
 			position: fixed;
-			// height: 60vh;
-
 			@include transform(translate(-50%, -50%));
 			left: 50%;
 			top: 50%;
 
 			div {
-				// width: 100%;
 				max-width: 100%;
 				position: relative;
-
-			@include span(6 of 12);
-			@include column-count(2);
-			@include column-gap(ms(3));
+				@include span(6 of 12);
+				@include column-count(2);
+				@include column-gap(5vw);
 
 				p {
 					font-size: 2.3vh;
@@ -457,7 +489,6 @@
 		.artbox {
 			width: 66vw;
 			height: 90vh;
-			@include border-radius(ms(-2));
 			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
 
 			img {
@@ -475,29 +506,9 @@
 			height: ms(6);
 			padding-top: ms(1);
 
-			h1 {
-				color: $gray1;
-			}
-
-			h2 {
-				color: $gray2;
-				padding-top: ms(-1);
-			}
-
-			.nametitle {
-				@include span(2 of 12);
-				top: ms(1);
-				position: absolute;
-			}
-
 			.contactInfo {
-				@include span(12 of 12);
 				font-weight: 300;
 				text-align: center;
-
-				div:nth-of-type(2) {
-					display: inline;
-				}
 			}
 		}
 
