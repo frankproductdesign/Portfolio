@@ -18,7 +18,7 @@
 		"description" : "Concept design / Prototype for a home page. Built in HTML5, CSS3, Javascript. Only desktop version (min-width: 2080px), not responsive.",
 		"color" : "#616E28",
 		"image1" : "images/kipu-bg.jpg",
-		"image2" : "images/kipu-imac2.png"
+		"image2" : "images/kipu-imac.png"
 	},
 	{
 		"project" : "Phablet /s.com",
@@ -26,7 +26,8 @@
 		"description" : "This domain name refers to smartphones in the category of Phablets (screen size over 5.1 inches)... the website allow users to compare features of smartphones in this category and provide links to other sources... Users can compare smartphone features and click on the links to visit carriers in their areas. Data only covers major cities in north america.",
 		"role" : "In this project I've taken care of every aspect of the process, from design concepts to implementation. This webapp was built with AngularJS, HTML5, CSS3 (Sass, Compass, Susy), Grunt.",
 		"color" : "#616E28",
-		"image1" : "images/oandwbg.png"
+		"image1" : "images/phablet-bg.jpg",
+		"image2" : "images/phablet-imac.png"
 	},
 	{
 		"project" : "RapidPhire",
@@ -35,6 +36,6 @@
 		"role" : " ",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg.jpg",
-		"image2" : "images/rapidphire-imac.png"
+		"image2" : "images/rapidphire-imac2.png"
 	}
 ]
