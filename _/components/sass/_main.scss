@@ -363,13 +363,14 @@
 			height: auto;
 			@include span(9 of 12);
 			position: relative;
-			padding-left: ms(4);
+			padding-left: 1.6vw;
 			padding-top: ms(0);
 
 			img {
 				position: relative;
 				padding: ms(0);
 				display: inline;
+				max-width: 60%;
 			}
 
 			::before, img:nth-of-type(3) {
@@ -379,7 +380,7 @@
 
 		.projects {
 			@include span(12 of 12);
-			padding: 0px;
+			padding: auto;
 			position: relative;
 
 			.projectbg {
@@ -387,9 +388,9 @@
 			}
 
 			.projectInfo {
-				@include span(2 at 2 of 12);
+				@include span(3 of 12);
 				position: relative;
-				padding: ms(1) 0px ms(5);
+				padding: ms(1) auto ms(5);
 				font-weight: 300;
 				@include transform (translateX(0));
 				left: 0;
@@ -531,13 +532,14 @@
 			height: auto;
 			@include span(9 of 12);
 			position: relative;
-			padding-left: ms(4);
+			padding-left: 6.4vw;
 			padding-top: ms(0);
 
 			img {
 				position: relative;
-				padding: ms(0);
+				padding: 1.6vw;
 				display: inline;
+				max-width: 100%;
 			}
 
 			::before, img:nth-of-type(3) {
