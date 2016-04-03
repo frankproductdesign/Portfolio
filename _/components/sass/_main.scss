@@ -283,15 +283,26 @@
 		@include container;
 
 		.introtext {
+			@include span(12 of 12);
+			position: fixed;
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
 
 			div {
-				width: 98%;
-				max-width: 540px;
+				// width: 100%;
+				max-width: 100%;
+				position: relative;
+				@include span(10 of 12);
+				@include column-count(2);
+				@include column-gap(5vw);
 
 				p {
-					font-size: 1.7;
+					font-size: 1.7vh;
 					font-weight: 300;
 					line-height: 2.9vh;
+					color: $gray3;
+					letter-spacing: 0.55px;
 				}					
 			}
 		}
@@ -358,9 +369,9 @@
 				@include column-gap(5vw);
 
 				p {
-					font-size: 2.3vh;
+					font-size: 2.4vh;
 					font-weight: 300;
-					line-height: 3.9vh;
+					line-height: 4.1vh;
 					color: $gray3;
 					letter-spacing: 0.55px;
 				}					
@@ -401,23 +412,24 @@
 			@include span(9 of 12);
 			position: relative;
 			padding-left: 1.6vw;
-			padding-top: ms(0);
+			padding-top: ms(2);
 
 			img {
 				position: relative;
 				padding: ms(0);
 				display: inline;
 				max-width: 60%;
+				float: right;
 			}
 
 			::before, img:nth-of-type(3) {
-				display: none;
+				display: inline;
 			}
 		}
 
 		.projects {
 			@include span(12 of 12);
-			padding: auto;
+			padding: 0;
 			position: relative;
 
 			.projectbg {
@@ -443,6 +455,7 @@
 
 				p {
 					padding-top: ms(2);
+					padding-right: ms(0);
 				}
 			}
 		}
@@ -543,12 +556,11 @@
 			height: auto;
 			@include span(9 of 12);
 			position: relative;
-			padding-left: 6.4vw;
-			padding-top: ms(0);
+			padding-top: ms(3);
 
 			img {
 				position: relative;
-				padding: 1.6vw;
+				padding: 0px 3.2vw 0px 0px;
 				display: inline;
 				max-width: 100%;
 			}
