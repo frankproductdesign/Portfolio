@@ -310,7 +310,7 @@
 		.artbox {
 
 			img {
-				width: ms(7);
+				width: 50vh;
 			}
 		}
 
@@ -346,6 +346,20 @@
 		@include single-transition(all, 1s, ease-out);
 		@include container;
 
+		.introtext {
+
+			div {
+				max-width: 620px;
+
+				p {
+					font-size: 1.9vh;
+					font-weight: 300;
+					line-height: 3.1vh;
+					color: $gray3;
+					letter-spacing: 0.55px;
+				}		
+			}
+		}
 	}
 
 
