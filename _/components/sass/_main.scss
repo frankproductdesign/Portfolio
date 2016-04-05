@@ -189,8 +189,8 @@
 		.plusIcon {
 			@include transition-duration(0.2s);
 			@include transition-delay(0.1s);
-			width: 44px;
-			height: 44px;
+			width: 45px;
+			height: 45px;
 			top: 3vh;
 			bottom: auto;
 			left: 50%;
@@ -422,6 +422,21 @@
 			}
 		}
 
+		.circle {
+			width: 44px; 
+			height: 44px; 
+			background-color: white;
+			top: 1.3vh;
+			bottom: auto;
+		}
+
+		.plusIcon {
+			width: 45px;
+			height: 45px;
+			top: 1.3vh;
+			bottom: auto;
+		}
+
 		.devicesimg {
 			z-index: 901;
 			height: auto;
@@ -434,7 +449,7 @@
 				position: relative;
 				padding: ms(0);
 				display: inline;
-				max-width: 60%;
+				max-width: 75%;
 				float: right;
 			}
 
@@ -545,14 +560,14 @@
 			width: 60px; 
 			height: 60px; 
 			background-color: white;
-			top: 3vh;
+			top: 1.7vh;
 			bottom: auto;
 		}
 
 		.plusIcon {
 			width: 61px;
 			height: 61px;
-			top: 3vh;
+			top: 1.7vh;
 			bottom: auto;
 		}
 

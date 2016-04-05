@@ -3,10 +3,10 @@
 		"project" : "Olive and Well",
 		"type" : "E-commerce website",
 		"description" : "Oliveandwell.com is an online store for olive oils and related products. The experience at the physical store allow customers to taste the oils and fill up the bottles themselves... Products sold on the site are shipped from the store located in Chicago, Illinois, USA. The site runs on a single page application with responsive design. Built in AngularJS, Sass (Compass), Susy (grid layout), SVG graphics, HTML5, CSS3, Grunt.",
-		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design it and code it almost enterily, to work with the client from the very first concepts, through implementation, and deployment. And the chance to keep an ongoing serie of iterations to maintain the site up-to-date and to release incremental improvements design-wise and functionality-wise. Back-End by Iroel Perez.",
+		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design and code enterily, to work with the client from the very first concepts, through implementation and deployment. And the chance to keep an ongoing serie of iterations to maintain the site up-to-date and to release incremental improvements design-wise and functionality-wise. Back-End by Iroel Perez.",
 		"image1" : "images/oandwbg.png",
-		"image2" : "images/oandw-ipad.png",
-		"image3" : "images/oandw-laptop.png",
+		"image2" : "images/oandw-laptop.png",
+		"image3" : "images/oandw-ipad-land.png",
 		"image4" : "images/oandw-iphone.png",
 		"color" : "#616E28",
 		"link" : "Visit website",
@@ -23,8 +23,8 @@
 	{
 		"project" : "Phablet /s.com",
 		"type" : "Information website",
-		"description" : "This domain name refers to smartphones in the category of Phablets (screen size over 5.1 inches)... the website allow users to compare features of smartphones in this category and provide links to other sources... Users can compare smartphone features and click on the links to visit carriers in their areas. Data only covers major cities in north america.",
-		"role" : "In this project I've taken care of every aspect of the process, from design concepts to implementation. This webapp was built with AngularJS, HTML5, CSS3 (Sass, Compass, Susy), Grunt.",
+		"description" : "Compare smartphones features in the category of phablets.",
+		"role" : "Concept, design, code.",
 		"color" : "#616E28",
 		"image1" : "images/phablet-bg.jpg",
 		"image2" : "images/phablet-imac.png"
@@ -32,8 +32,17 @@
 	{
 		"project" : "RapidPhire",
 		"type" : "Web Application",
-		"description" : "Unfortunately this work can not be shown here... two years of work, research and iterations. This is one of the most challenging user experience I have ever worked on... this web application tracks large amount of data and anomalies on your network activity... the challenge is in representing this information with a myriad of graphs for data visualization...",
-		"role" : " ",
+		"description" : " ",
+		"role" : "Prototyping. Design.",
+		"color" : "#616E28",
+		"image1" : "images/rapidphire-bg.jpg",
+		"image2" : "images/rapidphire-imac2.png"
+	},
+	{
+		"project" : "This website",
+		"type" : "Web Application",
+		"description" : "It probably seems weird that I'm using my own website as part of the portfolio itself but afterall I've probably put as much time on this website as some of the other projects listed in here. The site is a responsive single page application with five breakpoints. I built it in AngularJS, with Sass and Compass, Susy, SVG graphics, HTML5, CSS3, using Grunt, Git / Github. I also used a couple of libraries; angular-parallax for the scrolling effect, and Slick.js for the touch / swiping effect on the work sections. For scaling I used modular-scale in Sass, with the ratio set to golden scale.",
+		"role" : "The vector art on the landing page it is also based on the golden spiral.",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg.jpg",
 		"image2" : "images/rapidphire-imac2.png"

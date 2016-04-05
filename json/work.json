@@ -1,10 +1,25 @@
 [
 	{
-		"type" : "GreenSpace, social network game (Facebook). Creative Direction, UX design, Game design.",
-		"images" : [{ "image":"images/game-greenspace-ui1.jpg" }, { "image":"images/game-greenspace-ui2.jpg" }, { "image":"images/game-greenspace-ui3.jpg" }, { "image":"images/game-greenspace-ui4.jpg" }, { "image":"images/game-greenspace-ui5.jpg" }]
-	},
-	{
-		"type" : "Game splashes. Art Direction, Design.",
-		"images" : [{ "image":"images/splash-poker-blast.jpg" }, { "image":"images/splash-cursed.jpg" }, { "image":"images/splash-doutris.jpg" }, { "image":"images/splash-stolen-doubloon.jpg" }, { "image":"images/splash-bass-assassin2.jpg" }]
+		"type" : "Canada Aviation and Space Museum mobile app. Creative Direction and UX design. 2013",
+		"description" : "A popular request among the visitors to the museum was to look inside the cockpit of the airplanes on display at the museum. The purpose of the app was to bring that oportunity to visitors. A panorimic view of the cockpit was implemented to show inside the app. Unfortunately although this app was fully developed it didn't make live.",
+		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse004-iphone.png" }, { "image":"images/work/amuse005-iphone.png" }, { "image":"images/work/amuse006-iphone.png" }, { "image":"images/work/amuse007-iphone.png" }]
+	},{
+		"type" : "GreenSpace, social network game (Facebook). Creative Direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
+		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }]
+	},{
+		"type" : "GreenSpace, social network game (Facebook). UX design. 2013",
+		"images" : [{ "image":"images/work/game-greenspace-ui1.jpg" }, { "image":"images/work/game-greenspace-ui2.jpg" }, { "image":"images/work/game-greenspace-ui3.jpg" }, { "image":"images/work/game-greenspace-ui4.jpg" }, { "image":"images/work/game-greenspace-ui5.jpg" }]
+	},{
+		"type" : "Dymon Storage mobile app (iOS). Art Direction and UX design. 2012",
+		"description" : "A popular request among the visitors to the museum was to look inside the cockpit of the airplanes on display at the museum. The purpose of the app was to bring that oportunity to visitors. A panorimic view of the cockpit was implemented to show inside the app. Unfortunately although this app was fully developed it didn't make live.",
+		"images" : [{ "image":"images/work/dymonstorage004-iphone.png" }, { "image":"images/work/dymonstorage002-iphone.png" }, { "image":"images/work/dymonstorage005-iphone.png" }, { "image":"images/work/dymonstorage006-iphone.png" }, { "image":"images/work/dymonstorage007-iphone.png" }, { "image":"images/work/dymonstorage008-iphone.png" }]
+	},{
+		"type" : "Sezlik, real state app for iPhone. Art Direction and UX design. 2011",
+		"description" : "",
+		"images" : [{ "image":"images/work/sezlik-iphone-app01.png" }, { "image":"images/work/sezlik-iphone-app02.png" }, { "image":"images/work/sezlik-iphone-app03.png" }, { "image":"images/work/sezlik-iphone-app04.png" }, { "image":"images/work/sezlik-iphone-app05.png" }, { "image":"images/work/sezlik-iphone-app06.png" }, { "image":"images/work/sezlik-iphone-app07.png" }]
+	},{
+		"type" : "iDerby iPhone game. Art Direction and UX design. 2010",
+		"description" : "Developed in about a month, for an specific client request. It took a month to a developer and me to put this together.",
+		"images" : [{ "image":"images/work/iderby-iphone-game-001.png" }, { "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track02.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }]
 	}
 ]

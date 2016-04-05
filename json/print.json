@@ -1,14 +1,18 @@
 [
 	{
+		"type" : "Single page ad. Art direction and design.",
+		"images" : [{ "image":"images/print/rapidphire-full-page-ad.jpg" }]
+	},{
 		"type" : "Single page and double page ads. Art direction and design.",
-		"images" : [{ "image":"images/ad-single-page-zacapa.jpg" }, { "image":"images/ad-two-page-zacapa.jpg" }, { "image":"images/ad-letter-zacapa.jpg" }]
-	},
-	{
+		"images" : [{ "image":"images/print/ad-single-page-zacapa.jpg" }, { "image":"images/print/ad-two-page-zacapa.jpg" }, { "image":"images/print/ad-letter-zacapa.jpg" }]
+	},{
 		"type" : "Single page ads. Art direction and design.",
-		"images" : [{ "image":"images/ad-nails01.jpg" }, { "image":"images/ad-nails003.jpg" }, { "image":"images/ad-nails03.jpg" }]
-	},
-	{
-		"type" : "Music events posters.",
-		"images" : [{ "image":"images/poster-brahma.jpg" }, { "image":"images/poster-afrofunk.jpg" }, { "image":"images/poster-bnx.jpg" }, { "image":"images/poster-rockband.jpg" }]
+		"images" : [{ "image":"images/print/ad-nails01.jpg" }, { "image":"images/print/ad-nails003.jpg" }, { "image":"images/print/ad-nails03.jpg" }]
+	},{
+		"type" : "Brochure. Art direction and design",
+		"images" : [{ "image":"images/print/artzone-brochure-3d.png" }, { "image":"images/print/artzone-front.jpg" }, { "image":"images/print/artzone-back.jpg" }]
+	},{
+		"type" : "Promotional posters and flyers for music events.",
+		"images" : [{ "image":"images/print/poster-brahma.jpg" }, { "image":"images/print/poster-afrofunk.jpg" }, { "image":"images/print/poster-bnx.jpg" }, { "image":"images/print/poster-rockband.jpg" }]
 	}
 ]
