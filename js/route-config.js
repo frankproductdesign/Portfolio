@@ -7,10 +7,10 @@ angular
 			.when('/home', {
 				templateUrl: 'templates/home/index.html',
 			})
-			.when('/recent', {
-				templateUrl: 'templates/recent/index.html',
-				controller: 'CtrlrRecent',
-				controllerAs: 'recent'
+			.when('/current', {
+				templateUrl: 'templates/current/index.html',
+				controller: 'CtrlrCurrent',
+				controllerAs: 'current'
 			})
 			.when('/past', { 
 				templateUrl: 'templates/past/index.html',

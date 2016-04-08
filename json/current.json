@@ -1,0 +1,35 @@
+[
+	{
+		"project" : "Olive and Well",
+		"type" : "E-commerce web application",
+		"description" : "Oliveandwell.com is an online store for olive oils and related products. The experience at the physical store allow customers to taste the oils and fill up the bottles themselves. Products sold on the site are shipped from the store located in Chicago, Illinois, USA. For this site I used a SPA built in AngularJS, CSS3; Sass (Compass), Susy (grid layout), HTML5, JSON, SVG, Grunt, Git, Github.",
+		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design and code enterily, to work with the client from the very first concepts, through implementation and deployment. And the chance to keep an ongoing serie of iterations to maintain the site up-to-date and to release incremental improvements design-wise and functionality-wise. Back-End by Iroel Perez.",
+		"image1" : "images/oandwbg.png",
+		"image2" : "images/oandw-laptop.png",
+		"image3" : "images/oandw-ipad-land.png",
+		"image4" : "images/oandw-iphone.png",
+		"color" : "#616E28",
+		"link" : "Visit website",
+		"href" : "http://oliveandwell.com"
+	},{
+		"project" : "Phablet/s.com",
+		"type" : "Information website",
+		"description" : "Compare smartphones features in the category of phablets.",
+		"role" : "Concept, design, code.",
+		"color" : "#616E28",
+		"image1" : "images/phablet-bg.jpg",
+		"image2" : "images/phablet-imac.png",
+		"link" : "Visit website",
+		"href" : "http://phablet.com"
+	},{
+		"project" : "RapidPhire",
+		"type" : "Web application",
+		"description" : "rapidPHIRE is a context-aware cyber security Network Traffic Analysis platform that provides situational awareness and remediation of cyber threats operating inside SMB and Enterprise networks. rapidPhire is a SPA built in AngularJS, HTML5, CSS3 (Sass), D3.js, Gulp, Git, Github, among other technologies.",
+		"role" : "Creative direction, UX design, Prototyping.",
+		"color" : "#616E28",
+		"image1" : "images/rapidphire-bg.jpg",
+		"image2" : "images/rapidphire-imac2.png",
+		"link" : "Product page",
+		"href" : "http://www.phirelight.com/rapidphire/"
+	}
+]
