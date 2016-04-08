@@ -1,24 +1,28 @@
 [
 	{
-		"type" : "Canada Aviation and Space Museum mobile app. Creative Direction and UX design. 2013",
-		"description" : "A popular request among the visitors to the museum was to look inside the cockpit of the airplanes on display at the museum. The purpose of the app was to bring that oportunity to visitors. A panorimic view of the cockpit was implemented to show inside the app. Unfortunately although this app was fully developed it didn't make live.",
+		"type" : "Design Prototype. Creative direction and UX design. 2015",
+		"description" : "Concept prototype for a website",
+		"images" : [{ "image":"images/work/kipu-imac.png" }]
+	},{
+		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
+		"description" : "To look inside the cockpit of the aircrafts in display is one of the most popular request among the visitors to the museum. Provinding access to aircraft is not possible for a myriad of reason; missing parts, safety, some of these planes are really old. The purpose of this app was to provide a virtual experience to visitors with a panoramic view of the cockpit. Unfortunately although this app was fully developed it didn't make live.",
 		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse004-iphone.png" }, { "image":"images/work/amuse005-iphone.png" }, { "image":"images/work/amuse006-iphone.png" }, { "image":"images/work/amuse007-iphone.png" }]
 	},{
-		"type" : "GreenSpace, social network game (Facebook). Creative Direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
+		"type" : "GreenSpace, social network game (Facebook). Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }]
 	},{
 		"type" : "GreenSpace, social network game (Facebook). UX design. 2013",
 		"images" : [{ "image":"images/work/game-greenspace-ui1.jpg" }, { "image":"images/work/game-greenspace-ui2.jpg" }, { "image":"images/work/game-greenspace-ui3.jpg" }, { "image":"images/work/game-greenspace-ui4.jpg" }, { "image":"images/work/game-greenspace-ui5.jpg" }]
 	},{
-		"type" : "Dymon Storage mobile app (iOS). Art Direction and UX design. 2012",
-		"description" : "A popular request among the visitors to the museum was to look inside the cockpit of the airplanes on display at the museum. The purpose of the app was to bring that oportunity to visitors. A panorimic view of the cockpit was implemented to show inside the app. Unfortunately although this app was fully developed it didn't make live.",
-		"images" : [{ "image":"images/work/dymonstorage004-iphone.png" }, { "image":"images/work/dymonstorage002-iphone.png" }, { "image":"images/work/dymonstorage005-iphone.png" }, { "image":"images/work/dymonstorage006-iphone.png" }, { "image":"images/work/dymonstorage007-iphone.png" }, { "image":"images/work/dymonstorage008-iphone.png" }]
+		"type" : "Dymon Storage mobile app (Android & iOS). Art direction and UX design. 2012",
+		"description" : "Using the original UI elements of iOS was a requirement of the project.",
+		"images" : [{ "image":"images/work/dymonstorage001-android.png" }, { "image":"images/work/dymonstorage002-android.png" }, { "image":"images/work/dymonstorage003-android.png" }, { "image":"images/work/dymonstorage004-android.png" }, { "image":"images/work/dymonstorage005-android.png" }]
 	},{
-		"type" : "Sezlik, real state app for iPhone. Art Direction and UX design. 2011",
+		"type" : "Sezlik, real state app for iOS. Art Direction and UX design. 2011",
 		"description" : "",
-		"images" : [{ "image":"images/work/sezlik-iphone-app01.png" }, { "image":"images/work/sezlik-iphone-app02.png" }, { "image":"images/work/sezlik-iphone-app03.png" }, { "image":"images/work/sezlik-iphone-app04.png" }, { "image":"images/work/sezlik-iphone-app05.png" }, { "image":"images/work/sezlik-iphone-app06.png" }, { "image":"images/work/sezlik-iphone-app07.png" }]
+		"images" : [{ "image":"images/work/sezlik-iphone-app01.png" }, { "image":"images/work/sezlik-iphone-app02.png" }, { "image":"images/work/sezlik-iphone-app03.png" }, { "image":"images/work/sezlik-iphone-app04.png" }, { "image":"images/work/sezlik-iphone-app05.png" }, { "image":"images/work/sezlik-iphone-app06.png" }, { "image":"images/work/sezlik-iphone-app07.png"}]
 	},{
-		"type" : "iDerby iPhone game. Art Direction and UX design. 2010",
+		"type" : "iDerby iOS game. Art direction and UX design. 2010",
 		"description" : "Developed in about a month, for an specific client request. It took a month to a developer and me to put this together.",
 		"images" : [{ "image":"images/work/iderby-iphone-game-001.png" }, { "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track02.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }]
 	}

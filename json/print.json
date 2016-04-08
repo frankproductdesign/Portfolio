@@ -3,6 +3,9 @@
 		"type" : "Single page ad. Art direction and design.",
 		"images" : [{ "image":"images/print/rapidphire-full-page-ad.jpg" }]
 	},{
+		"type" : "Deployment guide. Art direction and design.",
+		"images" : [{ "image":"images/print/rapidphire-deployment-guide01.jpg" }, { "image":"images/print/rapidphire-deployment-guide02.jpg" }, { "image":"images/print/rapidphire-deployment-guide03.jpg" }]
+	},{
 		"type" : "Single page and double page ads. Art direction and design.",
 		"images" : [{ "image":"images/print/ad-single-page-zacapa.jpg" }, { "image":"images/print/ad-two-page-zacapa.jpg" }, { "image":"images/print/ad-letter-zacapa.jpg" }]
 	},{

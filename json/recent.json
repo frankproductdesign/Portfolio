@@ -11,16 +11,7 @@
 		"color" : "#616E28",
 		"link" : "Visit website",
 		"href" : "http://oliveandwell.com"
-	},
-	{
-		"project" : "Kipu Systems",
-		"type" : "Prototype",
-		"description" : "Concept design / Prototype for a home page. Built in HTML5, CSS3, Javascript. Only desktop version (min-width: 2080px), not responsive.",
-		"color" : "#616E28",
-		"image1" : "images/kipu-bg.jpg",
-		"image2" : "images/kipu-imac.png"
-	},
-	{
+	},{
 		"project" : "Phablet /s.com",
 		"type" : "Information website",
 		"description" : "Compare smartphones features in the category of phablets.",
@@ -28,21 +19,11 @@
 		"color" : "#616E28",
 		"image1" : "images/phablet-bg.jpg",
 		"image2" : "images/phablet-imac.png"
-	},
-	{
+	},{
 		"project" : "RapidPhire",
 		"type" : "Web Application",
 		"description" : " ",
 		"role" : "Prototyping. Design.",
-		"color" : "#616E28",
-		"image1" : "images/rapidphire-bg.jpg",
-		"image2" : "images/rapidphire-imac2.png"
-	},
-	{
-		"project" : "This website",
-		"type" : "Web Application",
-		"description" : "It probably seems weird that I'm using my own website as part of the portfolio itself but afterall I've probably put as much time on this website as some of the other projects listed in here. The site is a responsive single page application with five breakpoints. I built it in AngularJS, with Sass and Compass, Susy, SVG graphics, HTML5, CSS3, using Grunt, Git / Github. I also used a couple of libraries; angular-parallax for the scrolling effect, and Slick.js for the touch / swiping effect on the work sections. For scaling I used modular-scale in Sass, with the ratio set to golden scale.",
-		"role" : "The vector art on the landing page it is also based on the golden spiral.",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg.jpg",
 		"image2" : "images/rapidphire-imac2.png"
