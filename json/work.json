@@ -11,9 +11,6 @@
 		"type" : "GreenSpace, social network game (Facebook). Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }]
 	},{
-		"type" : "GreenSpace, social network game (Facebook). UX design. 2013",
-		"images" : [{ "image":"images/work/game-greenspace-ui1.jpg" }, { "image":"images/work/game-greenspace-ui2.jpg" }, { "image":"images/work/game-greenspace-ui3.jpg" }, { "image":"images/work/game-greenspace-ui4.jpg" }, { "image":"images/work/game-greenspace-ui5.jpg" }]
-	},{
 		"type" : "Dymon Storage mobile app (Android & iOS). Art direction and UX design. 2012",
 		"description" : "Using the original UI elements of iOS was a requirement of the project.",
 		"images" : [{ "image":"images/work/dymonstorage001-android.png" }, { "image":"images/work/dymonstorage002-android.png" }, { "image":"images/work/dymonstorage003-android.png" }, { "image":"images/work/dymonstorage004-android.png" }, { "image":"images/work/dymonstorage005-android.png" }]
@@ -27,5 +24,8 @@
 		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track02.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
 			"link" : "Youtube video",
 			"href" : "https://youtu.be/Kr2--vcRisE"
+	},{
+		"type" : "Icon sets for Blackberry themes (device customization). Art direction and design. 2010",
+		"images" : [{ "image":"images/work/BBtheme-stark-icons.jpg" }, { "image":"images/work/BBtheme-outback-icons.jpg" }, { "image":"images/work/BBtheme-pink-icons.jpg" }]
 	}
 ]
