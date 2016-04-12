@@ -1,8 +1,10 @@
 [
 	{
-		"type" : "Design Prototype. Creative direction and UX design. 2015",
+		"type" : "Website Prototype. Creative direction, design and coding. 2015",
 		"description" : "Concept prototype for a website",
-		"images" : [{ "image":"images/work/kipu-imac.png" }]
+		"images" : [{ "image":"images/work/kipu-imac.png" }],
+		"link" : "Launch prototype",
+		"href" : "https://www.frankcastro.com"
 	},{
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "To look inside the cockpit of the aircrafts in display is one of the most popular request among the visitors to the museum. Provinding access to aircraft is not possible for a myriad of reason; missing parts, safety, some of these planes are really old. The purpose of this app was to provide a virtual experience to visitors with a panoramic view of the cockpit. Unfortunately although this app was fully developed it didn't make live.",
@@ -22,8 +24,8 @@
 		"type" : "iDerby iOS game. Art direction and UX design. 2010",
 		"description" : "Developed in about a month, for an specific client request. It took a month to a developer and me to put this together.",
 		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track02.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
-			"link" : "Youtube video",
-			"href" : "https://youtu.be/Kr2--vcRisE"
+		"link" : "Youtube video",
+		"href" : "https://youtu.be/Kr2--vcRisE"
 	},{
 		"type" : "Icon sets for Blackberry themes (device customization). Art direction and design. 2010",
 		"images" : [{ "image":"images/work/BBtheme-stark-icons.jpg" }, { "image":"images/work/BBtheme-outback-icons.jpg" }, { "image":"images/work/BBtheme-pink-icons.jpg" }]
