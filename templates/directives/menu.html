@@ -1,7 +1,7 @@
 <div class="circle" ng-class="{'square' : isActive}"></div>
-<div class="plusIcon" ng-class="{'rotate' : isActive}" ng-click="openWindow()">
+<!-- <div class="plusIcon" ng-class="{'rotate' : isActive}">
 	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><path d="M31,0V30H61v1H31V61H30V31H0V30H30V0h1Z"/></svg>
-</div>
+</div> -->
 <nav menu-toggle ng-class="{'navOpen' : isActive}">
 	<ul menu-active>
 		<li><a href="#/home">Intro</a></li>
@@ -14,6 +14,6 @@
 	</ul>
 	<contact-mod></contact-mod>
 </nav>
-<div class="fclogo">
-	<a href="#/home"><img src="images/svg/fc-logo.svg" alt="Frank Castro logo | frankcastro.com" /></a>
+<div class="fclogo" ng-click="openWindow()">
+	<img src="images/svg/fc-logo.svg" alt="Frank Castro logo | frankcastro.com" />
 </div>

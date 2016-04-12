@@ -10,8 +10,8 @@
 		.fclogo {
 			width: 22px;
 			position: fixed;
-			bottom: ms(-1);
-			right: ms(0);
+			// bottom: ms(-1);
+			// right: ms(0);
 		}
 
 		.introtext {
@@ -47,7 +47,7 @@
 			height: 69vh;
 			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 33%, rgba($color2, 1) 64%));
 			position: fixed;
-			@include border-radius(ms(-2));
+			// @include border-radius(ms(-2));
 
 			img {
 				@include transform(translate(-50%, -50%));
@@ -111,43 +111,43 @@
 		// 	}
 		// }
 
-		.contacts {
-			width: 100%;
-			height: ms(6);
-			padding-top: ms(1);
+		// .contacts {
+		// 	width: 100%;
+		// 	height: ms(6);
+		// 	padding-top: ms(1);
 
-			.contactInfo {
-				@include span(12 of 12);
-				// @include pre(2);
-				// @include suffix (1); // Adds column after the element
-				font-weight: 300;
-				text-align: left;
+		// 	.contactInfo {
+		// 		@include span(12 of 12);
+		// 		// @include pre(2);
+		// 		// @include suffix (1); // Adds column after the element
+		// 		font-weight: 300;
+		// 		text-align: left;
 
-				p {
-					color: black;
-					@include transition-delay(0s);
-					@include transition-duration(0.1s);
-					@include transition-timing-function(ease-in);
-				}
+		// 		p {
+		// 			color: black;
+		// 			@include transition-delay(0s);
+		// 			@include transition-duration(0.1s);
+		// 			@include transition-timing-function(ease-in);
+		// 		}
 
-				div:nth-of-type(2) {
-					display: none;
-				}
-			}
+		// 		div:nth-of-type(2) {
+		// 			display: none;
+		// 		}
+		// 	}
 
-			// .ng-hide {
-			// 	@include transition-delay(0s);
-			// 	@include transition-duration(0s);
-			// 	@include transition-timing-function(ease-out);
-			// 	opacity: 0;
-			// }
+		// 	// .ng-hide {
+		// 	// 	@include transition-delay(0s);
+		// 	// 	@include transition-duration(0s);
+		// 	// 	@include transition-timing-function(ease-out);
+		// 	// 	opacity: 0;
+		// 	// }
 
-			// .ng-hide-remove {
-			// 	@include transition-delay(0s);
-			// 	@include transition-duration(0s);
-			// 	@include transition-timing-function(ease-in);
-			// }
-		}
+		// 	// .ng-hide-remove {
+		// 	// 	@include transition-delay(0s);
+		// 	// 	@include transition-duration(0s);
+		// 	// 	@include transition-timing-function(ease-in);
+		// 	// }
+		// }
 
 		.circle {
 			@include transition-delay(0s);
@@ -155,11 +155,12 @@
 			@include transition-timing-function(ease-out);
 			width: 44px; 
 			height: 44px; 
-			top: 3vh;
-			bottom: auto;
+			top: 2vh;
+			left: 2vh;
+			// bottom: auto;
 			background-color: white;
-			@include transform (translateX(-50%));
-			left: 50%;
+			// @include transform (translateX(-50%));
+			// left: 50%;
 			position: fixed;
 			@include border-radius(50%);
 			z-index: 997;
@@ -186,28 +187,29 @@
 			// }
 		}
 
-		.plusIcon {
-			@include transition-duration(0.2s);
-			@include transition-delay(0.1s);
-			width: 45px;
-			height: 45px;
-			top: 3vh;
-			bottom: auto;
-			left: 50%;
-			@include transform (translateX(-50%));
-			position: fixed;
-			cursor: pointer;
-			fill: skyblue;
-			z-index: 1000;
+		// .plusIcon {
+		// 	@include transition-duration(0.2s);
+		// 	@include transition-delay(0.1s);
+		// 	width: 45px;
+		// 	height: 45px;
+		// 	top: 3vh;
+		// 	bottom: auto;
+		// 	left: 50%;
+		// 	@include transform (translateX(-50%));
+		// 	position: fixed;
+		// 	cursor: pointer;
+		// 	fill: skyblue;
+		// 	z-index: 1000;
 
-			&.rotate {
-				@include transition-duration(0.2s);
-				@include transition-delay(0.1s);
-				@include transform-origin(50%, 50%); //these values are the default setting for origin
-				@include transform (translateX(-50%) rotate(45deg));
-				left: 50%;
-			}
-		}
+		// 	&.rotate {
+		// 		@include transition-duration(0.2s);
+		// 		@include transition-delay(0.1s);
+		// 		@include transform-origin(50%, 50%); //these values are the default setting for origin
+		// 		@include transform (translateX(-50%) rotate(45deg));
+		// 		left: 50%;
+		// 		fill: $color2;
+		// 	}
+		// }
 
 		.pageTitle {
 			@include span(8 of 12);
@@ -398,7 +400,7 @@
 		.artbox {
 			width: 58vw;
 			height: 78vh;
-			@include border-radius(ms(-2));
+			// @include border-radius(ms(-2));
 			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
 
 			img {
@@ -408,36 +410,36 @@
 		} 
 		// this is the class for the home page to size the box that create the frame effects
 
-		.contacts {
-			width: 100%;
-			height: auto;
-			padding-top: 4vh;
+		// .contacts {
+		// 	width: 100%;
+		// 	height: auto;
+		// 	padding-top: 4vh;
 
-			.contactInfo {
-				@include span(12 of 12);
-				font-weight: 300;
-				text-align: center;
+		// 	.contactInfo {
+		// 		@include span(12 of 12);
+		// 		font-weight: 300;
+		// 		text-align: center;
 
-				div:nth-of-type(2) {
-					display: inline;
-				}
-			}
-		}
+		// 		div:nth-of-type(2) {
+		// 			display: inline;
+		// 		}
+		// 	}
+		// }
 
-		.circle {
-			width: 44px; 
-			height: 44px; 
-			background-color: white;
-			top: 1.3vh;
-			bottom: auto;
-		}
+		// .circle {
+		// 	width: 44px; 
+		// 	height: 44px; 
+		// 	background-color: white;
+		// 	top: 1.3vh;
+		// 	bottom: auto;
+		// }
 
-		.plusIcon {
-			width: 45px;
-			height: 45px;
-			top: 1.3vh;
-			bottom: auto;
-		}
+		// .plusIcon {
+		// 	width: 45px;
+		// 	height: 45px;
+		// 	top: 1.3vh;
+		// 	bottom: auto;
+		// }
 
 		.devicesimg {
 			z-index: 901;
@@ -502,8 +504,13 @@
 
 		.fclogo {
 			width: 28px;
-			bottom: ms(0);
-			right: ms(1);
+			// bottom: ms(0);
+			// right: ms(1);
+			top: ms(2);
+			// @include transform (translateX(-50%));
+			left: ms(2);
+			z-index: 2999;
+			cursor: pointer;
 		}
 
 		.introtext {
@@ -533,9 +540,9 @@
 		}
 
 		.artbox {
-			width: 58vw;
-			height: 78vh;
-			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
+			width: 99.86vw;
+			height: 99.82vh;
+			@include background(linear-gradient(bottom right, rgba($color2, 0.92) 0%, rgba(lightskyblue, 1) 100%));
 
 			img {
 				width: 50vh;
@@ -552,32 +559,56 @@
 			width: 100%;
 			height: ms(6);
 			padding-top: ms(1);
+			padding-left: ms(2);
 
 			.contactInfo {
-				font-weight: 300;
-				text-align: center;
+				p {
+					font-weight: 300;
+					line-height: ms(2);
+					text-align: left;
+
+					a {
+						text-decoration: none;
+						color: white;
+					}
+				}
 			}
 		}
 
 		.circle {
 			width: 60px; 
 			height: 60px; 
-			background-color: white;
-			top: 1.7vh;
-			bottom: auto;
+			background-color: lightskyblue;
+			top: 1.9vh;
+			left: 1.7vh;
+			opacity: 1;
+
+			&.square {
+				@include transition-delay(0s);
+				@include transition-duration(0.3s);
+				@include transition-timing-function(ease-out);
+				height: 100%;
+				width: 100%;
+				top: 0px;
+				left: 0px;
+				border: 0px;
+				@include border-radius(0px);
+				@include background(skyblue);
+				opacity: 1;
+			}
 		}
 
-		.plusIcon {
-			width: 61px;
-			height: 61px;
-			top: 1.7vh;
-			bottom: auto;
-		}
+		// .plusIcon {
+		// 	width: 61px;
+		// 	height: 61px;
+		// 	top: 1.7vh;
+		// 	bottom: auto;
+		// }
 
 		.pageTitle {
 			@include span(3 of 12);
 			padding-left: ms(2);
-			bottom: ms(0);
+			bottom: ms(1);
 			@include single-text-shadow(white, 1px, 1px, ms(4));
 
 			h2 {
@@ -652,9 +683,12 @@ footer {
 		@include span(12 of 12);
 
 		.copyright {
-			width: 450px;
-			@include transform(translate(-50%, -390%) rotate(-90deg));
-			padding: ms(1) 0px ms(0) 0px;
+			position: fixed;
+			right: ms(2);
+			bottom: ms(1);
+			// width: 450px;
+			// @include transform(translateX(-50%));
+			// padding: ms(1) 0px ms(0) 0px;
 			letter-spacing: 0.04rem;
 			line-height: ms(1);
 
@@ -662,6 +696,7 @@ footer {
 				font-size: ms(-1);
 				color: $gray1;
 				font-weight: 400;
+				opacity: 0.6;
 			}
 		}
 	}
@@ -690,9 +725,9 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-			width: 450px;
-			@include transform(translate(-50%, -480%) rotate(-90deg));
-			padding: ms(0) 0px ms(0) 0px;
+			// width: 450px;
+			// @include transform(translate(-50%, -480%) rotate(-90deg));
+			// padding: ms(0) 0px ms(0) 0px;
 			letter-spacing: 0.04rem;
 			line-height: ms(1);
 

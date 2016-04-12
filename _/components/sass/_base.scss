@@ -23,7 +23,7 @@ $cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
 // COLORS
 
 $color1: white;
-$color2: lightskyblue;
+$color2: steelblue;
 $color3: pink;
 
 $gray1: lightgray;
@@ -114,9 +114,9 @@ nav {
 		@include single-transition(all, 0.3s, ease-out);
 		width: 87vw;
 		top: 13vh;
-		left: 50%;
+		// left: 50%;
 		// @include transform (translate(-50%, -50%));
-		@include transform (translateX(-50%));
+		// @include transform (translateX(-50%));
 
 		&.navOpen {
 			visibility: visible;
@@ -180,7 +180,7 @@ nav {
 
 			li {
 				padding: 0px 0px 3vh 0px;
-				text-align: center;
+				// text-align: center;
 				line-height: 4vh;
 
 				a {
@@ -194,16 +194,15 @@ nav {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0s, ease-out);
-		width: 33vw;
-		top: 55%;
-		left: 50%;
-		@include transform (translate(-50%, -50%));
+		width: 50%;
+		top: ms(5);
+		// @include transform (translate(-50%, -50%));
 
 		ul {
 
 			li {
-				padding: 0px 0px ms(1) 0px;
-				text-align: center;
+				padding: 0px 0px ms(1) ms(2);
+				// text-align: center;
 				line-height: 5vh;
 
 				a {

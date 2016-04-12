@@ -6,7 +6,7 @@
         stroke: #fff;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 0.85px;
+        stroke-width: 0.66px;
       }
 
       .cls-2 {
