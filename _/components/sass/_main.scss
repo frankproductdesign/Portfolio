@@ -88,53 +88,6 @@
 			}
 		} // this is for the home page art and full screen effect
 
-		// .ctasmall {
-		// 	position: fixed;
-		// 	width: 100%;
-		// 	top: 0.5vh;
-		// 	color: $gray1;
-
-		// 	p {
-		// 		text-transform: uppercase;
-		// 		font-size: ms(-1);
-		// 		font-weight: 400;
-		// 		@include transform(translateX(-50%));
-		// 		left: 50%;
-		// 		position: absolute;
-		// 	}
-
-		// 	&.dimmed {
-		// 		@include transition-delay(0s);
-		// 		@include transition-duration(0.2s);
-		// 		@include transition-timing-function(ease-in);
-		// 		opacity: 0;
-		// 	}
-		// }
-
-		// .contacts {
-		// 	width: 100%;
-		// 	height: ms(6);
-		// 	padding-top: ms(1);
-
-		// 	.contactInfo {
-		// 		@include span(12 of 12);
-		// 		// @include pre(2);
-		// 		// @include suffix (1); // Adds column after the element
-		// 		font-weight: 300;
-		// 		text-align: left;
-
-		// 		p {
-		// 			color: black;
-		// 			@include transition-delay(0s);
-		// 			@include transition-duration(0.1s);
-		// 			@include transition-timing-function(ease-in);
-		// 		}
-
-		// 		div:nth-of-type(2) {
-		// 			display: none;
-		// 		}
-		// 	}
-
 		// 	// .ng-hide {
 		// 	// 	@include transition-delay(0s);
 		// 	// 	@include transition-duration(0s);
@@ -186,30 +139,6 @@
 			// 	height: 0vh;
 			// }
 		}
-
-		// .plusIcon {
-		// 	@include transition-duration(0.2s);
-		// 	@include transition-delay(0.1s);
-		// 	width: 45px;
-		// 	height: 45px;
-		// 	top: 3vh;
-		// 	bottom: auto;
-		// 	left: 50%;
-		// 	@include transform (translateX(-50%));
-		// 	position: fixed;
-		// 	cursor: pointer;
-		// 	fill: skyblue;
-		// 	z-index: 1000;
-
-		// 	&.rotate {
-		// 		@include transition-duration(0.2s);
-		// 		@include transition-delay(0.1s);
-		// 		@include transform-origin(50%, 50%); //these values are the default setting for origin
-		// 		@include transform (translateX(-50%) rotate(45deg));
-		// 		left: 50%;
-		// 		fill: $color2;
-		// 	}
-		// }
 
 		.pageTitle {
 			@include span(8 of 12);
@@ -393,7 +322,7 @@
 					line-height: 4.1vh;
 					color: $gray3;
 					letter-spacing: 0.55px;
-				}					
+				}
 			}
 		}
 
@@ -409,37 +338,6 @@
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
-
-		// .contacts {
-		// 	width: 100%;
-		// 	height: auto;
-		// 	padding-top: 4vh;
-
-		// 	.contactInfo {
-		// 		@include span(12 of 12);
-		// 		font-weight: 300;
-		// 		text-align: center;
-
-		// 		div:nth-of-type(2) {
-		// 			display: inline;
-		// 		}
-		// 	}
-		// }
-
-		// .circle {
-		// 	width: 44px; 
-		// 	height: 44px; 
-		// 	background-color: white;
-		// 	top: 1.3vh;
-		// 	bottom: auto;
-		// }
-
-		// .plusIcon {
-		// 	width: 45px;
-		// 	height: 45px;
-		// 	top: 1.3vh;
-		// 	bottom: auto;
-		// }
 
 		.devicesimg {
 			z-index: 901;
@@ -491,6 +389,32 @@
 				p {
 					padding-top: ms(2);
 					padding-right: ms(0);
+				}
+			}
+		}
+
+		.aboutText {
+			@include span(12 of 12);
+			position: fixed;
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
+
+			div {
+				// max-width: 100%;
+				position: relative;
+				@include span(7 of 12);
+				@include column-count(2);
+				@include column-gap(ms(3));
+				@include transform(translateX(-50%));
+				left: 50%;
+
+				p {
+					font-size: ms(0);
+					font-weight: 400;
+					line-height: ms(1);
+					color: black;
+					// letter-spacing: 0.5px;
 				}
 			}
 		}
@@ -580,8 +504,8 @@
 			width: 60px; 
 			height: 60px; 
 			background-color: lightskyblue;
-			top: 1.9vh;
-			left: 1.7vh;
+			top: ms(1);
+			left: ms(1);
 			opacity: 1;
 
 			&.square {
@@ -598,13 +522,6 @@
 				opacity: 1;
 			}
 		}
-
-		// .plusIcon {
-		// 	width: 61px;
-		// 	height: 61px;
-		// 	top: 1.7vh;
-		// 	bottom: auto;
-		// }
 
 		.pageTitle {
 			@include span(3 of 12);
@@ -666,6 +583,47 @@
 
 				p {
 					padding-top: ms(2);
+				}
+			}
+		}
+
+		.aboutText {
+			div {
+				@include span(7 of 12);
+				@include column-gap(ms(3));
+
+				p {
+					font-size: ms(0);
+					font-weight: 400;
+					line-height: ms(1);
+					color: black;
+					// letter-spacing: 0.5px;
+				}
+			}
+		}
+
+		.approachText {
+			@include span(12 of 12);
+			position: fixed;
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
+
+			div {
+				// max-width: 100%;
+				position: relative;
+				@include span(7 of 12);
+				@include column-count(2);
+				@include column-gap(ms(3));
+				@include transform(translateX(-50%));
+				left: 50%;
+
+				p {
+					font-size: ms(0);
+					font-weight: 400;
+					line-height: ms(1);
+					color: black;
+					// letter-spacing: 0.5px;
 				}
 			}
 		}

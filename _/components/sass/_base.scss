@@ -122,7 +122,7 @@ nav {
 			visibility: visible;
 			opacity: 1;
 			@include transition-delay(0.4s);
-			@include transition-duration(0.3s);
+			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
 		}
 
