@@ -590,9 +590,11 @@
 		.aboutText {
 			div {
 				@include span(7 of 12);
+				@include column-count(3);
 				@include column-gap(ms(3));
 
 				p {
+					font-family: $serif;
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
@@ -619,6 +621,7 @@
 				left: 50%;
 
 				p {
+					font-family: $serif;
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
