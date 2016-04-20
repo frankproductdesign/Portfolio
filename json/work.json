@@ -4,11 +4,11 @@
 		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen res above 1900px wide.",
 		"images" : [{ "image":"images/work/kipu-imac.png" }],
 		"link" : "Launch prototype",
-		"href" : "https://www.frankcastro.com"
+		"href" : "http://www.kipu.frankcastro.com"
 	},{
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "",
-		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse004-iphone.png" }, { "image":"images/work/amuse005-iphone.png" }, { "image":"images/work/amuse006-iphone.png" }, { "image":"images/work/amuse007-iphone.png" }]
+		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse002-iphone.png" }, { "image":"images/work/amuse007-iphone.png" }]
 	},{
 		"type" : "GreenSpace, social network game (Facebook). Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"description" : "",

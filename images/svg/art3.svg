@@ -3,14 +3,16 @@
     <style>
       .cls-1 {
         fill: none;
-        stroke: #fff;
+        stroke: #333333;
         stroke-linecap: round;
         stroke-linejoin: round;
-        stroke-width: 0.66px;
+        stroke-width: 0.33px;
       }
 
       .cls-2 {
-        fill: #ef6ba7;
+        fill: #CEAE01;
+        stroke: none;
+        stroke-width: 0.33px;
       }
     </style>
   </defs>

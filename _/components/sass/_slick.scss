@@ -18,7 +18,7 @@ $slick-dot-color-active: $slick-dot-color !default;
 $slick-prev-character: " ≪ " !default;
 $slick-next-character: " ≫ " !default;
 $slick-dot-character: " ● " !default;
-$slick-dot-size: ms(1) !default;
+$slick-dot-size: ms(0) !default;
 $slick-opacity-arrows: 0.25 !default;
 $slick-opacity-dots: 0.75 !default;
 $slick-opacity-on-hover: 1 !default;
@@ -247,9 +247,9 @@ body {
 			z-index: -1;
 
 			img {
-				// max-width: 100%;
-				max-width: ms(8);
-				max-height: ms(7.4);
+				max-width: 100%;
+				// max-width: ms(8);
+				max-height: ms(8);
 				position: relative;
 				left: 50%;
 				@include transform (translateX(-50%));			

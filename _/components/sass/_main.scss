@@ -129,7 +129,7 @@
 				border: 0px;
 				@include border-radius(0px);
 				// @include background(linear-gradient(160deg, lightskyblue 32%, hotpink 68%));
-				@include background(gray);
+				@include background(black);
 			}
 
 			// &.square::after {
@@ -148,10 +148,33 @@
 			z-index: 991;
 			@include single-text-shadow(white, 1px, 1px, ms(0));
 
-				h2 {
+			h2 {
+				color: $gray1;
+				font-weight: 300;
+
+				a {
+					text-decoration: none;
 					color: $gray1;
-					font-weight: 300;
+					font-weight: 400;
 				}
+			}
+		}
+
+		.pageLink {
+			@include span(12 of 12);
+			position: relative;
+			bottom: ms(1);
+			text-align: center;
+
+			h2 {
+				font-weight: 300;
+
+				a {
+					text-decoration: none;
+					color: $gray1;
+					font-weight: 400;
+				}
+			}
 		}
 
 		.projectrow {
@@ -454,7 +477,7 @@
 				@include column-gap(5vw);
 
 				p {
-					font-size: 2.1vh;
+					font-size: 1.9vh;
 					font-weight: 300;
 					line-height: 3.9vh;
 					color: $gray3;
@@ -466,11 +489,11 @@
 		.artbox {
 			width: 99.86vw;
 			height: 99.82vh;
-			@include background(linear-gradient(bottom right, rgba($color2, 0.92) 0%, rgba(lightskyblue, 1) 100%));
+			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
 
 			img {
-				width: 50vh;
-				max-width: 480px;
+				width: 99vh;
+				max-width: 2140px;
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
@@ -503,7 +526,7 @@
 		.circle {
 			width: 60px; 
 			height: 60px; 
-			background-color: lightskyblue;
+			background-color: gold;
 			top: ms(1);
 			left: ms(1);
 			opacity: 1;
@@ -518,8 +541,8 @@
 				left: 0px;
 				border: 0px;
 				@include border-radius(0px);
-				@include background(skyblue);
-				opacity: 1;
+				// @include background(skyblue);
+				opacity: 0.9;
 			}
 		}
 
@@ -530,7 +553,7 @@
 			@include single-text-shadow(white, 1px, 1px, ms(4));
 
 			h2 {
-				color: $gray1;
+				color: $gray2;
 			}
 		}
 
@@ -612,23 +635,29 @@
 			top: 50%;
 
 			div {
-				// max-width: 100%;
 				position: relative;
-				@include span(7 of 12);
-				@include column-count(2);
-				@include column-gap(ms(3));
+				@include span(8 of 12);
 				@include transform(translateX(-50%));
 				left: 50%;
-
-				p {
-					font-family: $serif;
-					font-size: ms(0);
-					font-weight: 400;
-					line-height: ms(1);
-					color: black;
-					// letter-spacing: 0.5px;
-				}
+				text-align: center;
 			}
+		}
+
+		.ctaDrag {
+			@include transform(translateX(-50%));
+			left: 50%;
+			position: fixed;
+			top: ms(1);
+
+			p {
+				font-size: ms(0);
+				font-weight: 300;
+				color: $gray2;
+			}
+		}
+
+		.dimmed {
+			opacity: 0;
 		}
 	}
 }
@@ -695,7 +724,7 @@ footer {
 
 			p {
 				font-size: ms(0);
-				color: $gray1;
+				color: $gray2;
 				font-weight: 300;
 			}
 		}

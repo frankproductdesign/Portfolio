@@ -58,13 +58,12 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(6 of 12);
+		@include span(12 of 12);
 		padding-top: ms(4);
 		margin-bottom: ms(5);
 
 		.worktext {
-			top: ms(4);
-			padding: 0px;
+			padding: ms(2) 0px 0px;
 		}
 	}
 }

@@ -1,7 +1,11 @@
 <div class="pageTitle">
-	<h2>UX Design</h2>
+	<h2>Work</h2>
 </div>
-
+<div scroll class="ctaDrag" ng-class="{ 'dimmed': scrollPos >= 100 }">
+	<p><< Drag >></p>
+</div>
+<!-- <div class="workmodule">
+	<div ng-repeat="item in items"> -->
 <div class="workmodule" ng-repeat="item in items">
 	<div slick-carousel>
 		<div ng-repeat="image in item.images">
@@ -14,6 +18,9 @@
 		<br/>
 		<p><a ng-href="{{item.href}}">{{item.link}}</a></p>
 	</div>
+</div>
+<div class="pageLink">
+	<h2><a href="#/pastprint">Print Media</a></h2>
 </div>
 
 <footer-content></footer-content>

@@ -2,8 +2,8 @@
 	{
 		"project" : "Olive and Well",
 		"type" : "E-commerce web application",
-		"description" : "Oliveandwell.com is an online store for olive oils and related products. The experience at the physical store allow customers to taste the oils and fill up the bottles themselves. Products sold on the site are shipped from the store located in Chicago, Illinois, USA. For this site I used a SPA built on AngularJS, CSS3; Sass (Compass), Susy (grid layout), HTML5, JSON, SVG, Grunt, Git, Github.",
-		"role" : "This is one of the few projects I have been fortunate to have the opportunity to design and code enterily, to work with the client from the very first concepts to implementation... the current version is one of a serie of iterations. On the work for the next update is a home as a landing page, improvement of the site navigation and bug fixing. Back-End by Iroel Perez.",
+		"description" : "Oliveandwell.com is an online store for olive oils and related products. Customers are able to taste their premium olive oils and balsamic vinegars before making their selection, which is bottled from the same Italian Fusti (stainless steel tank) that they sample. Products sold on the site are shipped from the store located in Chicago, Illinois, USA. For this project I used a SPA built on AngularJS, CSS3; Sass (Compass), Susy (grid layout), HTML5, JSON, SVG, Grunt, Git, Github.",
+		"role" : "I have been fortunate to have the opportunity to design and code the front-end of this project entirely, to work with the client from the first concepts to implementation, feedback and refinement. The current version is just the first release of a serie of iterations. Back-End by Iroel Perez.",
 		"image1" : "images/oandwbg2.jpg",
 		"image2" : "images/oandw-laptop.png",
 		"image3" : "images/oandw-ipad-land.png",
@@ -12,14 +12,14 @@
 		"link" : "Visit website",
 		"href" : "http://oliveandwell.com"
 	},{
-		"project" : "Phablet/s.com",
-		"type" : "Information website",
-		"description" : "Compare smartphones features in the category of phablets.",
-		"role" : "Concept, design, code.",
+		"project" : "Phablet.com",
+		"type" : "Redesign",
+		"description" : "Most of the traffic to this type of generic domain name is generated through search engines. The redesign will showcase the best apps and games designed for this category of smartphones. The site will include a list of featured apps, top paid and top free apps on different categories with links to Android and iOS app stores.",
+		"role" : "My role in this project; Creative direction, design, prototyping. Workflow; Grunt, Git, Github, AngularJS, Sass with Compass, Susy, modular-scale, JSON, HTML5, CSS3.",
 		"color" : "#616E28",
 		"image1" : "images/phablet-bg.jpg",
-		"image2" : "images/phablet-imac.png",
-		"link" : "Visit website",
+		"image2" : "images/phablet-imac2.png",
+		"link" : "Coming Soon",
 		"href" : "http://phablet.com"
 	},{
 		"project" : "RapidPhire",
@@ -27,9 +27,8 @@
 		"description" : "rapidPHIRE is a context-aware cyber security Network Traffic Analysis platform that provides situational awareness and remediation of cyber threats operating inside SMB and Enterprise networks. rapidPhire is a SPA built in AngularJS, HTML5, CSS3 (Sass), D3.js, Gulp, Git, Github, among other technologies.",
 		"role" : "Creative direction, UX design, Prototyping.",
 		"color" : "#616E28",
-		"image1" : "images/rapidphire-bg.jpg",
-		"image2" : "images/rapidphire-imac2.png",
-		"link" : "Product page",
-		"href" : "http://www.phirelight.com/rapidphire/"
+		"image1" : "images/rapidphire-bg2.jpg",
+		"link" : "",
+		"href" : ""
 	}
 ]
