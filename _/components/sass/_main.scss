@@ -28,7 +28,7 @@
 				position: relative;
 
 				p {
-					font-family: $serif;
+					font-family: $sans;
 					font-size: 1.8vh;
 					font-weight: 400;
 					line-height: 2.7vh;
@@ -652,12 +652,14 @@
 			p {
 				font-size: ms(0);
 				font-weight: 300;
-				color: $gray2;
+				color: gold;
 			}
 		}
 
 		.dimmed {
-			opacity: 0;
+			p {
+				opacity: 0;
+			}
 		}
 	}
 }

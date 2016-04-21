@@ -221,7 +221,7 @@ body {
 		.slick-slide {
 
 			img {
-				max-width: 84%;;
+				max-width: 84%;
 				max-height: ms(6.4);
 				position: relative;
 				left: 50%;
@@ -252,6 +252,7 @@ body {
 				max-height: ms(8);
 				position: relative;
 				left: 50%;
+				cursor: grab;
 				@include transform (translateX(-50%));			
 			}
 		}

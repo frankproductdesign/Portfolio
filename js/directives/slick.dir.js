@@ -1,14 +1,14 @@
 angular
 	.module('myStuff')
 
-	// .directive('slickCarousel', function($timeout) {
-	.directive('slickCarousel', function($interval) {
+	.directive('slickCarousel', function($timeout) {
+	// .directive('slickCarousel', function($interval) {
 
 		return {
 			restrict: "A",
 			link: function(scope, element, attrs) {
-				// $timeout(function() {
-				$interval(function() {
+				$timeout(function() {
+				// $interval(function() {
 
 					$(element).slick({
 						speed: 500,
@@ -17,7 +17,9 @@ angular
 						infinite: false,
 						mobileFirst: true,
 						rows: 1,
-						centerMode: true,
+						lazyload: 'progressive',
+						// fade: true,
+						// centerMode: true,
 						// centerPadding: '90',
 						// centerPadding is the side padding when in center mode. (px or %)
 

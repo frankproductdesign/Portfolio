@@ -1,7 +1,7 @@
 angular
 	.module('myApp')
 
-	.directive("scroll", function ($window) {
+	.directive("scrollTrigger", function ($window) {
 		return function($scope, element, attrs) {
 
 		angular.element($window).bind("scroll",
