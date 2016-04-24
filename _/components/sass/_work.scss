@@ -1,3 +1,23 @@
+// .ng-hide {
+// 	@include transition-delay(0s);
+// 	@include transition-duration(0.4s);
+// 	@include transition-timing-function(ease-out);
+
+// 	p {
+// 		opacity: 0;
+// 	}
+// }
+
+// .ng-hide-remove {
+// 	@include transition-delay(0s);
+// 	@include transition-duration(0.4s);
+// 	@include transition-timing-function(ease-in);
+
+// 	p {
+// 		@include transition-delay(0.5s);
+// 	}
+// }
+
 .workmodule {
 	font-family: sans-serif;
 

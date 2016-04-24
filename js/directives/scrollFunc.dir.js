@@ -1,30 +1,7 @@
 angular
 	.module('myApp')
 
-	.directive("scrollTrigger", function ($window) {
-		return function($scope, element, attrs) {
-
-		angular.element($window).bind("scroll",
-				function() {
-
-					// if (this.pageYOffset >= 44) {
-					// 	$scope.hideIntro = true;
-					// } else {
-					// 	$scope.hideIntro = false;
-					// }
-
-					$scope.scrollPos = document.body.scrollTop || document.documentElement.scrollTop || 0;
-
-				$scope.$apply();
-			});
-// this toggles classes on different elements
-
-			// $scope.hideDetails = true;
-		};
-	})
-
-
-	.directive("scrollOpacity", function ($window) {
+	.directive("scroll", function ($window) {
 		return function($scope, element, attrs) {
 
 			var container = angular.element('.artContainer')

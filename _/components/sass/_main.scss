@@ -88,20 +88,6 @@
 			}
 		} // this is for the home page art and full screen effect
 
-		// 	// .ng-hide {
-		// 	// 	@include transition-delay(0s);
-		// 	// 	@include transition-duration(0s);
-		// 	// 	@include transition-timing-function(ease-out);
-		// 	// 	opacity: 0;
-		// 	// }
-
-		// 	// .ng-hide-remove {
-		// 	// 	@include transition-delay(0s);
-		// 	// 	@include transition-duration(0s);
-		// 	// 	@include transition-timing-function(ease-in);
-		// 	// }
-		// }
-
 		.circle {
 			@include transition-delay(0s);
 			@include transition-duration(0.2s);
@@ -157,6 +143,10 @@
 					color: $gray1;
 					font-weight: 400;
 				}
+
+				:hover {
+						color: orange;
+				}
 			}
 		}
 
@@ -173,6 +163,10 @@
 					text-decoration: none;
 					color: $gray1;
 					font-weight: 400;
+				}
+
+				:hover {
+						color: orange;
 				}
 			}
 		}
@@ -441,6 +435,18 @@
 				}
 			}
 		}
+
+		.ctaDrag {
+			position: relative;
+			top: ms(2);
+			text-align: center;
+
+			p {
+				font-size: ms(0);
+				font-weight: 300;
+				color: gold;
+			}
+		}
 	}
 
 
@@ -570,10 +576,6 @@
 				display: inline;
 				max-width: 100%;
 			}
-
-			::before, img:nth-of-type(3) {
-				display: inline;
-			}
 		}
 
 		.projects {
@@ -640,25 +642,10 @@
 				@include transform(translateX(-50%));
 				left: 50%;
 				text-align: center;
-			}
-		}
 
-		.ctaDrag {
-			@include transform(translateX(-50%));
-			left: 50%;
-			position: fixed;
-			top: ms(1);
-
-			p {
-				font-size: ms(0);
-				font-weight: 300;
-				color: gold;
-			}
-		}
-
-		.dimmed {
-			p {
-				opacity: 0;
+				h2 {
+					color: black;
+				}
 			}
 		}
 	}

@@ -25,4 +25,4 @@ angular
 				scope.$on('$locationChangeSuccess', setActive);
 			}
 		};
-	}])
+	}]);

@@ -83,12 +83,8 @@ $medium: 970px;
 $large: 1200px;
 $xlarge: 1919px;
 
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
+a:hover {
+		color: orange;
 }
 
 @mixin bg-properties {
