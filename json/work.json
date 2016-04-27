@@ -1,14 +1,16 @@
 [
 	{
-		"type" : "Website Prototype. Creative direction, design and code. 2015",
-		"description" : "This design had several elements working at once on a scroll event. The purpose of this prototype was to test performance on scroll functionality. Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
-		"images" : [{ "image":"images/work/kipu-imac.png" }],
+		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
+		"description" : "The purpose of this prototype was to present to the client a functional concept, to explore some alternatives for scroll effects and define a visual style for the website. Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"images" : [{ "image":"images/work/kipu-imac.png" },{ "image":"images/work/kipu-imac2.png" }],
 		"link" : "Launch prototype",
 		"href" : "http://www.kipu.frankcastro.com"
 	},{
-		"type" : "GreenSpace, social network game (Facebook). Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
+		"type" : "GreenSpace is a social network game developed for Facebook to promote environmentalism. Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"description" : "",
-		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }]
+		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }],
+		"link" : "GreenSpace (Wikipedia)",
+		"href" : "https://en.wikipedia.org/wiki/GreenSpace"
 	},{
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "",
@@ -24,9 +26,12 @@
 	},{
 		"type" : "iDerby iOS game. Art direction and UX design. 2010",
 		"description" : "",
-		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track02.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
+		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
 		"link" : "Youtube video",
 		"href" : "https://youtu.be/Kr2--vcRisE"
+	},{
+		"type" : "Icon set (redesign) for Rapidphire web application. Art direction and design. 2015",
+		"images" : [{ "image":"images/work/rp-icon-set1.jpg" }, { "image":"images/work/rp-icon-set2.jpg" }]
 	},{
 		"type" : "Icon sets for Blackberry themes (device customization). Art direction and design. 2010",
 		"images" : [{ "image":"images/work/BBtheme-stark-icons.jpg" }, { "image":"images/work/BBtheme-outback-icons.jpg" }, { "image":"images/work/BBtheme-pink-icons.jpg" }]

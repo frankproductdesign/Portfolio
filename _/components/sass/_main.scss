@@ -283,9 +283,9 @@
 					font-size: ms(0)
 				}
 
-				p {
-					padding-top: ms(1);
-				}
+				// p {
+				// 	padding-top: ms(1);
+				// }
 			}
 	  	}
 	}
@@ -403,10 +403,10 @@
 					font-size: ms(0)
 				}
 
-				p {
-					padding-top: ms(2);
-					padding-right: ms(0);
-				}
+				// p {
+				// 	padding-top: ms(2);
+				// 	padding-right: ms(0);
+				// }
 			}
 		}
 
@@ -568,7 +568,7 @@
 			height: auto;
 			@include span(9 of 12);
 			position: relative;
-			padding-top: ms(3);
+			// padding-top: ms(3);
 
 			img {
 				position: relative;
@@ -585,17 +585,18 @@
 
 			.projectbg {
 				width: 100%;
-				height: 37vw;
+				height: 99.6vh;
 				@include bg-properties;
 			}
 
 			.projectInfo {
 				@include span(2 at 2 of 12);
 				position: relative;
-				padding: ms(2) 0px ms(5);
+				padding: ms(1) ms(2) ms(5);
 				font-weight: 300;
 				@include transform (translateX(0));
 				left: 0;
+				background-color: white;
 
 				h2 {
 					color: $gray2;
@@ -604,10 +605,6 @@
 
 				a {
 					font-size: ms(0)
-				}
-
-				p {
-					padding-top: ms(2);
 				}
 			}
 		}
@@ -645,6 +642,7 @@
 
 				h2 {
 					color: black;
+					line-height: ms(4);
 				}
 			}
 		}
