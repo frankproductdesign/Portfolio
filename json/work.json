@@ -2,19 +2,20 @@
 	{
 		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
 		"description" : "The purpose of this prototype was to present to the client a functional concept, to explore some alternatives for scroll effects and define a visual style for the website. Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
-		"images" : [{ "image":"images/work/kipu-imac.png" },{ "image":"images/work/kipu-imac2.png" }],
+		"images" : [{ "image":"images/work/kipu-imac.jpg" },{ "image":"images/work/kipu-imac2.jpg" }],
 		"link" : "Launch prototype",
 		"href" : "http://www.kipu.frankcastro.com"
 	},{
 		"type" : "GreenSpace is a social network game developed for Facebook to promote environmentalism. Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"description" : "",
-		"images" : [{ "image":"images/work/greenspace-game-fullscreen001.jpg" }, { "image":"images/work/greenspace-game-fullscreen002.jpg" }, { "image":"images/work/greenspace-game-fullscreen003.jpg" }, { "image":"images/work/greenspace-game-fullscreen004.jpg" }],
+		"images" : [{ "image":"images/work/greenspace-ingame-shot-01.png" }, { "image":"images/work/greenspace-ingame-shot-02.png" }, { "image":"images/work/greenspace-ingame-shot-03.png" }, { "image":"images/work/greenspace-ingame-shot-04.png" }],
 		"link" : "GreenSpace (Wikipedia)",
 		"href" : "https://en.wikipedia.org/wiki/GreenSpace"
 	},{
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "",
-		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse002-iphone.png" }, { "image":"images/work/amuse003-iphone.png" }]
+		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse002-iphone.png" }, { "image":"images/work/amuse003-iphone.png" }],
+		"bg" : [{ "bg":"images/work/amuse-bg.jpg" }]
 	},{
 		"type" : "Dymon Storage mobile app (Android & iOS). Art direction and UX design. 2012",
 		"description" : "",

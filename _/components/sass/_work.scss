@@ -79,11 +79,19 @@
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		padding-top: ms(4);
+		padding: ms(4) 0px ms(4) 0px;
 		margin-bottom: ms(5);
 
 		.worktext {
-			padding: ms(2) 0px 0px;
+			@include span(2.6 of 12);
+			@include pre(1);
+			position: relative;
+			padding: ms(3) ms(2) ms(5) ms(3);
+			font-weight: 300;
+			@include transform (translateX(0));
+			left: 0;
+			background-color: white;
+			text-align: left;
 		}
 	}
 }
