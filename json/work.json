@@ -27,17 +27,5 @@
 		"description" : "",
 		"images" : [{ "image":"images/work/sezlik-iphone-app01.png" }, { "image":"images/work/sezlik-iphone-app02.png" }, { "image":"images/work/sezlik-iphone-app03.png" }, { "image":"images/work/sezlik-iphone-app04.png" }],
 		"bg" : [{ "image":"images/work/sezlik-bg.jpg" }]
-	},{
-		"type" : "iDerby iOS game. Art direction and UX design. 2010",
-		"description" : "",
-		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
-		"link" : "Youtube video",
-		"href" : "https://youtu.be/Kr2--vcRisE"
-	},{
-		"type" : "Icon set (redesign) for Rapidphire web application. Art direction and design. 2015",
-		"images" : [{ "image":"images/work/rp-icon-set1.jpg" }, { "image":"images/work/rp-icon-set2.jpg" }]
-	},{
-		"type" : "Icon sets for Blackberry themes (device customization). Art direction and design. 2010",
-		"images" : [{ "image":"images/work/BBtheme-stark-icons.jpg" }, { "image":"images/work/BBtheme-outback-icons.jpg" }, { "image":"images/work/BBtheme-pink-icons.jpg" }]
 	}
 ]
