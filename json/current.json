@@ -8,8 +8,6 @@
 		"image2" : "images/oandw-laptop.png",
 		"image3" : "images/oandw-ipad-land.png",
 		"image4" : "images/oandw-iphone.png",
-		"image5" : "",
-		"image6" : "",
 		"color" : "#616E28",
 		"link" : "Visit website",
 		"href" : "http://oliveandwell.com"
@@ -17,9 +15,11 @@
 		"project" : "RapidPhire",
 		"type" : "Web application",
 		"description" : "rapidPHIRE is a context-aware cyber security Network Traffic Analysis platform that provides situational awareness and remediation of cyber threats operating inside SMB and Enterprise networks. rapidPhire is a SPA built in AngularJS, HTML5, CSS3 (Sass), D3.js, Gulp, Git, Github, among other technologies.",
-		"role" : "Creative direction, UX design, Prototyping, Front-end development. (Image; Screenshot of an old concept, current application uses a different style).",
+		"role" : "Creative direction, UX design, Prototyping, Front-end development. (Image; Screenshot of a design concept from two years ago, the current application uses a different style).",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg3.jpg",
+		"image5" : "images/work/rp-icons1.jpg",
+		"image6" : "images/work/rp-icon-set2.jpg",
 		"link" : "",
 		"href" : ""
 	}

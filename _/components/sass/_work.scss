@@ -79,8 +79,10 @@
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
-		padding: ms(4) 0px ms(4) 0px;
-		margin-bottom: ms(5);
+		padding: ms(4) 0px 0px;
+		margin-bottom: ms(7);		
+
+		@include bg-properties;
 
 		.worktext {
 			@include span(2.6 of 12);

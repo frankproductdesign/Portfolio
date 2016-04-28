@@ -9,30 +9,27 @@
 <!-- <div scroll-trigger class="ctaDrag" ng-class="{ dimmed: isDimmed }"> -->
 
 <div class="ctaDrag">
-	<p>Drag Image</p>
+	<p>Drag</p>
 </div>
 
-
-<!-- <div class="workmodule">
-	<div ng-repeat="item in items"> -->
-
-<!-- <div class="workmodule" ng-repeat="item in items" ng-style="{ 'background-image' : 'url({{item.bg}})' }"> -->
-
-<div class="workmodule" ng-repeat="item in items">
-	<div slick-carousel>
-		<div ng-repeat="image in item.images">
-			<img ng-src="{{image.image}}" />
+<div ng-repeat="item in items">
+	<div class="workmodule" ng-repeat="image in item.bg" ng-style="'{{image.image}}' != '' && {'background-image':'url({{image.image}})'}">
+		<div slick-carousel>
+			<div ng-repeat="image in item.images">
+				<img ng-src="{{image.image}}"/>
+			</div>
+		</div>
+		<div class="worktext">
+			<p>{{item.type}}</p>
+			<p>{{item.description}}</p>
+			<br/>
+			<p><a ng-href="{{item.href}}">{{item.link}}</a></p>
 		</div>
 	</div>
-	<div class="worktext">
-		<p>{{item.type}}</p>
-		<p>{{item.description}}</p>
-		<br/>
-		<p><a ng-href="{{item.href}}">{{item.link}}</a></p>
-	</div>
 </div>
+
 <div class="pageLink">
-	<h2><a href="#/pastprint">Print</a></h2>
+	<h2><a href="#/pastprint">+</a></h2>
 </div>
 
 <footer-content></footer-content>
