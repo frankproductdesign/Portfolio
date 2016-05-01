@@ -1,5 +1,11 @@
 [ 
 	{
+		"type" : "Single page ad. Art direction and design. 2015",
+		"images" : [{ "image":"images/print/rapidphire-full-page-ad.jpg" }]
+	},{
+		"type" : "Deployment guide. Art direction and design. 2015",
+		"images" : [{ "image":"images/print/rapidphire-deployment-guide01.jpg" }, { "image":"images/print/rapidphire-deployment-guide02.jpg" }, { "image":"images/print/rapidphire-deployment-guide03.jpg" }]
+	},{
 		"type" : "iDerby iOS game. Art direction and UX design. 2010",
 		"description" : "",
 		"images" : [{ "image":"images/work/iderby-iphone-game-menu.png" }, { "image":"images/work/iderby-iphone-game-track01.png" }, { "image":"images/work/iderby-iphone-game-track03.png" }, { "image":"images/work/iderby-iphone-game-horse.png" }, { "image":"images/work/iderby-iphone-game-cup.png" }, { "image":"images/work/iderby-iphone-game-silk.png" }],
@@ -8,12 +14,6 @@
 	},{
 		"type" : "Icon sets for Blackberry themes (device customization). Art direction and design. 2010",
 		"images" : [{ "image":"images/work/BBtheme-stark-icons.jpg" }, { "image":"images/work/BBtheme-outback-icons.jpg" }, { "image":"images/work/BBtheme-pink-icons.jpg" }]
-	},{
-		"type" : "Single page ad. Art direction and design. 2015",
-		"images" : [{ "image":"images/print/rapidphire-full-page-ad.jpg" }]
-	},{
-		"type" : "Deployment guide. Art direction and design. 2015",
-		"images" : [{ "image":"images/print/rapidphire-deployment-guide01.jpg" }, { "image":"images/print/rapidphire-deployment-guide02.jpg" }, { "image":"images/print/rapidphire-deployment-guide03.jpg" }]
 	},{
 		"type" : "Single page and double page ads. Art direction and design. 2005",
 		"images" : [{ "image":"images/print/ad-single-page-zacapa.jpg" }, { "image":"images/print/ad-letter-zacapa.jpg" }]

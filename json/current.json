@@ -8,6 +8,9 @@
 		"image2" : "images/oandw-laptop.png",
 		"image3" : "images/oandw-ipad-land.png",
 		"image4" : "images/oandw-iphone.png",
+		"image5" : "images/product-art001.jpg",
+		"img5desc" : "Samples of the images created to represent each olive oil.",
+		"image6" : "images/product-art002.jpg",
 		"color" : "#616E28",
 		"link" : "Visit website",
 		"href" : "http://oliveandwell.com"
@@ -18,8 +21,10 @@
 		"role" : "Creative direction, UX design, Prototyping, Front-end development. (Image; Screenshot of a design concept from two years ago, the current application uses a different visual style).",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg3.jpg",
-		"image5" : "images/work/rp-icons1.jpg",
-		"image6" : "images/work/rp-icon-set2.jpg",
+		"image5" : "images/rp-icons1.jpg",
+		"img5desc" : "Concept of an icon set created for the web application.",
+		"image6" : "images/rp-icons2.jpg",
+		"img6desc" : "Icon set for an interactive 3D graph, and sample of menu navigation.",
 		"link" : "",
 		"href" : ""
 	}
