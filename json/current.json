@@ -9,8 +9,9 @@
 		"image3" : "images/oandw-ipad-land.png",
 		"image4" : "images/oandw-iphone.png",
 		"image5" : "images/product-art001.jpg",
-		"img5desc" : "Samples of the images created to represent each olive oil.",
+		"img5desc" : "Design elements.",
 		"image6" : "images/product-art002.jpg",
+		"image7" : "images/product-art003.jpg",
 		"color" : "#616E28",
 		"link" : "Visit website",
 		"href" : "http://oliveandwell.com"
@@ -22,9 +23,9 @@
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg3.jpg",
 		"image5" : "images/rp-icons1.jpg",
-		"img5desc" : "Concept of an icon set created for the web application.",
+		"img5desc" : "Icon set concept.",
 		"image6" : "images/rp-icons2.jpg",
-		"img6desc" : "Icon set for an interactive 3D graph, and sample of menu navigation.",
+		"img6desc" : "Icon set for an interactive 3D graph, and concept for navigation on large data tables.",
 		"link" : "",
 		"href" : ""
 	}

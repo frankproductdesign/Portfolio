@@ -7,7 +7,7 @@
 		<!-- <div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}" parallax-background parallax-ratio="0.3"></div> -->
 		<div class="projectbg" ng-style="{'background-image':'url({{item.image1}})'}"></div>
 <!-- 		<div class="devicesimg" parallax parallax-ratio="-0.3" parallax-horizontal-offset="30"> -->
-		<div class="projectInfo" parallax parallax-ratio="-0.2">
+		<div class="projectInfo" parallax parallax-ratio="-0.3">
 			<p>{{item.project}}</p>
 			<h2>{{item.type}}</h2>
 			<p>{{item.description}}</p>
@@ -18,25 +18,27 @@
 		</div>
 		<div class="devicesimg">
 <!-- 			<img ng-class = "{ 'shadow': scrollPos >= 40 }" ng-src="{{item.image2}}"/> -->
-			<img ng-src="{{item.image2}}" parallax parallax-ratio="-0.35"/>
+			<img ng-src="{{item.image2}}" parallax parallax-ratio="-0.4"/>
 			<img ng-src="{{item.image3}}" parallax parallax-ratio="-0.7"/>
-			<img ng-src="{{item.image4}}" parallax parallax-ratio="-0.85"/>
+			<img ng-src="{{item.image4}}" parallax parallax-ratio="-0.9"/>
 		</div>
 		<div class="detailsimg">
-			<img ng-src="{{item.image5}}"/>
-			<p>{{item.img5desc}}</p>
-		</div>
-		<div class="detailsimg">
-			<img ng-src="{{item.image6}}"/>
-			<p>{{item.img6desc}}</p>
-		</div>
-		<div class="detailsimg">
-			<img ng-src="{{item.image7}}"/>
-			<p>{{item.img7desc}}</p>
-		</div>
-		<div class="detailsimg">
-			<img ng-src="{{item.image8}}"/>
-			<p>{{item.img8desc}}</p>
+			<div>
+				<p>{{item.img5desc}}</p>
+				<img ng-src="{{item.image5}}"/>
+			</div>
+			<div>
+				<p>{{item.img6desc}}</p>
+				<img ng-src="{{item.image6}}"/>
+			</div>
+			<div>
+				<p>{{item.img7desc}}</p>
+				<img ng-src="{{item.image7}}"/>
+			</div>
+			<div>
+				<p>{{item.img8desc}}</p>
+				<img ng-src="{{item.image8}}"/>
+			</div>
 		</div>
 	</div>
 </div>
