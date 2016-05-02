@@ -10,29 +10,30 @@
 		.fclogo {
 			width: 22px;
 			position: fixed;
-			// bottom: ms(-1);
-			// right: ms(0);
+			top: 25px;
+			left: 25px;
+			z-index: 2999;
+			cursor: pointer;
 		}
 
 		.introtext {
 			@include span(12 of 12);
 			position: fixed;
-			height: 100%;
+			@include transform(translateY(-50%));
+			top: 50%;			
 
 			div {
-				width: 85%;
 				max-width: 280px;
-				@include transform(translate(-50%, -50%));
-				left: 50%;
-				top: 50%;
 				position: relative;
+				@include transform(translateX(-50%)); //for all views
+				left: 50%; //for all views
 
 				p {
 					font-family: $sans;
-					font-size: 1.8vh;
+					font-size: 2.2vh;
 					font-weight: 400;
-					line-height: 2.7vh;
-					color: $gray3;
+					line-height: 3.2vh;
+					color: black;
 					letter-spacing: 0.55px;
 				}					
 			}
@@ -40,21 +41,20 @@
 
 		.artbox {
 			@include container;
-			top: 50%;
-			left: 50%;
-			@include transform(translate(-50%, -50%));
-			width: 88vw;
-			height: 69vh;
-			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 33%, rgba($color2, 1) 64%));
-			position: fixed;
-			// @include border-radius(ms(-2));
+			top: 50%; //for all views
+			left: 50%; //for all views
+			@include transform(translate(-50%, -50%)); //for all views
+			position: fixed; //for all views
+			width: 98vw;
+			height: 99vh;
+			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
 
 			img {
 				@include transform(translate(-50%, -50%));
 				top: 50%;
 				left: 50%;
 				position: absolute;
-				width: 270px;
+				width: 99vw;
 			}
 
 			// @media (min-width: 1200px) {
@@ -94,12 +94,9 @@
 			@include transition-timing-function(ease-out);
 			width: 44px; 
 			height: 44px; 
-			top: 2vh;
-			left: 2vh;
-			// bottom: auto;
-			background-color: white;
-			// @include transform (translateX(-50%));
-			// left: 50%;
+			top: ms(0);
+			left: ms(0);
+			background-color: gold;
 			position: fixed;
 			@include border-radius(50%);
 			z-index: 997;
@@ -135,7 +132,7 @@
 			@include single-text-shadow(white, 1px, 1px, ms(0));
 
 			h2 {
-				color: $gray1;
+				color: $gray2;
 				font-weight: 300;
 
 				a {
@@ -232,30 +229,30 @@
 		@include single-transition(all, 1s, ease-out);
 		@include container;
 
-		.introtext {
-			@include span(12 of 12);
-			position: fixed;
-			@include transform(translate(-50%, -50%));
-			left: 50%;
-			top: 50%;
+		// .introtext {
+		// 	@include span(12 of 12);
+		// 	position: fixed;
+		// 	@include transform(translate(-50%, -50%));
+		// 	left: 50%;
+		// 	top: 50%;
 
-			div {
-				// width: 100%;
-				max-width: 100%;
-				position: relative;
-				@include span(10 of 12);
-				@include column-count(2);
-				@include column-gap(5vw);
+		// 	div {
+		// 		// width: 100%;
+		// 		max-width: 100%;
+		// 		position: relative;
+		// 		@include span(10 of 12);
+		// 		@include column-count(2);
+		// 		@include column-gap(5vw);
 
-				p {
-					font-size: 1.7vh;
-					font-weight: 300;
-					line-height: 2.9vh;
-					color: $gray3;
-					letter-spacing: 0.55px;
-				}					
-			}
-		}
+		// 		p {
+		// 			font-size: 1.7vh;
+		// 			font-weight: 300;
+		// 			line-height: 2.9vh;
+		// 			color: $gray3;
+		// 			letter-spacing: 0.55px;
+		// 		}					
+		// 	}
+		// }
 
 		.artbox {
 
@@ -297,20 +294,20 @@
 		@include single-transition(all, 1s, ease-out);
 		@include container;
 
-		.introtext {
+		// .introtext {
 
-			div {
-				max-width: 620px;
+		// 	div {
+		// 		max-width: 620px;
 
-				p {
-					font-size: 1.9vh;
-					font-weight: 300;
-					line-height: 3.1vh;
-					color: $gray3;
-					letter-spacing: 0.55px;
-				}		
-			}
-		}
+		// 		p {
+		// 			font-size: 1.9vh;
+		// 			font-weight: 300;
+		// 			line-height: 3.1vh;
+		// 			color: $gray3;
+		// 			letter-spacing: 0.55px;
+		// 		}		
+		// 	}
+		// }
 	}
 
 
@@ -319,29 +316,29 @@
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
 
-		.introtext {
-			@include span(12 of 12);
-			position: fixed;
-			@include transform(translate(-50%, -50%));
-			left: 50%;
-			top: 50%;
+		// .introtext {
+		// 	@include span(12 of 12);
+		// 	position: fixed;
+		// 	@include transform(translate(-50%, -50%));
+		// 	left: 50%;
+		// 	top: 50%;
 
-			div {
-				max-width: 100%;
-				position: relative;
-				@include span(6 of 12);
-				@include column-count(2);
-				@include column-gap(5vw);
+		// 	div {
+		// 		max-width: 100%;
+		// 		position: relative;
+		// 		@include span(6 of 12);
+		// 		@include column-count(2);
+		// 		@include column-gap(5vw);
 
-				p {
-					font-size: 2.4vh;
-					font-weight: 300;
-					line-height: 4.1vh;
-					color: $gray3;
-					letter-spacing: 0.55px;
-				}
-			}
-		}
+		// 		p {
+		// 			font-size: 2.4vh;
+		// 			font-weight: 300;
+		// 			line-height: 4.1vh;
+		// 			color: $gray3;
+		// 			letter-spacing: 0.55px;
+		// 		}
+		// 	}
+		// }
 
 		.artbox {
 			width: 58vw;
@@ -455,10 +452,7 @@
 
 		.fclogo {
 			width: 28px;
-			// bottom: ms(0);
-			// right: ms(1);
 			top: ms(2);
-			// @include transform (translateX(-50%));
 			left: ms(2);
 			z-index: 2999;
 			cursor: pointer;
@@ -680,19 +674,16 @@ footer {
 
 		.copyright {
 			position: fixed;
-			right: ms(2);
-			bottom: ms(1);
-			// width: 450px;
-			// @include transform(translateX(-50%));
-			// padding: ms(1) 0px ms(0) 0px;
-			letter-spacing: 0.04rem;
-			line-height: ms(1);
+			right: ms(-1);
+			bottom: ms(-2);
 
 			p {
 				font-size: ms(-1);
-				color: $gray1;
+				color: $gray2;
 				font-weight: 400;
-				opacity: 0.6;
+				line-height: ms(0);
+				letter-spacing: 0.04rem;
+				opacity: 0.8;
 			}
 		}
 	}
@@ -721,15 +712,11 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-			// width: 450px;
-			// @include transform(translate(-50%, -480%) rotate(-90deg));
-			// padding: ms(0) 0px ms(0) 0px;
-			letter-spacing: 0.04rem;
-			line-height: ms(1);
+			right: ms(2);
+			bottom: ms(1);
 
 			p {
 				font-size: ms(0);
-				color: $gray2;
 				font-weight: 300;
 			}
 		}
