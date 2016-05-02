@@ -192,6 +192,12 @@
 			@include span(12 of 12);
 			padding: 0px;
 			position: absolute;
+
+			div:nth-of-type(3) {
+				.projectInfo {
+					margin-top: ms(8);
+				}
+			}
 		}
 
 		.devicesimg {
@@ -207,6 +213,26 @@
 			}
 		}
 
+		.detailsimg {
+			position: relative;
+			@include span(12 of 12);
+			font-family: $primary-font;
+
+			div {
+				position: relative;
+				// padding-left: 20vw;
+			}
+
+			div:last-of-type {
+				padding-bottom: ms(5);
+			}
+
+			img {
+				padding-top: ms(1);
+				padding-bottom: ms(2);
+			}
+		}
+
 	  	.projects {
 	  		@include span(12 of 12);
 	  		padding: 0px;
@@ -219,12 +245,12 @@
 			}
 
 			.projectInfo {
-				@include span(8 of 12);
-				position: relative;
-				padding: ms(0) 0px ms(5);
+				@include span(12 of 12);
+				position: relative; //for all views
+				padding: ms(0) ms(0) ms(4);
 				font-weight: 300;
-				@include transform (translateX(-50%));
-				left: 50%;
+				z-index: 992; //for all views
+				background-color: white; //for all views
 
 				h2 {
 					color: $gray2;
@@ -282,29 +308,29 @@
 			}
 		}
 
-	  	.projects {
+	  // 	.projects {
 
-			.projectInfo {
-				width: 480px;
-				padding: ms(3) 0px ms(6);
-				font-weight: 400;
-				@include transform (translateX(-50%));
-				left: 50%;
+			// .projectInfo {
+			// 	width: 480px;
+			// 	padding: ms(3) 0px ms(6);
+			// 	font-weight: 400;
+			// 	@include transform (translateX(-50%));
+			// 	left: 50%;
 
-				h2 {
-					color: $gray2;
-					padding-top: ms(-1);
-				}
+			// 	h2 {
+			// 		color: $gray2;
+			// 		padding-top: ms(-1);
+			// 	}
 
-				a {
-					font-size: ms(0)
-				}
+			// 	a {
+			// 		font-size: ms(0)
+			// 	}
 
-				// p {
-				// 	padding-top: ms(1);
-				// }
-			}
-	  	}
+			// 	// p {
+			// 	// 	padding-top: ms(1);
+			// 	// }
+			// }
+	  // 	}
 	}
 
 
@@ -394,33 +420,33 @@
 			}
 		}
 
-		.projects {
-			@include span(12 of 12);
-			padding: 0;
-			position: relative;
+		// .projects {
+		// 	@include span(12 of 12);
+		// 	padding: 0;
+		// 	position: relative;
 
-			.projectbg {
-				height: 33vw;
-			}
+		// 	.projectbg {
+		// 		height: 33vw;
+		// 	}
 
-			.projectInfo {
-				@include span(3 of 12);
-				position: relative;
-				padding: ms(1) auto ms(5);
-				font-weight: 300;
-				@include transform (translateX(0));
-				left: 0;
+		// 	.projectInfo {
+		// 		@include span(3 of 12);
+		// 		position: relative;
+		// 		padding: ms(1) auto ms(5);
+		// 		font-weight: 300;
+		// 		@include transform (translateX(0));
+		// 		left: 0;
 
-				h2 {
-					color: $gray2;
-					margin: ms(0) 0 ms(1);
-				}
+		// 		h2 {
+		// 			color: $gray2;
+		// 			margin: ms(0) 0 ms(1);
+		// 		}
 
-				a {
-					font-size: ms(0)
-				}
-			}
-		}
+		// 		a {
+		// 			font-size: ms(0)
+		// 		}
+		// 	}
+		// }
 
 		.aboutText {
 			@include span(12 of 12);
@@ -574,6 +600,15 @@
 			}
 		}
 
+		.projectrow {
+
+			div:nth-of-type(3) {
+				.projectInfo {
+					margin-top: 0px;
+				}
+			}
+		}
+
 		.devicesimg {
 			z-index: 901;
 			height: ms(5);
@@ -609,25 +644,15 @@
 		}
 
 		.projects {
-			@include span(12 of 12);
-			padding: 0px;
-			position: relative;
 
 			.projectbg {
-				width: 100%;
 				height: 99.8vh;
-				@include bg-properties;
 			}
 
 			.projectInfo {
 				@include span(2.5 of 12);
-				position: relative;
 				padding: ms(3) ms(2) 60vh ms(3);
 				font-weight: 300;
-				@include transform (translateX(0));
-				left: 0;
-				background-color: white;
-				z-index: 992;
 
 				h2 {
 					color: $gray2;
