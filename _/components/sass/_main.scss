@@ -195,18 +195,13 @@
 
 			div:nth-of-type(3) {
 				.projectInfo {
-					margin-top: ms(8);
+					top: ms(8);
 				}
 			}
 		}
 
 		.devicesimg {
-			z-index: 901;
-			height: auto;
-			@include span(9 of 12);
-			position: relative;
-			// padding-top: ms(4);
-			padding-left: ms(4);
+			height: 0px;
 
 			img {
 				display: none;
@@ -220,16 +215,20 @@
 
 			div {
 				position: relative;
-				// padding-left: 20vw;
+
+				p {
+					padding-left: ms(-1);
+				}
 			}
 
 			div:last-of-type {
-				padding-bottom: ms(5);
+				padding-bottom: ms(4);
 			}
 
 			img {
-				padding-top: ms(1);
-				padding-bottom: ms(2);
+				padding-top: ms(2);
+				padding-bottom: ms(3);
+				max-width: 100%;
 			}
 		}
 
@@ -251,6 +250,7 @@
 				font-weight: 300;
 				z-index: 992; //for all views
 				background-color: white; //for all views
+				height: auto;
 
 				h2 {
 					color: $gray2;

@@ -112,11 +112,9 @@ body {
 			z-index: -1;
 
 			img {
-				max-width: 100%;
-				max-height: ms(7);
+				// width: 100%;
+				// max-height: ms(7);
 				position: relative;
-				left: 50%;
-				@include transform (translateX(-50%));
 			}
 		}
 
@@ -192,7 +190,10 @@ body {
 		.slick-slide {
 
 			img {
+				max-width: 100%;
 				max-height: ms(7);
+				left: 50%;
+				@include transform (translateX(-50%));
 			}
 		}
 	}
