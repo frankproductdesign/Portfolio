@@ -23,7 +23,7 @@
 			top: 50%;			
 
 			div {
-				max-width: 280px;
+				max-width: 90vw;
 				position: relative;
 				@include transform(translateX(-50%)); //for all views
 				left: 50%; //for all views
@@ -88,6 +88,27 @@
 			}
 		} // this is for the home page art and full screen effect
 
+		.contacts {
+			width: 100%;
+			height: 35vh;
+			padding-top: ms(1);
+			padding-left: ms(1);
+
+			.contactInfo {
+				p {
+					font-size: ms(0);
+					font-weight: 300;
+					line-height: 5vh;
+					text-align: left;
+
+					a {
+						text-decoration: none;
+						color: white;
+					}
+				}
+			}
+		}
+
 		.circle {
 			@include transition-delay(0s);
 			@include transition-duration(0.2s);
@@ -108,11 +129,10 @@
 				height: 100%;
 				width: 100%;
 				top: 0px;
-				bottom: 0px;
-				border: 0px;
+				left: 0px;
 				@include border-radius(0px);
-				// @include background(linear-gradient(160deg, lightskyblue 32%, hotpink 68%));
 				@include background(black);
+				opacity: 0.9;
 			}
 
 			// &.square::after {
@@ -539,7 +559,6 @@
 				left: 0px;
 				border: 0px;
 				@include border-radius(0px);
-				// @include background(skyblue);
 				opacity: 0.9;
 			}
 		}
