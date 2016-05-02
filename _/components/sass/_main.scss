@@ -614,6 +614,7 @@
 				@include transform (translateX(0));
 				left: 0;
 				background-color: white;
+				z-index: 992;
 
 				h2 {
 					color: $gray2;

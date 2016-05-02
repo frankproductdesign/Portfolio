@@ -86,7 +86,6 @@
 
 		.worktext {
 			@include span(2.6 of 12);
-			@include pre(1);
 			position: relative;
 			padding: ms(3) ms(2) ms(5) ms(3);
 			font-weight: 300;
@@ -94,6 +93,7 @@
 			left: 0;
 			background-color: white;
 			text-align: left;
+			z-index: 992;
 		}
 	}
 }
