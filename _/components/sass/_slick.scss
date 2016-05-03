@@ -112,9 +112,11 @@ body {
 			z-index: -1;
 
 			img {
-				// width: 100%;
-				// max-height: ms(7);
+				width: 90%;
 				position: relative;
+				cursor: grab;
+				left: 50%;
+				@include transform (translateX(-50%));
 			}
 		}
 
@@ -187,26 +189,26 @@ body {
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
 
-		.slick-slide {
+		// .slick-slide {
 
-			img {
-				max-width: 100%;
-				max-height: ms(7);
-				left: 50%;
-				@include transform (translateX(-50%));
-			}
-		}
+		// 	// img {
+		// 	// 	max-width: 100%;
+		// 	// 	max-height: ms(7);
+		// 	// 	left: 50%;
+		// 	// 	@include transform (translateX(-50%));
+		// 	// }
+		// }
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
-		.slick-slide {
+		// .slick-slide {
 
-			img {
-				max-height: ms(7);
-			}
-		}
+		// 	img {
+		// 		max-height: ms(7);
+		// 	}
+		// }
 	}
 
 	@include susy-breakpoint($large) {
@@ -219,16 +221,16 @@ body {
 			}
 		}
 
-		.slick-slide {
+		// .slick-slide {
 
-			img {
-				max-width: 84%;
-				max-height: ms(6.4);
-				position: relative;
-				left: 50%;
-				@include transform (translateX(-50%));
-			}
-		}
+		// 	img {
+		// 		max-width: 84%;
+		// 		max-height: ms(6.4);
+		// 		position: relative;
+		// 		left: 50%;
+		// 		@include transform (translateX(-50%));
+		// 	}
+		// }
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -248,13 +250,9 @@ body {
 			z-index: -1;
 
 			img {
+				width: auto;
 				max-width: 100%;
-				// max-width: ms(8);
 				max-height: 100%;
-				position: relative;
-				left: 50%;
-				cursor: grab;
-				@include transform (translateX(-50%));			
 			}
 		}
 

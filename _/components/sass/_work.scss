@@ -20,6 +20,8 @@
 
 .workmodule {
 	font-family: sans-serif;
+	background-repeat: no-repeat;
+	background-position: center top;
 
 // -------------------------- XSMALL --------------------------
 
@@ -29,14 +31,19 @@
 		// @include pre(1);
 		// @include suffix(1);
 		// @include span(4 at 3 of 12);
-		padding-top: ms(3);
-		padding-bottom: ms(3);
+		padding: ms(4) 0px ms(3);
 
 		.worktext {
 			position: relative;
-			top: 0px;
-			text-align: center;
-			padding: ms(3) 7vw 0px;
+			margin-top: ms(3);
+			padding: ms(2) 5vw ms(3);
+			background-color: white;
+			text-align: left;
+			z-index: 992;
+
+			a {
+				display: none;
+			}
 		}
 	}
 
@@ -88,12 +95,17 @@
 			@include span(2.6 of 12);
 			position: relative;
 			padding: ms(3) ms(2) ms(5) ms(3);
+			margin-top: 0px;
 			font-weight: 300;
 			@include transform (translateX(0));
 			left: 0;
 			background-color: white;
 			text-align: left;
 			z-index: 992;
+
+			a {
+				display: inline;
+			}
 		}
 	}
 }

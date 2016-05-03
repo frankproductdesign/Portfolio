@@ -42,6 +42,14 @@ angular
 
 							}, {
 
+							breakpoint: 319,
+								settings: {
+									adaptiveHeight: true,
+									slidesToShow: 1
+								}
+
+							}, {
+
 							breakpoint: 200,
 								settings: "unslick" // destroys slick
 						}]
