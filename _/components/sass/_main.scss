@@ -309,18 +309,7 @@
 		}
 
 		.ctaDrag {
-			position: fixed;
-			top: ms(0);
-			text-align: center;
-			z-index: 2200;
-			@include transform (translateX(-50%));
-			left: 50%;
-
-			p {
-				font-size: ms(0);
-				font-weight: 300;
-				color: gold;
-			}
+			display: none;
 		}
 	}
 
@@ -536,6 +525,7 @@
 			z-index: 2200;
 			@include transform (translateX(-50%));
 			left: 50%;
+			display: inline;
 
 			p {
 				font-size: ms(0);
