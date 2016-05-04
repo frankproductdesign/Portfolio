@@ -112,7 +112,9 @@ body {
 			z-index: -1;
 
 			img {
-				width: 90%;
+				width: auto;
+				max-width: 90%;
+				max-height: 440px;
 				position: relative;
 				cursor: grab;
 				left: 50%;

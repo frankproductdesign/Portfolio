@@ -39,7 +39,7 @@
 			padding: ms(2) 5vw ms(3);
 			background-color: white;
 			text-align: left;
-			z-index: 992;
+			z-index: 993;
 
 			a {
 				display: none;
@@ -101,7 +101,7 @@
 			left: 0;
 			background-color: white;
 			text-align: left;
-			z-index: 992;
+			z-index: 993;
 
 			a {
 				display: inline;
@@ -121,13 +121,13 @@
 		// @include pre(1);
 		// @include suffix(1);
 		// @include span(4 at 3 of 12);
-		padding-top: ms(3);
-		padding-bottom: ms(3);
+		padding: ms(2) 0px ms(3) 0px;
 
 		.worktext {
 			position: relative;
-			top: 0px;
-			padding: ms(3) 7vw 0px;
+			padding: ms(2) 5vw 0px;
+			background-color: white;
+			z-index: 993;
 		}
 	}
 
@@ -160,7 +160,6 @@
 		margin-bottom: ms(4);
 
 		.worktext {
-			top: ms(3);
 			padding: 0px;
 		}
 	}
@@ -177,13 +176,11 @@
 
 		.worktext {
 			width: 19vw;
-			top: ms(0);
-			padding: ms(3) ms(2) ms(4) ms(3);
+			padding: ms(2);
 			font-weight: 300;
-			@include transform (translateX(0));
-			left: 0;
-			background-color: gold;
-			text-align: left;
+			@include transform (translateX(-50%));
+			left: 50%;
+			text-align: center;
 		}
 	}
 }

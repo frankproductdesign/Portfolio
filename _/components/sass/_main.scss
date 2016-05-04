@@ -169,16 +169,18 @@
 
 		.pageLink {
 			@include span(12 of 12);
-			position: relative;
-			bottom: ms(1);
-			text-align: center;
+			position: fixed;
+			bottom: ms(-1);
+			text-align: left;
+			padding-left: 90px;
+			z-index: 992;
 
 			h2 {
 				font-weight: 300;
 
 				a {
 					text-decoration: none;
-					color: $gray1;
+					color: gold;
 					font-weight: 400;
 				}
 
@@ -266,6 +268,45 @@
 				}
 			}
 	  	}
+
+		.aboutText {
+			div {
+				@include single-transition(all, 1s, ease-out);
+				@include span(12 of 12);
+				padding: ms(4) ms(0) ms(0);
+
+				p {
+					font-family: $serif;
+					font-size: ms(0);
+					font-weight: 400;
+					line-height: ms(1);
+					color: black;
+					// letter-spacing: 0.5px;
+				}
+			}
+		}
+
+		.approachText {
+			@include single-transition(all, 1s, ease-out);
+			@include span(12 of 12);
+			position: fixed;
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
+
+			div {
+				position: relative;
+				@include span(11 of 12);
+				@include transform(translateX(-50%));
+				left: 50%;
+				text-align: center;
+
+				h2 {
+					color: black;
+					line-height: ms(2);
+				}
+			}
+		}
 
 		.ctaDrag {
 			position: fixed;
@@ -471,7 +512,7 @@
 			top: 50%;
 
 			div {
-				// max-width: 100%;
+				@include single-transition(all, 1s, ease-out);
 				position: relative;
 				@include span(7 of 12);
 				@include column-count(2);
@@ -484,7 +525,6 @@
 					font-weight: 400;
 					line-height: ms(1);
 					color: black;
-					// letter-spacing: 0.5px;
 				}
 			}
 		}
@@ -615,6 +655,16 @@
 			}
 		}
 
+		.pageLink {
+			bottom: ms(1);
+			text-align: left;
+			padding-left: 140px;
+
+			h2 {
+				font-weight: 300;
+			}
+		}
+
 		.projectrow {
 
 			div:nth-of-type(3) {
@@ -682,6 +732,7 @@
 
 		.aboutText {
 			div {
+				@include single-transition(all, 1s, ease-out);
 				@include span(7 of 12);
 				@include column-count(3);
 				@include column-gap(ms(3));
@@ -692,12 +743,12 @@
 					font-weight: 400;
 					line-height: ms(1);
 					color: black;
-					// letter-spacing: 0.5px;
 				}
 			}
 		}
 
 		.approachText {
+			@include single-transition(all, 1s, ease-out);
 			@include span(12 of 12);
 			position: fixed;
 			@include transform(translate(-50%, -50%));
