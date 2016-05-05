@@ -51,12 +51,15 @@
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
-		padding-top: ms(4);
+		padding: ms(2) 0px;
+		background-size: 170%;
 
 		.worktext {
 			max-width: 480px;
 			width: 50vw;
-			@include transform (translateX(-50%));
+			margin-top: 12vw;
+			padding: ms(3) 5vw ms(4);
+			@include transform (translateX(-40%));
 			left: 50%;
 		}
 	}
