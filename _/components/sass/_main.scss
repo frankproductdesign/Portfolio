@@ -172,7 +172,7 @@
 			position: fixed;
 			bottom: ms(-1);
 			text-align: left;
-			padding-left: 90px;
+			padding-left: 80px;
 			z-index: 992;
 
 			h2 {
@@ -276,7 +276,7 @@
 				padding: ms(4) ms(0) ms(0);
 
 				p {
-					font-family: $serif;
+					font-family: $sans;
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
@@ -320,37 +320,25 @@
 		@include single-transition(all, 1s, ease-out);
 		@include container;
 
-		// .introtext {
-		// 	@include span(12 of 12);
-		// 	position: fixed;
-		// 	@include transform(translate(-50%, -50%));
-		// 	left: 50%;
-		// 	top: 50%;
+		.introtext {
+			@include transform(translate(-50%, -50%));
+			left: 50%;
+			top: 50%;
 
-		// 	div {
-		// 		// width: 100%;
-		// 		max-width: 100%;
-		// 		position: relative;
-		// 		@include span(10 of 12);
-		// 		@include column-count(2);
-		// 		@include column-gap(5vw);
+			div {
+				width: 480px;
 
-		// 		p {
-		// 			font-size: 1.7vh;
-		// 			font-weight: 300;
-		// 			line-height: 2.9vh;
-		// 			color: $gray3;
-		// 			letter-spacing: 0.55px;
-		// 		}					
-		// 	}
-		// }
+				p {
+					font-size: 1.7vh;
+					font-weight: 400;
+					line-height: 2.9vh;
+				}					
+			}
+		}
 
 		.artbox {
-
-			img {
-				width: 50vh;
-				max-width: 480px;
-			}
+			width: 99vw;
+			height: 99.5vh;
 		}
 
 	  // 	.projects {
@@ -376,6 +364,13 @@
 			// 	// }
 			// }
 	  // 	}
+
+		.aboutText {
+			div {
+				padding-top: 11vh;
+				width: 480px;
+			}
+		}
 	}
 
 
@@ -408,11 +403,6 @@
 		@include single-transition(all, 1s, ease-out);
 
 		// .introtext {
-		// 	@include span(12 of 12);
-		// 	position: fixed;
-		// 	@include transform(translate(-50%, -50%));
-		// 	left: 50%;
-		// 	top: 50%;
 
 		// 	div {
 		// 		max-width: 100%;
@@ -510,7 +500,6 @@
 				left: 50%;
 
 				p {
-					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
 					color: black;
@@ -550,13 +539,6 @@
 		}
 
 		.introtext {
-			@include span(12 of 12);
-			// @include column-count(2);
-			// @include column-gap(ms(3));
-			position: fixed;
-			@include transform(translate(-50%, -50%));
-			left: 50%;
-			top: 50%;
 
 			div {
 				max-width: 100%;
@@ -722,17 +704,13 @@
 
 		.aboutText {
 			div {
-				@include single-transition(all, 1s, ease-out);
-				@include span(7 of 12);
 				@include column-count(3);
 				@include column-gap(ms(3));
 
 				p {
-					font-family: $serif;
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
-					color: black;
 				}
 			}
 		}
@@ -792,6 +770,16 @@ footer {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
+		
+		.copyright {
+			right: ms(0);
+			bottom: ms(-1);
+
+			p {
+				font-size: ms(-1);
+				line-height: ms(0);
+			}
+		}
 	}
 
 // -------------------------- MEDIUM --------------------------
