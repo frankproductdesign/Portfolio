@@ -422,14 +422,12 @@
 		// }
 
 		.artbox {
-			width: 58vw;
-			height: 78vh;
-			// @include border-radius(ms(-2));
-			@include background(linear-gradient(bottom right, rgba(lightblue, 0.92) 32%, rgba($color2, 0.98) 64%));
+			width: 99.8vw;
+			height: 99.8vh;
+			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
 
 			img {
-				width: 55vh;
-				max-width: 480px;
+				width: 99vh;
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
@@ -560,11 +558,9 @@
 		.artbox {
 			width: 99.86vw;
 			height: 99.82vh;
-			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
 
 			img {
-				width: 99vh;
-				max-width: 2140px;
+				width: 100vh;
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
