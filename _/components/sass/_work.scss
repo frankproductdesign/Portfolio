@@ -142,6 +142,7 @@
 			width: 50vw;
 			@include transform (translateX(-50%));
 			left: 50%;
+			text-align: center;
 		}
 	}
 
@@ -149,18 +150,25 @@
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
+		padding: ms(4) 0px ms(5);
+
+		.worktext {
+			font-weight: 300;
+			padding: ms(0);
+		}
 	}
 
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(6 of 12);
-		padding-top: ms(3);
+		@include span(12 of 12);
+		padding: ms(4) 0px 0px;
 		margin-bottom: ms(4);
 
 		.worktext {
-			padding: 0px;
+			font-weight: 300;
+			padding: ms(0);
 		}
 	}
 
@@ -177,10 +185,6 @@
 		.worktext {
 			width: 19vw;
 			padding: ms(2);
-			font-weight: 300;
-			@include transform (translateX(-50%));
-			left: 50%;
-			text-align: center;
 		}
 	}
 }

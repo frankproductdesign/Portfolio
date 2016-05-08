@@ -223,16 +223,15 @@ body {
 			}
 		}
 
-		// .slick-slide {
+		.slick-slide {
+			z-index: -1;
 
-		// 	img {
-		// 		max-width: 84%;
-		// 		max-height: ms(6.4);
-		// 		position: relative;
-		// 		left: 50%;
-		// 		@include transform (translateX(-50%));
-		// 	}
-		// }
+			img {
+				width: auto;
+				max-width: 100%;
+				max-height: 60vh;
+			}
+		}
 	}
 
 	@include susy-breakpoint($xlarge) {
