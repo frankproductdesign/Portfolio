@@ -16,12 +16,12 @@
 			<br/><br/>
 			<a ng-href="{{item.href}}">{{item.link}}</a>
 		</div>
-		<div class="devicesimg">
+		<ul class="devicesimg">
 <!-- 			<img ng-class = "{ 'shadow': scrollPos >= 40 }" ng-src="{{item.image2}}"/> -->
-			<img ng-src="{{item.image2}}" parallax parallax-ratio="-0.4"/>
-			<img ng-src="{{item.image3}}" parallax parallax-ratio="-0.7"/>
-			<img ng-src="{{item.image4}}" parallax parallax-ratio="-0.9"/>
-		</div>
+			<li><img ng-src="{{item.image2}}" parallax parallax-ratio="-0.4"/></li>
+			<li><img ng-src="{{item.image3}}" parallax parallax-ratio="-0.7"/></li>
+			<li><img ng-src="{{item.image4}}" parallax parallax-ratio="-1.1"/></li>
+		</ul>
 		<div class="detailsimg">
 			<div>
 				<p>{{item.img5desc}}</p>

@@ -51,16 +51,14 @@
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
-		padding: ms(2) 0px;
-		background-size: 170%;
+		padding: ms(4) 0px ms(2);
+		background-size: 145vh;
 
 		.worktext {
-			max-width: 480px;
+			max-width: 360px;
 			width: 50vw;
 			margin-top: 12vw;
 			padding: ms(3) 5vw ms(4);
-			@include transform (translateX(-40%));
-			left: 50%;
 		}
 	}
 
@@ -74,31 +72,16 @@
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(6 of 12);
-		padding-top: ms(3);
-		margin-bottom: ms(4);
-
-		.worktext {
-			top: ms(3);
-			padding: 0px;
-		}
-	}
-
-// -------------------------- XLARGE --------------------------
-
-	@include susy-breakpoint($xlarge) {
-		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
 		padding: ms(4) 0px 0px;
-		margin-bottom: ms(7);		
-
+		margin-bottom: ms(6);
 		@include bg-properties;
 
 		.worktext {
-			@include span(2.6 of 12);
+			@include span(4 of 12);
 			position: relative;
-			padding: ms(3) ms(2) ms(5) ms(3);
-			margin-top: 0px;
+			padding: ms(3) ms(2) ms(4) ms(3);
+			margin-top: 20px;
 			font-weight: 300;
 			@include transform (translateX(0));
 			left: 0;
@@ -109,6 +92,21 @@
 			a {
 				display: inline;
 			}
+		}
+	}
+
+// -------------------------- XLARGE --------------------------
+
+	@include susy-breakpoint($xlarge) {
+		@include single-transition(all, 1s, ease-out);
+		padding: ms(4) 0px 0px;
+		margin-bottom: ms(7);		
+
+		.worktext {
+			@include span(3 of 12);
+			padding: ms(3) ms(2) ms(5) ms(3);
+			margin-top: 0px;
+			font-weight: 300;
 		}
 	}
 }
