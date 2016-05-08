@@ -168,12 +168,12 @@
 		}
 
 		.pageLink {
-			@include span(12 of 12);
 			position: fixed;
 			bottom: ms(-1);
 			text-align: left;
 			padding-left: 80px;
 			z-index: 992;
+			letter-spacing: ms(-1);
 
 			h2 {
 				font-weight: 300;
@@ -181,7 +181,7 @@
 				a {
 					text-decoration: none;
 					color: gold;
-					font-weight: 400;
+					font-weight: 300;
 				}
 
 				:hover {
@@ -189,6 +189,19 @@
 				}
 			}
 		}
+
+		// .pageIndex {
+		// 	position: fixed;
+		// 	bottom: ms(-1);
+		// 	text-align: left;
+		// 	padding-left: 80px;
+		// 	z-index: 992;
+
+		// 	h2 {
+		// 		font-weight: 300;
+		// 		color: gray2;
+		// 	}
+		// }
 
 		.projectrow {
 			@include span(12 of 12);
@@ -665,6 +678,7 @@
 				p {
 					font-size: 1.9vh;
 					line-height: 3.9vh;
+					color: black;
 				}					
 			}
 		}
@@ -746,6 +760,11 @@
 				font-weight: 300;
 			}
 		}
+
+		// .pageIndex {
+		// 	bottom: ms(1);
+		// 	padding-left: 170px;
+		// }
 
 		.projectrow {
 
