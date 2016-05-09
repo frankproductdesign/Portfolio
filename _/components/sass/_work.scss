@@ -79,8 +79,8 @@
 		.worktext {
 			@include span(4 of 12);
 			position: relative;
-			padding: ms(3) ms(2) ms(4) ms(3);
-			margin-top: 20px;
+			padding: ms(2) ms(2) ms(3) ms(3);
+			margin-top: 60px;
 			font-weight: 300;
 			@include transform (translateX(0));
 			left: 0;
@@ -90,6 +90,10 @@
 
 			a {
 				display: inline;
+			}
+
+			p {
+				font-size: ms(0);
 			}
 		}
 	}

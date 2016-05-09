@@ -149,7 +149,7 @@
 			position: fixed;
 			bottom: ms(-1);
 			z-index: 991;
-			@include single-text-shadow(white, 1px, 1px, ms(0));
+			// @include single-text-shadow(white, 1px, 1px, ms(0));
 
 			h2 {
 				color: $gray2;
@@ -190,19 +190,6 @@
 			}
 		}
 
-		// .pageIndex {
-		// 	position: fixed;
-		// 	bottom: ms(-1);
-		// 	text-align: left;
-		// 	padding-left: 80px;
-		// 	z-index: 992;
-
-		// 	h2 {
-		// 		font-weight: 300;
-		// 		color: gray2;
-		// 	}
-		// }
-
 		.projectrow {
 			@include span(12 of 12);
 			padding: 0px;
@@ -222,7 +209,7 @@
 		.detailsimg {
 			position: relative;
 			@include span(12 of 12);
-			font-family: $primary-font;
+			font-family: $sans;
 
 			div {
 				position: relative;
@@ -760,11 +747,6 @@
 				font-weight: 300;
 			}
 		}
-
-		// .pageIndex {
-		// 	bottom: ms(1);
-		// 	padding-left: 170px;
-		// }
 
 		.projectrow {
 

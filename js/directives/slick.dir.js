@@ -2,13 +2,11 @@ angular
 	.module('myStuff')
 
 	.directive('slickCarousel', function($timeout) {
-	// .directive('slickCarousel', function($interval) {
 
 		return {
 			restrict: "A",
 			link: function(scope, element, attrs) {
 				$timeout(function() {
-				// $interval(function() {
 
 					$(element).slick({
 						speed: 500,
