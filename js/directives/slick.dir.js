@@ -7,7 +7,6 @@ angular
 			restrict: "A",
 			link: function(scope, element, attrs) {
 				$timeout(function() {
-
 					$(element).slick({
 						speed: 500,
 						dots: true,
@@ -52,6 +51,7 @@ angular
 								settings: "unslick" // destroys slick
 						}]
 					});
+					$(element).slick(scope.$eval(attrs.slickCarousel));
 				});
 			}
 		};

@@ -3,17 +3,16 @@
 </div>
 
 <div class="workmodule2" ng-repeat="item in items">
+	<div slick-carousel>
+		<div ng-repeat="image in item.images">
+			<img ng-src="{{image.image}}" />
+		</div>
+	</div>
 	<div class="worktext">
 		<p>{{item.type}}</p>
 		<p>{{item.description}}</p>
 		<br/>
 		<p><a ng-href="{{item.href}}">{{item.link}}</a></p>
-		<br/>
-	</div>
-	<div slick-carousel>
-		<div ng-repeat="image in item.images">
-			<img ng-src="{{image.image}}" />
-		</div>
 	</div>
 </div>
 

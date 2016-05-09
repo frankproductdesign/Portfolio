@@ -55,7 +55,6 @@
 		background-size: 145vh;
 
 		.worktext {
-			width: 50vw;
 			margin-top: 12vw;
 			padding: ms(3) 5vw ms(4);
 		}
@@ -73,17 +72,15 @@
 		@include single-transition(all, 1s, ease-out);
 		@include span(12 of 12);
 		padding: ms(4) 0px 0px;
-		margin-bottom: ms(6);
 		@include bg-properties;
 
 		.worktext {
-			@include span(4 of 12);
-			position: relative;
-			padding: ms(2) ms(2) ms(3) ms(3);
-			margin-top: 60px;
+			width: 480px;
+			padding: ms(2) ms(2) ms(3);
+			margin-top: 80px;
 			font-weight: 300;
-			@include transform (translateX(0));
-			left: 0;
+			@include transform (translateX(-50%));
+			left: 50%;
 			background-color: white;
 			text-align: left;
 			z-index: 993;
@@ -102,14 +99,11 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
-		padding: ms(4) 0px 0px;
-		margin-bottom: ms(7);		
+		padding: 8vh 0px 9vh;	
 
 		.worktext {
-			@include span(3 of 12);
-			padding: ms(3) ms(2) ms(4) ms(3);
-			margin-top: 0px;
-			font-weight: 300;
+			padding: ms(3) ms(3) ms(3);
+			margin-top: 9vh;
 		}
 	}
 }
@@ -173,6 +167,7 @@
 		.worktext {
 			font-weight: 300;
 			padding: ms(0);
+			margin-top: 60px;
 		}
 	}
 
@@ -187,8 +182,8 @@
 		@include bg-properties;
 
 		.worktext {
-			width: 19vw;
 			padding: ms(2);
+			margin-top: 60px;
 		}
 	}
 }
