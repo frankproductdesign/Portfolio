@@ -766,6 +766,9 @@
 		}
 
 		.circle {
+			@include transition-delay(0s);
+			@include transition-duration(0.2s);
+			@include transition-timing-function(ease-out);
 			width: 60px; 
 			height: 60px; 
 			background-color: gold;
@@ -775,8 +778,8 @@
 
 			&.square {
 				@include transition-delay(0s);
-				@include transition-duration(0.3s);
-				@include transition-timing-function(ease-out);
+				@include transition-duration(0.2s);
+				@include transition-timing-function(ease-in);
 				height: 100%;
 				width: 100%;
 				top: 0px;
