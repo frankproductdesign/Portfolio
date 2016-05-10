@@ -5,7 +5,7 @@
 		"images" : [{ "image":"images/work/kipu-imac.png" },{ "image":"images/work/kipu-imac2.png" }],
 		"link" : "Launch prototype",
 		"href" : "http://www.kipu.frankcastro.com",
-		"bg" : [{ "image":"images/work/kipu-bg.jpg" }]
+		"bg" : [{ "image":"" }]
 	},{
 		"type" : "GreenSpace is a social network game developed for Facebook to promote environmentalism. Creative direction, Game design. 2012-2013. Screenshots of the game in full screen mode.",
 		"description" : "",
@@ -16,16 +16,16 @@
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "",
 		"images" : [{ "image":"images/work/amuse001-iphone.png" }, { "image":"images/work/amuse002-iphone.png" }, { "image":"images/work/amuse003-iphone.png" }],
-		"bg" : [{ "image":"images/work/amuse-bg.jpg" }]
+		"bg" : [{ "image":"" }]
 	},{
 		"type" : "Dymon Storage mobile app (Android & iOS). Art direction and UX design. 2012",
 		"description" : "",
 		"images" : [{ "image":"images/work/dymonstorage001-android.png" }, { "image":"images/work/dymonstorage002-android.png" }, { "image":"images/work/dymonstorage003-android.png" }],
-		"bg" : [{ "image":"images/work/dymon-bg.jpg" }]
+		"bg" : [{ "image":"" }]
 	},{
 		"type" : "Sezlik, real state app for iOS. Art Direction and UX design. 2011",
 		"description" : "",
 		"images" : [{ "image":"images/work/sezlik-iphone-app01.png" }, { "image":"images/work/sezlik-iphone-app02.png" }, { "image":"images/work/sezlik-iphone-app03.png" }, { "image":"images/work/sezlik-iphone-app04.png" }],
-		"bg" : [{ "image":"images/work/sezlik-bg.jpg" }]
+		"bg" : [{ "image":"" }]
 	}
 ]
