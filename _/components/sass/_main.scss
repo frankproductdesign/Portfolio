@@ -195,9 +195,16 @@
 			padding: 0px;
 			position: absolute;
 
+			div:nth-of-type(2).projects {
+				.detailsimg {
+					top: -200px;
+				}
+			}
+
 			div:nth-of-type(3) {
 				.projectInfo {
-					top: ms(8);
+					position: absolute;
+					top: 2060px;
 				}
 			}
 		}
@@ -220,7 +227,7 @@
 			}
 
 			div:last-of-type {
-				padding-bottom: ms(4);
+				padding-bottom: 0px;
 			}
 
 			img {
@@ -336,6 +343,21 @@
 			height: 99.5vh;
 		}
 
+		.projectrow {
+			div:nth-of-type(2).projects {
+				.detailsimg {
+					top: 0px;
+				}
+			}
+
+			div:nth-of-type(3) {
+				.projectInfo {
+					position: absolute;
+					top: 2760px;
+				}
+			}
+		}
+
 		.devicesimg {
 			display: inline;
 			z-index: 901;
@@ -382,8 +404,10 @@
 			div {
 				p {
 					max-width: 380px;
-					padding-left: ms(2);
-					@include transform(translateY(-100px));
+					position: relative;
+					@include transform(translateX(-50%));
+					left: 50%;
+					text-align: center;
 				}
 			}
 
@@ -394,8 +418,9 @@
 			img {
 				padding-top: ms(2);
 				padding-bottom: ms(4);
-				position:relative;
-				@include transform(translate(-50%, -100px));
+				position: relative;
+				// @include transform(translate(-50%, -100px));
+				@include transform(translateX(-50%));
 				left: 50%;
 			}
 		}
@@ -443,6 +468,21 @@
 	@include susy-breakpoint($medium){
 		@include single-transition(all, 1s, ease-out);
 		@include container;
+
+		.projectrow {
+			div:nth-of-type(2).projects {
+				.detailsimg {
+					top: 0px;
+				}
+			}
+
+			div:nth-of-type(3) {
+				.projectInfo {
+					position: absolute;
+					top: 2460px;
+				}
+			}
+		}
 
 	  	.projects {
 			.projectInfo {
@@ -519,6 +559,21 @@
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
+
+		.projectrow {
+			div:nth-of-type(2).projects {
+				.detailsimg {
+					top: -300px;
+				}
+			}
+
+			div:nth-of-type(3) {
+				.projectInfo {
+					position: absolute;
+					top: 2460px;
+				}
+			}
+		}
 
 	  	.projects {
 
@@ -754,10 +809,15 @@
 		}
 
 		.projectrow {
+			div:nth-of-type(2).projects {
+				.detailsimg {
+					top: -300px;
+				}
+			}
 
 			div:nth-of-type(3) {
 				.projectInfo {
-					margin-top: 0px;
+					top: 3460px;
 				}
 			}
 		}
@@ -808,7 +868,7 @@
 
 			.projectInfo {
 				@include span(5 of 12);
-				padding: ms(3) ms(2) ms(4) ms(3);
+				padding: ms(3) ms(2) ms(5) ms(3);
 				font-weight: 300;
 
 				h2 {
@@ -831,7 +891,7 @@
 			}
 
 			div:last-of-type {
-				padding-bottom: ms(3);
+				padding-bottom: ms(4);
 			}
 		}
 

@@ -55,8 +55,16 @@
 		background-size: 145vh;
 
 		.worktext {
+			@include span(12 of 12);
 			margin-top: 12vw;
 			padding: ms(3) 5vw ms(4);
+
+			p {
+				@include transform (translateX(-50%));
+				left: 50%;
+				position: relative;
+				width: 420px;
+			}
 		}
 	}
 
@@ -75,15 +83,9 @@
 		@include bg-properties;
 
 		.worktext {
-			width: 480px;
-			padding: ms(2) ms(2) ms(3);
+			padding: ms(3) ms(2) ms(4);
 			margin-top: 80px;
 			font-weight: 300;
-			@include transform (translateX(-50%));
-			left: 50%;
-			background-color: white;
-			text-align: left;
-			z-index: 993;
 
 			a {
 				display: inline;
@@ -99,10 +101,10 @@
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
-		padding: 8vh 0px 9vh;	
+		padding: ms(4) 0px 0px;	
 
 		.worktext {
-			padding: ms(3) ms(3) ms(3);
+			padding: ms(3) ms(2) 16vh;
 			margin-top: 9vh;
 		}
 	}
