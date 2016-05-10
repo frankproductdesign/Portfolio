@@ -11,7 +11,8 @@
 		"description" : "",
 		"images" : [{ "image":"images/work/greenspace-ingame-shot-01.png" }, { "image":"images/work/greenspace-ingame-shot-02.png" }, { "image":"images/work/greenspace-ingame-shot-03.png" }, { "image":"images/work/greenspace-ingame-shot-04.png" }],
 		"link" : "GreenSpace (Wikipedia)",
-		"href" : "https://en.wikipedia.org/wiki/GreenSpace"
+		"href" : "https://en.wikipedia.org/wiki/GreenSpace",
+		"bg" : [{ "image":"" }]
 	},{
 		"type" : "Canada Aviation and Space Museum mobile app. Creative direction and UX design. 2013",
 		"description" : "",
