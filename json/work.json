@@ -1,7 +1,7 @@
 [
 	{
 		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
-		"description" : "The purpose of this prototype was to present to the client a functional concept, to explore some alternatives for scroll effects and define a visual style for the website. Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
 		"images" : [{ "image":"images/work/kipu-imac.png" },{ "image":"images/work/kipu-imac2.png" }],
 		"link" : "Launch prototype",
 		"href" : "http://www.kipu.frankcastro.com",

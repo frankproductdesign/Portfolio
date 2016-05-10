@@ -18,8 +18,8 @@
 	},{
 		"project" : "RapidPhire",
 		"type" : "Web application",
-		"description" : "rapidPHIRE is a context-aware cyber security Network Traffic Analysis platform that provides situational awareness and remediation of cyber threats operating inside SMB and Enterprise networks. rapidPhire is a SPA built in AngularJS, HTML5, CSS3 (Sass), D3.js, Gulp, Git, Github, among other technologies.",
-		"role" : "Creative direction, UX design, Prototyping, Front-end development. (Image; Screenshot of a design concept from two years ago, the current application uses a different visual style).",
+		"description" : "rapidPHIRE is a context-aware cyber security Network Traffic Analysis platform that provides situational awareness and remediation of cyber threats operating inside SMB and Enterprise networks.",
+		"role" : "Roles; Creative direction, UX design, Prototyping, Front-end development. (Image; Screenshot of a design concept from two years ago, the current application uses a different visual style).",
 		"color" : "#616E28",
 		"image1" : "images/rapidphire-bg3.jpg",
 		"link" : "",
