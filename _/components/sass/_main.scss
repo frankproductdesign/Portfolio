@@ -912,6 +912,7 @@
 		.approachText {
 
 			div {
+				@include span(6 of 12);
 
 				h2 {
 					line-height: 8vh;
