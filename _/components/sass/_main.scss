@@ -20,7 +20,7 @@
 			@include span(12 of 12);
 			position: fixed;
 			@include transform(translateY(-50%));
-			top: 50%;			
+			top: 50%;
 
 			div {
 				max-width: 90vw;
@@ -29,6 +29,7 @@
 				left: 50%; //for all views
 
 				p {
+					@include single-transition(all, 1s, ease-out);
 					font-family: $sans;
 					font-size: 2.2vh;
 					font-weight: 400;
@@ -40,7 +41,6 @@
 		}
 
 		.artbox {
-			@include container;
 			top: 50%; //for all views
 			left: 50%; //for all views
 			@include transform(translate(-50%, -50%)); //for all views
@@ -50,11 +50,13 @@
 			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
 
 			img {
+				@include single-transition(all, 1s, ease-out);
 				@include transform(translate(-50%, -50%));
 				top: 50%;
 				left: 50%;
 				position: absolute;
 				width: 99vw;
+				// opacity: 0.2;
 			}
 
 			// @media (min-width: 1200px) {
@@ -70,7 +72,7 @@
 			width: 100%;
 			height: 140vh;
 			position: absolute;
-			z-index: -1;
+			// z-index: -1;
 		}
 
 		.artContainer {
@@ -78,14 +80,7 @@
 			overflow: hidden;
 			display: block;
 			position: relative;
-			// @include background(linear-gradient(to bottom right, rgba($bg01, 0.1), rgba($bg02, 0.9)), image-url('http://frankcastro.com/something/texture-bg.jpg'));
-
-			&.dimmed {
-				@include transition-delay(0s);
-				@include transition-duration(0.2s);
-				@include transition-timing-function(ease-in);
-				opacity: 0;
-			}
+			// z-index: -1;
 		} // this is for the home page art and full screen effect
 
 		.contacts {
@@ -536,6 +531,7 @@
 				max-width: 100%;
 				position: relative;
 				@include span(8 of 12);
+				// max-width: 480px;
 				@include column-count(2);
 				@include column-gap(5vw);
 
@@ -545,6 +541,7 @@
 					line-height: 4.1vh;
 					color: $gray3;
 					letter-spacing: 0.55px;
+					text-align: left;
 				}
 			}
 		}
