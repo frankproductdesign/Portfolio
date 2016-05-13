@@ -243,6 +243,8 @@
 				z-index: 992; //for all views
 				background-color: white; //for all views
 				height: auto;
+				@include transform(translateX(-50%));
+				left: 50%;
 
 				h2 {
 					color: $gray2;
@@ -365,7 +367,6 @@
 
 	  	.projects {
 			.projectInfo {
-				width: 40vw;
 				padding: ms(2) ms(1) ms(4);
 				font-weight: 400;
 
@@ -408,8 +409,7 @@
 
 	  	.projects {
 			.projectInfo {
-				width: 40vw;
-				max-width: 420px;
+				max-width: 680px;
 				padding: ms(2) ms(2) ms(4);
 			}
 	  	}
@@ -460,8 +460,7 @@
 			}
 
 			.projectInfo {
-				width: 30vw;
-				min-width: 120px;
+				// min-width: 120px;
 				padding: ms(2) ms(3) ms(4);
 			}
 	  	}
@@ -658,7 +657,6 @@
 			}
 
 			.projectInfo {
-				@include span(12 of 12);
 				padding: ms(3) ms(2) ms(5) ms(3);
 				font-weight: 300;
 

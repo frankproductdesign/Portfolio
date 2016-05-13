@@ -11,6 +11,10 @@
 				<img ng-src="{{item.image1}}"/>
 			</div>
 		</div>
+		<div class="devicesimg">
+<!-- 			<img ng-class = "{ 'shadow': scrollPos >= 40 }" ng-src="{{item.image2}}"/> -->
+			<img ng-src="{{item.image4}}" parallax parallax-ratio="-0.4"/>
+		</div>
 		<div class="projectInfo">
 			<p>{{item.project}}</p>
 			<h2>{{item.type}}</h2>
@@ -19,10 +23,6 @@
 			<p>{{item.role}}</p>
 			<br/><br/>
 			<a ng-href="{{item.href}}">{{item.link}}</a>
-		</div>
-		<div class="devicesimg">
-<!-- 			<img ng-class = "{ 'shadow': scrollPos >= 40 }" ng-src="{{item.image2}}"/> -->
-			<img ng-src="{{item.image4}}" parallax parallax-ratio="-0.4"/>
 		</div>
 		<div class="detailsimg">
 			<div>
