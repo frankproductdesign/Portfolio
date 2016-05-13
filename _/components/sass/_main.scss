@@ -1,5 +1,5 @@
 .mainContainer {
-	@include container;
+	background-color: white;
 
 // -------------------------- XSMALL --------------------------
 
@@ -111,7 +111,7 @@
 			width: 44px; 
 			height: 44px; 
 			top: ms(0);
-			left: ms(0);
+			right: ms(0);
 			background-color: gold;
 			position: fixed;
 			@include border-radius(50%);
@@ -189,19 +189,6 @@
 			@include span(12 of 12);
 			padding: 0px;
 			position: absolute;
-
-			div:nth-of-type(2).projects {
-				.detailsimg {
-					top: -200px;
-				}
-			}
-
-			div:nth-of-type(3) {
-				.projectInfo {
-					position: absolute;
-					top: 2060px;
-				}
-			}
 		}
 
 		.devicesimg {
@@ -238,16 +225,14 @@
 	  		position: relative;
 
 			.mainImg {
-				// @include bg-properties;
-				width: 100%;
-				height: 99.8%;
+				padding-top: 15vh;
+				padding-bottom: 10vh;
 
-				// div {
-				// 	@include transform(translate(-50% -50%));
-				// 	left: 50%;
-				// 	top: 50%;
-				// 	position: relative;
-				// }
+				div {
+					@include transform(translateX(-50%));
+					left: 50%;
+					position: absolute;
+				}
 			}
 
 			.projectInfo {
@@ -322,7 +307,6 @@
 
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
-		@include container;
 
 		.introtext {
 			@include transform(translate(-50%, -50%));
@@ -345,61 +329,13 @@
 			height: 99.5vh;
 		}
 
-		.projectrow {
-			div:nth-of-type(2).projects {
-				.detailsimg {
-					top: 0px;
-				}
-			}
-
-			div:nth-of-type(3) {
-				.projectInfo {
-					position: absolute;
-					top: 2760px;
-				}
-			}
-		}
-
 		.devicesimg {
 			display: inline;
 			z-index: 901;
-			height: ms(2);
-			position: relative;
-			float: right;
-
-			li {
-				img {
-					float: right;
-					position: relative;
-					padding: ms(0) ms(1) ms(0) ms(0);
-					display: inline;
-				}
-			}
-
-			li:nth-of-type(1) {
-				img {
-					top: 40px;
-					width: 400px;
-				}
-			}
-
-			li:nth-of-type(2) {
-				img {
-					top: 100px;
-					width: 270px;
-				}
-			}
-
-			li:nth-of-type(3) {
-				img {
-					top: 220px;
-					width: 120px;
-				}
-			}
-
-			// ::before, img:nth-of-type(3) {
-			// 	display: inline;
-			// }
+			position: absolute;
+			@include transform(translateX(-50%));
+			left: 65%;
+			top: 600px;
 		}
 
 		.detailsimg {
@@ -469,22 +405,6 @@
 
 	@include susy-breakpoint($medium){
 		@include single-transition(all, 1s, ease-out);
-		@include container;
-
-		.projectrow {
-			div:nth-of-type(2).projects {
-				.detailsimg {
-					top: 0px;
-				}
-			}
-
-			div:nth-of-type(3) {
-				.projectInfo {
-					position: absolute;
-					top: 2460px;
-				}
-			}
-		}
 
 	  	.projects {
 			.projectInfo {
@@ -493,37 +413,6 @@
 				padding: ms(2) ms(2) ms(4);
 			}
 	  	}
-
-		.devicesimg {
-
-			li {
-				img {
-					padding-right: ms(2);
-				}
-			}
-
-			li:nth-of-type(1) {
-				img {
-					width: 440px;
-				}
-			}
-
-			li:nth-of-type(2) {
-				img {
-					width: 290px;
-				}
-			}
-
-			li:nth-of-type(3) {
-				img {
-					width: 160px;
-				}
-			}
-
-			// ::before, img:nth-of-type(3) {
-			// 	display: inline;
-			// }
-		}
 	}
 
 
@@ -564,21 +453,6 @@
 		} 
 		// this is the class for the home page to size the box that create the frame effects
 
-		.projectrow {
-			div:nth-of-type(2).projects {
-				.detailsimg {
-					top: -300px;
-				}
-			}
-
-			div:nth-of-type(3) {
-				.projectInfo {
-					position: absolute;
-					top: 2460px;
-				}
-			}
-		}
-
 	  	.projects {
 
 			.mainImg {
@@ -591,44 +465,6 @@
 				padding: ms(2) ms(3) ms(4);
 			}
 	  	}
-
-		.devicesimg {
-			display: inline;
-			z-index: 901;
-			height: ms(2);
-			position: relative;
-
-			li {
-				float: right;
-				img {
-					float: right;
-					position: relative;
-					padding: ms(0) ms(1);
-					display: inline;
-				}
-			}
-
-			li:nth-of-type(1) {
-				img {
-					top: 0px;
-					width: 390px;
-				}
-			}
-
-			li:nth-of-type(2) {
-				img {
-					top: 0px;
-					width: 260px;
-				}
-			}
-
-			li:nth-of-type(3) {
-				img {
-					top: 0px;
-					width: 85px;
-				}
-			}
-		}
 
 		.detailsimg {
 			div {
@@ -715,7 +551,7 @@
 		.fclogo {
 			width: 28px;
 			bottom: ms(2);
-			right: ms(2);
+			right: ms(5);
 			z-index: 2999;
 			cursor: pointer;
 		}
@@ -777,7 +613,7 @@
 			height: 60px; 
 			background-color: gold;
 			top: ms(1);
-			left: ms(1);
+			right: ms(5);
 			opacity: 1;
 
 			&.square {
@@ -796,7 +632,7 @@
 
 		.pageTitle {
 			@include span(3 of 12);
-			padding-left: ms(2);
+			padding-left: ms(5);
 			bottom: ms(1);
 			@include single-text-shadow(white, 1px, 1px, ms(4));
 
@@ -815,58 +651,6 @@
 			}
 		}
 
-		.projectrow {
-			div:nth-of-type(2).projects {
-				.detailsimg {
-					top: -300px;
-				}
-			}
-
-			div:nth-of-type(3) {
-				.projectInfo {
-					top: 3460px;
-				}
-			}
-		}
-
-		.devicesimg {
-			display: inline;
-			z-index: 901;
-			height: ms(2);
-			position: relative;
-
-			li {
-				float: right;
-				img {
-					float: right;
-					position: relative;
-					padding: ms(0) 3vw;
-					display: inline;
-				}
-			}
-
-			li:nth-of-type(1) {
-				img {
-					top: 0px;
-					width: 30vw;
-				}
-			}
-
-			li:nth-of-type(2) {
-				img {
-					top: 0px;
-					width: 21vw;
-				}
-			}
-
-			li:nth-of-type(3) {
-				img {
-					top: 0px;
-					width: 7vw;
-				}
-			}
-		}
-
 		.projects {
 
 			.mainImg {
@@ -874,7 +658,7 @@
 			}
 
 			.projectInfo {
-				@include span(5 of 12);
+				@include span(12 of 12);
 				padding: ms(3) ms(2) ms(5) ms(3);
 				font-weight: 300;
 
@@ -887,6 +671,11 @@
 					font-size: ms(0)
 				}
 			}
+		}
+
+		.devicesimg {
+			left: 65%;
+			top: 600px;
 		}
 
 		.detailsimg {
