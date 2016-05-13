@@ -4,7 +4,7 @@
 		"type" : "E-commerce web application",
 		"description" : "Oliveandwell.com is an online store for olive oils and related products. At the physical store in Chicago, Illinois customers are able to taste their premium olive oils and balsamic vinegars before making their selection, which is bottled from the same Italian Fusti (stainless steel tank) that they sample.",
 		"role" : "For this project I used a SPA built on AngularJS, CSS3; Sass (Compass), Susy (grid layout), HTML5, JSON, SVG, Grunt, Git, Github. The current website is the first release from a serie of iterations. Back-End by Iroel Perez.",
-		"image1" : "images/oandwbg2.jpg",
+		"image1" : "images/oandw-imac.png",
 		"image2" : "images/oandw-laptop.png",
 		"image3" : "images/oandw-ipad-land.png",
 		"image4" : "images/oandw-iphone.png",
