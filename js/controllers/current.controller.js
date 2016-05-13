@@ -6,7 +6,7 @@ angular
 	.controller('CtrlrCurrent', ['$scope', '$http', function ($scope, $http) {
 		var list = this;
 		list.items = []; //empty array so you don't get an error when the page initially loads
-		$http.get('json/current.json').success(function(data) {
+		$http.get('json/project1.json').success(function(data) {
 			$scope.items = data;
 		});
 	}])

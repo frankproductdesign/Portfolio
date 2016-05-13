@@ -724,8 +724,6 @@
 
 footer {
 	font-family: $primary-font;
-	position: fixed;
-	bottom: 20px;
 
 // -------------------------- XSMALL --------------------------
 
@@ -734,9 +732,6 @@ footer {
 		@include span(12 of 12);
 
 		.copyright {
-			position: fixed;
-			right: ms(-1);
-			bottom: ms(-2);
 
 			p {
 				font-size: ms(-1);
@@ -755,8 +750,6 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 		
 		.copyright {
-			right: ms(0);
-			bottom: ms(-1);
 
 			p {
 				font-size: ms(-1);
@@ -783,8 +776,6 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-			right: ms(2);
-			bottom: ms(1);
 
 			p {
 				font-size: ms(0);
