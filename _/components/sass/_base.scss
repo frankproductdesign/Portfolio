@@ -88,14 +88,20 @@ a:hover {
 }
 
 @mixin bg-properties {
-	-webkit-background-size: auto;
-	-moz-background-size: auto;
-	-o-background-size: auto;
-	background-size: auto;
-	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	@include single-transition(all, 1s, ease-out);
+
+	@include susy-breakpoint($xsmall) {
+		background-position: center center;
+	}
+
+	@include susy-breakpoint($large) {
+		background-position: center center;
+	}
 }
-// check where you were using these properties before you delete the commented lines
 
 nav {
 	visibility: hidden;
@@ -262,14 +268,41 @@ body {
 				font-weight: 300;
 			}
 	}
-
-
 }
 
 #{headings(1,4)} {
 	color: $gray2;
 }
 
+.bgImage {
+	@include single-transition(all, 1s, ease-out);
+	@include background(image-url('oandw-prot-iphone.jpg'));
+	@include bg-properties;
+	width: 100%;
+	opacity: 0.1;
+	position: fixed;
+	top: 0px;
+
+	@include susy-breakpoint($xsmall) {
+		height: 90%;
+	}
+
+	@include susy-breakpoint($small) {
+		height: 90%;
+	}
+
+	@include susy-breakpoint($medium) {
+		height: 90%;
+	}
+
+	@include susy-breakpoint($large) {
+		height: 99%;
+	}
+
+	@include susy-breakpoint($xlarge) {
+		height: 90%;
+	}
+}
 
 // breakpoints structure
 
