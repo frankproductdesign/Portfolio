@@ -52,7 +52,7 @@ $sans: 'freight-sans-pro', sans-serif;
 
 // Typographic scale using golden ratio 1:1.618, modular-scale .
 // $ms-base: 1rem;
-$ms-base: 1rem * 0.92;
+$ms-base: 1rem * 0.88;
 // 1rem = 16px by default. To relate values so you can write 1.4rem = 14px, the default font size on the body has to be set like this; body { font-size:62.5%; }.
 $ms-ratio: 1.618;
 
@@ -77,11 +77,20 @@ $susy: (
 	)
 );
 
-$xsmall: 320px;
-$small: 760px;
-$medium: 970px;
-$large: 1200px;
-$xlarge: 1919px;
+// Breakpoints values
+$xsmall: 320px; 
+
+$small: 760px; 
+$smlMax: 860px;
+
+$medium: 980px; 
+$medMax: 1080px;
+
+$large: 1240px; 
+$largeMax: 1200px; // this is to maintain the content in this breakpoint within this var width value
+
+$xlarge: 1900px; 
+$xlargeMax: 1800px;
 
 a:hover {
 		color: orange;
@@ -279,7 +288,7 @@ body {
 	@include background(image-url('oandw-prot-iphone.jpg'));
 	@include bg-properties;
 	width: 100%;
-	opacity: 0.1;
+	opacity: 1;
 	position: fixed;
 	top: 0px;
 
@@ -296,7 +305,7 @@ body {
 	}
 
 	@include susy-breakpoint($large) {
-		height: 99%;
+		height: 100%;
 	}
 
 	@include susy-breakpoint($xlarge) {

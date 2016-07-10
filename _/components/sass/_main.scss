@@ -41,6 +41,10 @@
 			}
 		}
 
+		.introtextBg {
+			z-index: 8;
+		}
+
 		.artbox {
 			top: 50%; //for all views
 			left: 50%; //for all views
@@ -74,20 +78,23 @@
 			overflow: hidden;
 			display: block;
 			position: relative;
-			// z-index: -1;
+			z-index: 1;
 		} // this is for the home page art and full screen effect
 
 		.imgDesc {
-			position: relative;
+			position: absolute;
 			left: 0px;
-			top: 80vh;
+			top: 140vh;
+			z-index: 12;
+			padding-bottom: 16vh;
 
 			p {
 				display: inline;
 				font-size: ms(0);
-				line-height: ms(-1);
+				line-height: ms(0);
 				color: white;
 				background-color: black;
+				padding: 0px ms(0) 0px ms(3);
 			}
 		}
 
@@ -140,12 +147,11 @@
 		}
 
 		.pageTitle {
-			@include span(8 of 12);
+			width: 80%;
 			padding-left: 56px;
 			position: fixed;
 			top: ms(-1);
 			z-index: 991;
-			opacity: 0.3; // this is temporal delete later
 			// @include single-text-shadow(white, 1px, 1px, ms(0));
 
 			h2 {
@@ -425,23 +431,48 @@
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
 
+		.fclogo {
+			width: 16px;
+			top: 26px;
+			left: ms(0);
+			cursor: pointer;
+		}
+
 		.introtext {
+			position: relative;
+
 			div {
-				width: 260px;
+				width: 280px;
 				left: 80%;
 				top: 40vh;
-				background-color: white;
-				height: 90vh;
+				background: transparent;
+				height: 60vh;
 
 				p {
 					font-size: ms(0);
-					font-weight: 300;
+					font-weight: 400;
 					line-height: ms(1);
 					color: $gray3;
 					letter-spacing: 0.2px;
 					text-align: left;
-					padding: ms(1) ms(1) ms(1) ms(2);
+					padding: ms(2) ms(2) ms(3) ms(2);
 				}
+			}
+		}
+
+		.introtextBg {
+			width: 100%;
+			position: absolute;
+			top: 0px;
+	
+			div {
+				width: 280px;
+				position: relative;
+				@include transform(translateX(-50%));
+				left: 80%;
+				top: 40vh;
+				background-color: white;
+				height: 60vh;
 			}
 		}
 
@@ -455,6 +486,19 @@
 			}
 		} 
 		// this is the class for the home page to size the box that create the frame effects
+
+		.pageTitle {
+			width: 50%;
+			padding-left: ms(3);
+			top: ms(1);
+			z-index: 991;
+			// @include single-text-shadow(white, 1px, 1px, ms(0));
+
+			h2 {
+				color: gold;
+				font-weight: 300;
+			}
+		}
 
 	  	.projects {
 
@@ -727,9 +771,12 @@ footer {
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
-		@include span(12 of 12);
 
 		.copyright {
+			width: 100%;
+			position: fixed;
+			text-align: center;
+			padding: ms(0);
 
 			p {
 				font-size: ms(-1);
@@ -748,7 +795,6 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 		
 		.copyright {
-
 			p {
 				font-size: ms(-1);
 				line-height: ms(0);
@@ -766,6 +812,10 @@ footer {
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
+
+		.copyright {
+			bottom: 0px;
+		}
 	}
 
 // -------------------------- XLARGE --------------------------
@@ -774,7 +824,6 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-
 			p {
 				font-size: ms(0);
 				font-weight: 300;
