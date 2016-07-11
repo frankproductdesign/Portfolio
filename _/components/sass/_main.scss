@@ -1,5 +1,5 @@
 .mainContainer {
-	height: 100%;
+	// height: 100%;
 
 // -------------------------- XSMALL --------------------------
 
@@ -16,17 +16,18 @@
 			cursor: pointer;
 		}
 
-		.introtext {
+		.introtextContainer {
 			width: 100%;
 			position: fixed;
 			top: 0px;
 			z-index: 2;
 
-			div {
-				max-width: 90vw;
+			.introtext {
+				// max-width: 90vw;
 				position: relative;
 				@include transform(translateX(-50%));
 				left: 50%;
+				background-color: white;
 
 				p {
 					font-family: $sans;
@@ -39,15 +40,43 @@
 			}
 		}
 
-		.introtextBg {
-			z-index: 1;
+		.secondtextContainer {
+			position: relative;
+			height: 280px;
 
-			div {
+			.secondtext {
+				// max-width: 90vw;
 				position: relative;
 				@include transform(translateX(-50%));
-				background-color: white;
+				left: 50%;
+				background-color: gold;
+
+				p {
+					font-family: $sans;
+					font-size: 2.2vh;
+					font-weight: 400;
+					line-height: 3.2vh;
+					color: black;
+					letter-spacing: 0.55px;
+				}					
 			}
 		}
+
+		.scrollSpace {
+			width: 100%;
+			height: 55vh;
+			position: absolute;
+		}
+
+		// .introtextBg {
+		// 	z-index: 1;
+
+		// 	div {
+		// 		position: relative;
+		// 		@include transform(translateX(-50%));
+		// 		background-color: white;
+		// 	}
+		// }
 
 		// .artbox {
 		// 	top: 50%; //for all views
@@ -86,11 +115,11 @@
 		// } // this is for the home page art and full screen effect
 
 		.imgDesc {
-			position: absolute;
+			position: relative;
 			left: 0px;
-			top: 140vh;
+			// top: 80vh;
 			z-index: 12;
-			padding-bottom: 16vh;
+			// padding-bottom: 10vh;
 
 			p {
 				display: inline;
@@ -323,13 +352,13 @@
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 
-		.introtext {
+		.introtextContainer {
 			// @include transform(translate(-50%, -50%));
 			// @include transform(translateX(0%));
 			// left: 0%;
 			// top: 50%;
 
-			div {
+			.introtext {
 				width: 480px;
 
 				p {
@@ -442,15 +471,18 @@
 			cursor: pointer;
 		}
 
-		.introtext {
+		.introtextContainer {
 			position: relative;
+			// height: 400px;
+			height: 100vh;
 
-			div {
+			.introtext {
 				width: 280px;
+				// height: 70vh;
 				left: 80%;
-				top: 40vh;
-				background: transparent;
-				height: 60vh;
+				// top: 40vh;
+				position: absolute;
+				bottom: 0px;
 
 				p {
 					font-size: ms(0);
@@ -464,30 +496,72 @@
 			}
 		}
 
-		.introtextBg {
-			width: 100%;
-			position: absolute;
-			top: 0px;
-			display: inline;
-			height: 100%;
-	
-			div {
+		.secondtextContainer {
+			position: relative;
+			height: 100vh;
+
+			.secondtext {
 				width: 280px;
 				left: 80%;
-				top: 40vh;
-				height: 60vh;
+				position: relative;
+
+				p {
+					font-size: ms(0);
+					font-weight: 400;
+					line-height: ms(1);
+					color: $gray3;
+					letter-spacing: 0.2px;
+					text-align: left;
+					padding: ms(2) ms(2) ms(3) ms(2);
+				}
 			}
 		}
 
-		.artbox {
-			width: 99.8vw;
-			height: 99.8vh;
-			@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
+		.scrollSpace {
+			width: 100%;
+			height: 55vh;
+			position: absolute;
+		}
 
-			img {
-				width: 99vh;
+		.imgDesc {
+			top: 80vh;
+			position: absolute;
+			// padding-bottom: 10vh;
+
+			p {
+				display: inline;
+				font-size: ms(0);
+				line-height: ms(1);
+				color: white;
+				background-color: black;
+				padding: 2px ms(0) 2px ms(3);
 			}
-		} 
+		}
+
+		// .introtextBg {
+		// 	width: 100%;
+		// 	position: absolute;
+		// 	top: 0px;
+		// 	display: inline;
+		// 	height: 100%;
+	
+		// 	div {
+		// 		width: 280px;
+		// 		left: 80%;
+		// 		top: 40vh;
+		// 		height: 60vh;
+		// 	}
+		// }
+
+		// .artbox {
+		// 	width: 99.8vw;
+		// 	height: 99.8vh;
+		// 	@include background(linear-gradient(bottom right, rgba(gold, 1) 0%, rgba(gold, 1) 100%));
+
+		// 	img {
+		// 		width: 99vh;
+		// 	}
+		// } 
 		// this is the class for the home page to size the box that create the frame effects
 
 		.pageTitle {
@@ -605,9 +679,8 @@
 			cursor: pointer;
 		}
 
-		.introtext {
-
-			div {
+		.introtextContainer {
+			.introtext {
 				p {
 					font-size: ms(1);
 					line-height: ms(2);
@@ -616,19 +689,19 @@
 			}
 		}
 
-		.artbox {
-			width: 99.86vw;
-			height: 99.82vh;
+		// .artbox {
+		// 	width: 99.86vw;
+		// 	height: 99.82vh;
 
-			img {
-				width: 100vh;
-			}
-		} 
+		// 	img {
+		// 		width: 100vh;
+		// 	}
+		// } 
 		// this is the class for the home page to size the box that create the frame effects
 
-		.artContainerSpace {
-			height: 140vh;
-		}
+		// .artContainerSpace {
+		// 	height: 140vh;
+		// }
 
 		.contacts {
 			width: 100%;

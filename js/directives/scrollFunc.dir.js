@@ -4,7 +4,7 @@ angular
 	.directive("scroll", function ($window) {
 		return function($scope, element, attrs) {
 
-			var container = angular.element('.artContainer')
+			var container = angular.element('.introtext')
 			var range = 200;
 
 		angular.element($window).bind("scroll",
