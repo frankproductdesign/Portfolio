@@ -291,6 +291,7 @@ body {
 	opacity: 1;
 	position: fixed;
 	top: 0px;
+	z-index: -1;
 
 	@include susy-breakpoint($xsmall) {
 		height: 90%;
