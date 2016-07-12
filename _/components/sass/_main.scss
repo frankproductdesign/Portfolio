@@ -24,7 +24,7 @@
 			z-index: 2;
 
 			.introtext {
-				width: 300px;
+				width: 320px;
 				position: absolute;
 				@include transform(translateX(-50%));
 				left: 50%;
@@ -50,7 +50,7 @@
 			z-index: 980;
 
 			.secondtext {
-				width: 300px;
+				width: 320px;
 				position: relative;
 				@include transform(translateX(-50%));
 				left: 50%;
@@ -645,6 +645,7 @@
 
 				p:first-of-type {
 					font-size: ms(1);
+					padding-top: ms(3);
 					padding-bottom: 0px;
 				}
 
@@ -658,6 +659,7 @@
 
 				p:last-of-type {
 					padding-top: 0px;
+					padding-bottom: ms(5);
 				}
 			}
 		}
