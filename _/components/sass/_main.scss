@@ -145,7 +145,7 @@
 			position: fixed;
 			top: ms(-1);
 			z-index: 991;
-			// @include single-text-shadow(white, 1px, 1px, ms(0));
+			// @include single-text-shadow(black, 0px, 1px, 2px);
 
 			h2 {
 				color: $gray2;
@@ -426,7 +426,7 @@
 
 		.fclogo {
 			width: 16px;
-			top: 26px;
+			top: 32px;
 			left: ms(0);
 			cursor: pointer;
 		}
@@ -443,12 +443,12 @@
 
 				p {
 					font-size: ms(0);
-					font-weight: 400;
 					line-height: ms(1);
+					font-weight: 400;
 					color: $gray3;
-					letter-spacing: 0.2px;
+					letter-spacing: 0.03rem;
 					text-align: left;
-					padding: ms(2) ms(2) ms(3) ms(2);
+					padding: ms(2) ms(1) ms(3) ms(2);
 				}
 			}
 		}
@@ -468,13 +468,13 @@
 				}
 
 				p {
-					font-size: ms(0);
+					font-size: ms(-1);
 					font-weight: 400;
-					line-height: ms(1);
+					line-height: ms(0);
 					color: $gray3;
 					letter-spacing: 0.2px;
 					text-align: left;
-					padding: ms(2) ms(2) ms(3) ms(2);
+					padding: ms(2) ms(1) ms(3) ms(2);
 				}
 
 				p:last-of-type {
@@ -492,12 +492,11 @@
 		.imgDesc {
 			top: 70vh;
 			position: absolute;
-			// padding-bottom: 10vh;
 
 			p {
 				display: inline;
-				font-size: ms(0);
-				line-height: ms(1);
+				font-size: ms(-1);
+				line-height: ms(0);
 				color: white;
 				background-color: black;
 				padding: 2px ms(0) 2px ms(3);
@@ -506,8 +505,8 @@
 
 		.pageTitle {
 			width: 50%;
-			padding-left: ms(3);
-			top: ms(1);
+			padding-left: ms(4);
+			top: ms(2);
 			z-index: 991;
 			// @include single-text-shadow(white, 1px, 1px, ms(0));
 
@@ -614,20 +613,52 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.fclogo {
-			width: 28px;
-			bottom: ms(2);
-			right: ms(5);
+			width: 24px;
+			top: 26px;
+			left: ms(1);
 			z-index: 2999;
 			cursor: pointer;
 		}
 
 		.introtextContainer {
 			.introtext {
+				width: 360px;
+				left: 82%;
+				position: absolute;
+				bottom: 0px;
+
 				p {
 					font-size: ms(1);
 					line-height: ms(2);
-					color: black;
-				}					
+					font-weight: 400;
+					letter-spacing: 0.03rem;
+					padding: ms(4) ms(3) ms(5) ms(4);
+				}
+			}
+		}
+
+		.secondtextContainer {
+			.secondtext {
+				width: 360px;
+				left: 82%;
+				position: relative;
+
+				p:first-of-type {
+					font-size: ms(1);
+					padding-bottom: 0px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(1);
+					font-weight: 400;
+					letter-spacing: 0.2px;
+					padding: ms(2) ms(3) ms(4) ms(4);
+				}
+
+				p:last-of-type {
+					padding-top: 0px;
+				}
 			}
 		}
 
@@ -677,14 +708,25 @@
 			}
 		}
 
-		.pageTitle {
-			@include span(3 of 12);
-			padding-left: ms(5);
-			top: ms(0);
-			@include single-text-shadow(white, 1px, 1px, ms(4));
+		.imgDesc {
+			top: 70vh;
 
-			h2 {
-				color: $gray2;
+			p {
+				font-size: ms(0);
+				line-height: ms(1);
+				letter-spacing: 0.03rem;
+				padding: 1px ms(0) 1px ms(4);
+			}
+		}
+
+		.pageTitle {
+			padding-left: ms(5);
+			top: ms(2);
+
+			p {
+				font-weight: 300;
+				font-size: ms(2); 
+				letter-spacing: 0.04rem;
 			}
 		}
 
@@ -778,9 +820,9 @@ footer {
 
 		.copyright {
 			position: fixed;
-			padding: ms(0);
+			padding: ms(-1);
 			@include transform(rotate(-90deg));
-			@include transform-origin(50%, -75%);
+			@include transform-origin(48%, -130%);
 
 			p {
 				font-size: ms(-1);
@@ -818,6 +860,9 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
+			padding: ms(-1);
+			@include transform(rotate(-90deg));
+			@include transform-origin(48%, -130%);
 			bottom: 0px;
 			right: 0px;
 		}
@@ -829,6 +874,7 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
+			@include transform-origin(45%, -170%);
 			p {
 				font-size: ms(0);
 				font-weight: 300;

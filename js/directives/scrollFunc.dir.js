@@ -5,7 +5,7 @@ angular
 		return function($scope, element, attrs) {
 
 			var container = angular.element('.introtext')
-			var range = 200;
+			var range = 500;
 
 		angular.element($window).bind("scroll",
 				function() {

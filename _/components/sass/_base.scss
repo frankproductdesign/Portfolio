@@ -51,10 +51,12 @@ $sans: 'freight-sans-pro', sans-serif;
 // $serif: 'freight-text-pro', sans-serif;
 
 // Typographic scale using golden ratio 1:1.618, modular-scale .
-// $ms-base: 1rem;
-$ms-base: 1rem * 0.88;
+$ms-base: 1rem;
+// $ms-base: 1rem * 0.88;
 // 1rem = 16px by default. To relate values so you can write 1.4rem = 14px, the default font size on the body has to be set like this; body { font-size:62.5%; }.
-$ms-ratio: 1.618;
+// $ms-ratio: 1.618;
+$ms-ratio: 1.33; //perfect four
+
 
 $button: ms(0); //recommended medium weight, all caps
 $link: uppercase;
