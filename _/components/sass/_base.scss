@@ -239,7 +239,7 @@ body {
 			}
 
 			h2 {
-				font-size: ms(1);
+				font-size: ms(2);
 				font-weight: 400;
 			}
 
@@ -249,6 +249,7 @@ body {
 
 			h4 {
 				font-size: ms(0);
+				text-transform: uppercase;
 			} //recommended medium weight
 
 			p {
@@ -285,24 +286,24 @@ body {
 
 .bgImage {
 	@include single-transition(all, 1s, ease-out);
-	@include background(image-url('oandw-prot-iphone.jpg'));
+	@include background(image-url('oandw-prot-iphone2.jpg'));
 	@include bg-properties;
 	width: 100%;
-	opacity: 0.1;
+	opacity: 1;
 	position: fixed;
 	top: 0px;
 	z-index: -1;
 
 	@include susy-breakpoint($xsmall) {
-		height: 90%;
+		height: 100%;
 	}
 
 	@include susy-breakpoint($small) {
-		height: 90%;
+
 	}
 
 	@include susy-breakpoint($medium) {
-		height: 90%;
+
 	}
 
 	@include susy-breakpoint($large) {
@@ -310,7 +311,7 @@ body {
 	}
 
 	@include susy-breakpoint($xlarge) {
-		height: 90%;
+
 	}
 }
 
