@@ -10,8 +10,8 @@
 		.fclogo {
 			width: 22px;
 			position: fixed;
-			top: 12px;
-			left: ms(0);
+			top: 14px;
+			left: ms(2);
 			z-index: 2999;
 			cursor: pointer;
 		}
@@ -39,7 +39,7 @@
 					color: black;
 					letter-spacing: 0.2px;
 					text-align: left;
-					padding: ms(2) ms(2) ms(3) ms(2);
+					padding: ms(1) ms(1) ms(2) ms(1);
 				}
 			}
 		}
@@ -47,7 +47,6 @@
 		.secondtextContainer {
 			position: relative;
 			height: 100vh;
-			z-index: 980;
 
 			.secondtext {
 				width: 320px;
@@ -55,17 +54,28 @@
 				@include transform(translateX(-50%));
 				left: 50%;
 				background-color: gold;
+				z-index: 980;
+
+				p:first-of-type {
+					font-size: ms(0);
+					padding-top: ms(5);
+					padding-bottom: 0px;
+				}
 
 				p {
 					font-family: $sans;
-					font-size: ms(0);
+					font-size: ms(-1);
+					line-height: ms(0);
 					font-weight: 400;
-					line-height: ms(1);
 					color: black;
 					letter-spacing: 0.2px;
 					text-align: left;
-					padding: ms(2) ms(2) ms(3) ms(2);
-				}					
+					padding: ms(1) ms(1) ms(2) ms(1);
+				}
+
+				p:last-of-type {
+					padding-top: 0px;
+				}
 			}
 		}
 
@@ -83,8 +93,8 @@
 
 			p {
 				display: inline;
-				font-size: ms(0);
-				line-height: ms(1);
+				font-size: ms(-1);
+				line-height: ms(0);
 				color: white;
 				background-color: black;
 				padding: 2px ms(0) 2px ms(2);
@@ -116,11 +126,11 @@
 			@include transition-delay(0s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-			width: 44px; 
-			height: 44px; 
-			bottom: ms(0);
+			width: 36px; 
+			height: 36px; 
+			top: ms(0);
 			right: ms(0);
-			background-color: none;
+			background-color: gold;
 			position: fixed;
 			@include border-radius(50%);
 			z-index: 997;
@@ -141,48 +151,17 @@
 
 		.pageTitle {
 			width: 80%;
-			padding-left: 56px;
+			padding-left: ms(5);
 			position: fixed;
-			top: ms(-1);
-			z-index: 991;
+			top: ms(0);
+			z-index: 979;
 			// @include single-text-shadow(black, 0px, 1px, 2px);
 
-			h2 {
-				color: $gray2;
+			p {
+				color: gold;
 				font-weight: 300;
-
-				a {
-					text-decoration: none;
-					color: $gray1;
-					font-weight: 400;
-				}
-
-				:hover {
-						color: orange;
-				}
-			}
-		}
-
-		.pageLink {
-			position: fixed;
-			bottom: ms(-1);
-			text-align: left;
-			padding-left: 80px;
-			z-index: 992;
-			letter-spacing: ms(-1);
-
-			h2 {
-				font-weight: 300;
-
-				a {
-					text-decoration: none;
-					color: gold;
-					font-weight: 300;
-				}
-
-				:hover {
-						color: orange;
-				}
+				font-size: ms(1); 
+				letter-spacing: 0.04rem;
 			}
 		}
 
@@ -445,7 +424,6 @@
 					font-size: ms(0);
 					line-height: ms(1);
 					font-weight: 400;
-					color: $gray3;
 					letter-spacing: 0.03rem;
 					text-align: left;
 					padding: ms(2) ms(1) ms(3) ms(2);
@@ -471,7 +449,6 @@
 					font-size: ms(-1);
 					font-weight: 400;
 					line-height: ms(0);
-					color: $gray3;
 					letter-spacing: 0.2px;
 					text-align: left;
 					padding: ms(2) ms(1) ms(3) ms(2);
@@ -507,7 +484,6 @@
 			width: 50%;
 			padding-left: ms(4);
 			top: ms(2);
-			z-index: 991;
 			// @include single-text-shadow(white, 1px, 1px, ms(0));
 
 			p {
@@ -689,11 +665,10 @@
 			@include transition-delay(0s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-			width: 60px; 
-			height: 60px; 
-			background-color: gold;
-			bottom: ms(1);
-			right: ms(5);
+			width: 44px; 
+			height: 44px;
+			top: ms(2);
+			right: ms(2);
 			opacity: 1;
 
 			&.square {
@@ -729,16 +704,6 @@
 				font-weight: 300;
 				font-size: ms(2); 
 				letter-spacing: 0.04rem;
-			}
-		}
-
-		.pageLink {
-			bottom: ms(1);
-			text-align: left;
-			padding-left: 140px;
-
-			h2 {
-				font-weight: 300;
 			}
 		}
 

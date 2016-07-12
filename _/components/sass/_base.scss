@@ -127,9 +127,6 @@ nav {
 		@include single-transition(all, 0.3s, ease-out);
 		width: 87vw;
 		top: 13vh;
-		// left: 50%;
-		// @include transform (translate(-50%, -50%));
-		// @include transform (translateX(-50%));
 
 		&.navOpen {
 			visibility: visible;
@@ -148,7 +145,7 @@ nav {
 				display: block; // makes the whole link area clickable (not just the text)
 				// float: left;
 				padding: 0px 0px ms(0) ms(1);
-				text-align: left;
+				text-align: right;
 				line-height: 5vh;
 
 				a {
@@ -206,7 +203,7 @@ nav {
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 0s, ease-out);
-		width: 50%;
+		width: 100%;
 		top: ms(5);
 		// @include transform (translate(-50%, -50%));
 
