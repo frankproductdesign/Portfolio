@@ -169,40 +169,6 @@
 			}
 		}
 
-		.projectrow {
-			@include span(12 of 12);
-			padding: 0px;
-			position: absolute;
-		}
-
-		.devicesimg {
-			display: none;
-		}
-
-		.detailsimg {
-			position: relative;
-			@include span(12 of 12);
-			font-family: $sans;
-
-			div {
-				position: relative;
-
-				p {
-					padding-left: ms(-1);
-				}
-			}
-
-			div:last-of-type {
-				padding-bottom: 0px;
-			}
-
-			img {
-				padding-top: ms(2);
-				padding-bottom: ms(3);
-				max-width: 100%;
-			}
-		}
-
 		.aboutText {
 			width: 100%;
 
@@ -235,19 +201,19 @@
 		.approachText {
 			@include single-transition(all, 1s, ease-out);
 			width: 100%;
-			position: fixed;
-			@include transform(translateY(-60%));
-			top: 50%;
 
 			div {
-				position: relative;
-				@include transform(translateX(-50%));
+				width: 80%;
+				position: absolute;
+				@include transform(translate(-50%, -50%));
+				top: 50%;
 				left: 50%;
 				text-align: left;
 				padding: 0px ms(2);
 
-				h3 {
+				p {
 					color: black;
+					font-size: ms(1);
 					line-height: ms(3);
 				}
 			}
@@ -279,7 +245,6 @@
 		}
 
 		.secondtextContainer {
-
 			.secondtext {
 				width: 380px;
 
@@ -308,55 +273,21 @@
 			height: 99.5vh;
 		}
 
-		.devicesimg {
-			display: inline;
-			z-index: 901;
-			position: absolute;
-			@include transform(translateX(-50%));
-			left: 65%;
-			top: 600px;
-		}
-
-		.detailsimg {
-			div {
-				p {
-					max-width: 380px;
-					position: relative;
-					@include transform(translateX(-50%));
-					left: 50%;
-					text-align: center;
-				}
-			}
-
-			div:last-of-type {
-				padding-bottom: ms(5);
-			}
-
-			img {
-				padding-top: ms(2);
-				padding-bottom: ms(4);
-				position: relative;
-				// @include transform(translate(-50%, -100px));
-				@include transform(translateX(-50%));
-				left: 50%;
-			}
-		}
-
 		.aboutText {
 			div {
-				padding-top: 11vh;
+				padding: 9vh ms(2);
 				width: 480px;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: absolute;
 			}
 		}
 
 		.approachText {
-			@include transform(translateY(-100%));
-
 			div {
-
-				h2 {
-					color: black;
-					line-height: 4vh;
+				p {
+					font-size: ms(2);
+					line-height: ms(4);
 				}
 			}
 		}
@@ -377,9 +308,9 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.fclogo {
-			width: 16px;
+			width: 20px;
 			top: 32px;
-			left: ms(0);
+			left: ms(2);
 			cursor: pointer;
 		}
 
@@ -454,10 +385,13 @@
 		}
 
 		.pageTitle {
-			width: 50%;
-			padding-left: ms(4);
-			top: ms(2);
+			padding-top: 30px;
+			padding-left: ms(5);
 			// @include single-text-shadow(white, 1px, 1px, ms(0));
+
+			&.bgGrad {
+				background: none;
+			}
 
 			p {
 				color: gold;
@@ -467,34 +401,13 @@
 			}
 		}
 
-		.detailsimg {
-			div {
-				p {
-					max-width: 380px;
-					padding-left: ms(1);
-				}
-			}
-
-			div:last-of-type {
-				padding-bottom: ms(3);
-			}
-		}
-
 		.aboutText {
-			@include span(12 of 12);
-			position: fixed;
-			@include transform(translate(-50%, -50%));
-			left: 50%;
-			top: 50%;
+			width: 100%;
 
 			div {
 				@include single-transition(all, 1s, ease-out);
 				position: relative;
-				@include span(7 of 12);
-				@include column-count(2);
-				@include column-gap(ms(3));
-				@include transform(translateX(-50%));
-				left: 50%;
+				width: 480px;
 
 				p {
 					font-weight: 400;
@@ -506,22 +419,18 @@
 
 		.approachText {
 			@include single-transition(all, 1s, ease-out);
-			width: 100%;
-			position: fixed;
-			@include transform(translate(-50%, -60%));
-			left: 50%;
-			top: 50%;
 
 			div {
-				position: relative;
+				position: absolute;
 				width: 480px;
-				@include transform(translateX(-50%));
+				@include transform(translate(-50%, -50%));
 				left: 50%;
+				top: 50%;
 				text-align: left;
 
-				h3 {
-					color: black;
-					line-height: ms(2);
+				p {
+					font-size: ms(2);
+					line-height: ms(3);
 				}
 			}
 		}
@@ -658,8 +567,8 @@
 		}
 
 		.pageTitle {
+			padding-top: 42px;
 			padding-left: ms(6);
-			top: ms(2);
 
 			p {
 				font-weight: 300;
@@ -668,29 +577,16 @@
 			}
 		}
 
-		.devicesimg {
-			left: 65%;
-			top: 600px;
-		}
-
-		.detailsimg {
-			div {
-				p {
-					max-width: 380px;
-					padding-left: ms(2);
-				}
-			}
-
-			div:last-of-type {
-				padding-bottom: ms(4);
-			}
-		}
-
 		.aboutText {
 			div {
+				position: absolute;
+				width: 960px;
 				@include column-count(2);
 				@include column-gap(ms(4));
 				max-width: 1100px;
+				@include transform(translate(-50%, -50%));
+				top: 50%;
+				left: 50%;
 
 				p {
 					font-size: ms(0);
@@ -701,12 +597,12 @@
 		}
 
 		.approachText {
-
+			@include single-transition(all, 1s, ease-out);
+			
 			div {
-				@include span(6 of 12);
-
-				h2 {
-					line-height: 8vh;
+				p {
+					font-size: ms(2);
+					line-height: ms(4);
 				}
 			}
 		}

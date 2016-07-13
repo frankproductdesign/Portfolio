@@ -6,7 +6,7 @@
 }
 
 html, body {
-	// overflow-x: hidden;
+	overflow-x: hidden;
 	// height: 100%;
 }
 
@@ -322,12 +322,13 @@ body {
 	}
 
 	@include susy-breakpoint($large) {
-
+		top: ms(2);
+		right: ms(3);
 	}
 
 	@include susy-breakpoint($xlarge) {
-		top: 42px;
-		right: 48px;
+		top: ms(4);
+		right: ms(5);
 	}
 }
 
