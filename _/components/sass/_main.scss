@@ -12,7 +12,7 @@
 			position: fixed;
 			top: 14px;
 			left: ms(2);
-			z-index: 2999;
+			z-index: 979;
 			cursor: pointer;
 		}
 
@@ -34,8 +34,8 @@
 				p {
 					font-family: $sans;
 					font-size: ms(0);
-					font-weight: 400;
 					line-height: ms(1);
+					font-weight: 400;
 					color: black;
 					letter-spacing: 0.2px;
 					text-align: left;
@@ -58,7 +58,7 @@
 
 				p:first-of-type {
 					font-size: ms(0);
-					padding-top: ms(5);
+					padding-top: ms(4);
 					padding-bottom: 0px;
 				}
 
@@ -103,16 +103,15 @@
 
 		.contacts {
 			width: 100%;
-			height: 35vh;
 			padding-top: ms(1);
-			padding-left: ms(1);
+			padding-right: ms(1);
 
 			.contactInfo {
 				p {
 					font-size: ms(0);
+					line-height: ms(2);
 					font-weight: 300;
-					line-height: 5vh;
-					text-align: left;
+					text-align: right;
 
 					a {
 						text-decoration: none;
@@ -126,23 +125,23 @@
 			@include transition-delay(0s);
 			@include transition-duration(0.2s);
 			@include transition-timing-function(ease-out);
-			width: 36px; 
-			height: 36px; 
-			top: ms(0);
-			right: ms(0);
-			background-color: gold;
+			width: 44px; 
+			height: 44px; 
+			top: ms(-1);
+			right: ms(-1);
+			background-color: transparent;
 			position: fixed;
 			@include border-radius(50%);
 			z-index: 997;
 
 			&.square {
 				@include transition-delay(0s);
-				@include transition-duration(0.3s);
-				@include transition-timing-function(ease-out);
+				@include transition-duration(0.2s);
+				@include transition-timing-function(ease-in);
 				height: 100%;
 				width: 100%;
 				top: 0px;
-				left: 0px;
+				right: 0px;
 				@include border-radius(0px);
 				@include background(black);
 				opacity: 0.9;
@@ -150,12 +149,17 @@
 		}
 
 		.pageTitle {
-			width: 80%;
+			padding-top: 14px;
 			padding-left: ms(5);
 			position: fixed;
-			top: ms(0);
+			width: 100%;
+			height: 36px;
 			z-index: 979;
 			// @include single-text-shadow(black, 0px, 1px, 2px);
+
+			&.bgGrad {
+				@include background(linear-gradient(bottom, rgba(white, 0.5) 0%, rgba(white, 1) 100%));
+			}
 
 			p {
 				color: gold;
@@ -199,83 +203,52 @@
 			}
 		}
 
-	  	.projects {
-	  		@include span(12 of 12);
-	  		padding: 0px;
-	  		position: relative;
-
-			.mainImg {
-				height: 400px;
-				padding-top: 15vh;
-				padding-bottom: 10vh;
-
-				div {
-					@include transform(translateX(-50%));
-					left: 50%;
-					position: absolute;
-				}
-			}
-
-			.projectInfo {
-				@include span(12 of 12);
-				position: relative; //for all views
-				padding: ms(0) ms(0) ms(4);
-				font-weight: 300;
-				z-index: 992; //for all views
-				background-color: white; //for all views
-				height: auto;
-				@include transform(translateX(-50%));
-				left: 50%;
-
-				h2 {
-					color: $gray2;
-					padding-top: ms(-1);
-				}
-
-				a {
-					font-size: ms(0)
-				}
-
-				p {
-					padding-top: ms(1);
-				}
-			}
-	  	}
-
 		.aboutText {
+			width: 100%;
+
 			div {
-				@include single-transition(all, 1s, ease-out);
-				@include span(12 of 12);
-				padding: ms(4) ms(0) ms(4);
+				padding: ms(5) ms(2);
 
 				p {
 					font-family: $sans;
 					font-size: ms(0);
-					font-weight: 400;
 					line-height: ms(1);
-					color: black;
 					// letter-spacing: 0.5px;
+					font-weight: 400;
+					color: black;
+				}
+
+				dfn {
+					font-style: italic;
+					font-size: ms(0);
+					line-height: ms(0);
+				}
+
+				em {
+					font-style: italic;
+					font-size: ms(-1);
+					color: $gray2;
 				}
 			}
 		}
 
 		.approachText {
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
+			width: 100%;
 			position: fixed;
-			@include transform(translateY(-50%));
+			@include transform(translateY(-60%));
 			top: 50%;
 
 			div {
 				position: relative;
-				@include span(11 of 12);
 				@include transform(translateX(-50%));
 				left: 50%;
 				text-align: left;
+				padding: 0px ms(2);
 
-				h2 {
+				h3 {
 					color: black;
-					line-height: 6vh;
+					line-height: ms(3);
 				}
 			}
 		}
@@ -292,19 +265,41 @@
 		@include single-transition(all, 1s, ease-out);
 
 		.introtextContainer {
-			// @include transform(translate(-50%, -50%));
-			// @include transform(translateX(0%));
-			// left: 0%;
-			// top: 50%;
-
 			.introtext {
-				width: 480px;
+				width: 380px;
 
 				p {
-					font-size: 1.7vh;
+					font-size: ms(0);
+					line-height: ms(1);
 					font-weight: 400;
-					line-height: 2.9vh;
-				}					
+					letter-spacing: 0.2px;
+					padding: ms(2) ms(2) ms(3) ms(2);
+				}
+			}
+		}
+
+		.secondtextContainer {
+
+			.secondtext {
+				width: 380px;
+
+				p:first-of-type {
+					font-size: ms(1);
+					padding-top: ms(4);
+					padding-bottom: 0px;
+				}
+
+				p {
+					font-size: ms(0);
+					line-height: ms(1);
+					font-weight: 400;
+					letter-spacing: 0.2px;
+					padding: ms(2) ms(2) ms(3) ms(2);
+				}
+
+				p:last-of-type {
+					padding-top: 0px;
+				}
 			}
 		}
 
@@ -347,22 +342,6 @@
 			}
 		}
 
-	  	.projects {
-			.projectInfo {
-				padding: ms(2) ms(1) ms(4);
-				font-weight: 400;
-
-				h2 {
-					color: $gray2;
-					padding-top: ms(-1);
-				}
-
-				a {
-					font-size: ms(0)
-				}
-			}
-	  	}
-
 		.aboutText {
 			div {
 				padding-top: 11vh;
@@ -389,12 +368,6 @@
 	@include susy-breakpoint($medium){
 		@include single-transition(all, 1s, ease-out);
 
-	  	.projects {
-			.projectInfo {
-				max-width: 680px;
-				padding: ms(2) ms(2) ms(4);
-			}
-	  	}
 	}
 
 
@@ -494,18 +467,6 @@
 			}
 		}
 
-	  	.projects {
-
-			.mainImg {
-				// height: 99.8vh;
-			}
-
-			.projectInfo {
-				// min-width: 120px;
-				padding: ms(2) ms(3) ms(4);
-			}
-	  	}
-
 		.detailsimg {
 			div {
 				p {
@@ -545,7 +506,7 @@
 
 		.approachText {
 			@include single-transition(all, 1s, ease-out);
-			@include span(12 of 12);
+			width: 100%;
 			position: fixed;
 			@include transform(translate(-50%, -60%));
 			left: 50%;
@@ -553,7 +514,7 @@
 
 			div {
 				position: relative;
-				@include span(8 of 12);
+				width: 480px;
 				@include transform(translateX(-50%));
 				left: 50%;
 				text-align: left;
@@ -590,9 +551,9 @@
 
 		.fclogo {
 			width: 24px;
-			top: 26px;
-			left: ms(1);
-			z-index: 2999;
+			top: 40px;
+			left: ms(3);
+			z-index: 999;
 			cursor: pointer;
 		}
 
@@ -644,14 +605,14 @@
 			width: 100%;
 			height: ms(6);
 			padding-top: ms(1);
-			padding-left: ms(2);
 
 			.contactInfo {
+				padding-right: ms(4);
+
 				p {
 					font-size: ms(0);
 					font-weight: 300;
 					line-height: 3vh;
-					text-align: left;
 
 					a {
 						text-decoration: none;
@@ -678,7 +639,7 @@
 				height: 100%;
 				width: 100%;
 				top: 0px;
-				left: 0px;
+				right: 0px;
 				border: 0px;
 				@include border-radius(0px);
 				opacity: 0.9;
@@ -697,34 +658,13 @@
 		}
 
 		.pageTitle {
-			padding-left: ms(5);
+			padding-left: ms(6);
 			top: ms(2);
 
 			p {
 				font-weight: 300;
 				font-size: ms(2); 
 				letter-spacing: 0.04rem;
-			}
-		}
-
-		.projects {
-
-			.mainImg {
-				// height: 99.8vh;
-			}
-
-			.projectInfo {
-				padding: ms(3) ms(2) ms(5) ms(3);
-				font-weight: 300;
-
-				h2 {
-					color: $gray2;
-					padding-top: ms(-1);
-				}
-
-				a {
-					font-size: ms(0)
-				}
 			}
 		}
 
@@ -749,7 +689,7 @@
 		.aboutText {
 			div {
 				@include column-count(2);
-				@include column-gap(ms(3));
+				@include column-gap(ms(4));
 				max-width: 1100px;
 
 				p {
@@ -788,8 +728,11 @@ footer {
 		.copyright {
 			position: fixed;
 			padding: ms(-1);
+			right: 10px;
+			bottom: 150px;
 			@include transform(rotate(-90deg));
-			@include transform-origin(48%, -130%);
+			@include transform-origin(100%, 50%);
+			z-index: 999;
 
 			p {
 				font-size: ms(-1);
@@ -828,10 +771,8 @@ footer {
 
 		.copyright {
 			padding: ms(-1);
-			@include transform(rotate(-90deg));
-			@include transform-origin(48%, -130%);
-			bottom: 0px;
-			right: 0px;
+			right: 10px;
+			bottom: 150px;
 		}
 	}
 

@@ -205,13 +205,10 @@ nav {
 		@include single-transition(all, 0s, ease-out);
 		width: 100%;
 		top: ms(5);
-		// @include transform (translate(-50%, -50%));
 
 		ul {
-
 			li {
-				padding: 0px 0px ms(1) ms(2);
-				// text-align: center;
+				padding: 0px ms(4) ms(1) 0px;
 				line-height: 5vh;
 
 				a {
@@ -283,17 +280,67 @@ body {
 	color: $gray2;
 }
 
-.bgImage {
-	@include single-transition(all, 1s, ease-out);
-	@include background(image-url('oandw-prot-iphone2.jpg'));
-	@include bg-properties;
-	width: 100%;
-	opacity: 1;
-	position: fixed;
-	top: 0px;
-	z-index: -1;
-
+.barsWrapper {
 	@include susy-breakpoint($xsmall) {
+		top: 18px;
+		right: 26px;
+		position: fixed;
+		cursor: pointer;
+		z-index: 998;
+
+		.bar {
+			background-color: gold;
+			height: 1px;
+			width: 18px;
+			margin: 4px 0px;
+			display: table;
+		}
+
+		&.close {
+			div {
+				opacity: 0;
+			}
+
+			div:first-of-type {
+				@include transform(translate(0px, 5px) rotate(45deg));
+				opacity: 1;
+			}
+
+			div:last-of-type {
+				@include transform(translate(0px, -5px) rotate(-45deg));
+				opacity: 1;
+			}
+		}
+	}
+
+	@include susy-breakpoint($small) {
+
+	}
+
+	@include susy-breakpoint($medium) {
+
+	}
+
+	@include susy-breakpoint($large) {
+
+	}
+
+	@include susy-breakpoint($xlarge) {
+		top: 42px;
+		right: 48px;
+	}
+}
+
+.bgImage {
+	@include susy-breakpoint($xsmall) {
+		@include single-transition(all, 1s, ease-out);
+		@include background(image-url('oandw-prot-iphone2.jpg'));
+		@include bg-properties;
+		width: 100%;
+		opacity: 1;
+		position: fixed;
+		top: 0px;
+		z-index: -1;
 		height: 100%;
 	}
 

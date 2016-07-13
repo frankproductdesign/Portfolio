@@ -1,9 +1,9 @@
-<div class="circle" ng-class="{'square' : isActive}" ng-click="openWindow()"></div>
-<!-- use this element for the new navigation that rotates from the left -->
-
-<!-- <div class="plusIcon" ng-class="{'rotate' : isActive}">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 61 61"><path d="M31,0V30H61v1H31V61H30V31H0V30H30V0h1Z"/></svg>
-</div> -->
+<div class="circle" ng-class="{'square' : isActive}" ></div>
+<div class="barsWrapper" ng-class="{'close' : isActive}" ng-click="openWindow()">
+	<div class="bar"></div>
+	<div class="bar"></div>
+	<div class="bar"></div>
+</div>
 <nav menu-toggle ng-class="{'navOpen' : isActive}">
 	<ul menu-active>
 		<li><a href="#/home">Home</a></li>
@@ -11,7 +11,7 @@
 		<!-- <li><a href="#/past">Work</a></li> -->
 		<!-- <li><a href="#/pastprint">Work</a></li> -->
 		<li><a href="#/approach">Approach</a></li>
-		<!-- <li><a href="#/code">Thoughts</a></li> -->
+		<li><a href="#/code">Thoughts</a></li>
 		<li><a href="#/about">About</a></li>
 	</ul>
 	<contact-mod></contact-mod>
