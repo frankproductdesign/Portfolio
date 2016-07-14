@@ -125,8 +125,8 @@ nav {
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 0.3s, ease-out);
-		width: 87vw;
-		top: 13vh;
+		width: 100%;
+		top: 10vh;
 
 		&.navOpen {
 			visibility: visible;
@@ -144,7 +144,7 @@ nav {
 			li {
 				display: block; // makes the whole link area clickable (not just the text)
 				// float: left;
-				padding: 0px 0px ms(0) ms(1);
+				padding: 0px ms(4) ms(0) 0;
 				text-align: right;
 				line-height: 5vh;
 
@@ -172,7 +172,17 @@ nav {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 0.5s, ease-out);
-		top: ms(4);
+
+		ul {
+			li {
+				padding: 0px ms(5) ms(0) 0;
+				line-height: 5vh;
+
+				a {
+					font-size: 4vh;
+				}
+			}
+		}
 	}
 
 // -------------------------- MEDIUM --------------------------
@@ -184,12 +194,13 @@ nav {
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large) {
-		@include single-transition(all, 0s, ease-out);
+		width: 100%;
+		top: ms(6);
 
 		ul {
 
 			li {
-				padding: 0px 0px ms(0) ms(1);
+				padding: 0px ms(4) ms(0) 0;
 				line-height: 4vh;
 
 				a {
@@ -202,13 +213,11 @@ nav {
 // -------------------------- XLARGE --------------------------
 
 	@include susy-breakpoint($xlarge) {
-		@include single-transition(all, 0s, ease-out);
-		width: 100%;
-		top: ms(5);
+		top: 12vh;
 
 		ul {
 			li {
-				padding: 0px ms(4) ms(1) 0px;
+				padding: 0px ms(6) ms(1) 0px;
 				line-height: 5vh;
 
 				a {
@@ -281,6 +290,8 @@ body {
 }
 
 .barsWrapper {
+	display: block;
+
 	@include susy-breakpoint($xsmall) {
 		top: 18px;
 		right: 26px;
@@ -314,7 +325,8 @@ body {
 	}
 
 	@include susy-breakpoint($small) {
-
+		top: ms(3);
+		right: ms(3);
 	}
 
 	@include susy-breakpoint($medium) {
@@ -323,7 +335,7 @@ body {
 
 	@include susy-breakpoint($large) {
 		top: ms(2);
-		right: ms(3);
+		right: ms(2);
 	}
 
 	@include susy-breakpoint($xlarge) {
@@ -338,7 +350,7 @@ body {
 		@include background(image-url('oandw-prot-iphone2.jpg'));
 		@include bg-properties;
 		width: 100%;
-		opacity: 1;
+		opacity: 0.1;
 		position: fixed;
 		top: 0px;
 		z-index: -1;
