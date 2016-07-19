@@ -167,12 +167,14 @@
 				font-weight: 400;
 				font-size: ms(1); 
 				letter-spacing: 0.04rem;
+				padding-top: 0px;
 			}
 
 			p {
 				font-family: $sans;
-				font-size: ms(-1);
+				font-size: ms(0);
 				font-weight: 400;
+				padding-top: 3px;
 			}
 		}
 
