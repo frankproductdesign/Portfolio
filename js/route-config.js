@@ -6,6 +6,8 @@ angular
 		$routeProvider
 			.when('/home', {
 				templateUrl: 'templates/home/index.html',
+				controller: 'CtrlrWork',
+				controllerAs: 'work'
 			})
 			.when('/current', {
 				templateUrl: 'templates/current/index.html',

@@ -2,7 +2,31 @@
 	{
 		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
 		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
-		"images" : [{ "image":"images/work/kipu-imac.png" },{ "image":"images/work/kipu-imac2.png" }],
+		"images" : [{ "image":"images/work/asset01.jpg" },{ "image":"images/work/asset02.jpg" }],
+		"link" : "Launch prototype",
+		"href" : "http://www.kipu.frankcastro.com",
+		"bg" : [{ "image":"" }]
+	},
+	{
+		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
+		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"images" : [{ "image":"images/work/asset02.jpg" },{ "image":"images/work/asset04.jpg" }],
+		"link" : "Launch prototype",
+		"href" : "http://www.kipu.frankcastro.com",
+		"bg" : [{ "image":"" }]
+	},
+	{
+		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
+		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"images" : [{ "image":"images/work/asset03.jpg" }],
+		"link" : "Launch prototype",
+		"href" : "http://www.kipu.frankcastro.com",
+		"bg" : [{ "image":"" }]
+	},
+	{
+		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
+		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/asset01.jpg" }],
 		"link" : "Launch prototype",
 		"href" : "http://www.kipu.frankcastro.com",
 		"bg" : [{ "image":"" }]

@@ -28,17 +28,17 @@ body {
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 
-		/* Slider */
+		// Slider
 
 		.slick-list {
+			@include span(6 of 12);
+
 			.slick-loading & {
 				// background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
 			}
-
-			// height: ms(6);
 		}
 
-		/* Arrows */
+		// Arrows
 
 		.slick-prev,
 		.slick-next {
@@ -113,12 +113,9 @@ body {
 
 			img {
 				width: auto;
-				max-width: 90%;
-				max-height: 440px;
 				position: relative;
 				cursor: grab;
-				left: 50%;
-				@include transform (translateX(-50%));
+				margin: 0 auto;
 			}
 		}
 
@@ -191,81 +188,20 @@ body {
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
 
-		// .slick-slide {
-
-		// 	// img {
-		// 	// 	max-width: 100%;
-		// 	// 	max-height: ms(7);
-		// 	// 	left: 50%;
-		// 	// 	@include transform (translateX(-50%));
-		// 	// }
-		// }
 	}
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 
-		// .slick-slide {
-
-		// 	img {
-		// 		max-height: ms(7);
-		// 	}
-		// }
 	}
 
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 
-		.slick-prev,
-		.slick-next {
-			&:before {
-				opacity: 0.16;
-			}
-		}
-
-		.slick-slide {
-			z-index: -1;
-
-			img {
-				width: auto;
-				max-width: 100%;
-				max-height: 60vh;
-			}
-		}
 	}
 
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
 
-		.slick-prev,
-		.slick-next {
-			cursor: pointer;
-			@include transform(translate(0, -50%) scale(1.5));
-
-				&:before {
-					opacity: 0.16;
-				}
-			}
-
-		.slick-slide {
-			z-index: -1;
-
-			img {
-				width: auto;
-				max-width: 100%;
-				max-height: 60vh;
-			}
-		}
-
-		.slick-dots {
-
-			li {
-				margin: ms(2) ms(0);
-	
-				button {
-					@include transform(scale(1));
-				}
-			}
-		}
 	}
 }
