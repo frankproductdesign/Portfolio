@@ -45,10 +45,8 @@ $primary-font: 'SourceSansReg';
 $primary-fontlight: 'SourceSansLight';
 $primary-fontbold: 'SourceSansBold';
 
-// $sans: 'molengo', sans-serif;
-$sans: 'freight-sans-pro', sans-serif;
-// $sans: 'freight-neo-pro', sans-serif;
-// $serif: 'freight-text-pro', sans-serif;
+$futura: 'futura-pt', sans-serif;
+// using font-weights 300, 400 (normal, italic), 700.
 
 // Typographic scale using golden ratio 1:1.618, modular-scale .
 $ms-base: 1rem;
@@ -159,7 +157,7 @@ nav {
 			.active {
 
 				a {
-					font-family: $sans;
+					font-family: $futura;
 					color: $links;
 					opacity: 0.4;
 					cursor: none;
@@ -230,7 +228,7 @@ nav {
 
 // keep this body tag down here so you can grab the variables above
 body {
-	font-family: $sans, $primary-font;
+	font-family: $futura, $primary-font;
 // @include background(linear-gradient(bottom right, rgba(pink, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%), image-url('bg-test2.png') repeat-y 100% 0);
 	// @include background(linear-gradient(bottom right, rgba($bg03, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%));
 	margin: 0px;

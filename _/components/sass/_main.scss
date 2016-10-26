@@ -34,7 +34,7 @@
 				bottom: 0px;
 
 				p {
-					font-family: $sans;
+					font-family: $futura;
 					font-size: ms(0);
 					line-height: ms(1);
 					font-weight: 400;
@@ -65,7 +65,7 @@
 				}
 
 				p {
-					font-family: $sans;
+					font-family: $futura;
 					font-size: ms(-1);
 					line-height: ms(0);
 					font-weight: 400;
@@ -173,7 +173,7 @@
 			}
 
 			p {
-				font-family: $sans;
+				font-family: $futura;
 				font-size: ms(0);
 				font-weight: 400;
 				padding-top: 3px;
@@ -187,7 +187,7 @@
 				padding: ms(5) ms(2);
 
 				p {
-					font-family: $sans;
+					font-family: $futura;
 					font-size: ms(0);
 					line-height: ms(1);
 					// letter-spacing: 0.5px;
@@ -230,9 +230,6 @@
 			}
 		}
 
-		.ctaDrag {
-			display: none;
-		}
 
 		.columns {
 			width: 50%;
@@ -241,6 +238,31 @@
 			.slickContainer {
 				width: 50%;
 				margin: 0 auto;
+			}
+
+			.workText {
+				a {
+					text-decoration: none;
+					color: black;
+				}
+
+				p:first-of-type {
+					font-family: $futura, $primary-fontbold;
+					font-weight: 700;
+					font-style: normal;
+					font-size: ms(2);
+					line-height: ms(2);
+					letter-spacing: 0.05px;
+				}
+
+				p:last-of-type {
+					font-family: $futura, $primary-font;
+					font-weight: 400;
+					font-style: normal;
+					font-size: ms(0);
+					line-height: ms(1);
+					letter-spacing: 0.07px;
+				}
 			}
 		}
 	}
@@ -558,22 +580,6 @@
 				}
 			}
 		}
-
-		.ctaDrag {
-			position: fixed;
-			top: ms(1);
-			text-align: center;
-			z-index: 2200;
-			@include transform (translateX(-50%));
-			left: 50%;
-			display: inline;
-
-			p {
-				font-size: ms(0);
-				font-weight: 300;
-				color: gold;
-			}
-		}
 	}
 
 
@@ -728,10 +734,6 @@
 					line-height: ms(4);
 				}
 			}
-		}
-
-		.ctaDrag {
-			top: ms(2);
 		}
 	}
 }
