@@ -1,34 +1,34 @@
 [
 	{
-		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
-		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"type" : "Website",
+		"description" : "Creative direction, ux design, front-end development.",
 		"images" : [{ "image":"images/work/asset01.jpg" },{ "image":"images/work/asset02.jpg" }],
-		"link" : "Launch prototype",
-		"href" : "http://www.kipu.frankcastro.com",
+		"link" : "View",
+		"href" : "#/approach",
 		"bg" : [{ "image":"" }]
 	},
 	{
-		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
-		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"type" : "App",
+		"description" : "Art direction, ux design.",
 		"images" : [{ "image":"images/work/asset02.jpg" },{ "image":"images/work/asset04.jpg" }],
-		"link" : "Launch prototype",
-		"href" : "http://www.kipu.frankcastro.com",
+		"link" : "View",
+		"href" : "#/approach",
 		"bg" : [{ "image":"" }]
 	},
 	{
-		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
-		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"type" : "App",
+		"description" : "Art direction, ux design.",
 		"images" : [{ "image":"images/work/asset03.jpg" }],
-		"link" : "Launch prototype",
-		"href" : "http://www.kipu.frankcastro.com",
+		"link" : "View",
+		"href" : "#/approach",
 		"bg" : [{ "image":"" }]
 	},
 	{
-		"type" : "Landing Page Prototype. Creative direction, design and code. 2015",
-		"description" : "Built with HTML5, CSS3, Sass (Compass), Jquery, webfont from Adobe typekit, Grunt. This prototype is not responsive, designed only for screen resolution above 1900 pixels wide.",
+		"type" : "Social Network Game",
+		"description" : "Creative direction, game design. (Characters and costume designs)",
 		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/asset01.jpg" }],
-		"link" : "Launch prototype",
-		"href" : "http://www.kipu.frankcastro.com",
+		"link" : "View",
+		"href" : "#/approach",
 		"bg" : [{ "image":"" }]
 	}
 ]

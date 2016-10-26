@@ -8,19 +8,21 @@ angular
 			link: function(scope, element, attrs) {
 				$timeout(function() {
 					$(element).slick({
-						speed: 500,
-						dots: true,
+						autoplay: true,
+						autoplaySpeed: 36000,
+						speed: 1500,
+						dots: false,
 						arrows: false,
-						infinite: false,
+						infinite: true,
 						mobileFirst: true,
 						rows: 1,
 						lazyload: 'progressive',
+						draggable: true,
 						// fade: true,
 						// centerMode: true,
 						// centerPadding: '90',
 						// centerPadding is the side padding when in center mode. (px or %)
 
-						// the magic
 						responsive: [{
 							breakpoint: 7000,
 							// this breakpoint is coded backwards to sass, it include screen sizes downwards not upwards
