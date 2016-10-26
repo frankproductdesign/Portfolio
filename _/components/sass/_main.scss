@@ -1,6 +1,6 @@
 .mainContainer {
 	width: 100%;
-	max-width: 2500px;
+	max-width: 1880px;
 	margin: 0 auto;
 
 // -------------------------- XSMALL --------------------------
@@ -151,32 +151,28 @@
 			}
 		}
 
-		.pageTitle {
-			padding-top: 14px;
-			padding-left: ms(5);
-			position: fixed;
-			width: 100%;
-			height: 36px;
-			z-index: 979;
-			// @include single-text-shadow(black, 0px, 1px, 2px);
+		.header {
+			.pageTitle {
+				float: left;
+				width: 50%;
+				height: 36px;
+				z-index: 979;
 
-			&.bgGrad {
-				@include background(linear-gradient(bottom, rgba(white, 0.5) 0%, rgba(white, 1) 100%));
+				&.bgGrad {
+					@include background(linear-gradient(bottom, rgba(white, 0.5) 0%, rgba(white, 1) 100%));
+				}
+
+				p {
+					font-family: $futura;
+					font-weight: 300;
+					font-size: ms(2);
+					text-transform: uppercase;
+					color: black;
+				}
 			}
 
-			p:first-of-type {
-				color: gold;
-				font-weight: 400;
-				font-size: ms(1); 
-				letter-spacing: 0.04rem;
-				padding-top: 0px;
-			}
+			.links {
 
-			p {
-				font-family: $futura;
-				font-size: ms(0);
-				font-weight: 400;
-				padding-top: 3px;
 			}
 		}
 
@@ -230,13 +226,12 @@
 			}
 		}
 
-
 		.columns {
 			width: 50%;
 			float: left;
 
 			.slickContainer {
-				width: 50%;
+				width: 68%;
 				margin: 0 auto;
 			}
 
@@ -343,15 +338,7 @@
 		}
 
 		.pageTitle {
-			padding-top: 36px;
-			padding-left: ms(5);
-			height: 36px;
 
-			p:first-of-type {
-				font-weight: 300;
-				font-size: ms(1); 
-				letter-spacing: 0.04rem;
-			}
 		}
 
 		.aboutText {
@@ -530,19 +517,8 @@
 		}
 
 		.pageTitle {
-			padding-top: 30px;
-			padding-left: ms(5);
-			// @include single-text-shadow(white, 1px, 1px, ms(0));
-
 			&.bgGrad {
 				background: none;
-			}
-
-			p:first-of-type {
-				color: gold;
-				font-weight: 300;
-				font-size: ms(1); 
-				letter-spacing: 0.04rem;
 			}
 		}
 
@@ -696,14 +672,7 @@
 		}
 
 		.pageTitle {
-			padding-top: 42px;
-			padding-left: ms(6);
 
-			p:first-of-type {
-				font-weight: 300;
-				font-size: ms(2); 
-				letter-spacing: 0.04rem;
-			}
 		}
 
 		.aboutText {

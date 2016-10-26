@@ -18,10 +18,6 @@ angular
 						rows: 1,
 						lazyload: 'progressive',
 						draggable: true,
-						// fade: true,
-						// centerMode: true,
-						// centerPadding: '90',
-						// centerPadding is the side padding when in center mode. (px or %)
 
 						responsive: [{
 							breakpoint: 7000,
