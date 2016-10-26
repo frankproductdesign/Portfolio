@@ -31,8 +31,6 @@ body {
 		// Slider
 
 		.slick-list {
-			@include span(6 of 12);
-
 			.slick-loading & {
 				// background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
 			}

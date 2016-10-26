@@ -2,8 +2,8 @@
 	<p>Frank Castro</p>
 </div>
 
-<div>
-	<div ng-repeat="item in items">
+<div class="columns" ng-repeat="item in items">
+	<div class="slickContainer">
 		<div slick-carousel>
 			<div ng-repeat="image in item.images">
 				<img ng-src="{{image.image}}" />

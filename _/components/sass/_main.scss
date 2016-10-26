@@ -233,6 +233,16 @@
 		.ctaDrag {
 			display: none;
 		}
+
+		.columns {
+			width: 50%;
+			float: left;
+
+			.slickContainer {
+				width: 50%;
+				margin: 0 auto;
+			}
+		}
 	}
 
 
