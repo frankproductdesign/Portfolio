@@ -16,7 +16,7 @@ angular
 				function setActive() {
 					var path = $location.path();
 					if (path) {
-						angular.forEach(element.find('li'), function (li) {
+						angular.forEach(element.find('div'), function (li) {
 							var anchor = li.querySelector('a');
 							if (anchor.href.match('#' + path + '(?=\\?|$)')) {
 								angular.element(li).addClass('active');

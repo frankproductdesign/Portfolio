@@ -152,10 +152,20 @@
 		}
 
 		.header {
+			width: 1580px;
+			margin: 0 auto;
+			height: 240px;
+
+			p {
+				font-family: $futura;
+				text-transform: uppercase;
+				color: black;
+				padding-top: 108px;
+			}
+
 			.pageTitle {
 				float: left;
 				width: 50%;
-				height: 36px;
 				z-index: 979;
 
 				&.bgGrad {
@@ -163,16 +173,36 @@
 				}
 
 				p {
-					font-family: $futura;
 					font-weight: 300;
 					font-size: ms(2);
-					text-transform: uppercase;
-					color: black;
 				}
 			}
 
 			.links {
+				div {
+					float: right;
+					margin-left: ms(6);
+					padding-bottom: ms(3);
 
+					a {
+						text-decoration: none;
+						color: black;
+					}
+
+					p {
+						font-weight: 700;
+						font-size: ms(2);
+					}
+				}
+
+				.active {
+					// border-bottom: 1px;
+					border-bottom: 5px solid black;
+
+					p {
+						opacity: 1;
+					}
+				}
 			}
 		}
 
@@ -236,6 +266,8 @@
 			}
 
 			.workText {
+				height: 240px;
+
 				a {
 					text-decoration: none;
 					color: black;
@@ -246,8 +278,9 @@
 					font-weight: 700;
 					font-style: normal;
 					font-size: ms(2);
-					line-height: ms(2);
+					line-height: ms(5);
 					letter-spacing: 0.05px;
+					padding-top: 27px;
 				}
 
 				p:last-of-type {
