@@ -30,7 +30,8 @@ $gray1: lightgray;
 $gray2: gray;
 $gray3: dimgray;
 
-$links: gold;
+$text: #191919;
+$hover: black;
 
 
 // TYPEFACE
@@ -93,9 +94,19 @@ $largeMax: 1200px; // this is to maintain the content in this breakpoint within 
 $xlarge: 1900px; 
 $xlargeMax: 1800px;
 
-a:hover {
-		color: orange;
+a {
+	color: $text;
 }
+
+a:hover {
+	color: $hover;
+}
+
+p {
+	font-size: ms(0);
+	line-height: ms(1);
+	color: $text;
+} // this is the default size
 
 @mixin bg-properties {
 	-webkit-background-size: cover;
@@ -150,7 +161,7 @@ nav {
 				a {
 					text-decoration: none;
 					// text-transform: uppercase;
-					color: $links;
+					color: $text;
 					font-size: 4vh;
 				}
 			}
@@ -159,7 +170,7 @@ nav {
 
 				a {
 					font-family: $futura;
-					color: $links;
+					color: $text;
 					opacity: 0.4;
 					cursor: none;
 				}
@@ -227,7 +238,7 @@ nav {
 	}
 }
 
-// keep this body tag down here so you can grab the variables above
+// keep this body tag down here so you can reference the variables above
 body {
 	font-family: $futura, $primary-font;
 // @include background(linear-gradient(bottom right, rgba(pink, 0.5) 32%, rgba($bg02, 0.5) 44%, rgba($bg01, 0.5) 64%), image-url('bg-test2.png') repeat-y 100% 0);
@@ -255,11 +266,6 @@ body {
 				font-size: ms(0);
 				text-transform: uppercase;
 			} //recommended medium weight
-
-			p {
-				font-size: ms(0);
-				line-height: ms(1);
-			} // this is the default size
 	}
 
 	@include susy-breakpoint($small) {
@@ -340,36 +346,6 @@ body {
 	@include susy-breakpoint($xlarge) {
 		top: ms(4);
 		right: ms(5);
-	}
-}
-
-.bgImage {
-	@include susy-breakpoint($xsmall) {
-		@include single-transition(all, 1s, ease-out);
-		@include background(image-url('oandw-prot-iphone2.jpg'));
-		@include bg-properties;
-		width: 100%;
-		opacity: 1;
-		position: fixed;
-		top: 0px;
-		z-index: -1;
-		height: 100%;
-	}
-
-	@include susy-breakpoint($small) {
-
-	}
-
-	@include susy-breakpoint($medium) {
-
-	}
-
-	@include susy-breakpoint($large) {
-		height: 100%;
-	}
-
-	@include susy-breakpoint($xlarge) {
-
 	}
 }
 

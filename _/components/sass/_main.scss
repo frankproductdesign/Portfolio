@@ -18,91 +18,6 @@
 			cursor: pointer;
 		}
 
-		.introtextContainer {
-			width: 100%;
-			height: 100vh;
-			position: relative;
-			top: 0px;
-			z-index: 2;
-
-			.introtext {
-				width: 320px;
-				position: absolute;
-				@include transform(translateX(-50%));
-				left: 50%;
-				background-color: white;
-				bottom: 0px;
-
-				p {
-					font-family: $futura;
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					color: black;
-					letter-spacing: 0.2px;
-					text-align: left;
-					padding: ms(1) ms(1) ms(2) ms(1);
-				}
-			}
-		}
-
-		.secondtextContainer {
-			position: relative;
-			height: 100vh;
-
-			.secondtext {
-				width: 320px;
-				position: relative;
-				@include transform(translateX(-50%));
-				left: 50%;
-				background-color: gold;
-				z-index: 980;
-
-				p:first-of-type {
-					font-size: ms(0);
-					padding-top: ms(3);
-					padding-bottom: ms(1);
-				}
-
-				p {
-					font-family: $futura;
-					font-size: ms(-1);
-					line-height: ms(0);
-					font-weight: 400;
-					color: black;
-					letter-spacing: 0.2px;
-					text-align: left;
-					padding: 0px ms(1) ms(2) ms(1);
-				}
-
-				p:last-of-type {
-					padding-bottom: ms(4);
-				}
-			}
-		}
-
-		.scrollSpace {
-			width: 100%;
-			height: 55vh;
-			position: absolute;
-		}
-
-		.imgDesc {
-			position: absolute;
-			left: 0px;
-			top: 80vh;
-			z-index: 12;
-
-			p {
-				display: inline;
-				font-size: ms(-1);
-				line-height: ms(0);
-				color: white;
-				background-color: black;
-				padding: 2px ms(0) 2px ms(2);
-			}
-		}
-
 		.contacts {
 			width: 100%;
 
@@ -186,7 +101,6 @@
 
 					a {
 						text-decoration: none;
-						color: black;
 					}
 
 					p {
@@ -196,7 +110,7 @@
 
 				.active {
 					// border-bottom: 1px;
-					border-bottom: 5px solid black;
+					border-bottom: 5px solid $text;
 
 					p {
 						opacity: 1;
@@ -217,7 +131,6 @@
 					line-height: ms(1);
 					// letter-spacing: 0.5px;
 					font-weight: 400;
-					color: black;
 				}
 
 				dfn {
@@ -229,7 +142,6 @@
 				em {
 					font-style: italic;
 					font-size: ms(-1);
-					color: $gray2;
 				}
 			}
 		}
@@ -248,7 +160,6 @@
 
 				a {
 					text-decoration: none;
-					color: black;
 				}
 
 				p:first-of-type {
@@ -283,46 +194,6 @@
 			width: 22px;
 			top: 34px;
 			left: ms(2);
-		}
-
-		.introtextContainer {
-			.introtext {
-				width: 380px;
-				left: 65%;
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					letter-spacing: 0.2px;
-					padding: ms(2) ms(2) ms(3) ms(2);
-				}
-			}
-		}
-
-		.secondtextContainer {
-			.secondtext {
-				width: 380px;
-				left: 65%;
-
-				p:first-of-type {
-					font-size: ms(1);
-					padding-top: ms(4);
-					padding-bottom: ms(2);
-				}
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					letter-spacing: 0.2px;
-					padding: 0px ms(2) ms(3) ms(2);
-				}
-
-				p:last-of-type {
-					padding-bottom: ms(5);
-				}
-			}
 		}
 
 		.contacts {
@@ -369,45 +240,6 @@
 	@include susy-breakpoint($medium){
 		@include single-transition(all, 1s, ease-out);
 
-		.introtextContainer {
-			.introtext {
-				width: 380px;
-				left: 68%;
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					letter-spacing: 0.2px;
-					padding: ms(4) ms(3) ms(7);
-				}
-			}
-		}
-
-		.secondtextContainer {
-			.secondtext {
-				width: 380px;
-				left: 68%;
-
-				p:first-of-type {
-					font-size: ms(1);
-					padding-top: ms(4);
-					padding-bottom: ms(4);
-				}
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					letter-spacing: 0.2px;
-					padding: 0px ms(3) ms(5);
-				}
-
-				p:last-of-type {
-					padding-bottom: ms(6);
-				}
-			}
-		}
-
 		.contacts {
 			.contactInfo {
 				padding-top: ms(1);
@@ -433,76 +265,6 @@
 			top: 32px;
 			left: ms(2);
 			cursor: pointer;
-		}
-
-		.introtextContainer {
-			position: relative;
-			height: 100vh;
-
-			.introtext {
-				width: 280px;
-				left: 82%;
-				position: absolute;
-				bottom: 0px;
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					letter-spacing: 0.03rem;
-					text-align: left;
-					padding: ms(2) ms(1) ms(3) ms(2);
-				}
-			}
-		}
-
-		.secondtextContainer {
-			position: relative;
-			height: 100vh;
-
-			.secondtext {
-				width: 280px;
-				left: 82%;
-				position: relative;
-
-				p:first-of-type {
-					font-size: ms(1);
-					padding-bottom: ms(2);
-				}
-
-				p {
-					font-size: ms(-1);
-					font-weight: 400;
-					line-height: ms(0);
-					letter-spacing: 0.2px;
-					text-align: left;
-					padding: 0px ms(1) ms(3) ms(2);
-				}
-
-				p:last-of-type {
-					padding-bottom: ms(5);
-				}
-			}
-		}
-
-		.scrollSpace {
-			width: 100%;
-			height: 55vh;
-			position: absolute;
-		}
-
-		.imgDesc {
-			top: 70vh;
-			position: absolute;
-
-			p {
-				display: inline;
-				font-size: ms(-1);
-				line-height: ms(0);
-				color: white;
-				background-color: black;
-				padding: 1px ms(0) 1px ms(3);
-			}
 		}
 
 		.contacts {
@@ -556,49 +318,6 @@
 			cursor: pointer;
 		}
 
-		.introtextContainer {
-			.introtext {
-				width: 360px;
-				left: 82%;
-				position: absolute;
-				bottom: 0px;
-
-				p {
-					font-size: ms(1);
-					line-height: ms(2);
-					font-weight: 400;
-					letter-spacing: 0.03rem;
-					padding: ms(4) ms(3) ms(5) ms(4);
-				}
-			}
-		}
-
-		.secondtextContainer {
-			.secondtext {
-				width: 360px;
-				left: 82%;
-				position: relative;
-
-				p:first-of-type {
-					font-size: ms(1);
-					padding-top: ms(3);
-					padding-bottom: ms(2);
-				}
-
-				p {
-					font-size: ms(0);
-					line-height: ms(1);
-					font-weight: 400;
-					letter-spacing: 0.2px;
-					padding: 0px ms(3) ms(4) ms(4);
-				}
-
-				p:last-of-type {
-					padding-bottom: ms(6);
-				}
-			}
-		}
-
 		.contacts {
 			width: 100%;
 			height: ms(6);
@@ -641,17 +360,6 @@
 				border: 0px;
 				@include border-radius(0px);
 				opacity: 0.9;
-			}
-		}
-
-		.imgDesc {
-			top: 70vh;
-
-			p {
-				font-size: ms(0);
-				line-height: ms(1)*1.1;
-				letter-spacing: 0.03rem;
-				padding: 1px ms(0) 1px ms(4);
 			}
 		}
 
