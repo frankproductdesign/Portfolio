@@ -158,6 +158,7 @@
 
 			p {
 				font-family: $futura;
+				font-size: ms(1);
 				text-transform: uppercase;
 				color: black;
 				padding-top: 108px;
@@ -174,15 +175,14 @@
 
 				p {
 					font-weight: 300;
-					font-size: ms(2);
 				}
 			}
 
 			.links {
 				div {
 					float: right;
-					margin-left: ms(6);
-					padding-bottom: ms(3);
+					margin-left: ms(4);
+					padding-bottom: ms(1);
 
 					a {
 						text-decoration: none;
@@ -191,7 +191,6 @@
 
 					p {
 						font-weight: 700;
-						font-size: ms(2);
 					}
 				}
 
@@ -235,27 +234,6 @@
 			}
 		}
 
-		.approachText {
-			@include single-transition(all, 1s, ease-out);
-			width: 100%;
-
-			div {
-				width: 80%;
-				position: absolute;
-				@include transform(translate(-50%, -50%));
-				top: 50%;
-				left: 50%;
-				text-align: left;
-				padding: 0px ms(2);
-
-				p {
-					color: black;
-					font-size: ms(1);
-					line-height: ms(3);
-				}
-			}
-		}
-
 		.columns {
 			width: 50%;
 			float: left;
@@ -277,8 +255,8 @@
 					font-family: $futura, $primary-fontbold;
 					font-weight: 700;
 					font-style: normal;
-					font-size: ms(2);
-					line-height: ms(5);
+					font-size: ms(1);
+					line-height: ms(3);
 					letter-spacing: 0.05px;
 					padding-top: 27px;
 				}
@@ -381,15 +359,6 @@
 				@include transform(translateX(-50%));
 				left: 50%;
 				position: absolute;
-			}
-		}
-
-		.approachText {
-			div {
-				p {
-					font-size: ms(2);
-					line-height: ms(4);
-				}
 			}
 		}
 	}
@@ -571,24 +540,6 @@
 				}
 			}
 		}
-
-		.approachText {
-			@include single-transition(all, 1s, ease-out);
-
-			div {
-				position: absolute;
-				width: 480px;
-				@include transform(translate(-50%, -50%));
-				left: 50%;
-				top: 50%;
-				text-align: left;
-
-				p {
-					font-size: ms(2);
-					line-height: ms(3);
-				}
-			}
-		}
 	}
 
 
@@ -723,17 +674,6 @@
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
-				}
-			}
-		}
-
-		.approachText {
-			@include single-transition(all, 1s, ease-out);
-			
-			div {
-				p {
-					font-size: ms(2);
-					line-height: ms(4);
 				}
 			}
 		}
