@@ -9,11 +9,6 @@ angular
 				controller: 'CtrlrWork',
 				controllerAs: 'work'
 			})
-			.when('/pastprint', { 
-				templateUrl: 'templates/print/index.html',
-				controller: 'CtrlrPrint',
-				controllerAs: 'print'
-			})
 			.when('/oliveandwell', { 
 				templateUrl: 'templates/oliveandwell/index.html'
 			})
@@ -22,6 +17,9 @@ angular
 			})
 			.when('/dymon', { 
 				templateUrl: 'templates/dymon/index.html'
+			})
+			.when('/greenspace', { 
+				templateUrl: 'templates/greenspace/index.html',
 			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'

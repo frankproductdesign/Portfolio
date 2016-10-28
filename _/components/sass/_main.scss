@@ -145,9 +145,15 @@ $contentWidth: 1580px;
 			.content {
 				padding-top: ms(4);
 
+				p {
+					padding-bottom: ms(5);
+					width: 480px;
+					margin: 0 auto;
+				}
+
 				img {
 					width: 100%;
-					padding-bottom: ms(6);
+					padding-bottom: ms(5);
 				}
 			}
 		}
