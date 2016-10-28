@@ -145,6 +145,13 @@ $contentWidth: 1580px;
 			.content {
 				padding-top: ms(4);
 
+				h4 {
+					font-size: ms(0);
+					text-transform: uppercase;
+					text-align: center;
+					padding-bottom: ms(5);
+				}
+
 				p {
 					padding-bottom: ms(5);
 					width: 480px;
@@ -496,9 +503,8 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-			padding: ms(-1);
-			right: ms(0);
-			bottom: 22vh;
+			right: ms(1);
+			bottom: 200px;
 		}
 	}
 }

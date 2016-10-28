@@ -2,33 +2,43 @@
 	{
 		"type" : "E-commerce website",
 		"description" : "Creative direction, ux design, front-end development.",
-		"images" : [{ "image":"images/work/asset01.jpg" },{ "image":"images/work/asset02.jpg" }],
+		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
 		"link" : "View",
-		"href" : "#/oliveandwell",
-		"bg" : [{ "image":"" }]
+		"href" : "#/oliveandwell"
 	},
 	{
 		"type" : "App",
 		"description" : "Art direction, ux design.",
 		"images" : [{ "image":"images/work/asset02.jpg" },{ "image":"images/work/asset04.jpg" }],
 		"link" : "View",
-		"href" : "#/casm",
-		"bg" : [{ "image":"" }]
+		"href" : "#/casm"
 	},
 	{
 		"type" : "App",
 		"description" : "Art direction, ux design.",
-		"images" : [{ "image":"images/work/asset03.jpg" }],
+		"images" : [{ "image":"images/work/asset03.jpg" },{ "image":"images/work/asset03.jpg" }],
 		"link" : "View",
-		"href" : "#/dymon",
-		"bg" : [{ "image":"" }]
+		"href" : "#/dymon"
 	},
 	{
 		"type" : "Social Network Game",
 		"description" : "Creative direction, game design. (Characters and costume designs)",
-		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/asset01.jpg" }],
+		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
 		"link" : "View",
-		"href" : "#/greenspace",
-		"bg" : [{ "image":"" }]
+		"href" : "#/greenspace"
+	},
+	{
+		"type" : "Social Network Game",
+		"description" : "Creative direction, game design. (bla)",
+		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"link" : "View",
+		"href" : "#/greenspace"
+	},
+	{
+		"type" : "Social Network Game",
+		"description" : "Creative direction, game design. (bla2)",
+		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"link" : "View",
+		"href" : "#/greenspace"
 	}
 ]
