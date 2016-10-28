@@ -14,10 +14,8 @@ angular
 				controller: 'CtrlrCurrent',
 				controllerAs: 'current'
 			})
-			.when('/past', { 
-				templateUrl: 'templates/past/index.html',
-				controller: 'CtrlrWork',
-				controllerAs: 'work'
+			.when('/casm', { 
+				templateUrl: 'templates/casm/index.html'
 			})
 			.when('/pastprint', { 
 				templateUrl: 'templates/print/index.html',

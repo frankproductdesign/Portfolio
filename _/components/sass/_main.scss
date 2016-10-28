@@ -66,8 +66,10 @@
 			}
 		}
 
+$contentWidth: 1580px;
+
 		.header {
-			width: 1580px;
+			width: $contentWidth;
 			margin: 0 auto;
 			height: 240px;
 
@@ -126,7 +128,7 @@
 		}
 
 		.workContainer {
-			width: 1580px;
+			width: $contentWidth;
 			margin: 0 auto;
 
 			.projectName {
@@ -145,7 +147,7 @@
 
 				img {
 					width: 100%;
-					padding-bottom: ms(4);
+					padding-bottom: ms(6);
 				}
 			}
 		}

@@ -12,7 +12,7 @@
 		"description" : "Art direction, ux design.",
 		"images" : [{ "image":"images/work/asset02.jpg" },{ "image":"images/work/asset04.jpg" }],
 		"link" : "View",
-		"href" : "#/approach",
+		"href" : "#/casm",
 		"bg" : [{ "image":"" }]
 	},
 	{
