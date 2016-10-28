@@ -141,11 +141,18 @@
 			}
 
 			.content {
-				padding-top: ms(2);
-				
+				padding-top: ms(4);
+
 				img {
 					width: 100%;
+					padding-bottom: ms(4);
 				}
+			}
+		}
+
+		.portrait {
+			img {
+				width: 540px;
 			}
 		}
 
