@@ -1,10 +1,10 @@
 [
 	{
-		"type" : "Website",
+		"type" : "E-commerce website",
 		"description" : "Creative direction, ux design, front-end development.",
 		"images" : [{ "image":"images/work/asset01.jpg" },{ "image":"images/work/asset02.jpg" }],
 		"link" : "View",
-		"href" : "#/approach",
+		"href" : "#/oliveandwell",
 		"bg" : [{ "image":"" }]
 	},
 	{

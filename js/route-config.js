@@ -27,8 +27,8 @@ angular
 			.when('/code', { 
 				templateUrl: 'templates/code/index.html'
 			})
-			.when('/approach', { 
-				templateUrl: 'templates/approach/index.html'
+			.when('/oliveandwell', { 
+				templateUrl: 'templates/oliveandwell/index.html'
 			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
