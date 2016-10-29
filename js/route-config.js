@@ -21,6 +21,12 @@ angular
 			.when('/greenspace', { 
 				templateUrl: 'templates/greenspace/index.html',
 			})
+			.when('/greenspace1', { 
+				templateUrl: 'templates/greenspace1/index.html',
+			})
+			.when('/greenspace2', { 
+				templateUrl: 'templates/greenspace2/index.html',
+			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
 			})

@@ -29,16 +29,16 @@
 	},
 	{
 		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (Environments)",
+		"description" : "Creative direction, game design. (Environments and trees)",
 		"images" : [{ "image":"images/work/greenspace-game-island-closeup-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-island-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trees-frankcastro.com.jpg" }],
 		"link" : "View",
-		"href" : "#/greenspace"
+		"href" : "#/greenspace1"
 	},
 	{
 		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (Structures)",
+		"description" : "Creative direction, game design. (Structures and garbage types)",
 		"images" : [{ "image":"images/work/greenspace-game-energy-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-garbage-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trailers-frankcastro.com.jpg" }],
 		"link" : "View",
-		"href" : "#/greenspace"
+		"href" : "#/greenspace2"
 	}
 ]
