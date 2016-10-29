@@ -9,35 +9,35 @@
 	{
 		"type" : "App",
 		"description" : "Art direction, ux design.",
-		"images" : [{ "image":"images/work/asset02.jpg" },{ "image":"images/work/asset04.jpg" }],
+		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/casm"
 	},
 	{
 		"type" : "App",
 		"description" : "Art direction, ux design.",
-		"images" : [{ "image":"images/work/asset03.jpg" },{ "image":"images/work/asset03.jpg" }],
+		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/dymon"
 	},
 	{
 		"type" : "Social Network Game",
 		"description" : "Creative direction, game design. (Characters and costume designs)",
-		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
 	},
 	{
 		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (bla)",
-		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"description" : "Creative direction, game design. (Environments)",
+		"images" : [{ "image":"images/work/greenspace-game-island-closeup-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-island-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trees-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
 	},
 	{
 		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (bla2)",
-		"images" : [{ "image":"images/work/asset04.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"description" : "Creative direction, game design. (Structures)",
+		"images" : [{ "image":"images/work/greenspace-game-energy-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-garbage-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trailers-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
 	}
