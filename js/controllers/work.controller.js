@@ -1,4 +1,4 @@
-angular.module('myStuff')
+angular.module('myStuff', [])
 
 	// $scope and $http after bracket protects this function from being messed up with minification, the bracket close at the bottom
 

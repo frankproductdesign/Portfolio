@@ -9,15 +9,6 @@
 		@include single-transition(all, 1s, ease-out);
 		// @include container;
 
-		.fclogo {
-			width: 22px;
-			position: fixed;
-			top: 14px;
-			left: ms(2);
-			z-index: 979;
-			cursor: pointer;
-		}
-
 		.contacts {
 			width: 100%;
 
@@ -39,39 +30,16 @@
 			}
 		}
 
-		.circle {
-			@include transition-delay(0s);
-			@include transition-duration(0.2s);
-			@include transition-timing-function(ease-out);
-			width: 44px; 
-			height: 44px; 
-			top: ms(-1);
-			right: ms(-1);
-			background-color: transparent;
-			position: fixed;
-			@include border-radius(50%);
-			z-index: 997;
-
-			&.square {
-				@include transition-delay(0s);
-				@include transition-duration(0.2s);
-				@include transition-timing-function(ease-in);
-				height: 100%;
-				width: 100%;
-				top: 0px;
-				right: 0px;
-				@include border-radius(0px);
-				@include background(black);
-				opacity: 0.9;
-			}
-		}
-
 $contentWidth: 1580px;
 
 		.header {
 			width: $contentWidth;
-			margin: 0 auto;
 			height: 240px;
+			position: absolute;
+			@include transform(translateX(-50%));
+			left: 50%;
+			top: 0px;
+			opacity: 0.5;
 
 			p {
 				font-size: ms(1);
@@ -117,19 +85,29 @@ $contentWidth: 1580px;
 				}
 
 				.active {
-					// border-bottom: 1px;
 					border-bottom: 5px solid $text;
-
-					p {
-						opacity: 1;
-					}
 				}
 			}
 		}
 
+		.navbg-hidden {
+			@include susy-breakpoint($xsmall) {
+				will-change: transform;
+				@include single-transition(all, 0.9s, ease-out);
+				position: fixed;
+				background-color: white;
+				z-index: 99;
+				opacity: 1;
+			}
+		} //this is the class that shows and hides the links inside the work details pages
+
+		.spacer {
+				height: 240px;
+			} //you need this for the landing page
+
 		.workContainer {
 			width: $contentWidth;
-			margin: 0 auto;
+			margin: 240px auto 0;
 
 			.projectName {
 				p {
@@ -166,6 +144,7 @@ $contentWidth: 1580px;
 		}
 
 		.portrait {
+			margin-top: 240px;
 			img {
 				width: 520px;
 			}

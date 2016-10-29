@@ -101,6 +101,7 @@ a {
 
 a:hover {
 	color: $hover;
+	opacity: 1;
 }
 
 p {
@@ -122,120 +123,6 @@ p {
 
 	@include susy-breakpoint($large) {
 		background-position: center center;
-	}
-}
-
-nav {
-	visibility: hidden;
-	position: fixed;
-	z-index: 998;
-	@include single-transition(all, 0.2s, ease-in);
-	opacity: 0;
-
-// -------------------------- XSMALL --------------------------
-
-	@include susy-breakpoint($xsmall) {
-		@include single-transition(all, 0.3s, ease-out);
-		width: 100%;
-		top: 10vh;
-
-		&.navOpen {
-			visibility: visible;
-			opacity: 1;
-			@include transition-delay(0.4s);
-			@include transition-duration(0.2s);
-			@include transition-timing-function(ease-out);
-		}
-
-		ul {
-			list-style-type: none;
-			margin: 0;
-    		padding: 0;
-
-			li {
-				display: block; // makes the whole link area clickable (not just the text)
-				// float: left;
-				padding: 0px ms(4) ms(0) 0;
-				text-align: right;
-				line-height: 5vh;
-
-				a {
-					text-decoration: none;
-					// text-transform: uppercase;
-					color: $text;
-					font-size: 4vh;
-				}
-			}
-
-			.active {
-
-				a {
-					font-family: $futura;
-					color: $text;
-					opacity: 0.4;
-					cursor: none;
-				}
-			}
-		}
-	}
-
-// -------------------------- SMALL --------------------------
-
-	@include susy-breakpoint($small) {
-		@include single-transition(all, 0.5s, ease-out);
-
-		ul {
-			li {
-				padding: 0px ms(5) ms(0) 0;
-				line-height: 5vh;
-
-				a {
-					font-size: 4vh;
-				}
-			}
-		}
-	}
-
-// -------------------------- MEDIUM --------------------------
-
-	@include susy-breakpoint($medium) {
-		@include single-transition(all, 0.5s, ease-out);
-	}
-
-// -------------------------- LARGE --------------------------
-
-	@include susy-breakpoint($large) {
-		width: 100%;
-		top: ms(6);
-
-		ul {
-
-			li {
-				padding: 0px ms(4) ms(0) 0;
-				line-height: 4vh;
-
-				a {
-					font-size: 4vh;
-				}
-			}
-		}
-	}
-
-// -------------------------- XLARGE --------------------------
-
-	@include susy-breakpoint($xlarge) {
-		top: 12vh;
-
-		ul {
-			li {
-				padding: 0px ms(6) ms(1) 0px;
-				line-height: 5vh;
-
-				a {
-					font-size: 4vh;
-				}
-			}
-		}
 	}
 }
 
@@ -288,61 +175,6 @@ body {
 
 #{headings(1,4)} {
 	color: black;
-}
-
-.barsWrapper {
-	display: block;
-
-	@include susy-breakpoint($xsmall) {
-		top: 18px;
-		right: 26px;
-		position: fixed;
-		cursor: pointer;
-		z-index: 998;
-
-		.bar {
-			background-color: gold;
-			height: 1px;
-			width: 18px;
-			margin: 4px 0px;
-			display: table;
-		}
-
-		&.close {
-			div {
-				opacity: 0;
-			}
-
-			div:first-of-type {
-				@include transform(translate(0px, 5px) rotate(45deg));
-				opacity: 1;
-			}
-
-			div:last-of-type {
-				@include transform(translate(0px, -5px) rotate(-45deg));
-				opacity: 1;
-			}
-		}
-	}
-
-	@include susy-breakpoint($small) {
-		top: ms(3);
-		right: ms(3);
-	}
-
-	@include susy-breakpoint($medium) {
-
-	}
-
-	@include susy-breakpoint($large) {
-		top: ms(2);
-		right: ms(2);
-	}
-
-	@include susy-breakpoint($xlarge) {
-		top: ms(4);
-		right: ms(5);
-	}
 }
 
 // breakpoints structure
