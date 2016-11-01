@@ -31,7 +31,7 @@
 		}
 
 $contentWidth: 100vw;
-$contentMaxWidth: 320px;
+$contentMaxWidth: 88vw;
 $headerHeight: 200px;
 
 		.header {
@@ -273,7 +273,7 @@ $headerHeight: 200px;
 		}
 
 $contentWidth: 100vw;
-$contentMaxWidth: 520px;
+$contentMaxWidth: 68vw;
 $headerHeight: 200px;
 
 		.header {
@@ -399,7 +399,7 @@ $headerHeight: 200px;
 		}
 
 $contentWidth: 100vw;
-$contentMaxWidth: 820px;
+$contentMaxWidth: 84vw;
 $headerHeight: 220px;
 
 		.header {
@@ -510,7 +510,8 @@ $headerHeight: 220px;
 			}
 		}
 
-$contentWidth: 1078px;
+$contentWidth: 100vw;
+$contentMaxWidth: 83vw;
 $headerHeight: 180px;
 
 		.header {
@@ -518,7 +519,7 @@ $headerHeight: 180px;
 			height: $headerHeight;
 			
 			div:first-of-type {
-				max-width: $contentWidth;
+				max-width: $contentMaxWidth;
 			}
 
 			p {
@@ -535,16 +536,22 @@ $headerHeight: 180px;
 		}
 
 		.workContainer {
-			width: $contentWidth;
+			width: $contentMaxWidth;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentWidth;
+				width: $contentMaxWidth;
 				margin: 0 auto;
 
 				p {
 					font-weight: 700;
 					font-size: ms(1);
+				}
+			}
+
+			.websiteLink {
+				p {
+					width: $contentMaxWidth;
 				}
 			}
 
@@ -571,7 +578,7 @@ $headerHeight: 180px;
 		}
 
 		.portrait {
-			width: $contentWidth;
+			width: $contentMaxWidth;
 			margin: $headerHeight auto 0;
 			
 			img {
@@ -638,7 +645,8 @@ $headerHeight: 180px;
 			}
 		}
 
-$contentWidth: 1580px;
+$contentWidth: 100vw;
+$contentMaxWidth: 1580px;
 $headerHeight: 240px;
 
 		.header {
@@ -646,7 +654,7 @@ $headerHeight: 240px;
 			height: $headerHeight;
 
 			div:first-of-type {
-				max-width: $contentWidth;
+				max-width: $contentMaxWidth;
 			}
 
 			p {
@@ -671,21 +679,27 @@ $headerHeight: 240px;
 		}
 
 		.workContainer {
-			width: $contentWidth;
+			width: $contentMaxWidth;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentWidth;
+				width: $contentMaxWidth;
 
 				p {
 					font-weight: 700;
 					font-size: ms(1);
 				}
 			}
+
+			.websiteLink {
+				p {
+					width: $contentMaxWidth;
+				}
+			}
 		}
 
 		.portrait {
-			width: $contentWidth;
+			width: $contentMaxWidth;
 			margin: $headerHeight auto 0;
 			
 			img {
