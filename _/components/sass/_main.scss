@@ -160,10 +160,14 @@ $headerHeight: 200px;
 		}
 
 		.portrait {
-			margin-top: 240px;
+			width: $contentMaxWidth;
+			margin: $headerHeight auto 0;
 
 			img {
-				width: 520px;
+				width: 180px;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: relative;
 			}
 		}
 
@@ -171,6 +175,14 @@ $headerHeight: 200px;
 			width: 100%;
 
 			div {
+				@include single-transition(all, 1s, ease-out);
+				width: $contentMaxWidth;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: absolute;
+				top: 420px;
+				padding-bottom: 16vh;
+
 				p {
 					font-family: $futura;
 					font-size: ms(0);
@@ -334,9 +346,6 @@ $headerHeight: 200px;
 			
 			img {
 				width: 200px;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position: relative;
 			}
 		}
 
