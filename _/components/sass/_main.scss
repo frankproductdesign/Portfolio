@@ -102,8 +102,8 @@ $contentWidth: 1580px;
 		} //this is the class that shows and hides the links inside the work details pages
 
 		.spacer {
-				height: 240px;
-			} //you need this for the landing page
+			height: 240px;
+		}
 
 		.workContainer {
 			width: $contentWidth;
@@ -154,8 +154,6 @@ $contentWidth: 1580px;
 			width: 100%;
 
 			div {
-				padding: ms(5) ms(2);
-
 				p {
 					font-family: $futura;
 					font-size: ms(0);
@@ -227,12 +225,6 @@ $contentWidth: 1580px;
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
 
-		.fclogo {
-			width: 22px;
-			top: 34px;
-			left: ms(2);
-		}
-
 		.contacts {
 			.contactInfo {
 				padding-top: ms(2);
@@ -251,18 +243,12 @@ $contentWidth: 1580px;
 			}
 		}
 
-		.artbox {
-			width: 99vw;
-			height: 99.5vh;
-		}
-
 		.pageTitle {
 
 		}
 
 		.aboutText {
 			div {
-				padding: 10vh ms(2);
 				width: 480px;
 				@include transform(translateX(-50%));
 				left: 50%;
@@ -297,24 +283,45 @@ $contentWidth: 1580px;
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
 
-		.fclogo {
-			width: 20px;
-			top: 32px;
-			left: ms(2);
-			cursor: pointer;
-		}
-
 		.contacts {
 			.contactInfo {
-				padding-top: ms(1);
-				padding-right: ms(3);
-
 				p {
-					font-size: ms(0);
 					line-height: ms(2);
-					font-weight: 300;
 				}
 			}
+		}
+
+$contentWidth: 1078px;
+$headerHeight: 180px;
+
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+
+			p {
+				font-size: ms(0);
+				padding-top: 76px;
+			}
+
+			.links {
+				div {
+					margin-left: ms(4);
+					padding-bottom: ms(0);
+				}
+
+				.active {
+					border-bottom: 3px solid $text;
+				}
+			}
+		}
+
+		.workContainer {
+			width: $contentWidth;
+			margin: $headerHeight auto 0;
+		}
+
+		.spacer {
+			height: $headerHeight;
 		}
 
 		.pageTitle {
@@ -328,12 +335,26 @@ $contentWidth: 1580px;
 				@include single-transition(all, 1s, ease-out);
 				position: relative;
 				width: 480px;
-				padding: ms(5) ms(2);
 
 				p {
 					font-weight: 400;
 					line-height: ms(1);
 					color: black;
+				}
+			}
+		}
+
+		.columns {
+			.slickContainer {
+				width: 68%;
+			}
+
+			.workText {
+				height: $headerHeight;
+
+				p:first-of-type {
+					font-size: ms(0);
+					line-height: ms(2);
 				}
 			}
 		}
@@ -344,14 +365,6 @@ $contentWidth: 1580px;
 
 	@include susy-breakpoint($xlarge){
 		@include single-transition(all, 1s, ease-out);
-
-		.fclogo {
-			width: 24px;
-			top: 40px;
-			left: ms(3);
-			z-index: 999;
-			cursor: pointer;
-		}
 
 		.contacts {
 			width: 100%;
@@ -374,28 +387,37 @@ $contentWidth: 1580px;
 			}
 		}
 
-		.circle {
-			@include transition-delay(0s);
-			@include transition-duration(0.2s);
-			@include transition-timing-function(ease-out);
-			width: 44px; 
-			height: 44px;
-			top: ms(2);
-			right: ms(2);
-			opacity: 1;
+$contentWidth: 1580px;
+$headerHeight: 240px;
 
-			&.square {
-				@include transition-delay(0s);
-				@include transition-duration(0.2s);
-				@include transition-timing-function(ease-in);
-				height: 100%;
-				width: 100%;
-				top: 0px;
-				right: 0px;
-				border: 0px;
-				@include border-radius(0px);
-				opacity: 0.9;
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+
+			p {
+				font-size: ms(1);
+				padding-top: 108px;
 			}
+
+			.links {
+				div {
+					margin-left: ms(4);
+					padding-bottom: ms(1);
+				}
+
+				.active {
+					border-bottom: 5px solid $text;
+				}
+			}
+		}
+
+		.spacer {
+			height: $headerHeight;
+		}
+
+		.workContainer {
+			width: $contentWidth;
+			margin: $headerHeight auto 0;
 		}
 
 		.pageTitle {
@@ -410,13 +432,28 @@ $contentWidth: 1580px;
 				@include column-gap(ms(5));
 				max-width: 1100px;
 				@include transform(translateX(-50%));
-				top: 8%;
+				top: 240px;
 				left: 50%;
 
 				p {
 					font-size: ms(0);
 					font-weight: 400;
 					line-height: ms(1);
+				}
+			}
+		}
+
+		.columns {
+			.slickContainer {
+				width: 68%;
+			}
+
+			.workText {
+				height: $headerHeight;
+
+				p:first-of-type {
+					font-size: ms(1);
+					line-height: ms(3);
 				}
 			}
 		}
@@ -476,8 +513,8 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 
 		.copyright {
-			padding: ms(-1);
-			right: 10px;
+			padding: 0;
+			right: ms(0);
 			bottom: 150px;
 		}
 	}
