@@ -30,27 +30,34 @@
 			}
 		}
 
-$contentWidth: 360px;
+$contentWidth: 100vw;
+$contentMaxWidth: 320px;
+$headerHeight: 200px;
 
 		.header {
 			width: $contentWidth;
-			height: 240px;
+			height: $headerHeight;
 			position: absolute;
 			@include transform(translateX(-50%));
 			left: 50%;
 			top: 0px;
 			opacity: 0.35;
 
+			div:first-of-type {
+				max-width: $contentMaxWidth;
+				margin: 0 auto;
+			}
+
 			p {
-				font-size: ms(1);
+				font-size: ms(0);
 				text-transform: uppercase;
 				color: black;
-				padding-top: 108px;
+				padding-top: 80px;
 			}
 
 			.pageTitle {
 				float: left;
-				width: 50%;
+				width: auto;
 				z-index: 979;
 
 				p {
@@ -72,8 +79,8 @@ $contentWidth: 360px;
 			.links {
 				div {
 					float: right;
-					margin-left: ms(4);
-					padding-bottom: ms(1);
+					margin-left: ms(1);
+					padding-bottom: ms(0);
 
 					a {
 						text-decoration: none;
@@ -85,7 +92,7 @@ $contentWidth: 360px;
 				}
 
 				.active {
-					border-bottom: 5px solid $text;
+					border-bottom: 3px solid $text;
 				}
 			}
 		}
@@ -102,14 +109,17 @@ $contentWidth: 360px;
 		} //this is the class that shows and hides the links inside the work details pages
 
 		.spacer {
-			height: 240px;
+			height: $headerHeight;
 		}
 
 		.workContainer {
 			width: $contentWidth;
-			margin: 240px auto 0;
+			margin: $headerHeight auto 0;
 
 			.projectName {
+				width: $contentMaxWidth;
+				margin: 0 auto;
+
 				p {
 					font-weight: 700;
 					font-size: ms(1);
@@ -120,7 +130,7 @@ $contentWidth: 360px;
 				width: 100%;
 
 				p {
-					width: $contentWidth;
+					width: $contentMaxWidth;
 					margin: 0 auto;
 					text-align: right;
 				}
@@ -138,7 +148,7 @@ $contentWidth: 360px;
 
 				p {
 					padding-bottom: ms(3);
-					width: 480px;
+					width: $contentMaxWidth;
 					margin: 0 auto;
 				}
 
@@ -183,11 +193,11 @@ $contentWidth: 360px;
 		}
 
 		.columns {
-			width: 50%;
+			width: 100%;
 			float: left;
 
 			.slickContainer {
-				width: 68%;
+				width: 88%;
 				margin: 0 auto;
 			}
 
@@ -268,14 +278,14 @@ $headerHeight: 200px;
 				padding-top: 86px;
 			}
 
+			.pageTitle {
+				width: 50%;
+			}
+
 			.links {
 				div {
 					margin-left: ms(3);
 					padding-bottom: ms(0);
-				}
-
-				.active {
-					border-bottom: 3px solid $text;
 				}
 			}
 		}
@@ -286,7 +296,6 @@ $headerHeight: 200px;
 
 			.projectName {
 				width: $contentMaxWidth;
-				margin: 0 auto;
 
 				p {
 					font-weight: 700;
@@ -355,9 +364,6 @@ $headerHeight: 200px;
 		}
 
 		.columns {
-			width: 100%;
-			float: left;
-
 			.slickContainer {
 				width: 68%;
 			}
@@ -404,10 +410,6 @@ $headerHeight: 220px;
 				div {
 					margin-left: ms(3);
 					padding-bottom: ms(0);
-				}
-
-				.active {
-					border-bottom: 3px solid $text;
 				}
 			}
 		}
@@ -519,10 +521,6 @@ $headerHeight: 180px;
 				div {
 					margin-left: ms(4);
 					padding-bottom: ms(0);
-				}
-
-				.active {
-					border-bottom: 3px solid $text;
 				}
 			}
 		}
