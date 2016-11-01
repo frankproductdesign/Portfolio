@@ -127,24 +127,24 @@ $contentWidth: 360px;
 			}
 
 			.content {
-				padding-top: ms(4);
+				padding-top: ms(3);
 
 				h4 {
 					font-size: ms(0);
 					text-transform: uppercase;
 					text-align: center;
-					padding-bottom: ms(5);
+					padding-bottom: ms(3);
 				}
 
 				p {
-					padding-bottom: ms(5);
+					padding-bottom: ms(3);
 					width: 480px;
 					margin: 0 auto;
 				}
 
 				img {
 					width: 100%;
-					padding-bottom: ms(5);
+					padding-bottom: ms(3);
 				}
 			}
 		}
@@ -250,38 +250,9 @@ $contentWidth: 360px;
 			}
 		}
 
-		.aboutText {
-			div {
-				width: 480px;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position: absolute;
-			}
-		}
-	}
-
-
-// -------------------------- MEDIUM --------------------------
-
-	@include susy-breakpoint($medium){
-		@include single-transition(all, 1s, ease-out);
-
-		.contacts {
-			.contactInfo {
-				padding-top: ms(1);
-				padding-right: ms(3);
-
-				p {
-					font-size: ms(0);
-					line-height: 4vh;
-					font-weight: 300;
-				}
-			}
-		}
-
 $contentWidth: 100vw;
-$contentMaxWidth: 820px;
-$headerHeight: 220px;
+$contentMaxWidth: 520px;
+$headerHeight: 200px;
 
 		.header {
 			width: $contentWidth;
@@ -293,7 +264,7 @@ $headerHeight: 220px;
 			}
 
 			p {
-				font-size: ms(1);
+				font-size: ms(0);
 				padding-top: 86px;
 			}
 
@@ -330,7 +301,138 @@ $headerHeight: 220px;
 			}
 
 			.content {
-				padding-top: ms(4);
+				padding-top: ms(3);
+
+				h4 {
+					padding-bottom: ms(4);
+				}
+
+				p {
+					padding-bottom: ms(4);
+					width: 480px;
+				}
+
+				img {
+					width: 100%;
+					padding-bottom: ms(4);
+				}
+			}
+		}
+
+		.portrait {
+			width: $contentMaxWidth;
+			margin: $headerHeight auto 0;
+			
+			img {
+				width: 200px;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: relative;
+			}
+		}
+
+		.spacer {
+			height: $headerHeight;
+		}
+
+		.aboutText {
+			width: 100%;
+
+			div {
+				@include single-transition(all, 1s, ease-out);
+				width: 480px;
+				@include transform(translateX(-50%));
+				left: 50%;
+				position: absolute;
+				top: 470px;
+				padding-bottom: 20vh;
+
+				p {
+					line-height: ms(1);
+					color: black;
+				}
+			}
+		}
+
+		.columns {
+			width: 100%;
+			float: left;
+
+			.slickContainer {
+				width: 68%;
+			}
+		}
+	}
+
+
+// -------------------------- MEDIUM --------------------------
+
+	@include susy-breakpoint($medium){
+		@include single-transition(all, 1s, ease-out);
+
+		.contacts {
+			.contactInfo {
+				padding-top: ms(1);
+				padding-right: ms(3);
+
+				p {
+					font-size: ms(0);
+					line-height: 4vh;
+					font-weight: 300;
+				}
+			}
+		}
+
+$contentWidth: 100vw;
+$contentMaxWidth: 820px;
+$headerHeight: 220px;
+
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+
+			div:first-of-type {
+				max-width: $contentMaxWidth;
+			}
+
+			p {
+				font-size: ms(1);
+				padding-top: 86px;
+			}
+
+			.links {
+				div {
+					margin-left: ms(3);
+					padding-bottom: ms(0);
+				}
+
+				.active {
+					border-bottom: 3px solid $text;
+				}
+			}
+		}
+
+		.workContainer {
+			width: $contentWidth;
+			margin: $headerHeight auto 0;
+
+			.projectName {
+				width: $contentMaxWidth;
+
+				p {
+					font-weight: 700;
+					font-size: ms(1);
+				}
+			}
+
+			.websiteLink {
+				p {
+					width: $contentMaxWidth;
+				}
+			}
+
+			.content {
+				padding-top: ms(3);
 
 				h4 {
 					padding-bottom: ms(4);
@@ -352,9 +454,6 @@ $headerHeight: 220px;
 			
 			img {
 				width: 220px;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position: relative;
 			}
 		}
 
@@ -373,8 +472,15 @@ $headerHeight: 220px;
 
 				p {
 					line-height: ms(1);
-					color: black;
 				}
+			}
+		}
+
+		.columns {
+			width: 50%;
+
+			.slickContainer {
+				width: 68%;
 			}
 		}
 	}
@@ -630,7 +736,6 @@ footer {
 				font-weight: 400;
 				line-height: ms(0);
 				letter-spacing: 0.04rem;
-				opacity: 0.8;
 			}
 		}
 	}
@@ -641,9 +746,20 @@ footer {
 		@include single-transition(all, 1s, ease-out);
 		
 		.copyright {
+			position: fixed;
+			padding: 0;
+			right: ms(0);
+			bottom: 150px;
+			@include transform(rotate(-90deg));
+			@include transform-origin(100%, 50%);
+			z-index: 999;
+
 			p {
 				font-size: ms(-1);
+				color: $gray2;
+				font-weight: 400;
 				line-height: ms(0);
+				letter-spacing: 0.04rem;
 			}
 		}
 	}
