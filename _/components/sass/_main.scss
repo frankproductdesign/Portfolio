@@ -32,7 +32,7 @@
 
 $contentWidth: 100vw;
 $contentMaxWidth: 88vw;
-$headerHeight: 200px;
+$headerHeight: 130px;
 
 		.header {
 			width: $contentWidth;
@@ -52,7 +52,7 @@ $headerHeight: 200px;
 				font-size: ms(0);
 				text-transform: uppercase;
 				color: black;
-				padding-top: 80px;
+				padding-top: 50px;
 			}
 
 			.pageTitle {
@@ -180,7 +180,7 @@ $headerHeight: 200px;
 				@include transform(translateX(-50%));
 				left: 50%;
 				position: absolute;
-				top: 420px;
+				top: 360px;
 				padding-bottom: 16vh;
 
 				p {
