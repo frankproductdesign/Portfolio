@@ -103,7 +103,7 @@ $headerHeight: 130px;
 				@include single-transition(all, 0.9s, ease-out);
 				position: fixed;
 				background-color: white;
-				z-index: 99;
+				z-index: 999;
 				opacity: 1;
 			}
 		} //this is the class that shows and hides the links inside the work details pages

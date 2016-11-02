@@ -18,36 +18,6 @@ angular
 						rows: 1,
 						lazyload: 'progressive',
 						draggable: true,
-
-						responsive: [{
-							breakpoint: 7000,
-							// this breakpoint is coded backwards to sass, it include screen sizes downwards not upwards
-								settings: {
-									adaptiveHeight: false,
-									slidesToShow: 1
-								}
-
-							}, {
-
-							breakpoint: 1200,
-								settings: {
-									adaptiveHeight: true,
-									slidesToShow: 1
-								}
-
-							}, {
-
-							breakpoint: 319,
-								settings: {
-									adaptiveHeight: true,
-									slidesToShow: 1
-								}
-
-							}, {
-
-							breakpoint: 200,
-								settings: "unslick" // destroys slick
-						}]
 					});
 					$(element).slick(scope.$eval(attrs.slickCarousel));
 				});
