@@ -225,27 +225,6 @@ $headerHeight: 130px;
 				}
 			}
 		}
-
-
-		.contacts {
-			width: 100%;
-
-			.contactInfo {
-				width: $contentMaxWidth;
-
-				p {
-					font-size: ms(0);
-					font-weight: 300;
-					text-align: center;
-
-					a {
-						text-decoration: none;
-						color: black;
-						padding-left: ms(2);
-					}
-				}
-			}
-		}
 	}
 
 
@@ -674,29 +653,53 @@ $headerHeight: 240px;
 	}
 }
 
-footer {
-	font-family: $primary-font;
+.footer {
 
 // -------------------------- XSMALL --------------------------
 
 	@include susy-breakpoint($xsmall) {
 		@include single-transition(all, 1s, ease-out);
 
+		p {
+			font-weight: 300;
+			text-align: center;
+		}
+
+		div {
+			width: 88vw;
+			margin: 0 auto;
+
+			p {
+				font-size: ms(0);
+				line-height: ms(2);
+				letter-spacing: 0.07rem;
+			}
+
+			a {
+				text-decoration: none;
+				color: $gray1;
+			}
+
+			a::after {
+				content: " + ";
+				color: $gray2;
+			}
+
+			a:last-of-type::after {
+				content: " ";
+			}
+		}
+
 		.copyright {
-			position: fixed;
-			padding: ms(-1);
-			right: 10px;
-			bottom: 150px;
-			@include transform(rotate(-90deg));
-			@include transform-origin(100%, 50%);
 			z-index: 999;
 
 			p {
 				font-size: ms(-1);
-				color: $gray2;
+				color: $gray3;
 				font-weight: 400;
 				line-height: ms(0);
 				letter-spacing: 0.04rem;
+				padding: ms(0);
 			}
 		}
 	}
@@ -705,23 +708,9 @@ footer {
 
 	@include susy-breakpoint($small) {
 		@include single-transition(all, 1s, ease-out);
-		
-		.copyright {
-			position: fixed;
-			padding: 0;
-			right: ms(0);
-			bottom: 150px;
-			@include transform(rotate(-90deg));
-			@include transform-origin(100%, 50%);
-			z-index: 999;
 
-			p {
-				font-size: ms(-1);
-				color: $gray2;
-				font-weight: 400;
-				line-height: ms(0);
-				letter-spacing: 0.04rem;
-			}
+		div {
+			width: 68vw;
 		}
 	}
 
@@ -730,6 +719,8 @@ footer {
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
 		.copyright {
+			@include transform(rotate(-90deg));
+			@include transform-origin(100%, 50%);
 			padding: 0;
 			right: ms(0);
 			bottom: 150px;
