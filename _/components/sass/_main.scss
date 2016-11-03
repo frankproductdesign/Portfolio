@@ -9,27 +9,6 @@
 		@include single-transition(all, 1s, ease-out);
 		// @include container;
 
-		.contacts {
-			width: 100%;
-
-			.contactInfo {
-				padding-top: ms(1);
-				padding-right: ms(2);
-
-				p {
-					font-size: ms(0);
-					line-height: ms(2);
-					font-weight: 300;
-					text-align: right;
-
-					a {
-						text-decoration: none;
-						color: white;
-					}
-				}
-			}
-		}
-
 $contentWidth: 100vw;
 $contentMaxWidth: 88vw;
 $headerHeight: 130px;
@@ -246,6 +225,27 @@ $headerHeight: 130px;
 				}
 			}
 		}
+
+
+		.contacts {
+			width: 100%;
+
+			.contactInfo {
+				width: $contentMaxWidth;
+
+				p {
+					font-size: ms(0);
+					font-weight: 300;
+					text-align: center;
+
+					a {
+						text-decoration: none;
+						color: black;
+						padding-left: ms(2);
+					}
+				}
+			}
+		}
 	}
 
 
@@ -253,24 +253,6 @@ $headerHeight: 130px;
 
 	@include susy-breakpoint($small){
 		@include single-transition(all, 1s, ease-out);
-
-		.contacts {
-			.contactInfo {
-				padding-top: ms(2);
-				padding-right: ms(3);
-
-				p {
-					font-size: ms(0);
-					line-height: 4vh;
-					font-weight: 300;
-
-					a {
-						text-decoration: none;
-						color: white;
-					}
-				}
-			}
-		}
 
 $contentWidth: 100vw;
 $contentMaxWidth: 68vw;
@@ -385,19 +367,6 @@ $headerHeight: 200px;
 	@include susy-breakpoint($medium){
 		@include single-transition(all, 1s, ease-out);
 
-		.contacts {
-			.contactInfo {
-				padding-top: ms(1);
-				padding-right: ms(3);
-
-				p {
-					font-size: ms(0);
-					line-height: 4vh;
-					font-weight: 300;
-				}
-			}
-		}
-
 $contentWidth: 100vw;
 $contentMaxWidth: 84vw;
 $headerHeight: 220px;
@@ -501,14 +470,6 @@ $headerHeight: 220px;
 
 	@include susy-breakpoint($large){
 		@include single-transition(all, 1s, ease-out);
-
-		.contacts {
-			.contactInfo {
-				p {
-					line-height: ms(2);
-				}
-			}
-		}
 
 $contentWidth: 100vw;
 $contentMaxWidth: 83vw;
@@ -623,27 +584,6 @@ $headerHeight: 180px;
 
 	@include susy-breakpoint($xlarge){
 		@include single-transition(all, 1s, ease-out);
-
-		.contacts {
-			width: 100%;
-			height: ms(6);
-			padding-top: ms(1);
-
-			.contactInfo {
-				padding-right: ms(5);
-
-				p {
-					font-size: ms(0);
-					line-height: ms(3);
-					font-weight: 400;
-
-					a {
-						text-decoration: none;
-						color: white;
-					}
-				}
-			}
-		}
 
 $contentWidth: 100vw;
 $contentMaxWidth: 1580px;
