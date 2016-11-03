@@ -139,8 +139,12 @@ $headerHeight: 130px;
 		}
 
 		.portrait {
-			width: $contentMaxWidth;
-			margin: $headerHeight auto 0;
+			width: 100%;
+
+			div {
+				width: $contentMaxWidth;
+				margin: $headerHeight auto 0;
+			}
 
 			img {
 				width: 180px;
@@ -158,9 +162,9 @@ $headerHeight: 130px;
 				width: $contentMaxWidth;
 				@include transform(translateX(-50%));
 				left: 50%;
-				position: absolute;
-				top: 360px;
-				padding-bottom: 16vh;
+				position: relative;
+				padding-top: ms(1);
+				padding-bottom: ms(2);
 
 				p {
 					font-family: $futura;
@@ -302,8 +306,12 @@ $headerHeight: 200px;
 		}
 
 		.portrait {
-			width: $contentMaxWidth;
-			margin: $headerHeight auto 0;
+			width: 100%;
+
+			div {
+				width: $contentMaxWidth;
+				margin: $headerHeight auto 0;
+			}
 			
 			img {
 				width: 200px;
@@ -315,16 +323,11 @@ $headerHeight: 200px;
 		}
 
 		.aboutText {
-			width: 100%;
-
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: 480px;
-				@include transform(translateX(-50%));
-				left: 50%;
-				position: absolute;
-				top: 470px;
-				padding-bottom: 20vh;
+				width: $contentMaxWidth;
+				padding-top: ms(2);
+				padding-bottom: ms(3);
 
 				p {
 					line-height: ms(1);
@@ -408,8 +411,12 @@ $headerHeight: 220px;
 		}
 
 		.portrait {
-			width: $contentMaxWidth;
-			margin: $headerHeight auto 0;
+			width: 100%;
+			
+			div {
+				width: $contentMaxWidth;
+				margin: $headerHeight auto 0;
+			}
 			
 			img {
 				width: 220px;
@@ -421,13 +428,9 @@ $headerHeight: 220px;
 		}
 
 		.aboutText {
-			width: 100%;
-
 			div {
 				@include single-transition(all, 1s, ease-out);
 				width: 480px;
-				top: 490px;
-				padding-bottom: 20vh;
 
 				p {
 					line-height: ms(1);
@@ -518,13 +521,15 @@ $headerHeight: 180px;
 		}
 
 		.portrait {
-			width: $contentMaxWidth;
-			margin: $headerHeight auto 0;
+			width: 100%;
+
+			div {
+				width: $contentMaxWidth;
+				margin: $headerHeight auto 0;
+			}
 			
 			img {
-				width: 250px;
-				@include transform(translateX(0%));
-				left: 0%;
+				width: 240px;
 			}
 		}
 
@@ -533,12 +538,11 @@ $headerHeight: 180px;
 		}
 
 		.aboutText {
+			// @include transform(translateY(-240px));
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: 460px;
-				top: $headerHeight;
-				padding-bottom: 29vh;
-				position: absolute;
+				width: 480px;
+				padding-top: ms(2);
 			}
 		}
 
@@ -618,8 +622,12 @@ $headerHeight: 240px;
 		}
 
 		.portrait {
-			width: $contentMaxWidth;
-			margin: $headerHeight auto 0;
+			width: 100%;
+
+			div {
+				width: $contentMaxWidth;
+				margin: $headerHeight auto 0;
+			}
 			
 			img {
 				width: 240px;
@@ -632,7 +640,7 @@ $headerHeight: 240px;
 				width: 960px;
 				@include column-count(2);
 				@include column-gap(ms(5));
-				top: $headerHeight;
+				padding-bottom: ms(5);
 			}
 		}
 
@@ -678,11 +686,15 @@ $headerHeight: 240px;
 			a {
 				text-decoration: none;
 				color: $gray1;
+
+				&:hover {
+					color: $hover;
+				}
 			}
 
 			a::after {
 				content: " + ";
-				color: $gray2;
+				color: $gray3;
 			}
 
 			a:last-of-type::after {
@@ -718,12 +730,8 @@ $headerHeight: 240px;
 
 	@include susy-breakpoint($medium) {
 		@include single-transition(all, 1s, ease-out);
-		.copyright {
-			@include transform(rotate(-90deg));
-			@include transform-origin(100%, 50%);
-			padding: 0;
-			right: ms(0);
-			bottom: 150px;
+		div {
+			width: 58vw;
 		}
 	}
 
@@ -732,9 +740,6 @@ $headerHeight: 240px;
 	@include susy-breakpoint($large) {
 		@include single-transition(all, 1s, ease-out);
 
-		.copyright {
-			right: ms(0);
-		}
 	}
 
 // -------------------------- XLARGE --------------------------
@@ -742,9 +747,5 @@ $headerHeight: 240px;
 	@include susy-breakpoint($xlarge) {
 		@include single-transition(all, 1s, ease-out);
 
-		.copyright {
-			right: ms(1);
-			bottom: 200px;
-		}
 	}
 }
