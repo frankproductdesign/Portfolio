@@ -415,11 +415,12 @@ $headerHeight: 220px;
 			
 			div {
 				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				margin: 180px auto 0;
 			}
 			
 			img {
 				width: 220px;
+				z-index: 999;
 			}
 		}
 
@@ -525,7 +526,7 @@ $headerHeight: 180px;
 
 			div {
 				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				margin: 150px auto 0;
 			}
 			
 			img {
@@ -626,7 +627,7 @@ $headerHeight: 240px;
 
 			div {
 				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				margin: 180px auto 0;
 			}
 			
 			img {
@@ -640,6 +641,7 @@ $headerHeight: 240px;
 				width: 960px;
 				@include column-count(2);
 				@include column-gap(ms(5));
+				padding-top: ms(3);
 				padding-bottom: ms(5);
 			}
 		}
