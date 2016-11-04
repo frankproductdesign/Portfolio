@@ -683,6 +683,7 @@ $headerHeight: 240px;
 				font-size: ms(0);
 				line-height: ms(2);
 				letter-spacing: 0.07rem;
+				text-transform: uppercase;
 			}
 
 			a {
@@ -695,8 +696,8 @@ $headerHeight: 240px;
 			}
 
 			a::after {
-				content: " + ";
-				color: $gray3;
+				content: " . . . . ";
+				color: white;
 			}
 
 			a:last-of-type::after {
