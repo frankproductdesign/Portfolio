@@ -21,22 +21,22 @@
 		"href" : "#/dymon"
 	},
 	{
-		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (Characters and costume designs)",
+		"type" : "Social Network Game (SNG): Characters and costume designs",
+		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
 	},
 	{
-		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (Environments and trees)",
+		"type" : "SNG: Environments and trees",
+		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-island-closeup-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-island-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trees-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace1"
 	},
 	{
-		"type" : "Social Network Game",
-		"description" : "Creative direction, game design. (Structures and garbage types)",
+		"type" : "SNG: Structures and garbage types",
+		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-energy-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-garbage-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trailers-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace2"
