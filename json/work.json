@@ -40,5 +40,20 @@
 		"images" : [{ "image":"images/work/greenspace-game-energy-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-garbage-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trailers-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace2"
+	},
+	{
+		"type" : "Prototypes",
+		"description" : "Conceptual design, front-end development.",
+		"images" : [{ "image":"images/work/prototype-experiment-1-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-2-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-3-frankcastro.com.jpg" }],
+		"link" : "View",
+		"href" : "#/greenspace1",
+		"class" : "special"
+	},
+	{
+		"type" : "Print",
+		"description" : "Art Direction, design.",
+		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
+		"link" : "View",
+		"href" : "#/greenspace1"
 	}
 ]

@@ -91,6 +91,10 @@ $headerHeight: 130px;
 			height: $headerHeight;
 		}
 
+		.special {
+			display: none;
+		}
+
 		.workContainer {
 			width: $contentWidth;
 			margin: $headerHeight auto 0;
@@ -477,6 +481,10 @@ $headerHeight: 180px;
 					padding-bottom: ms(0);
 				}
 			}
+		}
+
+		.special {
+			display: inline;
 		}
 
 		.workContainer {

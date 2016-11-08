@@ -1,6 +1,6 @@
 <nav-menu></nav-menu>
 <div class="spacer"></div>
-<div class="columns" ng-repeat="item in items">
+<div class="columns {{item.class}}" ng-repeat="item in items">
 	<div class="slickContainer">
 		<div slick-carousel>
 			<div ng-repeat="image in item.images">
