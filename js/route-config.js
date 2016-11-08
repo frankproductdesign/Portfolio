@@ -27,6 +27,12 @@ angular
 			.when('/greenspace2', { 
 				templateUrl: 'templates/greenspace2/index.html',
 			})
+			.when('/prototypes', { 
+				templateUrl: 'templates/prototypes/index.html',
+			})
+			.when('/print', { 
+				templateUrl: 'templates/print/index.html',
+			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
 			})
