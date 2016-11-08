@@ -44,7 +44,7 @@
 	{
 		"type" : "Prototypes",
 		"description" : "Conceptual design, front-end development.",
-		"images" : [{ "image":"images/work/prototype-experiment-1-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-2-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-3-frankcastro.com.jpg" }],
+		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace1",
 		"class" : "special"
