@@ -21,21 +21,21 @@
 		"href" : "#/dymon"
 	},
 	{
-		"type" : "Social Network Game: Characters",
+		"type" : "Social network game: Characters",
 		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
 	},
 	{
-		"type" : "Social Network Game: Environments",
+		"type" : "Social network game: Environments",
 		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-island-closeup-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-island-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trees-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace1"
 	},
 	{
-		"type" : "Social Network Game: Structures",
+		"type" : "Social network game: Structures",
 		"description" : "Creative direction, game design.",
 		"images" : [{ "image":"images/work/greenspace-game-energy-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-garbage-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-trailers-frankcastro.com.jpg" }],
 		"link" : "View",
@@ -43,14 +43,14 @@
 	},
 	{
 		"type" : "Prototypes",
-		"description" : "Conceptual design, front-end development.",
+		"description" : "Design and front-end development.",
 		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/prototypes"
 	},
 	{
 		"type" : "Print",
-		"description" : "Art Direction, design.",
+		"description" : "Art direction and design.",
 		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/print"
