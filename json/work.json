@@ -46,8 +46,7 @@
 		"description" : "Conceptual design, front-end development.",
 		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
 		"link" : "View",
-		"href" : "#/prototypes",
-		"class" : "special"
+		"href" : "#/prototypes"
 	},
 	{
 		"type" : "Print",

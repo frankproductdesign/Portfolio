@@ -91,10 +91,6 @@ $headerHeight: 130px;
 			height: $headerHeight;
 		}
 
-		.special {
-			display: none;
-		}
-
 		.workContainer {
 			width: $contentWidth;
 			margin: $headerHeight auto 0;
@@ -116,6 +112,15 @@ $headerHeight: 130px;
 					width: $contentMaxWidth;
 					margin: 0 auto;
 					text-align: right;
+				}
+
+				p:first-of-type {
+					display: none;
+					text-transform: uppercase;
+				}
+
+				p:last-of-type {
+					display: inline-block;
 				}
 			}
 
@@ -483,10 +488,6 @@ $headerHeight: 180px;
 			}
 		}
 
-		.special {
-			display: inline;
-		}
-
 		.workContainer {
 			width: $contentMaxWidth;
 			margin: $headerHeight auto 0;
@@ -504,6 +505,14 @@ $headerHeight: 180px;
 			.websiteLink {
 				p {
 					width: $contentMaxWidth;
+				}
+
+				p:first-of-type {
+					display: inline-block;
+				}
+
+				p:last-of-type {
+					display: none;
 				}
 			}
 
