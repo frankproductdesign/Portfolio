@@ -180,7 +180,7 @@ $headerHeight: 130px;
 			}
 
 			img {
-				width: 180px;
+				width: 100%;
 				@include transform(translateX(-50%));
 				left: 50%;
 				position: relative;
@@ -345,10 +345,6 @@ $headerHeight: 200px;
 				width: $contentMaxWidth;
 				margin: $headerHeight auto 0;
 			}
-			
-			img {
-				width: 200px;
-			}
 		}
 
 		.spacer {
@@ -448,12 +444,7 @@ $headerHeight: 220px;
 			
 			div {
 				width: $contentMaxWidth;
-				margin: 180px auto 0;
-			}
-			
-			img {
-				width: 220px;
-				z-index: 999;
+				margin: $headerHeight auto 0;
 			}
 		}
 
@@ -567,11 +558,7 @@ $headerHeight: 180px;
 
 			div {
 				width: $contentMaxWidth;
-				margin: 150px auto 0;
-			}
-			
-			img {
-				width: 240px;
+				margin: $headerHeight auto 0;
 			}
 		}
 
@@ -668,11 +655,7 @@ $headerHeight: 240px;
 
 			div {
 				width: $contentMaxWidth;
-				margin: 180px auto 0;
-			}
-			
-			img {
-				width: 240px;
+				margin: $headerHeight auto 0;
 			}
 		}
 
