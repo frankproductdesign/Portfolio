@@ -145,6 +145,30 @@ $headerHeight: 130px;
 					padding-bottom: ms(3);
 				}
 			}
+
+			.submenu {
+				width: $contentMaxWidth;
+				height: 80px;
+				margin: 40px auto 0px;
+
+				div {
+					width: 70px;
+					float: left;
+					margin-bottom: ms(2);
+				}
+
+				p {
+					font-size: ms(1);
+					text-transform: uppercase;
+					text-align: center;
+					width: inherit;
+					padding-bottom: ms(2);
+				}
+
+				.active {
+					border-bottom: 4px solid $text;
+				}				
+			}
 		}
 
 		.portrait {
