@@ -9,6 +9,9 @@ angular
 				controller: 'CtrlrWork',
 				controllerAs: 'work'
 			})
+			.when('/rapidphire', { 
+				templateUrl: 'templates/rapidphire/index.html'
+			})
 			.when('/oliveandwell', { 
 				templateUrl: 'templates/oliveandwell/index.html'
 			})
