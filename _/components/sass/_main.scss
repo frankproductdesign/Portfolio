@@ -112,15 +112,17 @@ $headerHeight: 130px;
 					width: $contentMaxWidth;
 					margin: 0 auto;
 					text-align: right;
-				}
-
-				p:first-of-type {
-					display: none;
 					text-transform: uppercase;
 				}
 
-				p:last-of-type {
-					display: block;
+				&.prototype {
+					p:first-of-type {
+						display: none;
+					}
+
+					p:last-of-type {
+						display: block;
+					}
 				}
 			}
 
@@ -522,12 +524,14 @@ $headerHeight: 180px;
 					width: $contentMaxWidth;
 				}
 
-				p:first-of-type {
-					display: block;
-				}
+				&.prototype {
+					p:first-of-type {
+						display: block;
+					}
 
-				p:last-of-type {
-					display: none;
+					p:last-of-type {
+						display: none;
+					}
 				}
 			}
 

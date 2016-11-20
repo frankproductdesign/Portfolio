@@ -14,3 +14,10 @@ angular
 			templateUrl: "templates/directives/greenspacelinks.html"
 		};
 	})
+
+	.directive("rapidphireLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/rapidphirelinks.html"
+		};
+	})
