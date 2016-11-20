@@ -12,6 +12,12 @@ angular
 			.when('/rapidphire', { 
 				templateUrl: 'templates/rapidphire/index.html'
 			})
+			.when('/rapidphire1', { 
+				templateUrl: 'templates/rapidphire1/index.html'
+			})
+			.when('/rapidphire2', { 
+				templateUrl: 'templates/rapidphire2/index.html'
+			})
 			.when('/oliveandwell', { 
 				templateUrl: 'templates/oliveandwell/index.html'
 			})
