@@ -39,6 +39,9 @@ angular
 			.when('/prototypes', { 
 				templateUrl: 'templates/prototypes/index.html',
 			})
+			.when('/websites', { 
+				templateUrl: 'templates/websites/index.html'
+			})
 			.when('/print', { 
 				templateUrl: 'templates/print/index.html',
 			})

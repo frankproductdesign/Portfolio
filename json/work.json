@@ -42,17 +42,17 @@
 		"href" : "#/prototypes"
 	},
 	{
+		"type" : "Websites",
+		"description" : "Art direction, UX/UI design.",
+		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
+		"link" : "View",
+		"href" : "#/websites"
+	},
+	{
 		"type" : "Print",
 		"description" : "Art direction and design.",
 		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/print"
-	},
-	{
-		"type" : " ",
-		"description" : " ",
-		"images" : [{ "image":"images/work/white.gif" }],
-		"link" : "View",
-		"href" : "#/"
 	}
 ]
