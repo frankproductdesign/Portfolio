@@ -36,7 +36,7 @@
 	},
 	{
 		"type" : "Prototypes",
-		"description" : "Design and Front-end development.",
+		"description" : "Design, front-end development.",
 		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/prototypes"
@@ -50,7 +50,7 @@
 	},
 	{
 		"type" : "Print",
-		"description" : "Art direction and design.",
+		"description" : "Art direction, design.",
 		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/print"
