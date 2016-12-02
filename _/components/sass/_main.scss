@@ -7,32 +7,24 @@
 	@include susy-breakpoint($xsmall){
 
 $contentWidth: 100vw;
-$contentMaxWidth: 88vw;
-$headerHeight: 130px;
+$contentMaxWidth: 100vw;
+$headerHeight: 120px;
 
 		@include single-transition(all, 1s, ease-out);
-		max-width: 1580px;
 		// @include container;
 
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
 			position: absolute;
-			@include transform(translateX(-50%));
-			left: 50%;
 			top: 0px;
 			opacity: 0.85;
-
-			div:first-of-type {
-				max-width: $contentMaxWidth;
-				margin: 0 auto;
-			}
 
 			p {
 				font-size: ms(0);
 				text-transform: uppercase;
 				color: black;
-				padding-top: 50px;
+				padding-top: 45px;
 			}
 
 			.pageTitle {
@@ -41,6 +33,7 @@ $headerHeight: 130px;
 				z-index: 979;
 
 				p {
+					padding-left: ms(0);
 					font-weight: 300;
 				}
 			}
@@ -59,8 +52,8 @@ $headerHeight: 130px;
 			.links {
 				div {
 					float: left;
-					margin-left: ms(1);
-					padding-bottom: ms(0);
+					margin-left: ms(0);
+					padding-bottom: ms(-1);
 
 					a {
 						text-decoration: none;
@@ -102,7 +95,7 @@ $headerHeight: 130px;
 
 				p {
 					font-weight: 700;
-					font-size: ms(1);
+					// font-size: ms(1);
 				}
 			}
 
@@ -193,10 +186,9 @@ $headerHeight: 130px;
 
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: $contentMaxWidth;
+				@include span(12 of 12);
+				padding: ms(1) ms(0) ms(2);
 				position: relative;
-				padding-top: ms(1);
-				padding-bottom: ms(2);
 
 				p {
 					font-family: $futura;
@@ -224,15 +216,19 @@ $headerHeight: 130px;
 			float: left;
 
 			.slickContainer {
-				width: 88%;
+				width: 100%;
 				margin: 0 auto;
 			}
 
 			.workText {
-				height: 240px;
+				height: 180px;
 
 				a {
 					text-decoration: none;
+				}
+
+				p {
+					padding-left: ms(0);
 				}
 
 				p:first-of-type {
@@ -263,13 +259,15 @@ $headerHeight: 130px;
 		}
 
 		.footer {
+			@include span(12 of 12);
+			padding: 0px ms(0);
+
 			p {
 				font-weight: 300;
 				text-align: left;
 			}
 
 			div {
-				width: 88vw;
 				margin: 0 auto;
 
 				p {
@@ -320,7 +318,7 @@ $headerHeight: 130px;
 	@include susy-breakpoint($small){
 
 $contentWidth: 100vw;
-$contentMaxWidth: 68vw;
+$contentMaxWidth: 100vw;
 $headerHeight: 200px;
 
 		@include single-transition(all, 1s, ease-out);
@@ -329,9 +327,10 @@ $headerHeight: 200px;
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
+			padding-left: ms(3);
 
 			div:first-of-type {
-				max-width: $contentMaxWidth;
+				// max-width: $contentMaxWidth;
 				margin: 0 auto;
 			}
 
@@ -341,7 +340,7 @@ $headerHeight: 200px;
 			}
 
 			.pageTitle {
-				width: 50%;
+				width: auto;
 			}
 
 			.links {
@@ -418,9 +417,13 @@ $headerHeight: 200px;
 		}
 
 		.columns {
-			.slickContainer {
-				width: 68%;
-			}
+			width: 50%;
+		}
+
+		.footer {
+			@include span(12 of 12);
+			padding: 0px;
+			max-width: $contentMaxWidth;
 		}
 	}
 
@@ -428,22 +431,25 @@ $headerHeight: 200px;
 // -------------------------- MEDIUM --------------------------
 
 	@include susy-breakpoint($medium){
-		@include single-transition(all, 1s, ease-out);
 
 $contentWidth: 100vw;
 $contentMaxWidth: 84vw;
 $headerHeight: 220px;
 
+		@include single-transition(all, 1s, ease-out);
+		max-width: $contentMaxWidth;
+
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
+			margin-left: ms(0);
 
 			div:first-of-type {
 				max-width: $contentMaxWidth;
 			}
 
 			p {
-				font-size: ms(1);
+				font-size: ms(0);
 				padding-top: 86px;
 			}
 
@@ -515,12 +521,10 @@ $headerHeight: 220px;
 			}
 		}
 
-		.columns {
-			width: 50%;
-
-			.slickContainer {
-				width: 68%;
-			}
+		.footer {
+			@include span(12 of 12);
+			padding: 0px;
+			max-width: $contentMaxWidth;
 		}
 	}
 
@@ -547,11 +551,6 @@ $headerHeight: 180px;
 			p {
 				font-size: ms(0);
 				padding-top: 76px;
-			}
-
-
-			.pageTitle {
-				width: auto;
 			}
 
 			.links {
@@ -638,10 +637,6 @@ $headerHeight: 180px;
 
 		.columns {
 			width: 33.3%;
-
-			.slickContainer {
-				width: 100%;
-			}
 
 			.workText {
 				height: $headerHeight;
@@ -749,10 +744,6 @@ $headerHeight: 240px;
 			width: 33.3%;
 			// width: 30%;
 			// padding-right: 3.3%;
-
-			.slickContainer {
-				width: 100%;
-			}
 
 			.workText {
 				height: $headerHeight;
