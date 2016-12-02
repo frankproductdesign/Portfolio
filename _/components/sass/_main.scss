@@ -1,17 +1,18 @@
 .mainContainer {
 	width: 100%;
-	max-width: 1580px;
 	margin: 0 auto;
 
 // -------------------------- XSMALL --------------------------
 
 	@include susy-breakpoint($xsmall){
-		@include single-transition(all, 1s, ease-out);
-		// @include container;
 
 $contentWidth: 100vw;
 $contentMaxWidth: 88vw;
 $headerHeight: 130px;
+
+		@include single-transition(all, 1s, ease-out);
+		max-width: 1580px;
+		// @include container;
 
 		.header {
 			width: $contentWidth;
@@ -260,17 +261,70 @@ $headerHeight: 130px;
 				}
 			}
 		}
+
+		.footer {
+			p {
+				font-weight: 300;
+				text-align: left;
+			}
+
+			div {
+				width: 88vw;
+				margin: 0 auto;
+
+				p {
+					font-size: ms(0);
+					line-height: ms(2);
+					letter-spacing: 0.07rem;
+					// text-transform: uppercase;
+				}
+
+				a {
+					text-decoration: none;
+					color: $gray1;
+
+					&:hover {
+						color: $hover;
+					}
+				}
+
+				a::after {
+					content: " . . . . ";
+					color: white;
+				}
+
+				a:last-of-type::after {
+					content: " ";
+				}
+			}
+
+			.copyright {
+				z-index: 999;
+
+				p {
+					font-size: ms(-1);
+					color: $gray3;
+					font-weight: 400;
+					line-height: ms(0);
+					letter-spacing: 0.04rem;
+					padding: ms(0) 0px;
+					text-transform: none;
+				}
+			}
+		}
 	}
 
 
 // -------------------------- SMALL --------------------------
 
 	@include susy-breakpoint($small){
-		@include single-transition(all, 1s, ease-out);
 
 $contentWidth: 100vw;
 $contentMaxWidth: 68vw;
 $headerHeight: 200px;
+
+		@include single-transition(all, 1s, ease-out);
+		max-width: $contentMaxWidth;
 
 		.header {
 			width: $contentWidth;
@@ -474,11 +528,13 @@ $headerHeight: 220px;
 // -------------------------- LARGE --------------------------
 
 	@include susy-breakpoint($large){
-		@include single-transition(all, 1s, ease-out);
 
 $contentWidth: 100vw;
 $contentMaxWidth: 83vw;
 $headerHeight: 180px;
+
+		@include single-transition(all, 1s, ease-out);
+		max-width: $contentMaxWidth;
 
 		.header {
 			width: $contentWidth;
@@ -493,9 +549,14 @@ $headerHeight: 180px;
 				padding-top: 76px;
 			}
 
+
+			.pageTitle {
+				width: auto;
+			}
+
 			.links {
 				div {
-					margin-left: ms(4);
+					margin-left: ms(2);
 					padding-bottom: ms(0);
 				}
 			}
@@ -576,8 +637,10 @@ $headerHeight: 180px;
 		}
 
 		.columns {
+			width: 33.3%;
+
 			.slickContainer {
-				width: 68%;
+				width: 100%;
 			}
 
 			.workText {
@@ -589,17 +652,25 @@ $headerHeight: 180px;
 				}
 			}
 		}
+
+		.footer {
+			@include span(12 of 12);
+			padding: 0px;
+			max-width: $contentMaxWidth;
+		}
 	}
 
 
 // -------------------------- XLARGE --------------------------
 
 	@include susy-breakpoint($xlarge){
-		@include single-transition(all, 1s, ease-out);
 
 $contentWidth: 100vw;
 $contentMaxWidth: 1580px;
 $headerHeight: 240px;
+
+		@include single-transition(all, 1s, ease-out);
+		max-width: $contentMaxWidth;
 
 		.header {
 			width: $contentWidth;
@@ -612,10 +683,6 @@ $headerHeight: 240px;
 			p {
 				font-size: ms(0);
 				padding-top: 105px;
-			}
-
-			.pageTitle {
-				width: auto;
 			}
 
 			.links {
@@ -696,101 +763,108 @@ $headerHeight: 240px;
 				}
 			}
 		}
-	}
-}
 
-.footer {
-$contentMaxWidth: 1580px;
-
-// -------------------------- XSMALL --------------------------
-
-	@include susy-breakpoint($xsmall) {
-		@include single-transition(all, 1s, ease-out);
-
-		p {
-			font-weight: 300;
-			text-align: left;
-		}
-
-		div {
-			width: 88vw;
-			margin: 0 auto;
-
-			p {
-				font-size: ms(0);
-				line-height: ms(2);
-				letter-spacing: 0.07rem;
-				// text-transform: uppercase;
-			}
-
-			a {
-				text-decoration: none;
-				color: $gray1;
-
-				&:hover {
-					color: $hover;
-				}
-			}
-
-			a::after {
-				content: " . . . . ";
-				color: white;
-			}
-
-			a:last-of-type::after {
-				content: " ";
-			}
-		}
-
-		.copyright {
-			z-index: 999;
-
-			p {
-				font-size: ms(-1);
-				color: $gray3;
-				font-weight: 400;
-				line-height: ms(0);
-				letter-spacing: 0.04rem;
-				padding: ms(0) 0px;
-				text-transform: none;
-			}
-		}
-	}
-
-// -------------------------- SMALL --------------------------
-
-	@include susy-breakpoint($small) {
-		@include single-transition(all, 1s, ease-out);
-
-		div {
-			width: 68vw;
-		}
-	}
-
-// -------------------------- MEDIUM --------------------------
-
-	@include susy-breakpoint($medium) {
-		@include single-transition(all, 1s, ease-out);
-		div {
-			width: 58vw;
-		}
-	}
-
-// -------------------------- LARGE --------------------------
-
-	@include susy-breakpoint($large) {
-		@include single-transition(all, 1s, ease-out);
-		div {
-			width: 100vw;
+		.footer {
+			@include span(12 of 12);
+			padding: 0px;
 			max-width: $contentMaxWidth;
 		}
 	}
-
-// -------------------------- XLARGE --------------------------
-
-	@include susy-breakpoint($xlarge) {
-		@include single-transition(all, 1s, ease-out);
-		@include span(12 of 12);
-
-	}
 }
+
+// .footer {
+
+// // -------------------------- XSMALL --------------------------
+
+// 	@include susy-breakpoint($xsmall) {
+// 		@include single-transition(all, 1s, ease-out);
+
+// 		// p {
+// 		// 	font-weight: 300;
+// 		// 	text-align: left;
+// 		// }
+
+// 		// div {
+// 		// 	width: 88vw;
+// 		// 	margin: 0 auto;
+
+// 		// 	p {
+// 		// 		font-size: ms(0);
+// 		// 		line-height: ms(2);
+// 		// 		letter-spacing: 0.07rem;
+// 		// 		// text-transform: uppercase;
+// 		// 	}
+
+// 		// 	a {
+// 		// 		text-decoration: none;
+// 		// 		color: $gray1;
+
+// 		// 		&:hover {
+// 		// 			color: $hover;
+// 		// 		}
+// 		// 	}
+
+// 		// 	a::after {
+// 		// 		content: " . . . . ";
+// 		// 		color: white;
+// 		// 	}
+
+// 		// 	a:last-of-type::after {
+// 		// 		content: " ";
+// 		// 	}
+// 		// }
+
+// 		// .copyright {
+// 		// 	z-index: 999;
+
+// 		// 	p {
+// 		// 		font-size: ms(-1);
+// 		// 		color: $gray3;
+// 		// 		font-weight: 400;
+// 		// 		line-height: ms(0);
+// 		// 		letter-spacing: 0.04rem;
+// 		// 		padding: ms(0) 0px;
+// 		// 		text-transform: none;
+// 		// 	}
+// 		// }
+// 	}
+
+// // -------------------------- SMALL --------------------------
+
+// 	@include susy-breakpoint($small) {
+// 		@include single-transition(all, 1s, ease-out);
+
+// 		// div {
+// 		// 	width: 68vw;
+// 		// }
+// 	}
+
+// // -------------------------- MEDIUM --------------------------
+
+// 	@include susy-breakpoint($medium) {
+// 		@include single-transition(all, 1s, ease-out);
+
+// 		// div {
+// 		// 	width: 58vw;
+// 		// }
+// 	}
+
+// // -------------------------- LARGE --------------------------
+
+// 	@include susy-breakpoint($large) {
+// 		@include single-transition(all, 1s, ease-out);
+// 		@include span(12 of 12);
+
+// 		// div {
+// 		// 	width: 100vw;
+// 		// 	max-width: $contentMaxWidth;
+// 		// }
+// 	}
+
+// // -------------------------- XLARGE --------------------------
+
+// 	@include susy-breakpoint($xlarge) {
+// 		@include single-transition(all, 1s, ease-out);
+// 		@include span(12 of 12);
+// 	}
+// }
