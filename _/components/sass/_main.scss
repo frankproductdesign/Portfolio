@@ -515,7 +515,7 @@ $headerHeight: 200px;
 			div {
 				@include single-transition(all, 1s, ease-out);
 				padding: ms(2) ms(2) ms(3);
-				width: 540px;
+				width: 560px;
 
 				p {
 					line-height: ms(1);
@@ -546,7 +546,7 @@ $headerHeight: 200px;
 
 $contentWidth: 100vw;
 $contentMaxWidth: 83vw;
-$headerHeight: 180px;
+$headerHeight: 170px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
@@ -557,7 +557,7 @@ $headerHeight: 180px;
 
 			p {
 				font-size: ms(0);
-				padding-top: 76px;
+				padding-top: 72px;
 			}
 
 			.pageTitle {
@@ -605,7 +605,7 @@ $headerHeight: 180px;
 
 				h4 {
 					text-transform: uppercase;
-					padding-bottom: ms(4);
+					padding-bottom: ms(3);
 				}
 
 				p {
@@ -636,7 +636,7 @@ $headerHeight: 180px;
 		.aboutText {
 			div {
 				@include single-transition(all, 1s, ease-out);
-				padding: ms(2) 0px ms(3);
+				padding: ms(3) 0px;
 			}
 		}
 
@@ -667,7 +667,7 @@ $headerHeight: 180px;
 
 $contentWidth: 100vw;
 $contentMaxWidth: 1580px;
-$headerHeight: 240px;
+$headerHeight: 180px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
@@ -682,7 +682,7 @@ $headerHeight: 240px;
 
 			p {
 				font-size: ms(0);
-				padding-top: 105px;
+				padding-top: 75px;
 			}
 
 			.links {
@@ -714,6 +714,14 @@ $headerHeight: 240px;
 					width: $contentMaxWidth;
 				}
 			}
+
+			.content {
+				padding: 0px;
+
+				h4 {
+					padding-bottom: ms(3);
+				}
+			}
 		}
 
 		.portrait {
@@ -732,7 +740,7 @@ $headerHeight: 240px;
 		.aboutText {
 			div {
 				@include single-transition(all, 1s, ease-out);
-				padding: ms(2) 0px ms(3);
+				padding: ms(3) 0px;
 				width: 780px;
 			}
 		}
@@ -759,100 +767,3 @@ $headerHeight: 240px;
 		}
 	}
 }
-
-// .footer {
-
-// // -------------------------- XSMALL --------------------------
-
-// 	@include susy-breakpoint($xsmall) {
-// 		@include single-transition(all, 1s, ease-out);
-
-// 		// p {
-// 		// 	font-weight: 300;
-// 		// 	text-align: left;
-// 		// }
-
-// 		// div {
-// 		// 	width: 88vw;
-// 		// 	margin: 0 auto;
-
-// 		// 	p {
-// 		// 		font-size: ms(0);
-// 		// 		line-height: ms(2);
-// 		// 		letter-spacing: 0.07rem;
-// 		// 		// text-transform: uppercase;
-// 		// 	}
-
-// 		// 	a {
-// 		// 		text-decoration: none;
-// 		// 		color: $gray1;
-
-// 		// 		&:hover {
-// 		// 			color: $hover;
-// 		// 		}
-// 		// 	}
-
-// 		// 	a::after {
-// 		// 		content: " . . . . ";
-// 		// 		color: white;
-// 		// 	}
-
-// 		// 	a:last-of-type::after {
-// 		// 		content: " ";
-// 		// 	}
-// 		// }
-
-// 		// .copyright {
-// 		// 	z-index: 999;
-
-// 		// 	p {
-// 		// 		font-size: ms(-1);
-// 		// 		color: $gray3;
-// 		// 		font-weight: 400;
-// 		// 		line-height: ms(0);
-// 		// 		letter-spacing: 0.04rem;
-// 		// 		padding: ms(0) 0px;
-// 		// 		text-transform: none;
-// 		// 	}
-// 		// }
-// 	}
-
-// // -------------------------- SMALL --------------------------
-
-// 	@include susy-breakpoint($small) {
-// 		@include single-transition(all, 1s, ease-out);
-
-// 		// div {
-// 		// 	width: 68vw;
-// 		// }
-// 	}
-
-// // -------------------------- MEDIUM --------------------------
-
-// 	@include susy-breakpoint($medium) {
-// 		@include single-transition(all, 1s, ease-out);
-
-// 		// div {
-// 		// 	width: 58vw;
-// 		// }
-// 	}
-
-// // -------------------------- LARGE --------------------------
-
-// 	@include susy-breakpoint($large) {
-// 		@include single-transition(all, 1s, ease-out);
-// 		@include span(12 of 12);
-
-// 		// div {
-// 		// 	width: 100vw;
-// 		// 	max-width: $contentMaxWidth;
-// 		// }
-// 	}
-
-// // -------------------------- XLARGE --------------------------
-
-// 	@include susy-breakpoint($xlarge) {
-// 		@include single-transition(all, 1s, ease-out);
-// 		@include span(12 of 12);
-// 	}
-// }
