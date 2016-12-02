@@ -90,50 +90,51 @@ $headerHeight: 120px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentMaxWidth;
-				margin: 0 auto;
+				@include span (12 of 12);
+				padding: 0px ms(0) ms(2);
 
-				p {
-					font-weight: 700;
-					// font-size: ms(1);
+				div:first-of-type {
+					height: 42px;
+					float: left;
 				}
-			}
-
-			.websiteLink {
-				width: 100%;
 
 				p {
-					width: $contentMaxWidth;
-					margin: 0 auto;
-					text-align: right;
 					text-transform: uppercase;
+					padding: 0px 0px ms(1);
+				}
+
+				a {
+					padding-left: ms(0);
+					font-weight: 700;
 				}
 
 				&.prototype {
-					p:first-of-type {
+					a {
 						display: none;
 					}
 
-					p:last-of-type {
-						display: block;
+					span {
+						text-transform: none;
+						padding-left: ms(0);
 					}
 				}
 			}
 
 			.content {
-				padding-top: ms(3);
+				@include span (12 of 12);
+				padding: 0px ms(0);
 
 				h4 {
 					font-size: ms(0);
 					text-transform: uppercase;
-					text-align: center;
+					text-align: left;
 					padding-bottom: ms(3);
 				}
 
 				p {
 					padding-bottom: ms(3);
-					width: $contentMaxWidth;
-					margin: 0 auto;
+					// width: $contentMaxWidth;
+					// margin: 0 auto;
 				}
 
 				img {
@@ -143,37 +144,36 @@ $headerHeight: 120px;
 			}
 
 			.submenu {
-				width: $contentMaxWidth;
-				height: 80px;
+				height: 42px;
 				display: flex;
+				margin-left: ms(0);
 
 				div {
-					width: 70px;
+					width: 44px;
 					float: left;
 				}
 
 				p {
-					font-size: ms(1);
+					font-size: ms(0);
 					font-weight: 700;
 					text-transform: uppercase;
 					text-align: center;
 					width: inherit;
-					padding: ms(1) 0;
+				}
+
+				a {
+					padding: 0px;
 				}
 
 				.active {
-					border-bottom: 4px solid $text;
+					border-bottom: 3px solid $text;
 				}				
 			}
 		}
 
 		.portrait {
-			width: 100%;
-
-			div {
-				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
-			}
+			@include span (12 of 12);
+			padding: $headerHeight ms(0) 0px;
 
 			img {
 				width: 100%;
@@ -287,7 +287,7 @@ $headerHeight: 120px;
 				}
 
 				a::after {
-					content: " . . . . ";
+					content: " | ";
 					color: white;
 				}
 
@@ -319,7 +319,7 @@ $headerHeight: 120px;
 
 $contentWidth: 100vw;
 $contentMaxWidth: 100vw;
-$headerHeight: 200px;
+$headerHeight: 180px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
@@ -327,25 +327,21 @@ $headerHeight: 200px;
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
-			padding-left: ms(3);
-
-			div:first-of-type {
-				// max-width: $contentMaxWidth;
-				margin: 0 auto;
-			}
 
 			p {
 				font-size: ms(0);
-				padding-top: 86px;
+				padding-top: 74px;
 			}
 
 			.pageTitle {
-				width: auto;
+				p {
+					padding-left: ms(1);
+				}
 			}
 
 			.links {
 				div {
-					margin-left: ms(3);
+					margin-left: ms(2);
 					padding-bottom: ms(0);
 				}
 			}
@@ -356,12 +352,7 @@ $headerHeight: 200px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentMaxWidth;
-
-				p {
-					font-weight: 700;
-					font-size: ms(1);
-				}
+				padding: 0px ms(1) ms(2);
 			}
 
 			.websiteLink {
@@ -371,30 +362,35 @@ $headerHeight: 200px;
 			}
 
 			.content {
-				padding-top: ms(3);
+				padding: 0px ms(1);
 
 				h4 {
-					padding-bottom: ms(4);
+					padding-bottom: ms(3);
 				}
 
 				p {
 					padding-bottom: ms(4);
-					width: 480px;
+					width: 520px;
+					margin: 0 auto;
 				}
 
 				img {
-					width: 100%;
 					padding-bottom: ms(4);
 				}
 			}
 		}
 
 		.portrait {
-			width: 100%;
+			@include span (12 of 12);
+			padding: $headerHeight ms(1) 0px;
 
 			div {
-				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				@include span (6 of 12);
+				padding: 0px;
+			}
+
+			img {
+				max-width: 450px;
 			}
 		}
 
@@ -405,9 +401,8 @@ $headerHeight: 200px;
 		.aboutText {
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: $contentMaxWidth;
-				padding-top: ms(2);
-				padding-bottom: ms(3);
+				padding: ms(2) ms(1) ms(3);
+				width: 520px;
 
 				p {
 					line-height: ms(1);
@@ -418,12 +413,19 @@ $headerHeight: 200px;
 
 		.columns {
 			width: 50%;
+
+			.workText {
+				height: 180px;
+
+				p {
+					padding-left: ms(1);
+				}
+			}
 		}
 
 		.footer {
 			@include span(12 of 12);
-			padding: 0px;
-			max-width: $contentMaxWidth;
+			padding: 0px ms(1);
 		}
 	}
 
@@ -433,8 +435,8 @@ $headerHeight: 200px;
 	@include susy-breakpoint($medium){
 
 $contentWidth: 100vw;
-$contentMaxWidth: 84vw;
-$headerHeight: 220px;
+$contentMaxWidth: 100vw;
+$headerHeight: 200px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
@@ -442,15 +444,16 @@ $headerHeight: 220px;
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
-			margin-left: ms(0);
-
-			div:first-of-type {
-				max-width: $contentMaxWidth;
-			}
 
 			p {
 				font-size: ms(0);
 				padding-top: 86px;
+			}
+
+			.pageTitle {
+				p {
+					padding-left: ms(2);
+				}
 			}
 
 			.links {
@@ -466,12 +469,7 @@ $headerHeight: 220px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentMaxWidth;
-
-				p {
-					font-weight: 700;
-					font-size: ms(1);
-				}
+				padding: 0px ms(2) ms(2);
 			}
 
 			.websiteLink {
@@ -481,28 +479,31 @@ $headerHeight: 220px;
 			}
 
 			.content {
-				padding-top: ms(3);
+				padding: 0px ms(2);
 
 				h4 {
-					padding-bottom: ms(4);
+					padding-bottom: ms(3);
 				}
 
 				p {
-					padding-bottom: ms(4);
+					padding-bottom: ms(3);
+					width: 540px;
+					margin: 0 auto;
 				}
 
 				img {
-					padding-bottom: ms(4);
+					padding-bottom: ms(3);
 				}
 			}
 		}
 
 		.portrait {
-			width: 100%;
-			
+			@include span (12 of 12);
+			padding: $headerHeight ms(2) 0px;
+
 			div {
-				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				@include span (6 of 12);
+				padding: 0px;
 			}
 		}
 
@@ -513,7 +514,8 @@ $headerHeight: 220px;
 		.aboutText {
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: 480px;
+				padding: ms(2) ms(2) ms(3);
+				width: 540px;
 
 				p {
 					line-height: ms(1);
@@ -521,10 +523,19 @@ $headerHeight: 220px;
 			}
 		}
 
+		.columns {
+			.workText {
+				height: $headerHeight;
+
+				p {
+					padding-left: ms(2);
+				}
+			}
+		}
+
 		.footer {
 			@include span(12 of 12);
-			padding: 0px;
-			max-width: $contentMaxWidth;
+			padding: 0px ms(2);
 		}
 	}
 
@@ -543,14 +554,16 @@ $headerHeight: 180px;
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
-			
-			div:first-of-type {
-				max-width: $contentMaxWidth;
-			}
 
 			p {
 				font-size: ms(0);
 				padding-top: 76px;
+			}
+
+			.pageTitle {
+				p {
+					padding-left: 0px;
+				}
 			}
 
 			.links {
@@ -568,11 +581,7 @@ $headerHeight: 180px;
 			.projectName {
 				width: $contentMaxWidth;
 				margin: 0 auto;
-
-				p {
-					font-weight: 700;
-					font-size: ms(1);
-				}
+				padding: 0px 0px ms(2);
 			}
 
 			.websiteLink {
@@ -592,33 +601,31 @@ $headerHeight: 180px;
 			}
 
 			.content {
-				padding-top: ms(4);
+				padding: 0px;
 
 				h4 {
 					text-transform: uppercase;
-					text-align: center;
-					padding-bottom: ms(5);
+					padding-bottom: ms(4);
 				}
 
 				p {
-					padding-bottom: ms(5);
-					width: 480px;
-					margin: 0 auto;
+					padding-bottom: ms(4);
 				}
 
 				img {
 					width: 100%;
-					padding-bottom: ms(5);
+					padding-bottom: ms(4);
 				}
 			}
 		}
 
 		.portrait {
-			width: 100%;
+			@include span (12 of 12);
+			padding: $headerHeight 0px 0px;
 
 			div {
-				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				@include span (5 of 12);
+				padding: 0px;
 			}
 		}
 
@@ -627,11 +634,9 @@ $headerHeight: 180px;
 		}
 
 		.aboutText {
-			// @include transform(translateY(-240px));
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: 480px;
-				padding-top: ms(2);
+				padding: ms(2) 0px ms(3);
 			}
 		}
 
@@ -641,9 +646,9 @@ $headerHeight: 180px;
 			.workText {
 				height: $headerHeight;
 
-				p:first-of-type {
-					font-size: ms(0);
-					line-height: ms(2);
+				p {
+					padding-left: 0px;
+					padding-right: ms(0);
 				}
 			}
 		}
@@ -702,11 +707,6 @@ $headerHeight: 240px;
 
 			.projectName {
 				width: $contentMaxWidth;
-
-				p {
-					font-weight: 700;
-					font-size: ms(1);
-				}
 			}
 
 			.websiteLink {
@@ -717,26 +717,23 @@ $headerHeight: 240px;
 		}
 
 		.portrait {
-			width: 100%;
+			padding: $headerHeight 0px 0px;
 
 			div {
-				width: $contentMaxWidth;
-				margin: $headerHeight auto 0;
+				@include span (4 of 12);
+				padding: 0px;
 			}
 
 			img {
-				width: 33.3%;
+				max-width: 480px;
 			}
 		}
 
 		.aboutText {
 			div {
 				@include single-transition(all, 1s, ease-out);
-				width: 960px;
-				@include column-count(1);
-				// @include column-gap(ms(5));
-				padding-top: ms(2);
-				padding-bottom: ms(5);
+				padding: ms(2) 0px ms(3);
+				width: 780px;
 			}
 		}
 
