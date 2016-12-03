@@ -97,6 +97,7 @@ $headerHeight: 120px;
 					height: 42px;
 					float: left;
 				}
+// you are using a div in some pages; rapidphire and GS, make it consistent
 
 				p {
 					text-transform: uppercase;
@@ -355,12 +356,6 @@ $headerHeight: 180px;
 				padding: 0px ms(1) ms(2);
 			}
 
-			.websiteLink {
-				p {
-					width: $contentMaxWidth;
-				}
-			}
-
 			.content {
 				padding: 0px ms(1);
 
@@ -579,22 +574,15 @@ $headerHeight: 170px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentMaxWidth;
-				margin: 0 auto;
 				padding: 0px 0px ms(2);
-			}
-
-			.websiteLink {
-				p {
-					width: $contentMaxWidth;
-				}
 
 				&.prototype {
-					p:first-of-type {
-						display: block;
+					a {
+						display: initial;
+						padding-left: ms(0);
 					}
 
-					p:last-of-type {
+					span {
 						display: none;
 					}
 				}
