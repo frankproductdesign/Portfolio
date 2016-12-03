@@ -1,28 +1,28 @@
 [
 	{
 		"type" : "Data-driven web application",
-		"description" : "UX/UI design, prototyping.",
+		"description" : "UX design, prototyping.",
 		"images" : [{ "image":"images/work/rapidphire-web-app1-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app2-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/rapidphire"
 	},
 	{
 		"type" : "E-commerce website",
-		"description" : "Creative direction, UX/UI design, front-end development.",
+		"description" : "UX design, front-end development.",
 		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/oliveandwell"
 	},
 	{
 		"type" : "App",
-		"description" : "Art direction, UX/UI design.",
+		"description" : "Art direction, UX design.",
 		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/casm"
 	},
 	{
 		"type" : "App",
-		"description" : "Art direction, UX/UI design.",
+		"description" : "Art direction, UX design.",
 		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/dymon"
@@ -43,7 +43,7 @@
 	},
 	{
 		"type" : "Websites",
-		"description" : "Art direction, UX/UI old designs.",
+		"description" : "Art direction, UX old designs.",
 		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/websites"
