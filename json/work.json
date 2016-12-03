@@ -1,35 +1,35 @@
 [
 	{
 		"type" : "Data-driven web application",
-		"description" : "UX design, prototyping.",
+		"description" : "UX design, prototyping. (2016)",
 		"images" : [{ "image":"images/work/rapidphire-web-app1-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app2-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/rapidphire"
 	},
 	{
 		"type" : "E-commerce website",
-		"description" : "UX design, front-end development.",
+		"description" : "UX design, front-end development. (2015)",
 		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/oliveandwell"
 	},
 	{
 		"type" : "App",
-		"description" : "Art direction, UX design.",
+		"description" : "Art direction, UX design. (2014)",
 		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/casm"
 	},
 	{
 		"type" : "App",
-		"description" : "Art direction, UX design.",
+		"description" : "Art direction, UX design. (2013)",
 		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/dymon"
 	},
 	{
 		"type" : "Game",
-		"description" : "Creative direction, Game design, UX design.",
+		"description" : "Creative direction, Game design, UX design. (2014)",
 		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/greenspace"
