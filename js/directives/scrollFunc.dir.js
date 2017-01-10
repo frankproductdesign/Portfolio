@@ -7,7 +7,7 @@
 		restrict: 'A',
 		link: function (scope, element) {
 			var windowEl = angular.element($window);
-			var delta = 40;
+			var delta = 10;
 			var lastScrollTop = 0;
 
 			windowEl.on('scroll', function () {

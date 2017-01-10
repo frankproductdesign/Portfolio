@@ -547,7 +547,7 @@ $headerHeight: 170px;
 		max-width: $contentMaxWidth;
 
 		.header {
-			width: $contentWidth;
+			width: 90vw;
 			height: $headerHeight;
 
 			p {
@@ -661,7 +661,7 @@ $headerHeight: 180px;
 		max-width: $contentMaxWidth;
 
 		.header {
-			width: $contentWidth;
+			width: 80vw;
 			height: $headerHeight;
 
 			div:first-of-type {
