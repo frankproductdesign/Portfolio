@@ -222,33 +222,25 @@ $headerHeight: 120px;
 			}
 
 			.workText {
-				height: 180px;
+				height: auto;
+				z-index: 999;
+				position: absolute;
+				@include transform(translateY(-40px));
 
 				a {
 					text-decoration: none;
 				}
 
 				p {
-					padding-left: ms(0);
-				}
-
-				p:first-of-type {
-					font-family: $futura, $primary-fontbold;
-					font-weight: 700;
-					font-style: normal;
-					font-size: ms(0);
-					line-height: ms(1);
-					letter-spacing: 0.05px;
-					padding-top: 27px;
-				}
-
-				p:last-of-type {
+					padding-left: ms(1);
+					color: white;
 					font-family: $futura, $primary-font;
-					font-weight: 400;
+					font-weight: 300;
 					font-style: normal;
-					font-size: ms(0);
+					font-size: ms(-1);
 					line-height: ms(1);
-					letter-spacing: 0.07px;
+					letter-spacing: 0.3px;
+					text-transform: uppercase;
 				}
 
 				.aboutWork {
@@ -261,7 +253,7 @@ $headerHeight: 120px;
 
 		.footer {
 			@include span(12 of 12);
-			padding: 0px ms(0);
+			padding: ms(0);
 
 			p {
 				font-weight: 300;
@@ -272,10 +264,14 @@ $headerHeight: 120px;
 				margin: 0 auto;
 
 				p {
-					font-size: ms(0);
+					font-size: ms(-1);
 					line-height: ms(2);
-					letter-spacing: 0.07rem;
-					// text-transform: uppercase;
+					letter-spacing: 0.03rem;
+					text-transform: uppercase;
+				}
+
+				.email {
+					font-size: ms(0);
 				}
 
 				a {
@@ -306,7 +302,7 @@ $headerHeight: 120px;
 					font-weight: 400;
 					line-height: ms(0);
 					letter-spacing: 0.04rem;
-					padding: ms(0) 0px;
+					padding: ms(0) 0px 0px;
 					text-transform: none;
 				}
 			}
@@ -408,19 +404,11 @@ $headerHeight: 180px;
 
 		.columns {
 			width: 50%;
-
-			.workText {
-				height: 180px;
-
-				p {
-					padding-left: ms(1);
-				}
-			}
 		}
 
 		.footer {
 			@include span(12 of 12);
-			padding: 0px ms(1);
+			padding: ms(1);
 		}
 	}
 
@@ -518,19 +506,9 @@ $headerHeight: 200px;
 			}
 		}
 
-		.columns {
-			.workText {
-				height: $headerHeight;
-
-				p {
-					padding-left: ms(2);
-				}
-			}
-		}
-
 		.footer {
 			@include span(12 of 12);
-			padding: 0px ms(2);
+			padding: ms(1);
 		}
 	}
 
@@ -630,20 +608,11 @@ $headerHeight: 170px;
 
 		.columns {
 			width: 33.3%;
-
-			.workText {
-				height: $headerHeight;
-
-				p {
-					padding-left: 0px;
-					padding-right: ms(0);
-				}
-			}
 		}
 
 		.footer {
 			@include span(12 of 12);
-			padding: 0px;
+			padding: ms(1);
 			max-width: $contentMaxWidth;
 		}
 	}
@@ -737,22 +706,24 @@ $headerHeight: 180px;
 		.columns {
 			width: 33.3%;
 			// width: 30%;
-			// padding-right: 3.3%;
-
-			.workText {
-				height: $headerHeight;
-
-				p:first-of-type {
-					font-size: ms(0);
-					line-height: ms(2);
-				}
-			}
+			// padding-right: 3.3%;}
 		}
 
 		.footer {
 			@include span(12 of 12);
-			padding: 0px;
+			padding: ms(1);
 			max-width: $contentMaxWidth;
+
+			div {
+				p {
+					font-size: ms(-1);
+					line-height: ms(2);
+				}
+
+				.email {
+					font-size: ms(0);
+				}
+			}
 		}
 	}
 }
