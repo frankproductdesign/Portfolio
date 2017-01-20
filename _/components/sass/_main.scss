@@ -103,22 +103,6 @@ $headerHeight: 120px;
 					text-transform: uppercase;
 					padding: 0px 0px ms(1);
 				}
-
-				// a {
-				// 	padding-left: ms(0);
-				// 	font-weight: 700;
-				// }
-
-				// &.prototype {
-				// 	a {
-				// 		display: none;
-				// 	}
-
-				// 	span {
-				// 		text-transform: none;
-				// 		padding-left: ms(0);
-				// 	}
-				// }
 			}
 
 			.content {
@@ -293,7 +277,7 @@ $headerHeight: 120px;
 
 				a {
 					text-decoration: none;
-					color: $gray1;
+					color: $gray2;
 
 					&:hover {
 						color: $hover;
@@ -315,7 +299,7 @@ $headerHeight: 120px;
 
 				p {
 					font-size: ms(-1);
-					color: $gray3;
+					color: $gray1;
 					font-weight: 400;
 					line-height: ms(0);
 					letter-spacing: 0.04rem;
@@ -570,17 +554,6 @@ $headerHeight: 170px;
 
 			.projectName {
 				padding: 0px 0px ms(2);
-
-				// &.prototype {
-				// 	a {
-				// 		display: initial;
-				// 		padding-left: ms(0);
-				// 	}
-
-				// 	span {
-				// 		display: none;
-				// 	}
-				// }
 			}
 
 			.content {
