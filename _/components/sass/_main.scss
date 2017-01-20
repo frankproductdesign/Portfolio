@@ -104,21 +104,21 @@ $headerHeight: 120px;
 					padding: 0px 0px ms(1);
 				}
 
-				a {
-					padding-left: ms(0);
-					font-weight: 700;
-				}
+				// a {
+				// 	padding-left: ms(0);
+				// 	font-weight: 700;
+				// }
 
-				&.prototype {
-					a {
-						display: none;
-					}
+				// &.prototype {
+				// 	a {
+				// 		display: none;
+				// 	}
 
-					span {
-						text-transform: none;
-						padding-left: ms(0);
-					}
-				}
+				// 	span {
+				// 		text-transform: none;
+				// 		padding-left: ms(0);
+				// 	}
+				// }
 			}
 
 			.content {
@@ -138,9 +138,26 @@ $headerHeight: 120px;
 					// margin: 0 auto;
 				}
 
+				a {
+					padding-left: ms(0);
+					font-weight: 700;
+					text-transform: uppercase;
+				}
+
 				img {
 					width: 100%;
 					padding-bottom: ms(3);
+				}
+
+				&.prototype {
+					a {
+						display: none;
+					}
+
+					span {
+						text-transform: none;
+						padding-left: ms(0);
+					}
 				}
 			}
 
@@ -554,16 +571,16 @@ $headerHeight: 170px;
 			.projectName {
 				padding: 0px 0px ms(2);
 
-				&.prototype {
-					a {
-						display: initial;
-						padding-left: ms(0);
-					}
+				// &.prototype {
+				// 	a {
+				// 		display: initial;
+				// 		padding-left: ms(0);
+				// 	}
 
-					span {
-						display: none;
-					}
-				}
+				// 	span {
+				// 		display: none;
+				// 	}
+				// }
 			}
 
 			.content {
@@ -581,6 +598,17 @@ $headerHeight: 170px;
 				img {
 					width: 100%;
 					padding-bottom: ms(4);
+				}
+
+				&.prototype {
+					a {
+						display: initial;
+						padding-left: ms(0);
+					}
+
+					span {
+						display: none;
+					}
 				}
 			}
 		}
