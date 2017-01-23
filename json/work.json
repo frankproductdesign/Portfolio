@@ -43,7 +43,7 @@
 	},
 	{
 		"type" : "Websites",
-		"description" : "Art direction, UX old designs.",
+		"description" : "Art direction, old UX designs.",
 		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
 		"link" : "View",
 		"href" : "#/websites"

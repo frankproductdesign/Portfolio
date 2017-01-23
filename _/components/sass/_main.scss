@@ -34,7 +34,18 @@ $headerHeight: 120px;
 
 				p {
 					padding-left: ms(0);
-					font-weight: 300;
+					font-family: $futura;
+					font-weight: 700;
+					font-style: normal;
+					text-transform: none;
+					color: $gray1;
+
+					span {
+						font-family: $futuraCond;
+						font-weight: 400;
+						letter-spacing: 0.7px;
+						padding-left: ms(-3);
+					}
 				}
 			}
 
@@ -111,7 +122,6 @@ $headerHeight: 120px;
 
 				h4 {
 					font-size: ms(0);
-					text-transform: uppercase;
 					text-align: left;
 					padding-bottom: ms(3);
 				}
@@ -235,12 +245,12 @@ $headerHeight: 120px;
 				p {
 					padding-left: ms(1);
 					color: white;
-					font-family: $futura, $primary-font;
-					font-weight: 300;
+					font-family: $futuraCond, $primary-font;
+					font-weight: 400;
 					font-style: normal;
 					font-size: ms(-1);
 					line-height: ms(1);
-					letter-spacing: 0.3px;
+					letter-spacing: 0.7px;
 					text-transform: uppercase;
 				}
 
@@ -273,6 +283,9 @@ $headerHeight: 120px;
 
 				.email {
 					font-size: ms(0);
+					font-family: $futuraCond;
+					font-weight: 700;
+					font-style: normal;
 				}
 
 				a {
@@ -560,7 +573,6 @@ $headerHeight: 170px;
 				padding: 0px;
 
 				h4 {
-					text-transform: uppercase;
 					padding-bottom: ms(3);
 				}
 
