@@ -37,7 +37,6 @@ $headerHeight: 120px;
 					font-family: $futura;
 					font-weight: 700;
 					font-style: normal;
-					text-transform: none;
 					color: $gray1;
 
 					span {
@@ -245,7 +244,7 @@ $headerHeight: 120px;
 				p {
 					padding-left: ms(1);
 					color: white;
-					font-family: $futuraCond, $primary-font;
+					font-family: $futura, $primary-font;
 					font-weight: 400;
 					font-style: normal;
 					font-size: ms(-1);
