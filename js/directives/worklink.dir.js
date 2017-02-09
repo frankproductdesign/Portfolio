@@ -21,3 +21,10 @@ angular
 			templateUrl: "templates/directives/rapidphirelinks.html"
 		};
 	})
+
+	.directive("oandwLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/oandwlinks.html"
+		};
+	})
