@@ -1,17 +1,17 @@
 [
 	{
+		"type" : "E-commerce website",
+		"description" : "UX design, front-end development. (2017)",
+		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
+		"link" : "View >>>",
+		"href" : "#/oliveandwell"
+	},
+	{
 		"type" : "Data-driven web application",
 		"description" : "UX design, prototyping. (2016)",
 		"images" : [{ "image":"images/work/rapidphire-web-app1-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app2-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app3-frankcastro.com.jpg" }],
 		"link" : "View >>>",
 		"href" : "#/rapidphire"
-	},
-	{
-		"type" : "E-commerce website",
-		"description" : "UX design, front-end development. (2016)",
-		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
-		"link" : "View >>>",
-		"href" : "#/oliveandwell"
 	},
 	{
 		"type" : "App",
@@ -36,7 +36,7 @@
 	},
 	{
 		"type" : "Prototypes",
-		"description" : "Design, front-end development.",
+		"description" : "Prototypes. Design and code.",
 		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
 		"link" : "View >>>",
 		"href" : "#/prototypes"
