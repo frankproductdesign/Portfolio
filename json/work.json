@@ -3,56 +3,56 @@
 		"type" : "Data-driven web application",
 		"description" : "UX design, prototyping. (2016)",
 		"images" : [{ "image":"images/work/rapidphire-web-app1-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app2-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app3-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/rapidphire"
 	},
 	{
 		"type" : "E-commerce website",
 		"description" : "UX design, front-end development. (2016)",
 		"images" : [{ "image":"images/work/oliveandwell-desktop-mobile-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-ipad-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-iphone-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/oliveandwell"
 	},
 	{
 		"type" : "App",
 		"description" : "Art direction, UX design. (2014)",
 		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/casm"
 	},
 	{
 		"type" : "App",
 		"description" : "Art direction, UX design. (2013)",
 		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/dymon"
 	},
 	{
 		"type" : "Game",
 		"description" : "Creative direction, Game design, UX design. (2014)",
 		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/greenspace"
 	},
 	{
 		"type" : "Prototypes",
 		"description" : "Design, front-end development.",
 		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/prototypes"
 	},
 	{
 		"type" : "Websites",
 		"description" : "Art direction, old UX designs.",
 		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/websites"
 	},
 	{
 		"type" : "Print",
 		"description" : "Art direction, design.",
 		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
-		"link" : "View",
+		"link" : "View >>>",
 		"href" : "#/print"
 	}
 ]

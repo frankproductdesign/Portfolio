@@ -243,16 +243,18 @@ $headerHeight: 120px;
 
 				p {
 					padding-left: ms(1);
-					color: white;
+					color: $gray2;
 					font-family: $futura, $primary-font;
 					font-weight: 400;
 					font-style: normal;
 					font-size: ms(-1);
 					line-height: ms(1);
-					letter-spacing: 0.7px;
+					letter-spacing: 0.3px;
 					text-transform: uppercase;
 
 					span {
+						color: white;
+						font-family: $futura, $primary-font;
 						font-weight: 700;
 					}
 				}
