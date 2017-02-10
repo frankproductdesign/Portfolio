@@ -27,6 +27,9 @@ angular
 			.when('/oliveandwell2', { 
 				templateUrl: 'templates/oliveandwell2/index.html'
 			})
+			.when('/oliveandwell3', { 
+				templateUrl: 'templates/oliveandwell3/index.html'
+			})
 			.when('/casm', { 
 				templateUrl: 'templates/casm/index.html'
 			})
