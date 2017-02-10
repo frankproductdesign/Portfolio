@@ -251,6 +251,10 @@ $headerHeight: 120px;
 					line-height: ms(1);
 					letter-spacing: 0.7px;
 					text-transform: uppercase;
+
+					span {
+						font-weight: 700;
+					}
 				}
 
 				.aboutWork {
