@@ -550,8 +550,12 @@ $headerHeight: 170px;
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
 
+		.views {
+			margin: 0;
+		}
+
 		.header {
-			width: 90vw;
+			width: $contentMaxWidth;
 			height: $headerHeight;
 
 			p {
