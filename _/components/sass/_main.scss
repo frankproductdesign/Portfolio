@@ -227,7 +227,7 @@ $headerHeight: 120px;
 			float: left;
 
 			.slickContainer {
-				width: 100%;
+				width: 92%;
 				margin: 0 auto;
 			}
 
@@ -339,6 +339,9 @@ $headerHeight: 180px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
+		.views {
+			margin: 0 3%;
+		}
 
 		.header {
 			width: $contentWidth;
@@ -351,7 +354,7 @@ $headerHeight: 180px;
 
 			.pageTitle {
 				p {
-					padding-left: ms(1);
+					padding-left: 0px;
 				}
 			}
 
@@ -423,6 +426,10 @@ $headerHeight: 180px;
 
 		.columns {
 			width: 50%;
+
+			.slickContainer {
+				width: 100%;
+			}
 		}
 
 		.footer {
@@ -454,7 +461,7 @@ $headerHeight: 200px;
 
 			.pageTitle {
 				p {
-					padding-left: ms(2);
+					padding-left: 0px;
 				}
 			}
 
