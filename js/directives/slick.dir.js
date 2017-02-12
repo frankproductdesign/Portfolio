@@ -9,15 +9,16 @@ angular
 				$timeout(function() {
 					$(element).slick({
 						autoplay: true,
-						autoplaySpeed: 36000,
-						speed: 1500,
+						autoplaySpeed: 490,
+						speed: 1700,
 						dots: false,
 						arrows: false,
 						infinite: true,
 						mobileFirst: true,
+						fade: true,
 						rows: 1,
 						lazyload: 'progressive',
-						draggable: true,
+						draggable: false,
 					});
 					$(element).slick(scope.$eval(attrs.slickCarousel));
 				});
