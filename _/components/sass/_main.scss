@@ -542,6 +542,10 @@ $headerHeight: 170px;
 			width: $contentMaxWidth;
 			height: $headerHeight;
 
+			.menuContent {
+				width: $contentWidth;
+			}
+
 			p {
 				font-size: ms(0);
 				padding-top: 72px;
@@ -643,11 +647,11 @@ $headerHeight: 180px;
 		max-width: $contentMaxWidth;
 
 		.header {
-			width: 80vw;
+			width: $contentWidth;
 			height: $headerHeight;
 
-			div:first-of-type {
-				max-width: $contentMaxWidth;
+			.menuContent {
+				width: $contentWidth;
 			}
 
 			p {
