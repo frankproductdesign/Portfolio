@@ -6,19 +6,23 @@
 
 	@include susy-breakpoint($xsmall){
 
-$contentWidth: 100vw;
-$contentMaxWidth: 100vw;
+$contentWidth: 92vw;
 $headerHeight: 120px;
 
 		@include single-transition(all, 1s, ease-out);
 		// @include container;
 
 		.header {
-			width: $contentWidth;
+			width: 100vw;
 			height: $headerHeight;
 			position: absolute;
 			top: 0px;
-			opacity: 0.85;
+
+			.menuContent {
+				width: $contentWidth;
+				margin: 0 auto;
+				position: relative;
+			}
 
 			p {
 				font-size: ms(0);
@@ -33,7 +37,6 @@ $headerHeight: 120px;
 				z-index: 979;
 
 				p {
-					padding-left: ms(0);
 					font-family: $futura;
 					font-weight: 700;
 					font-style: normal;
@@ -86,7 +89,7 @@ $headerHeight: 120px;
 				@include single-transition(all, 0.9s, ease-out);
 				position: fixed;
 				background-color: white;
-				z-index: 999;
+				z-index: 1001;
 				opacity: 1;
 			}
 		} //this is the class that shows and hides the links inside the work details pages
@@ -101,7 +104,7 @@ $headerHeight: 120px;
 
 			.projectName {
 				@include span (12 of 12);
-				padding: 0px ms(0) ms(2);
+				padding: 0px 0px ms(2);
 
 				div:first-of-type {
 					height: 42px;
@@ -117,7 +120,7 @@ $headerHeight: 120px;
 
 			.content {
 				@include span (12 of 12);
-				padding: 0px ms(0);
+				padding: 0px;
 
 				h4 {
 					font-size: ms(0);
@@ -127,8 +130,6 @@ $headerHeight: 120px;
 
 				p {
 					padding-bottom: ms(3);
-					// width: $contentMaxWidth;
-					// margin: 0 auto;
 				}
 
 				a {
@@ -333,15 +334,11 @@ $headerHeight: 120px;
 
 	@include susy-breakpoint($small){
 
-$contentWidth: 100vw;
-$contentMaxWidth: 100vw;
+$contentWidth: 94vw;
 $headerHeight: 180px;
 
 		@include single-transition(all, 1s, ease-out);
-		max-width: $contentMaxWidth;
-		.views {
-			margin: 0 3%;
-		}
+		max-width: $contentWidth;
 
 		.header {
 			width: $contentWidth;
@@ -350,12 +347,6 @@ $headerHeight: 180px;
 			p {
 				font-size: ms(0);
 				padding-top: 74px;
-			}
-
-			.pageTitle {
-				p {
-					padding-left: 0px;
-				}
 			}
 
 			.links {
@@ -371,11 +362,11 @@ $headerHeight: 180px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				padding: 0px ms(1) ms(2);
+				padding: 0px 0px ms(2);
 			}
 
 			.content {
-				padding: 0px ms(1);
+				padding: 0px;
 
 				h4 {
 					padding-bottom: ms(3);
@@ -443,26 +434,23 @@ $headerHeight: 180px;
 
 	@include susy-breakpoint($medium){
 
-$contentWidth: 100vw;
-$contentMaxWidth: 100vw;
+$contentWidth: 96vw;
 $headerHeight: 200px;
 
 		@include single-transition(all, 1s, ease-out);
-		max-width: $contentMaxWidth;
+		max-width: $contentWidth;
 
 		.header {
 			width: $contentWidth;
 			height: $headerHeight;
 
+			.menuContent {
+				width: $contentWidth;
+			}
+
 			p {
 				font-size: ms(0);
 				padding-top: 86px;
-			}
-
-			.pageTitle {
-				p {
-					padding-left: 0px;
-				}
 			}
 
 			.links {
@@ -478,17 +466,17 @@ $headerHeight: 200px;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				padding: 0px ms(2) ms(2);
+				padding: 0px 0px ms(2);
 			}
 
 			.websiteLink {
 				p {
-					width: $contentMaxWidth;
+					width: 100vw;
 				}
 			}
 
 			.content {
-				padding: 0px ms(2);
+				padding: 0px;
 
 				h4 {
 					padding-bottom: ms(3);
@@ -549,10 +537,6 @@ $headerHeight: 170px;
 
 		@include single-transition(all, 1s, ease-out);
 		max-width: $contentMaxWidth;
-
-		.views {
-			margin: 0;
-		}
 
 		.header {
 			width: $contentMaxWidth;
