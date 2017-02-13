@@ -90,10 +90,10 @@ $medium: 980px;
 $medMax: 1080px;
 
 $large: 1240px; 
-$largeMax: 1200px; // this is to maintain the content in this breakpoint within this var width value
+$largeMax: 1200px; // this is to maintain the content in this breakpoint within this var width value, you are using this value in main.scss
 
 $xlarge: 1900px; 
-$xlargeMax: 1800px;
+$xlargeMax: 1580px; //you are using this in main.scss
 
 a {
 	color: $text;

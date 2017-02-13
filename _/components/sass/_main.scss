@@ -532,18 +532,17 @@ $headerHeight: 200px;
 	@include susy-breakpoint($large){
 
 $contentWidth: 100vw;
-$contentMaxWidth: 83vw;
 $headerHeight: 170px;
 
 		@include single-transition(all, 1s, ease-out);
-		max-width: $contentMaxWidth;
+		max-width: $largeMax;
 
 		.header {
-			width: $contentMaxWidth;
+			width: $largeMax;
 			height: $headerHeight;
 
 			.menuContent {
-				width: $contentWidth;
+				width: $largeMax;
 			}
 
 			p {
@@ -566,7 +565,7 @@ $headerHeight: 170px;
 		}
 
 		.workContainer {
-			width: $contentMaxWidth;
+			width: $largeMax;
 			margin: $headerHeight auto 0;
 
 			.projectName {
@@ -630,7 +629,7 @@ $headerHeight: 170px;
 		.footer {
 			@include span(12 of 12);
 			padding: ms(1);
-			max-width: $contentMaxWidth;
+			max-width: $largeMax;
 		}
 	}
 
@@ -640,14 +639,13 @@ $headerHeight: 170px;
 	@include susy-breakpoint($xlarge){
 
 $contentWidth: 100vw;
-$contentMaxWidth: 1580px;
 $headerHeight: 180px;
 
 		@include single-transition(all, 1s, ease-out);
-		max-width: $contentMaxWidth;
+		max-width: $xlargeMax;
 
 		.header {
-			width: $contentWidth;
+			width: $xlargeMax;
 			height: $headerHeight;
 
 			.menuContent {
@@ -676,17 +674,17 @@ $headerHeight: 180px;
 		}
 
 		.workContainer {
-			width: $contentMaxWidth;
+			width: $xlargeMax;
 			margin: $headerHeight auto 0;
 
 			.projectName {
-				width: $contentMaxWidth;
+				width: $xlargeMax;
 				padding: 0px 0px ms(3);
 			}
 
 			.websiteLink {
 				p {
-					width: $contentMaxWidth;
+					width: $xlargeMax;
 				}
 			}
 
@@ -729,7 +727,7 @@ $headerHeight: 180px;
 		.footer {
 			@include span(12 of 12);
 			padding: ms(1);
-			max-width: $contentMaxWidth;
+			max-width: $xlargeMax;
 
 			div {
 				p {
