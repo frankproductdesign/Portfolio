@@ -9,8 +9,8 @@ angular
 				$timeout(function() {
 					$(element).slick({
 						autoplay: true,
-						autoplaySpeed: 690,
-						speed: 1700,
+						autoplaySpeed: 2490,
+						speed: 2700,
 						dots: false,
 						arrows: false,
 						infinite: true,
