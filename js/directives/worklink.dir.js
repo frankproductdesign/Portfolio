@@ -29,6 +29,20 @@ angular
 		};
 	})
 
+	.directive("amuseLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/amuselinks.html"
+		};
+	})
+
+	.directive("dymonLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/dymonlinks.html"
+		};
+	})
+
 	.directive("greenspaceLinks", function() {
 		return {
 			restrict: "E",
@@ -40,5 +54,19 @@ angular
 		return {
 			restrict: "E",
 			templateUrl: "templates/directives/prototypeslinks.html"
+		};
+	})
+
+	.directive("printLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/printlinks.html"
+		};
+	})
+
+	.directive("websitesLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/websiteslinks.html"
 		};
 	})

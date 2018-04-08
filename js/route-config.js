@@ -36,6 +36,9 @@ angular
 			.when('/casm', { 
 				templateUrl: 'templates/casm/index.html'
 			})
+			.when('/casm1', { 
+				templateUrl: 'templates/casm1/index.html'
+			})
 			.when('/dymon', { 
 				templateUrl: 'templates/dymon/index.html'
 			})
@@ -60,8 +63,14 @@ angular
 			.when('/websites', { 
 				templateUrl: 'templates/websites/index.html'
 			})
+			.when('/websites1', { 
+				templateUrl: 'templates/websites1/index.html'
+			})
 			.when('/print', { 
 				templateUrl: 'templates/print/index.html',
+			})
+			.when('/print1', { 
+				templateUrl: 'templates/print1/index.html',
 			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
