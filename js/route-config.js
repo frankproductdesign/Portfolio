@@ -49,7 +49,13 @@ angular
 				templateUrl: 'templates/greenspace2/index.html',
 			})
 			.when('/prototypes', { 
-				templateUrl: 'templates/prototypes/index.html',
+				templateUrl: 'templates/prototype/index.html',
+			})
+			.when('/prototype1', { 
+				templateUrl: 'templates/prototype1/index.html',
+			})
+			.when('/prototype2', { 
+				templateUrl: 'templates/prototype2/index.html',
 			})
 			.when('/websites', { 
 				templateUrl: 'templates/websites/index.html'

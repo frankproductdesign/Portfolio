@@ -18,19 +18,19 @@
 		"href" : "#/rapidphire"
 	},
 	{
-		"type" : "App",
+		"type" : "Museum of Aviation app",
 		"description" : "Art direction, UX/UI design. (2014)",
 		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
 		"href" : "#/casm"
 	},
 	{
-		"type" : "App",
+		"type" : "Dymon app",
 		"description" : "Art direction, UX/UI design. (2013)",
 		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
 		"href" : "#/dymon"
 	},
 	{
-		"type" : "Game",
+		"type" : "Greenspace game",
 		"description" : "Creative direction, Game design, UX design. (2014)",
 		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
 		"href" : "#/greenspace"
@@ -42,7 +42,7 @@
 		"href" : "#/prototypes"
 	},
 	{
-		"type" : "Websites",
+		"type" : "Various websites",
 		"description" : "Art direction, old UX/UI designs.",
 		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
 		"href" : "#/websites"

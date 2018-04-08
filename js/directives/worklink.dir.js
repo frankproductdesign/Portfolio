@@ -15,10 +15,10 @@ angular
 		};
 	})
 
-	.directive("greenspaceLinks", function() {
+	.directive("oandwLinks", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/greenspacelinks.html"
+			templateUrl: "templates/directives/oandwlinks.html"
 		};
 	})
 
@@ -29,9 +29,16 @@ angular
 		};
 	})
 
-	.directive("oandwLinks", function() {
+	.directive("greenspaceLinks", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/oandwlinks.html"
+			templateUrl: "templates/directives/greenspacelinks.html"
+		};
+	})
+
+	.directive("prototypesLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/prototypeslinks.html"
 		};
 	})
