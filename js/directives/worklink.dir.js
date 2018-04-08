@@ -8,6 +8,13 @@ angular
 		};
 	})
 
+	.directive("d3mLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/d3mlinks.html"
+		};
+	})
+
 	.directive("greenspaceLinks", function() {
 		return {
 			restrict: "E",
