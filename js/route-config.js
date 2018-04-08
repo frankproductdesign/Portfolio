@@ -9,6 +9,9 @@ angular
 				controller: 'CtrlrWork',
 				controllerAs: 'work'
 			})
+			.when('/d3m', { 
+				templateUrl: 'templates/d3m/index.html'
+			})
 			.when('/rapidphire', { 
 				templateUrl: 'templates/rapidphire/index.html'
 			})
