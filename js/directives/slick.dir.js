@@ -18,7 +18,7 @@ angular
 						fade: true,
 						rows: 1,
 						lazyload: 'progressive',
-						draggable: false,
+						draggable: true,
 					});
 					$(element).slick(scope.$eval(attrs.slickCarousel));
 				});

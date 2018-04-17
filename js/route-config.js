@@ -12,6 +12,12 @@ angular
 			.when('/d3m', { 
 				templateUrl: 'templates/d3m/index.html'
 			})
+			.when('/d3m', { 
+				templateUrl: 'templates/d3m1/index.html'
+			})
+			.when('/d3m', { 
+				templateUrl: 'templates/d3m2/index.html'
+			})
 			.when('/rapidphire', { 
 				templateUrl: 'templates/rapidphire/index.html'
 			})
