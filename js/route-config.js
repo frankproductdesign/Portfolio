@@ -12,10 +12,10 @@ angular
 			.when('/d3m', { 
 				templateUrl: 'templates/d3m/index.html'
 			})
-			.when('/d3m', { 
+			.when('/d3m1', { 
 				templateUrl: 'templates/d3m1/index.html'
 			})
-			.when('/d3m', { 
+			.when('/d3m2', { 
 				templateUrl: 'templates/d3m2/index.html'
 			})
 			.when('/rapidphire', { 
