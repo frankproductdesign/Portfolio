@@ -1,56 +1,119 @@
 [
-	{
-		"type" : "Web application",
-		"description" : "UX/UI design. (2018)",
-		"images" : [{ "image":"images/work/d3m-web-app1-frankcastro.com.jpg" },{ "image":"images/work/d3m-web-app2-frankcastro.com.jpg" },{ "image":"images/work/d3m-web-app3-frankcastro.com.jpg" }],
-		"href" : "#/d3m"
-	},
-	{
-		"type" : "E-commerce website",
-		"description" : "UX/UI design, front-end development. (2017)",
-		"images" : [{ "image":"images/work/oliveandwell-01-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-02-frankcastro.com.jpg" },{ "image":"images/work/oliveandwell-03-frankcastro.com.jpg" }],
-		"href" : "#/oliveandwell"
-	},
-	{
-		"type" : "Data-driven web application",
-		"description" : "UX/UI design. (2016)",
-		"images" : [{ "image":"images/work/rapidphire-web-app1-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app2-frankcastro.com.jpg" },{ "image":"images/work/rapidphire-web-app3-frankcastro.com.jpg" }],
-		"href" : "#/rapidphire"
-	},
-	{
-		"type" : "Prototypes",
-		"description" : "Design and code. (~2015)",
-		"images" : [{ "image":"images/work/prototype-kipu-frankcastro.com.jpg" },{ "image":"images/work/prototype-experiment-frankcastro.com.jpg" },{ "image":"images/work/prototype-rp-frankcastro.com.jpg" }],
-		"href" : "#/prototypes"
-	},
-	{
-		"type" : "Museum of Aviation app",
-		"description" : "Art direction, UX/UI design. (2014)",
-		"images" : [{ "image":"images/work/casm-iphone-app-loading-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-list-frankcastro.com.jpg" },{ "image":"images/work/casm-iphone-app-cockpit-frankcastro.com.jpg" }],
-		"href" : "#/casm"
-	},
-	{
-		"type" : "Dymon app",
-		"description" : "Art direction, UX/UI design. (2013)",
-		"images" : [{ "image":"images/work/dymon-iphone-1-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-2-frankcastro.com.jpg" },{ "image":"images/work/dymon-iphone-3-frankcastro.com.jpg" }],
-		"href" : "#/dymon"
-	},
-	{
-		"type" : "Greenspace game",
-		"description" : "Creative direction, Game design, UX design. (2012)",
-		"images" : [{ "image":"images/work/greenspace-game-welcome-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-home-frankcastro.com.jpg" },{ "image":"images/work/greenspace-game-dialogs-frankcastro.com.jpg" }],
-		"href" : "#/greenspace"
-	},
-	{
-		"type" : "Print",
-		"description" : "Art direction, design. (~2010)",
-		"images" : [{ "image":"images/work/print-1-frankcastro.com.jpg" },{ "image":"images/work/print-2-frankcastro.com.jpg" },{ "image":"images/work/print-3-frankcastro.com.jpg" }],
-		"href" : "#/print"
-	},
-	{
-		"type" : "Various websites",
-		"description" : "Art direction, UX/UI design. (~2008)",
-		"images" : [{ "image":"images/work/websites-01-frankcastro.com.jpg" },{ "image":"images/work/websites-02-frankcastro.com.jpg" },{ "image":"images/work/websites-03-frankcastro.com.jpg" }],
-		"href" : "#/websites"
-	}
+  {
+    "type": "Web application",
+    "description": "UX/UI design. (2018)",
+    "images": [
+      {
+        "image": "images/work/01-d3m-web-app1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/01-d3m-web-app1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/d3m"
+  },
+  {
+    "type": "E-commerce website",
+    "description": "UX/UI design, front-end development. (2017)",
+    "images": [
+      {
+        "image": "images/work/02-rapidphire-web-app1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/02-rapidphire-web-app1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/oliveandwell"
+  },
+  {
+    "type": "Data-driven web application",
+    "description": "UX/UI design. (2016)",
+    "images": [
+      {
+        "image": "images/work/03-oliveandwell-01-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/03-oliveandwell-01-frankcastro.com.png"
+      }
+    ],
+    "href": "#/rapidphire"
+  },
+  {
+    "type": "Prototypes",
+    "description": "Design and code. (~2015)",
+    "images": [
+      {
+        "image": "images/work/04-greenspace-game-welcome-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/04-greenspace-game-welcome-frankcastro.com.png"
+      }
+    ],
+    "href": "#/prototypes"
+  },
+  {
+    "type": "Museum of Aviation app",
+    "description": "Art direction, UX/UI design. (2014)",
+    "images": [
+      {
+        "image": "images/work/05-casm-iphone-app-cockpit-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/05-casm-iphone-app-cockpit-frankcastro.com.png"
+      }
+    ],
+    "href": "#/casm"
+  },
+  {
+    "type": "Dymon app",
+    "description": "Art direction, UX/UI design. (2013)",
+    "images": [
+      {
+        "image": "images/work/06-dymon-iphone-1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/06-dymon-iphone-1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/dymon"
+  },
+  {
+    "type": "Greenspace game",
+    "description": "Creative direction, Game design, UX design. (2012)",
+    "images": [
+      {
+        "image": "images/work/07-experiment-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/07-experiment-frankcastro.com.png"
+      }
+    ],
+    "href": "#/greenspace"
+  },
+  {
+    "type": "Print",
+    "description": "Art direction, design. (~2010)",
+    "images": [
+      {
+        "image": "images/work/08-print-1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/08-print-1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/print"
+  },
+  {
+    "type": "Various websites",
+    "description": "Art direction, UX/UI design. (~2008)",
+    "images": [
+      {
+        "image": "images/work/09-websites-02-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/09-websites-02-frankcastro.com.png"
+      }
+    ],
+    "href": "#/websites"
+  }
 ]

@@ -8,11 +8,11 @@ angular
 			link: function(scope, element, attrs) {
 				$timeout(function() {
 					$(element).slick({
-						autoplay: true,
-						autoplaySpeed: 2490,
-						speed: 2700,
+						autoplay: false,
+						autoplaySpeed: 12000,
+						speed: 3000,
 						dots: false,
-						arrows: false,
+						arrows: true,
 						infinite: true,
 						mobileFirst: true,
 						fade: true,
