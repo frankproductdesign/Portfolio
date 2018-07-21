@@ -78,6 +78,9 @@ angular
 			.when('/print1', { 
 				templateUrl: 'templates/print1/index.html',
 			})
+			.when('/contact', { 
+				templateUrl: 'templates/contact/index.html'
+			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
 			})
