@@ -1,23 +1,25 @@
 <nav-menu></nav-menu>
 <div class="spacer"></div>
 <div class="homeintrotext">
-	<h1>Hi, I’m Frank, a multidisciplinary Senior UX designer currently living in Ottawa, Canada. Over the years I have worked with companies to help them connect with their customer through UX research, user-centered design and collaboration.</h1>
+	<h1>I’m Frank, a multidisciplinary Senior UX designer currently living in Ottawa, Canada. Over the years I have worked with companies to help them connect with their customer through UX research, user-centered design and collaboration.</h1>
 </div>
 <div class="spacer"></div>
-<div class="columns" ng-repeat="item in items">
-	<div class="slickContainer">
-		<div slick-carousel>
-			<div ng-repeat="image in item.images">
-				<a ng-href="{{item.href}}">
-					<img ng-src="{{image.image}}" />
-				</a>
+<div class="workcontainer">
+	<div class="columns" ng-repeat="item in items">
+		<div class="slickContainer">
+			<div slick-carousel>
+				<div ng-repeat="image in item.images">
+					<a ng-href="{{item.href}}">
+						<img ng-src="{{image.image}}" />
+					</a>
+				</div>
 			</div>
+	<!-- 		<div class="workText">
+				<a ng-href="{{item.href}}">
+					<p>{{item.type}}</p>
+					<p>{{item.description}}</p>
+				</a>
+			</div> -->
 		</div>
-<!-- 		<div class="workText">
-			<a ng-href="{{item.href}}">
-				<p>{{item.type}}</p>
-				<p>{{item.description}}</p>
-			</a>
-		</div> -->
 	</div>
 </div>
