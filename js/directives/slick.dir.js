@@ -12,7 +12,7 @@ angular
 						autoplaySpeed: 12000,
 						speed: 3000,
 						dots: false,
-						arrows: true,
+						arrows: false,
 						infinite: true,
 						mobileFirst: true,
 						fade: true,
