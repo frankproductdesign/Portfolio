@@ -12,32 +12,11 @@ angular
 			.when('/d3m', { 
 				templateUrl: 'templates/d3m/index.html'
 			})
-			.when('/d3m1', { 
-				templateUrl: 'templates/d3m1/index.html'
-			})
-			.when('/d3m2', { 
-				templateUrl: 'templates/d3m2/index.html'
-			})
 			.when('/rapidphire', { 
 				templateUrl: 'templates/rapidphire/index.html'
 			})
-			.when('/rapidphire1', { 
-				templateUrl: 'templates/rapidphire1/index.html'
-			})
-			.when('/rapidphire2', { 
-				templateUrl: 'templates/rapidphire2/index.html'
-			})
 			.when('/oliveandwell', { 
 				templateUrl: 'templates/oliveandwell/index.html'
-			})
-			.when('/oliveandwell1', { 
-				templateUrl: 'templates/oliveandwell1/index.html'
-			})
-			.when('/oliveandwell2', { 
-				templateUrl: 'templates/oliveandwell2/index.html'
-			})
-			.when('/oliveandwell3', { 
-				templateUrl: 'templates/oliveandwell3/index.html'
 			})
 			.when('/casm', { 
 				templateUrl: 'templates/casm/index.html'
@@ -57,14 +36,8 @@ angular
 			.when('/greenspace2', { 
 				templateUrl: 'templates/greenspace2/index.html',
 			})
-			.when('/prototypes', { 
-				templateUrl: 'templates/prototype/index.html',
-			})
-			.when('/prototype1', { 
-				templateUrl: 'templates/prototype1/index.html',
-			})
-			.when('/prototype2', { 
-				templateUrl: 'templates/prototype2/index.html',
+			.when('/vispol', { 
+				templateUrl: 'templates/vispol/index.html',
 			})
 			.when('/websites', { 
 				templateUrl: 'templates/websites/index.html'

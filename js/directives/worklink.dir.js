@@ -50,10 +50,10 @@ angular
 		};
 	})
 
-	.directive("prototypesLinks", function() {
+	.directive("vispolLinks", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/prototypeslinks.html"
+			templateUrl: "templates/directives/vispollinks.html"
 		};
 	})
 
