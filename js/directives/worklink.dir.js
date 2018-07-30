@@ -57,10 +57,10 @@ angular
 		};
 	})
 
-	.directive("printLinks", function() {
+	.directive("prototypeLinks", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/printlinks.html"
+			templateUrl: "templates/directives/prototypelinks.html"
 		};
 	})
 

@@ -21,20 +21,11 @@ angular
 			.when('/casm', { 
 				templateUrl: 'templates/casm/index.html'
 			})
-			.when('/casm1', { 
-				templateUrl: 'templates/casm1/index.html'
-			})
 			.when('/dymon', { 
 				templateUrl: 'templates/dymon/index.html'
 			})
 			.when('/greenspace', { 
 				templateUrl: 'templates/greenspace/index.html',
-			})
-			.when('/greenspace1', { 
-				templateUrl: 'templates/greenspace1/index.html',
-			})
-			.when('/greenspace2', { 
-				templateUrl: 'templates/greenspace2/index.html',
 			})
 			.when('/vispol', { 
 				templateUrl: 'templates/vispol/index.html',
@@ -45,11 +36,8 @@ angular
 			.when('/websites1', { 
 				templateUrl: 'templates/websites1/index.html'
 			})
-			.when('/print', { 
-				templateUrl: 'templates/print/index.html',
-			})
-			.when('/print1', { 
-				templateUrl: 'templates/print1/index.html',
+			.when('/prototype', { 
+				templateUrl: 'templates/prototype/index.html',
 			})
 			.when('/contact', { 
 				templateUrl: 'templates/contact/index.html'
