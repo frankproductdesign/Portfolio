@@ -15,6 +15,9 @@ angular
 			.when('/rapidphire', { 
 				templateUrl: 'templates/rapidphire/index.html'
 			})
+			.when('/sezlik', { 
+				templateUrl: 'templates/sezlik/index.html'
+			})
 			.when('/oliveandwell', { 
 				templateUrl: 'templates/oliveandwell/index.html'
 			})

@@ -29,6 +29,13 @@ angular
 		};
 	})
 
+	.directive("sezlikLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/sezliklinks.html"
+		};
+	})
+
 	.directive("amuseLinks", function() {
 		return {
 			restrict: "E",
