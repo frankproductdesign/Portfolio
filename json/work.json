@@ -26,6 +26,19 @@
     "href": "#/rapidphire"
   },
   {
+    "type": "App design",
+    "description": "UX/UI design",
+    "images": [
+      {
+        "image": "images/work/03-sezlik-01-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/03-sezlik-01-frankcastro.com.png"
+      }
+    ],
+    "href": "#/oliveandwell"
+  },
+  {
     "type": "E-commerce website",
     "description": "UX/UI design.",
     "images": [
