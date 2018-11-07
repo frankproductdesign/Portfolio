@@ -36,11 +36,14 @@ angular
 			.when('/websites', { 
 				templateUrl: 'templates/websites/index.html'
 			})
+			.when('/prototype', { 
+				templateUrl: 'templates/prototype/index.html',
+			})
 			.when('/print', { 
 				templateUrl: 'templates/print/index.html'
 			})
-			.when('/prototype', { 
-				templateUrl: 'templates/prototype/index.html',
+			.when('/logos', { 
+				templateUrl: 'templates/logos/index.html'
 			})
 			.when('/contact', { 
 				templateUrl: 'templates/contact/index.html'

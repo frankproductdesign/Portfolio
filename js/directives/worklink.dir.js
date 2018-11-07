@@ -84,3 +84,10 @@ angular
 			templateUrl: "templates/directives/printlinks.html"
 		};
 	})
+
+	.directive("logosLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/logoslinks.html"
+		};
+	})

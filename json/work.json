@@ -141,5 +141,18 @@
       }
     ],
     "href": "#/print"
+  },
+  {
+    "type": "Logos",
+    "description": "Design.",
+    "images": [
+      {
+        "image": "images/work/12-logos-1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/12-logos-1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/logos"
   }
 ]
