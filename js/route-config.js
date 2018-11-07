@@ -36,8 +36,8 @@ angular
 			.when('/websites', { 
 				templateUrl: 'templates/websites/index.html'
 			})
-			.when('/websites1', { 
-				templateUrl: 'templates/websites1/index.html'
+			.when('/print', { 
+				templateUrl: 'templates/print/index.html'
 			})
 			.when('/prototype', { 
 				templateUrl: 'templates/prototype/index.html',

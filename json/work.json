@@ -128,5 +128,18 @@
       }
     ],
     "href": "#/websites"
+  },
+  {
+    "type": "Print",
+    "description": "Art direction, design.",
+    "images": [
+      {
+        "image": "images/work/11-print-1-frankcastro.com.png"
+      },
+      {
+        "image": "images/work/11-print-1-frankcastro.com.png"
+      }
+    ],
+    "href": "#/print"
   }
 ]

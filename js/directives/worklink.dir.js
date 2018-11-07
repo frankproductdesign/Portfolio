@@ -77,3 +77,10 @@ angular
 			templateUrl: "templates/directives/websiteslinks.html"
 		};
 	})
+
+	.directive("printLinks", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/printlinks.html"
+		};
+	})
