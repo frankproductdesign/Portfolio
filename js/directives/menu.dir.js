@@ -1,6 +1,20 @@
 angular
 	.module('myStuff')
 
+	.directive("navMenu", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/menu.html"
+		};
+	})
+
+	.directive("menuItems", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/menuitems.html"
+		};
+	})
+
 	.directive('menuActive', ['$location', function ($location) {
 		return {
 			restrict: 'A',
@@ -27,9 +41,9 @@ angular
 		};
 	}])
 
-	.directive("navMenu", function() {
+	.directive("footerContent", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/menu.html"
+			templateUrl: "templates/directives/footercontent.html"
 		};
 	})
