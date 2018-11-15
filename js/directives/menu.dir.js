@@ -8,10 +8,10 @@ angular
 		};
 	})
 
-	.directive("menuItems", function() {
+	.directive("footerContent", function() {
 		return {
 			restrict: "E",
-			templateUrl: "templates/directives/menuitems.html"
+			templateUrl: "templates/directives/footer.html"
 		};
 	})
 
@@ -40,10 +40,3 @@ angular
 			}
 		};
 	}])
-
-	.directive("footerContent", function() {
-		return {
-			restrict: "E",
-			templateUrl: "templates/directives/footercontent.html"
-		};
-	})
