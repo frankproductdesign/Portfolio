@@ -1,13 +1,6 @@
 angular
 	.module('myStuff')
 
-	.directive("navMenu", function() {
-		return {
-			restrict: "E",
-			templateUrl: "templates/directives/menu.html"
-		};
-	})
-
 	.directive('menuActive', ['$location', function ($location) {
 		return {
 			restrict: 'A',
@@ -33,3 +26,10 @@ angular
 			}
 		};
 	}])
+
+	.directive("navMenu", function() {
+		return {
+			restrict: "E",
+			templateUrl: "templates/directives/menu.html"
+		};
+	})

@@ -45,8 +45,8 @@ angular
 			.when('/logos', { 
 				templateUrl: 'templates/logos/index.html'
 			})
-			.when('/contact', { 
-				templateUrl: 'templates/contact/index.html'
+			.when('/process', { 
+				templateUrl: 'templates/process/index.html'
 			})
 			.when('/about', { 
 				templateUrl: 'templates/about/index.html'
