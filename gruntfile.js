@@ -16,6 +16,23 @@ module.exports = function(grunt) {
 					config: 'config.rb'
 				}
 			}
+		},
+		watch: {
+			options: { livereload: true },
+			scripts:{
+				files: ['js/app.module.js', 'js/route-config.js', 'js/controllers/*.js', 'js/directives/*.js', '_/components/js/*.js', 'images/svg/*.svg'],
+				tasks: ['uglify']
+			},
+			sass: {
+				files: ['_/components/sass/*.scss'],
+				tasks: ['compass:dev']
+			},
+			html: {
+				files: ['*.html', 'templates/*.html', 'templates/*/*.html']
+			},
+			json: {
+				files: ['*.json', 'json/*.json']
+			}
 		}
 	})
 	grunt.registerTask('default', 'watch');
