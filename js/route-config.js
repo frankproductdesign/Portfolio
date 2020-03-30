@@ -10,46 +10,60 @@ angular
 				controllerAs: 'work'
 			})
 			.when('/d3m', { 
-				templateUrl: 'templates/d3m/index.html'
+				templateUrl: 'templates/d3m/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/rapidphire', { 
-				templateUrl: 'templates/rapidphire/index.html'
+				templateUrl: 'templates/rapidphire/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/sezlik', { 
-				templateUrl: 'templates/sezlik/index.html'
+				templateUrl: 'templates/sezlik/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/oliveandwell', { 
-				templateUrl: 'templates/oliveandwell/index.html'
+				templateUrl: 'templates/oliveandwell/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/casm', { 
-				templateUrl: 'templates/casm/index.html'
+				templateUrl: 'templates/casm/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/dymon', { 
-				templateUrl: 'templates/dymon/index.html'
+				templateUrl: 'templates/dymon/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/greenspace', { 
 				templateUrl: 'templates/greenspace/index.html',
+				controller: 'CtrlrDate',
 			})
 			.when('/vispol', { 
 				templateUrl: 'templates/vispol/index.html',
+				controller: 'CtrlrDate',
 			})
 			.when('/websites', { 
-				templateUrl: 'templates/websites/index.html'
+				templateUrl: 'templates/websites/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/prototype', { 
 				templateUrl: 'templates/prototype/index.html',
+				controller: 'CtrlrDate',
 			})
 			.when('/print', { 
-				templateUrl: 'templates/print/index.html'
+				templateUrl: 'templates/print/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/logos', { 
-				templateUrl: 'templates/logos/index.html'
+				templateUrl: 'templates/logos/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/process', { 
-				templateUrl: 'templates/process/index.html'
+				templateUrl: 'templates/process/index.html',
+				controller: 'CtrlrDate'
 			})
 			.when('/about', { 
-				templateUrl: 'templates/about/index.html'
+				templateUrl: 'templates/about/index.html',
+				controller: 'CtrlrDate'
 			})
 
 			.otherwise({ redirectTo: '/home'
