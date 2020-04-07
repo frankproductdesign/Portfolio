@@ -37,5 +37,8 @@ ehthumbs.db
 Thumbs.db
 *sass-cache*
 
-node_modules/
+# I added this #
 bower_components/
+node_modules/
+.vscode/
+web.config
