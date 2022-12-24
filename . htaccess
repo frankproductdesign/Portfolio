@@ -1,4 +1,4 @@
-# force SSL on entire site
-RewriteEngine On 
-RewriteCond %{HTTPS} !=on
-RewriteRule ^/?(.*) https://frankcastro.com/$1 [R=301,L]
+# http to https redirect
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !=443
+RewriteRule ^(.*)$ https://frankcastro.com/#/$1 [R=301,L]
