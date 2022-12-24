@@ -1,0 +1,124 @@
+$default-text-shadow-color: rgba(#000000, 0.8);
+$default-text-shadow-blur: 3px;
+$default-text-shadow-v-offset: 2px;
+
+$cartbttnshadow: rgba(black, 0.5) 0px 2px 3px;
+
+// COLORS
+
+$color1: #3AD7E7;
+$color2: steelblue;
+$color3: pink;
+
+$gray1: #777;
+$gray2: #666;
+$gray3: dimgray;
+
+$text: #191919;
+$hover: black;
+
+
+// TYPEFACE
+
+// White text on a black background has a higher contrast to the opposite, the letterforms need to be wider apart, lighter in weight and have more space between the lines. Increase the leading, tracking and decrease your font-weight
+
+@font-face { 
+	font-family: SourceSansReg;
+	src: url(fonts/SourceSansPro-Regular.otf);
+};
+
+@font-face { 
+	font-family: SourceSansLight;
+	src: url(fonts/SourceSansPro-Light.otf);
+};
+
+@font-face { 
+	font-family: SourceSansBold;
+	src: url(fonts/SourceSansPro-Bold.otf);
+};
+
+$primary-font: 'SourceSansReg';
+$primary-fontlight: 'SourceSansLight';
+$primary-fontbold: 'SourceSansBold';
+
+$museo: 'museo-sans', sans-serif;
+// using font-weight; 300, 700
+
+$button: 16px; //recommended medium weight, all caps
+$link: uppercase;
+
+$touch-character: " ☛ " !default;
+
+// Breakpoints values
+$small: 320px;
+
+$med: 768px;
+
+$large: 1560px; // this is to maintain the content in this breakpoint within this var width value, you are using this value in main.scss
+
+a {
+	color: $gray1;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: $hover;
+	opacity: 1;
+}
+
+$textmaxwidth: 680px;
+
+p {
+	font-size: 16px;
+	line-height: 24px;
+	color: $text;
+	margin: 0;
+} // this is the default size
+
+// @mixin bg-properties {
+// 	-webkit-background-size: cover;
+// 	-moz-background-size: cover;
+// 	-o-background-size: cover;
+// 	background-size: cover;
+// 	transition: all, 1s, ease-out;
+// 	background-position: center center;
+// }
+
+// keep this body tag down here so you can reference the variables above
+body {
+	font-family: $museo, $primary-font;
+	font-weight: 300;
+	margin: 0px;
+	padding: 0px;
+
+	#{headings(1,4)} {
+		font-family: $museo;
+		color: black;
+	}
+
+	h1 {
+		font-size: 36px; //preferably use the font light weight type
+		font-weight: 300;
+		line-height: 48px;
+		margin: 0px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+
+	h3 {
+		font-size: 24px;
+		font-weight: 300;
+		margin: 0px;
+	}
+
+	h4 {
+		font-size: 16px;
+		font-weight: 700;
+	} //medium weight recommended
+}
+
+html, body {
+	overflow-x: initial;
+}

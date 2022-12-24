@@ -1,0 +1,444 @@
+.mainContainer {
+	margin: 0 auto;
+
+// ---------------------------------------------------- SMALL ----------------------------------------------------
+
+@media only screen and (min-width: $small){
+
+$contentWidth: 94%;
+$headerHeight: 114px;
+
+		max-width: $contentWidth;
+
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+			background-color: white;
+			position: absolute;
+			top: 0px;
+			z-index: 9999;
+
+			p {
+				font-size: 18px;
+				font-weight: 300;
+				color: black;
+			}
+		}
+
+		.spacer {
+			height: $headerHeight;
+		}
+
+		.links {
+			display: flex;
+			margin-top: 42px;
+
+			div {
+				margin-left: 24px;
+
+				a {
+					color: $gray1;
+					text-decoration: none;
+				}
+			}
+
+			div:first-of-type {
+				margin-left: 0px;
+			}
+
+			.active {
+				a {
+					color: black;
+					font-weight: 700;
+				}
+			}
+		}
+
+		.navbg-hidden {
+			// toggles the top navigation
+			position: fixed;
+			width: $contentWidth;
+			height: $headerHeight;
+			background-color: white;
+			z-index: 1001;
+			opacity: 1;
+		}
+
+		.grid {
+			// grid to show all the work on landing page
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+
+			.gridElement {
+				width: 50%;
+
+				img {
+					width: 100%;
+				}
+			}
+		}
+
+		.workContainer {
+			margin: 0 auto;
+
+			.content {
+				padding: 0 0 18px 0;
+
+				h4 {
+					text-align: left;
+					padding-bottom: 40px;
+				}
+
+				p {
+					padding-bottom: 32px;
+				}
+
+				a {
+					font-weight: 700;
+				}
+
+				img {
+					width: 100%;
+				}
+
+				.imagedesc {
+					p {
+						font-weight: 300;
+						margin: 0;
+						padding-bottom: 24px;
+					}
+				}
+
+				.prototypesamples {
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					justify-content: center;
+					
+					div {
+						img {
+							width: 260px;
+							padding: 0 12px 18px;
+						}
+					}
+				}
+
+				&.prototype {
+					// you are using this to hide the link in mobile devices, browsers don't render this yet.
+					span {
+						text-transform: none;
+						display: inline;
+					}
+				}
+			}
+
+			.nextProject {
+				float: right;
+			}
+
+			.submenu {
+				display: flex;
+				position: absolute;
+				top: 0px;
+				// background-color: white;
+
+				div {
+					padding: 32px 0 12px 18px;
+				}
+				
+				div:first-of-type {
+				 	padding-left: 0;
+				}
+
+				p {
+					font-size: 16px;
+					font-weight: 700;
+					text-transform: uppercase;
+					text-align: center;
+				}
+
+				div:last-of-type {
+					float: right;
+				}
+			}
+		}
+
+		.processtext {
+
+			p:last-of-type {
+				padding-bottom: 10vh;
+			} // this is to push the footer down to the bottom of the page
+		}
+
+		.aboutText {
+			padding: 0;
+			display: flex;
+			flex-flow: column;
+			// justify-content: space-between;
+
+			.bodytext {
+				padding: 0 0 40px 0;
+				position: relative;
+				max-width: $textmaxwidth;
+
+				p {
+					font-family: $museo;
+					font-size: 16px;
+					line-height: 24px;
+					font-weight: 300;
+				}
+
+				dfn {
+					font-style: italic;
+					font-size: 16px;
+					line-height: 16px;
+				}
+
+				em {
+					font-style: italic;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.email {
+			margin-bottom: 96px;
+		}
+
+		.portrait {
+			display: block;
+
+			img {
+				width: 210px;
+			}
+		}
+
+		.footer {
+			padding-top: 40px;
+
+			.socialicons {
+				display: flex;
+				justify-content: center;
+				padding-top: 32px;
+
+				img {
+					padding-left: 16px;
+					opacity: 0.5;
+				}
+			}
+
+			.copyright {
+				z-index: 999;
+				margin: 32px 0 40px 0;
+
+				p {
+					font-size: 12px;
+					font-weight: 400;
+					text-transform: none;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+
+// ---------------------------------------------------- MEDIUM ----------------------------------------------------
+
+	@media only screen and (min-width: $med){
+
+$contentWidth: $med;
+$headerHeight: 108px;
+
+		max-width: $contentWidth;
+		transition: (all, 1s, ease-out);
+
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+			margin: 0 auto;
+
+			p {
+				font-weight: 300;
+				color: black;
+			}
+		}
+
+		.spacer {
+			height: $headerHeight;
+		}
+
+		.navbg-hidden {
+			// toggles the top navigation
+			height: $headerHeight;
+		}
+
+		.grid {
+			max-width: $med;
+			margin: 0 auto;
+
+			.gridElement {
+				width: 50%;
+			}
+		}
+
+		.workContainer {
+			width: $contentWidth;
+			margin: 0 auto;
+			padding: 0;
+
+			.content {
+				h4 {
+					padding-bottom: 42px;
+				}
+
+				p {
+					padding-bottom: 42px;
+					margin: 0 auto;
+				}
+
+				.prototypesamples {
+					flex-direction: row;
+					justify-content: space-between;
+
+					div {
+						img {
+							width: 250px;
+							padding: 0 6px 6px;
+						}
+					}
+				}
+
+				&.prototype {
+					span {
+						display: none;
+					}
+				}
+			}
+
+			.submenu {
+				width: $contentWidth;
+				height: $headerHeight;
+			}
+		}
+
+		.processtext {
+			padding: 0;
+			
+			p:last-of-type {
+				padding-bottom: 10vh;
+			}
+		}
+
+		.aboutText {
+			padding: 0;
+
+			.bodytext {
+				transition: (all, 1s, ease-out);
+
+				p {
+					line-height: 24px;
+					color: black;
+				}
+			}
+		}
+
+		.portrait {
+			display: block;
+
+			img {
+				width: 222px;
+			}
+		}
+	}
+
+// ---------------------------------------------------- LARGE ----------------------------------------------------
+
+	@media only screen and (min-width: $large){
+		transition: (all, 1s, ease-out);
+
+		$contentWidth: $large;
+		$headerHeight: 108px;
+		max-width: $large;
+
+		.header {
+			width: $contentWidth;
+			height: $headerHeight;
+
+			p {
+				font-weight: 300;
+				color: black;
+			}
+		}
+
+		.spacer {
+			height: $headerHeight;
+		}
+
+		.navbg-hidden {
+			// toggles the top navigation
+			height: $headerHeight;
+		}
+
+		.grid {
+			max-width: $large;
+			margin: 0 auto;
+
+			.gridElement {
+				width: 33%;
+			}
+		}
+
+		.workContainer {
+			width: $contentWidth;
+			margin: 0 auto;
+
+			.content {
+				padding: 0 0 40px 0;
+
+				h4 {
+					padding-bottom: 40px;
+				}
+
+				p {
+					width: $textmaxwidth;
+					margin: 0;
+					padding-bottom: 40px;
+				}
+
+				.prototypesamples {
+					div {
+						img {
+							width: 360px;
+							padding: 0 6px 6px;
+						}
+					}
+				}
+			}
+		}
+
+		.email {
+			margin-bottom: 60px;
+		}
+
+		.portrait {
+			img {
+				width: 360px;
+			}
+		}
+
+		.processtext {
+			p {
+				width: $textmaxwidth;
+			}
+
+			p:last-of-type {
+				padding-bottom: 24vh;
+			}
+		}
+
+		.footer {
+			max-width: $large;
+		}
+	}
+}
